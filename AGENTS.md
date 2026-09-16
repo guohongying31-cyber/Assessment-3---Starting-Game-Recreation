@@ -14,7 +14,9 @@
 - Preserve all feature branches after merging. Use merge commits to retain the branch structure.
 - Do not rewrite, squash, fake, amend, or backdate history.
 - Keep Main unchanged after its initial repository bootstrap until final validation passes.
-- Remote hosting will be supplied by the user later. Do not invent a remote URL.
+- Authorized remote: https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation.git.
+  Connect and synchronize this repository without rewriting any existing history.
+- Target the complete 100% HD flow in grading-band order; do not skip prerequisites.
 - Use the user's provided Git name and email, configured locally. Do not invent either value.
 
 ## Assessment constraints, extracted from the supplied PDF
