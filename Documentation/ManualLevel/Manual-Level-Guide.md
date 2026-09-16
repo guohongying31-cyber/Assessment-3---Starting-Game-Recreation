@@ -53,9 +53,26 @@ The complete level spans 28 columns and 29 rows, with 660 nonempty cells: 438 wa
 218 spirit motes and four animated elixirs. Row14 is the side-tunnel row; its outer six
 columns on each side are empty. The upper and lower tunnel walls end at the map boundary.
 
-## Milestone status
+## Open and inspect
 
-The saved full maze has passed placement, reflection, seam and Play checks. The combined
-level/showcase presentation and final integration checks remain in this feature.
+Open RecreatedLevel in Unity 6000.4.11f1. The maze is visible in Scene View before Play.
+Select Level01_Manual to inspect its four quadrant groups, row groups and individual
+prefab instances. Expand TopLeft/Row03 to find the source elixir placement at column 01.
+The other three elixirs are reflected copies at world cells (3,26), (25,1) and (25,26).
+
+The orthographic camera is centered at (13.5, -14, -10), with size 15.8 and a dark navy
+background. The intended display is 1920 x 1080. The complete maze occupies the center;
+the existing character, item and wall samples occupy the two side panels under AssetShowcase.
+The camera, level root and scene objects have descriptive English names and labels.
+
+Press Play and observe at least 28 seconds. Four elixirs pulse in the maze, five characters
+cycle through their preview states, and the opening music switches to its normal loop.
+The sidebar elixir also pulses. Stop returns to the same saved maze. This stage does not
+add keyboard control, patrol movement, collision handling, pickup collection or a runtime
+LevelGenerator. The separate Characters group is reserved for the movement stage.
+
+To adjust a cell in the Inspector, use integer positions and 90-degree rotations. Update
+the placement worksheet and repeat mirror/seam checks when changing the source design.
+Do not add a second Row14 to the lower quadrants. Keep the side exits free of pickups.
 
 See [validation](Manual-Level-Validation.md) for actual checks and saved evidence.

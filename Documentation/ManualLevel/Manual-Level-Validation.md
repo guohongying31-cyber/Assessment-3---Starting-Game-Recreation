@@ -52,3 +52,28 @@ The top-left milestone alone does not complete the four-quadrant manual level.
 - Local logs: tmp/manual-level/unity-mirrored-build.log and unity-mirrored-play.log.
   Evidence: Full-Layout-Validation.json, Mirrored-Scene-Validation.json,
   Mirrored-Play-Session1.json and Mirrored-Editor.png.
+
+## Final scene presentation and playback
+
+- Kept the complete maze in the center of the frame. Repositioned the existing fifteen
+  showcase sprites into the two side panels, with English titles, names and preview hints.
+  No new wall image, pickup image, animation clip or runtime gameplay script was added.
+- Reopened and verified all 660 maze placements again. Final-Scene-Validation.json records
+  every cell's source row/column, category, rotation, quadrant and prefab reference.
+- Ran two complete 28-second Play sessions, with Stop and a fresh Play between them.
+  All 660 maze objects remained present before, during and after both sessions; the saved
+  scene hash was unchanged after each Stop.
+- All four in-maze elixirs displayed both pulse frames. The first run observed 56 frame
+  changes per elixir; the second observed 52. Each run observed all 46 visual states across
+  the cultivator, four beasts and sidebar elixir.
+- Both sessions confirmed intro startup, handover to normal music, and the normal music
+  wrapping around its full 24-second loop. Unity compilation and both Play sessions passed.
+- Inspected actual camera renders at 1920 x 1080 and 1280 x 720. All four quadrants, side
+  exits, labels, sprites and wall samples remain visible without clipping or panel overlap.
+  Both captures use the same 16:9 aspect ratio; other aspect ratios are not claimed here.
+- Local logs: tmp/manual-level/unity-presentation-build.log and unity-final-play.log.
+  Evidence: Final-Play-Session1.json, Final-Play-Session2.json, Final-Editor.png,
+  Final-Play.png and Final-Play-720p.png.
+
+This completes the manual layout and scene presentation checks. Patrol movement,
+runtime generation, player builds and final packaging belong to later validation stages.
