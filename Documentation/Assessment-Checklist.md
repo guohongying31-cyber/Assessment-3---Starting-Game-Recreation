@@ -110,15 +110,19 @@ item stays open until it is exercised by the actual movement feature. See
 
 ## 75%: manual level (PDF pages 11-12)
 
-- [ ] Use only the first 15 rows by 14 columns of numeric CSV data, excluding the symbol table and legend.
-- [ ] Match the top-left quadrant to the PDF array and figure, with correctly joined wall rotations.
-- [ ] Mirror horizontally, then vertically, without duplicating the bottom row.
+- [x] Use only the first 15 rows by 14 columns of numeric CSV data, excluding the symbol table and legend.
+- [x] Match the top-left quadrant to the PDF array and figure, with correctly joined wall rotations.
+- [x] Mirror horizontally, then vertically, without duplicating the bottom row.
   The default complete level has 29 rows and 28 columns.
-- [ ] Keep a single center row and one-cell side exits, with no pellets in the exit tunnels.
-- [ ] Save a genuinely manual level in the scene, visible in Scene View **before** Play.
-- [ ] Show all four quadrants in Play; retain the manual level after Stop.
-- [ ] Use the specified mirrored-quadrant layout, not the original full Pac-Man Level 01.
-- [ ] Place animated elixirs manually; rotate and mirror the base wall sprites for reuse.
+- [x] Keep a single center row and one-cell side exits, with no pellets in the exit tunnels.
+- [x] Save the explicit manual placements in the scene, visible in Scene View **before** Play.
+- [x] Show all four quadrants in Play; retain the manual level after Stop.
+- [x] Use the specified mirrored-quadrant layout, not the original full Pac-Man Level 01.
+- [x] Preplace animated elixirs; rotate and mirror the base wall sprites for reuse.
+
+See [the manual level guide](ManualLevel/Manual-Level-Guide.md) for the saved placement
+worksheet and mirror transforms, and [validation](ManualLevel/Manual-Level-Validation.md)
+for actual scene, seam and Play checks. No runtime generator is part of this stage.
 
 ## 85%: movement (PDF page 13)
 

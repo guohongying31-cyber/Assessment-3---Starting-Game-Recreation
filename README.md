@@ -16,8 +16,11 @@ See the audio validation record for the checks performed and listening-review li
 The visual stage now includes 101 sprite frames, 46 visual animation clips, six visual
 controllers, and a scene showcase with fifteen reusable sprite prefabs. Two full Play
 sessions verified every required animation state and the existing music sequence.
-The next stage is `Feature-ManualLevel`, followed by movement and procedural generation.
-Those three features remain unfinished. This project is not ready for assessment submission.
+The manual level is now saved in the scene: 28 columns by 29 rows, four reflected quadrants,
+660 placed objects, 218 spirit motes and four animated elixirs. Two full Play sessions
+verified the completed maze, retained animation showcase and music restart.
+The next stage is `Feature-Movement`, followed by procedural generation and final validation.
+Those features remain unfinished. This project is not ready for assessment submission.
 
 - Unity: **6000.4.11f1**, confirmed by the user.
 - Remote: [Assessment-3---Starting-Game-Recreation](https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation).
@@ -37,6 +40,8 @@ Those three features remain unfinished. This project is not ready for assessment
 - [Visual production and import settings](Documentation/Visual/Visual-Production.md)
 - [Animation controls and showcase guide](Documentation/Visual/Animation-Guide.md)
 - [Visual validation record](Documentation/Visual/Visual-Validation.md)
+- [Manual maze layout and scene guide](Documentation/ManualLevel/Manual-Level-Guide.md)
+- [Manual level validation record](Documentation/ManualLevel/Manual-Level-Validation.md)
 
 Production notes describe the actual assets and configuration. Validation records
 distinguish completed checks from work that remains unfinished.
@@ -48,12 +53,14 @@ Open `Assets/Scenes/RecreatedLevel.unity`.
 The scene contains an orthographic camera and four organizational groups:
 `Systems`, `Level01_Manual`, `Characters`, and `AssetShowcase`.
 `Systems/LevelAudio` plays the 2.4-second intro and then loops the normal music.
-`AssetShowcase` displays the cultivator, four beasts, four items and six wall samples.
-Press Play and watch for at least 21 seconds to see every character animation state.
-The elixir pulses continuously. Stop and Play again to restart the preview and music.
-`Level01_Manual` and the separate gameplay `Characters` group are reserved for later work.
+`Level01_Manual` contains the four saved maze quadrants, visible before Play.
+`AssetShowcase` displays the cultivator, four beasts, four items and six wall samples in
+the side panels. Press Play and watch for at least 28 seconds to see every character
+state and a full normal-music loop. Four maze elixirs and the sidebar elixir pulse.
+Stop and Play again to restart the preview and music. The separate gameplay `Characters`
+group is reserved for the movement stage; the cultivator does not patrol the maze yet.
 
-![Visual asset showcase](Documentation/Visual/Showcase-Static.png)
+![Manual maze and animated asset showcase](Documentation/ManualLevel/Final-Editor.png)
 
 ## Git and submission
 

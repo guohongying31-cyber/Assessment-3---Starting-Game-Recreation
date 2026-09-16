@@ -2,8 +2,8 @@
 
 Open Assets/Scenes/RecreatedLevel.unity and press Play.
 The 2.4-second intro is followed by the normal-state music on a continuous loop.
-The scene now includes an animated sprite showcase. Maze construction and patrol movement
-remain later stages; the audio rig continues to operate independently of the visual preview.
+The scene includes the complete manual maze and an animated sprite showcase. Patrol movement
+remains a later stage; the audio rig continues to operate independently of the visual preview.
 
 ## Scene organization
 

@@ -1,0 +1,50 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T09:38:36.4252989Z",
+    "phase": "Mirrored",
+    "session": 1,
+    "cellsBefore": 660,
+    "cellsDuring": 660,
+    "cellsAfter": 660,
+    "observedSeconds": 4.0000338010204079,
+    "introStarted": true,
+    "normalStarted": true,
+    "normalLoopWrapped": false,
+    "sceneUnchangedAfterStop": true,
+    "passed": true,
+    "elixirs": [
+        {
+            "path": "TopLeft/R03_C01_Elixir",
+            "frameChanges": 8,
+            "frames": [
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01"
+            ]
+        },
+        {
+            "path": "TopRight/R03_C01_Elixir",
+            "frameChanges": 8,
+            "frames": [
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01"
+            ]
+        },
+        {
+            "path": "BottomLeft/R03_C01_Elixir",
+            "frameChanges": 8,
+            "frames": [
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01"
+            ]
+        },
+        {
+            "path": "BottomRight/R03_C01_Elixir",
+            "frameChanges": 8,
+            "frames": [
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01"
+            ]
+        }
+    ],
+    "characterStates": []
+}
