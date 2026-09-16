@@ -77,17 +77,17 @@ This checklist does not award a grade.
 
 ## 50%: sprites (PDF pages 9 and 11-12)
 
-- [ ] PacStudent has distinct left, right, up, and down walking sequences, plus death frames.
+- [x] PacStudent has distinct left, right, up, and down walking sequences, plus death frames.
   Rotating one sequence does not satisfy the directional requirement.
-- [ ] Each of the four beasts has normal frames for all four directions.
-- [ ] Include frightened frames for all four directions, recovering frames, and dead frames.
-- [ ] Include spirit motes, ward-breaking elixirs, crimson fruit, and a life icon.
-- [ ] Include six wall sprites: outside corner, outside wall, inside corner, inside wall,
+- [x] Each of the four beasts has normal frames for all four directions.
+- [x] Include frightened frames for all four directions, recovering frames, and dead frames.
+- [x] Include spirit motes, ward-breaking elixirs, crimson fruit, and a life icon.
+- [x] Include six wall sprites: outside corner, outside wall, inside corner, inside wall,
   T junction, and beast exit seal.
-- [ ] Organize the layout around tile categories 1-8; do not export separate rotation variants.
+- [x] Organize the layout around tile categories 1-8; do not export separate rotation variants.
   Category 0 uses no sprite. Power pellets must also meet the two-frame animation requirement.
-- [ ] Import all visual assets into Unity and provide visible scene examples.
-- [ ] Keep sizes, pixels per unit, and pivots consistent; characters must fit a one-cell passage.
+- [x] Import all visual assets into Unity and provide visible scene examples.
+- [x] Keep sizes, pixels per unit, and pivots consistent; characters must fit a one-cell passage.
 
 ## 65%: animators (PDF page 10)
 

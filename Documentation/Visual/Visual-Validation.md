@@ -40,3 +40,17 @@ completed animation-controller or Play-mode showcase behavior.
 - Imported all 101 sprite frames across seven sheets. Unity completed import/compilation
   with exit code 0. Local log: tmp/unity-complete-sprite-import.log.
 - Wall-Connection-Validation.json records the seam checks and atlas hash.
+
+## Static scene display
+
+- Created fifteen reusable sprite prefabs: five characters, four items, and six walls.
+- Placed their instances under AssetShowcase with English labels using the editor's
+  bundled UI package. The manual-level and movement groups remain reserved for later stages.
+- The first camera render showed labels only because the camera retained the future
+  maze-center position. Aligned it to the showcase center and saved the correction.
+- Inspected a new 1920 x 1080 render: all fifteen sprites are visible, transparent item
+  backgrounds remain invisible, and labels fit without overlap or clipping.
+- The corrected renderer run exited with code 0. Local log: tmp/unity-showcase-camera-aligned.log.
+- Showcase-Static.png is an actual Unity camera render of the saved scene.
+
+Animation behavior is still validated separately; a static render does not prove a state cycle.
