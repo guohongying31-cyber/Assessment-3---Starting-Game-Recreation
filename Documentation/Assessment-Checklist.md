@@ -101,11 +101,11 @@ This checklist does not award a grade.
 - [x] In Play, show every required state for the cultivator and all beasts; power pickups pulse.
 - [x] Preview looping animations for at least three cycles and at least two seconds,
   whichever is longer. Play non-looping animations fully once. Set Exit Time accordingly.
-- [ ] Later movement instances change direction immediately; showcase cycling must not
+- [x] Later movement instances change direction immediately; showcase cycling must not
   override their movement-driven animation state.
 
-The direction-selection mechanism has been verified with Showcase disabled. The final
-item stays open until it is exercised by the actual movement feature. See
+The movement feature now exercises immediate direction selection with Showcase disabled,
+while gallery characters retain their preview cycles. See
 [animation controls](Visual/Animation-Guide.md) and [visual validation](Visual/Visual-Validation.md).
 
 ## 75%: manual level (PDF pages 11-12)
@@ -126,13 +126,18 @@ for actual scene, seam and Play checks. No runtime generator is part of this sta
 
 ## 85%: movement (PDF page 13)
 
-- [ ] Use the course's programmatic tween approach with frame-rate-independent motion.
-- [ ] Loop clockwise around the first inner block at the top left. With the array origin
+- [x] Use the course's programmatic tween approach with frame-rate-independent motion.
+- [x] Loop clockwise around the first inner block at the top left. With the array origin
   at the top left, follow `(row 1,col 1) -> (1,6) -> (5,6) -> (5,1) -> (1,1)`.
-- [ ] Use the same linear speed on every segment, regardless of segment length.
-- [ ] Turn instantly, select the matching animation immediately, and play non-collecting movement audio.
-- [ ] Check lap duration, direction, path, and audio at different frame rates.
-- [ ] Do not substitute `Rigidbody.velocity`, `Vector3.MoveTowards()`, or similar methods for tweening.
+- [x] Use the same linear speed on every segment, regardless of segment length.
+- [x] Turn instantly, select the matching animation immediately, and play non-collecting movement audio.
+- [x] Check lap duration, direction, path, and audio at different frame rates.
+- [x] Do not substitute `Rigidbody.velocity`, `Vector3.MoveTowards()`, or similar methods for tweening.
+
+See [movement validation](Movement/Movement-Validation.md) for three actual Play sessions
+at 30, 60 and 144 requested FPS, exact corner events, animation frames, audio output and
+pause/resume checks. The implementation uses start/end/duration interpolation as described
+in the supplied workshop transcript; the Week 6/7 example source was not supplied.
 
 ## 100%: LevelGenerator (PDF pages 14-15)
 

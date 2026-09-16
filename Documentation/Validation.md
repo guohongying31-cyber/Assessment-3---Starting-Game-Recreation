@@ -27,15 +27,16 @@ and compilation status.
 
 ## Current implementation limits
 
-- The scene contains the audio rig, a complete manual maze and a visual showcase with
-  five characters, four items and six wall samples. The gameplay character group is
-  reserved for patrol movement, which has not yet been implemented.
+- The scene contains the audio rig, a complete manual maze, an automatically patrolling
+  cultivator and a visual showcase with five characters, four items and six wall samples.
 - Six visual controllers provide 46 animation states, in addition to the audio opening
   controller. Every visual state has been observed in two full Play sessions.
-- No gameplay C# scripts have been committed. Temporary authoring and verification helpers
-  are excluded from commits and removed before feature integration.
+- Three runtime scripts implement linear tweening, the fixed patrol and animation/audio
+  presentation. Temporary authoring and verification helpers are excluded from commits
+  and removed before feature integration.
 - Audio Play checks are recorded in [audio validation](Audio/Audio-Validation.md).
-  Player builds, frame-rate movement tests, and generator tests have not run.
+  Movement frame-rate tests are recorded in [movement validation](Movement/Movement-Validation.md).
+  Player builds and generator tests have not run.
 - Map data checks cannot replace manual-layout or LevelGenerator assessment evidence.
 - No final ZIP exists, and Development has not been merged into Main.
 
@@ -94,5 +95,18 @@ cells are empty. Pixel-edge checks verified 438 wall connections after rotation/
 The [manual level validation record](ManualLevel/Manual-Level-Validation.md) covers scene
 reload, exact transforms and references, two final 28-second Play sessions, all 46
 showcase states, audio restart and loop behavior, and unchanged saved scenes after Stop.
-Actual renders were inspected at 1080p and 720p, both 16:9. Movement, runtime generation,
+Actual renders were inspected at 1080p and 720p, both 16:9. Runtime generation,
 player builds and final submission validation remain separate future work.
+
+## Movement stage
+
+The patrol follows `(1,-1) -> (6,-1) -> (6,-5) -> (1,-5) -> (1,-1)` using
+elapsed/duration interpolation. Segment durations are distance divided by 2.5 units/s,
+and unused frame time carries across corners. Three final Play sessions at requested
+30, 60 and 144 FPS each observed two laps, immediate directional states, all eight
+walking frames and nonzero continuous footstep output. Each full lap took 7.2 game seconds.
+
+Disabling movement, pausing time scale and resuming passed the presentation checks.
+The final scene regression verified all 660 manual placements and prefab references.
+The [movement validation record](Movement/Movement-Validation.md) includes actual measured
+frame rates, failed attempts, corrections, screenshots and scope limits.

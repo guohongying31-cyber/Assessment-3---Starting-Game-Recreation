@@ -1,0 +1,99 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T11:13:58.9224916Z",
+    "phase": "Presentation",
+    "sceneSha256": "36c79aeaf121b908663eab5ca368332f40b884b5168b108dcf48336a55023293",
+    "requestedFps": 30,
+    "observedFrames": 442,
+    "completedLaps": 2,
+    "gameSeconds": 15.004510239512472,
+    "measuredFps": 29.457809214995178,
+    "maxPositionError": 4.76837158203125e-7,
+    "maxArcSpeedError": 0.000019336150610005376,
+    "minDelta": 0.005860898643732071,
+    "maxDelta": 0.3333333432674408,
+    "pathCorrect": true,
+    "constantSpeed": true,
+    "exactCornerTurns": true,
+    "sceneRestored": true,
+    "passed": true,
+    "lapCrossings": [
+        7.179999990000476,
+        14.379999965735195
+    ],
+    "lapPeriods": [
+        7.199999975734719
+    ],
+    "turns": [
+        {
+            "direction": "Down",
+            "gameTime": 1.9908980300453514,
+            "x": 6.0,
+            "y": -1.0
+        },
+        {
+            "direction": "Left",
+            "gameTime": 3.5907284297052155,
+            "x": 6.0,
+            "y": -5.0
+        },
+        {
+            "direction": "Up",
+            "gameTime": 5.590801934523809,
+            "x": 1.0,
+            "y": -5.0
+        },
+        {
+            "direction": "Right",
+            "gameTime": 7.191041631235827,
+            "x": 1.0,
+            "y": -1.0
+        },
+        {
+            "direction": "Down",
+            "gameTime": 9.191131030328798,
+            "x": 6.0,
+            "y": -1.0
+        },
+        {
+            "direction": "Left",
+            "gameTime": 10.791003635204082,
+            "x": 6.0,
+            "y": -5.0
+        },
+        {
+            "direction": "Up",
+            "gameTime": 12.790811033163266,
+            "x": 1.0,
+            "y": -5.0
+        },
+        {
+            "direction": "Right",
+            "gameTime": 14.390837329931973,
+            "x": 1.0,
+            "y": -1.0
+        }
+    ],
+    "presentation": {
+        "directionStatesMatch": true,
+        "movementAudioPlaying": true,
+        "musicCoexists": true,
+        "galleryPreserved": true,
+        "disabledPatrolStops": true,
+        "disabledPresenterStops": true,
+        "timeScalePauseStops": true,
+        "resumed": true,
+        "movementOutputPeak": 0.1121620312333107,
+        "audioLoopWraps": 19,
+        "observedSprites": [
+            "Cultivator_Walk_Down_00",
+            "Cultivator_Walk_Down_01",
+            "Cultivator_Walk_Left_00",
+            "Cultivator_Walk_Left_01",
+            "Cultivator_Walk_Right_00",
+            "Cultivator_Walk_Right_01",
+            "Cultivator_Walk_Up_00",
+            "Cultivator_Walk_Up_01"
+        ]
+    }
+}

@@ -98,5 +98,5 @@ runtime generation, player builds and final packaging belong to later validation
   ProjectSettings/PackageManagerSettings.asset is unchanged and excluded from this feature.
   Static-Audit.json records its hash, the scene hash, counts and validation scope.
 
-Movement and generation remain unfinished. This is a completed manual-level feature,
+At this milestone, movement and generation were unfinished. This is a completed manual-level feature,
 not a final submission or a claim of an awarded grade.
