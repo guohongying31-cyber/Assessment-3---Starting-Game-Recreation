@@ -1,0 +1,26 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T09:35:40.6786762Z",
+    "phase": "TopLeft",
+    "session": 1,
+    "cellsBefore": 166,
+    "cellsDuring": 166,
+    "cellsAfter": 166,
+    "observedSeconds": 9.44448830073696,
+    "introStarted": true,
+    "normalStarted": true,
+    "normalLoopWrapped": false,
+    "sceneUnchangedAfterStop": true,
+    "passed": true,
+    "elixirs": [
+        {
+            "path": "TopLeft/R03_C01_Elixir",
+            "frameChanges": 7,
+            "frames": [
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01"
+            ]
+        }
+    ],
+    "characterStates": []
+}

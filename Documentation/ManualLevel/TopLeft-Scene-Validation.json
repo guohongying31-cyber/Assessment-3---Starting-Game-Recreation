@@ -1,0 +1,1678 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T09:35:30.4807670Z",
+    "phase": "TopLeft",
+    "columns": 14,
+    "rows": 15,
+    "placedCells": 166,
+    "spiritMotes": 55,
+    "elixirs": 1,
+    "centerRowCells": 2,
+    "uniqueCells": true,
+    "exactPlacements": true,
+    "prefabReferences": true,
+    "cameraContainsLayout": true,
+    "passed": true,
+    "cells": [
+        {
+            "row": 0,
+            "column": 0,
+            "category": 1,
+            "sourceRow": 0,
+            "sourceColumn": 0,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterCorner.prefab"
+        },
+        {
+            "row": 0,
+            "column": 1,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 2,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 2,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 3,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 3,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 4,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 4,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 5,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 5,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 6,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 7,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 7,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 8,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 8,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 9,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 9,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 10,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 10,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 11,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 11,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 12,
+            "category": 2,
+            "sourceRow": 0,
+            "sourceColumn": 12,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 0,
+            "column": 13,
+            "category": 7,
+            "sourceRow": 0,
+            "sourceColumn": 13,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_TJunction.prefab"
+        },
+        {
+            "row": 1,
+            "column": 0,
+            "category": 2,
+            "sourceRow": 1,
+            "sourceColumn": 0,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 1,
+            "column": 1,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 2,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 2,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 3,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 3,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 4,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 4,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 5,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 5,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 7,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 7,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 8,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 8,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 9,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 9,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 10,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 10,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 11,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 11,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 12,
+            "category": 5,
+            "sourceRow": 1,
+            "sourceColumn": 12,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 1,
+            "column": 13,
+            "category": 4,
+            "sourceRow": 1,
+            "sourceColumn": 13,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 2,
+            "column": 0,
+            "category": 2,
+            "sourceRow": 2,
+            "sourceColumn": 0,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 2,
+            "column": 1,
+            "category": 5,
+            "sourceRow": 2,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 2,
+            "column": 2,
+            "category": 3,
+            "sourceRow": 2,
+            "sourceColumn": 2,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 2,
+            "column": 3,
+            "category": 4,
+            "sourceRow": 2,
+            "sourceColumn": 3,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 2,
+            "column": 4,
+            "category": 4,
+            "sourceRow": 2,
+            "sourceColumn": 4,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 2,
+            "column": 5,
+            "category": 3,
+            "sourceRow": 2,
+            "sourceColumn": 5,
+            "sourceRotation": 270,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 2,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 2,
+            "column": 7,
+            "category": 3,
+            "sourceRow": 2,
+            "sourceColumn": 7,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 2,
+            "column": 8,
+            "category": 4,
+            "sourceRow": 2,
+            "sourceColumn": 8,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 2,
+            "column": 9,
+            "category": 4,
+            "sourceRow": 2,
+            "sourceColumn": 9,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 2,
+            "column": 10,
+            "category": 4,
+            "sourceRow": 2,
+            "sourceColumn": 10,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 2,
+            "column": 11,
+            "category": 3,
+            "sourceRow": 2,
+            "sourceColumn": 11,
+            "sourceRotation": 270,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 2,
+            "column": 12,
+            "category": 5,
+            "sourceRow": 2,
+            "sourceColumn": 12,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "category": 4,
+            "sourceRow": 2,
+            "sourceColumn": 13,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 3,
+            "column": 0,
+            "category": 2,
+            "sourceRow": 3,
+            "sourceColumn": 0,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 3,
+            "column": 1,
+            "category": 6,
+            "sourceRow": 3,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/Elixir.prefab"
+        },
+        {
+            "row": 3,
+            "column": 2,
+            "category": 4,
+            "sourceRow": 3,
+            "sourceColumn": 2,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 3,
+            "column": 5,
+            "category": 4,
+            "sourceRow": 3,
+            "sourceColumn": 5,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 3,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 3,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "category": 4,
+            "sourceRow": 3,
+            "sourceColumn": 7,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 3,
+            "column": 11,
+            "category": 4,
+            "sourceRow": 3,
+            "sourceColumn": 11,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 3,
+            "column": 12,
+            "category": 5,
+            "sourceRow": 3,
+            "sourceColumn": 12,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 3,
+            "column": 13,
+            "category": 4,
+            "sourceRow": 3,
+            "sourceColumn": 13,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 4,
+            "column": 0,
+            "category": 2,
+            "sourceRow": 4,
+            "sourceColumn": 0,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 4,
+            "column": 1,
+            "category": 5,
+            "sourceRow": 4,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 4,
+            "column": 2,
+            "category": 3,
+            "sourceRow": 4,
+            "sourceColumn": 2,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "category": 4,
+            "sourceRow": 4,
+            "sourceColumn": 3,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 4,
+            "column": 4,
+            "category": 4,
+            "sourceRow": 4,
+            "sourceColumn": 4,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 4,
+            "column": 5,
+            "category": 3,
+            "sourceRow": 4,
+            "sourceColumn": 5,
+            "sourceRotation": 180,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 4,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 4,
+            "column": 7,
+            "category": 3,
+            "sourceRow": 4,
+            "sourceColumn": 7,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 4,
+            "column": 8,
+            "category": 4,
+            "sourceRow": 4,
+            "sourceColumn": 8,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 4,
+            "column": 9,
+            "category": 4,
+            "sourceRow": 4,
+            "sourceColumn": 9,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 4,
+            "column": 10,
+            "category": 4,
+            "sourceRow": 4,
+            "sourceColumn": 10,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "category": 3,
+            "sourceRow": 4,
+            "sourceColumn": 11,
+            "sourceRotation": 180,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 4,
+            "column": 12,
+            "category": 5,
+            "sourceRow": 4,
+            "sourceColumn": 12,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "category": 3,
+            "sourceRow": 4,
+            "sourceColumn": 13,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 5,
+            "column": 0,
+            "category": 2,
+            "sourceRow": 5,
+            "sourceColumn": 0,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 5,
+            "column": 1,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 2,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 2,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 3,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 4,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 5,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 5,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 7,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 8,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 8,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 9,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 9,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 10,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 10,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 11,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 11,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 12,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 12,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "category": 5,
+            "sourceRow": 5,
+            "sourceColumn": 13,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 6,
+            "column": 0,
+            "category": 2,
+            "sourceRow": 6,
+            "sourceColumn": 0,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 6,
+            "column": 1,
+            "category": 5,
+            "sourceRow": 6,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 6,
+            "column": 2,
+            "category": 3,
+            "sourceRow": 6,
+            "sourceColumn": 2,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "category": 4,
+            "sourceRow": 6,
+            "sourceColumn": 3,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "category": 4,
+            "sourceRow": 6,
+            "sourceColumn": 4,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 6,
+            "column": 5,
+            "category": 3,
+            "sourceRow": 6,
+            "sourceColumn": 5,
+            "sourceRotation": 270,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 6,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 6,
+            "column": 7,
+            "category": 3,
+            "sourceRow": 6,
+            "sourceColumn": 7,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 6,
+            "column": 8,
+            "category": 3,
+            "sourceRow": 6,
+            "sourceColumn": 8,
+            "sourceRotation": 270,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 6,
+            "column": 9,
+            "category": 5,
+            "sourceRow": 6,
+            "sourceColumn": 9,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 6,
+            "column": 10,
+            "category": 3,
+            "sourceRow": 6,
+            "sourceColumn": 10,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 6,
+            "column": 11,
+            "category": 4,
+            "sourceRow": 6,
+            "sourceColumn": 11,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 6,
+            "column": 12,
+            "category": 4,
+            "sourceRow": 6,
+            "sourceColumn": 12,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "category": 4,
+            "sourceRow": 6,
+            "sourceColumn": 13,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 7,
+            "column": 0,
+            "category": 2,
+            "sourceRow": 7,
+            "sourceColumn": 0,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 7,
+            "column": 1,
+            "category": 5,
+            "sourceRow": 7,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 7,
+            "column": 2,
+            "category": 3,
+            "sourceRow": 7,
+            "sourceColumn": 2,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "category": 4,
+            "sourceRow": 7,
+            "sourceColumn": 3,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "category": 4,
+            "sourceRow": 7,
+            "sourceColumn": 4,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "category": 3,
+            "sourceRow": 7,
+            "sourceColumn": 5,
+            "sourceRotation": 180,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 7,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 7,
+            "column": 7,
+            "category": 4,
+            "sourceRow": 7,
+            "sourceColumn": 7,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 7,
+            "column": 8,
+            "category": 4,
+            "sourceRow": 7,
+            "sourceColumn": 8,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 7,
+            "column": 9,
+            "category": 5,
+            "sourceRow": 7,
+            "sourceColumn": 9,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 7,
+            "column": 10,
+            "category": 3,
+            "sourceRow": 7,
+            "sourceColumn": 10,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 7,
+            "column": 11,
+            "category": 4,
+            "sourceRow": 7,
+            "sourceColumn": 11,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 7,
+            "column": 12,
+            "category": 4,
+            "sourceRow": 7,
+            "sourceColumn": 12,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 7,
+            "column": 13,
+            "category": 3,
+            "sourceRow": 7,
+            "sourceColumn": 13,
+            "sourceRotation": 270,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 8,
+            "column": 0,
+            "category": 2,
+            "sourceRow": 8,
+            "sourceColumn": 0,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 8,
+            "column": 1,
+            "category": 5,
+            "sourceRow": 8,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 8,
+            "column": 2,
+            "category": 5,
+            "sourceRow": 8,
+            "sourceColumn": 2,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "category": 5,
+            "sourceRow": 8,
+            "sourceColumn": 3,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "category": 5,
+            "sourceRow": 8,
+            "sourceColumn": 4,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "category": 5,
+            "sourceRow": 8,
+            "sourceColumn": 5,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 8,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 8,
+            "column": 7,
+            "category": 4,
+            "sourceRow": 8,
+            "sourceColumn": 7,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 8,
+            "column": 8,
+            "category": 4,
+            "sourceRow": 8,
+            "sourceColumn": 8,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 8,
+            "column": 9,
+            "category": 5,
+            "sourceRow": 8,
+            "sourceColumn": 9,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 8,
+            "column": 10,
+            "category": 5,
+            "sourceRow": 8,
+            "sourceColumn": 10,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 8,
+            "column": 11,
+            "category": 5,
+            "sourceRow": 8,
+            "sourceColumn": 11,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 8,
+            "column": 12,
+            "category": 5,
+            "sourceRow": 8,
+            "sourceColumn": 12,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "category": 4,
+            "sourceRow": 8,
+            "sourceColumn": 13,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 9,
+            "column": 0,
+            "category": 1,
+            "sourceRow": 9,
+            "sourceColumn": 0,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterCorner.prefab"
+        },
+        {
+            "row": 9,
+            "column": 1,
+            "category": 2,
+            "sourceRow": 9,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 9,
+            "column": 2,
+            "category": 2,
+            "sourceRow": 9,
+            "sourceColumn": 2,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "category": 2,
+            "sourceRow": 9,
+            "sourceColumn": 3,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "category": 2,
+            "sourceRow": 9,
+            "sourceColumn": 4,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "category": 1,
+            "sourceRow": 9,
+            "sourceColumn": 5,
+            "sourceRotation": 270,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterCorner.prefab"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 9,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "category": 4,
+            "sourceRow": 9,
+            "sourceColumn": 7,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 9,
+            "column": 8,
+            "category": 3,
+            "sourceRow": 9,
+            "sourceColumn": 8,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 9,
+            "column": 9,
+            "category": 4,
+            "sourceRow": 9,
+            "sourceColumn": 9,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 9,
+            "column": 10,
+            "category": 4,
+            "sourceRow": 9,
+            "sourceColumn": 10,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 9,
+            "column": 11,
+            "category": 3,
+            "sourceRow": 9,
+            "sourceColumn": 11,
+            "sourceRotation": 270,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 9,
+            "column": 13,
+            "category": 4,
+            "sourceRow": 9,
+            "sourceColumn": 13,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "category": 2,
+            "sourceRow": 10,
+            "sourceColumn": 5,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 10,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 10,
+            "column": 7,
+            "category": 4,
+            "sourceRow": 10,
+            "sourceColumn": 7,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 10,
+            "column": 8,
+            "category": 3,
+            "sourceRow": 10,
+            "sourceColumn": 8,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 10,
+            "column": 9,
+            "category": 4,
+            "sourceRow": 10,
+            "sourceColumn": 9,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 10,
+            "column": 10,
+            "category": 4,
+            "sourceRow": 10,
+            "sourceColumn": 10,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 10,
+            "column": 11,
+            "category": 3,
+            "sourceRow": 10,
+            "sourceColumn": 11,
+            "sourceRotation": 180,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 10,
+            "column": 13,
+            "category": 3,
+            "sourceRow": 10,
+            "sourceColumn": 13,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 11,
+            "column": 5,
+            "category": 2,
+            "sourceRow": 11,
+            "sourceColumn": 5,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 11,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "category": 4,
+            "sourceRow": 11,
+            "sourceColumn": 7,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 11,
+            "column": 8,
+            "category": 4,
+            "sourceRow": 11,
+            "sourceColumn": 8,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "category": 2,
+            "sourceRow": 12,
+            "sourceColumn": 5,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 12,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 12,
+            "column": 7,
+            "category": 4,
+            "sourceRow": 12,
+            "sourceColumn": 7,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 12,
+            "column": 8,
+            "category": 4,
+            "sourceRow": 12,
+            "sourceColumn": 8,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 12,
+            "column": 10,
+            "category": 3,
+            "sourceRow": 12,
+            "sourceColumn": 10,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 12,
+            "column": 11,
+            "category": 4,
+            "sourceRow": 12,
+            "sourceColumn": 11,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 12,
+            "column": 12,
+            "category": 4,
+            "sourceRow": 12,
+            "sourceColumn": 12,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 12,
+            "column": 13,
+            "category": 8,
+            "sourceRow": 12,
+            "sourceColumn": 13,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_ExitSeal.prefab"
+        },
+        {
+            "row": 13,
+            "column": 0,
+            "category": 2,
+            "sourceRow": 13,
+            "sourceColumn": 0,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 13,
+            "column": 1,
+            "category": 2,
+            "sourceRow": 13,
+            "sourceColumn": 1,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 13,
+            "column": 2,
+            "category": 2,
+            "sourceRow": 13,
+            "sourceColumn": 2,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "category": 2,
+            "sourceRow": 13,
+            "sourceColumn": 3,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "category": 2,
+            "sourceRow": 13,
+            "sourceColumn": 4,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterStraight.prefab"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "category": 1,
+            "sourceRow": 13,
+            "sourceColumn": 5,
+            "sourceRotation": 180,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_OuterCorner.prefab"
+        },
+        {
+            "row": 13,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 13,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "category": 3,
+            "sourceRow": 13,
+            "sourceColumn": 7,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 13,
+            "column": 8,
+            "category": 3,
+            "sourceRow": 13,
+            "sourceColumn": 8,
+            "sourceRotation": 180,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerCorner.prefab"
+        },
+        {
+            "row": 13,
+            "column": 10,
+            "category": 4,
+            "sourceRow": 13,
+            "sourceColumn": 10,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "category": 5,
+            "sourceRow": 14,
+            "sourceColumn": 6,
+            "sourceRotation": 0,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Pickups/SpiritMote.prefab"
+        },
+        {
+            "row": 14,
+            "column": 10,
+            "category": 4,
+            "sourceRow": 14,
+            "sourceColumn": 10,
+            "sourceRotation": 90,
+            "quadrant": "TopLeft",
+            "prefab": "Assets/Prefabs/Level/Walls/Wall_InnerStraight.prefab"
+        }
+    ]
+}
