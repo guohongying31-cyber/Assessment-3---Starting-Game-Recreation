@@ -2,7 +2,8 @@
 
 Open Assets/Scenes/RecreatedLevel.unity and press Play.
 The 2.4-second intro is followed by the normal-state music on a continuous loop.
-The scene remains visually empty because sprite and level production belong to later stages.
+The scene now includes an animated sprite showcase. Maze construction and patrol movement
+remain later stages; the audio rig continues to operate independently of the visual preview.
 
 ## Scene organization
 

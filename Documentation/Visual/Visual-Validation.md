@@ -101,3 +101,25 @@ Animation behavior is still validated separately; a static render does not prove
 
 These checks validate the visual showcase and reusable assets. They do not establish a
 completed maze, patrol movement, generated level, player build, or final assessment grade.
+
+## Clean import and pre-merge audit
+
+- Removed all temporary Editor scripts and their metadata from Assets. Reopened with
+  Unity 6000.4.11f1; the clean import/compilation run exited with code 0. No C# compilation
+  error, compilation failure or exception was found in tmp/unity-visual-clean-import.log.
+- Compared all 230 current files under Assets before and after that import. Their hashes
+  were identical, so the cleaned project retains the exact assets tested in Play.
+- Checked English filenames and text, valid PNG/PCM WAV files, local documentation links,
+  source/metadata pairs, folder metadata, 125 unique asset GUIDs and resolved references.
+  The three UI component references resolve to the editor's bundled UI package.
+- Verified all 101 sprite IDs, 46 visual clips, six visual controllers, prefab assignments,
+  animation sprite references and Showcase transition conditions.
+- All character opaque bounds fit within one cell; the largest measured extent is about
+  0.931 cells. All seven source-sheet hashes and all eleven audio hashes match prior records.
+- No C#, DLL or Python files remain under Assets. The offline wall-geometry renderer
+  remains in SourceArt. Cache, log, build and temporary directories are excluded from Git.
+- The pre-existing untracked ProjectSettings/PackageManagerSettings.asset is unchanged
+  and excluded from this feature. See Static-Audit.json for the measured hash and scope.
+
+This completes the visual feature's implementation checks. Later features and final
+submission still require their own validation. Git history records actual commits and merges.

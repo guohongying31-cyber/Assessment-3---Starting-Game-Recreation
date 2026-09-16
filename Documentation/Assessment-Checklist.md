@@ -45,9 +45,11 @@ Assessment 3 does not require keyboard input, pellet or wall collisions, or enem
 
 ## 20%: project structure (PDF page 7)
 
-- [ ] Use clear folders, subfolders, and asset names; track resources with their `.meta` files.
-- [ ] Organize the Recreated Level hierarchy with parent groups and short, meaningful names.
-- [ ] Keep temporary scripts, duplicate examples, caches, and unrelated material out of the project.
+- [x] Use clear folders, subfolders, and asset names; track resources with their `.meta` files.
+- [x] Organize the Recreated Level hierarchy with parent groups and short, meaningful names.
+- [x] Keep temporary scripts, duplicate examples, caches, and unrelated material out of the tracked project.
+
+Recheck these shared structure requirements after each later feature and when packaging.
 
 ## 35%: audio (PDF page 8)
 
@@ -91,16 +93,20 @@ This checklist does not award a grade.
 
 ## 65%: animators (PDF page 10)
 
-- [ ] PacStudent has one Animator Controller with four Walking directions and Dead.
-- [ ] Power pellets have their own Animator Controller.
-- [ ] Beast controller names start with `GhostAnimator_`. Each beast has four Walking
+- [x] PacStudent has one Animator Controller with four Walking directions and Dead.
+- [x] Power pellets have their own Animator Controller.
+- [x] Beast controller names start with `GhostAnimator_`. Each beast has four Walking
   directions, four Scared directions, Recovering, and Dead: ten states.
-- [ ] Use either one controller with three Override Controllers or four separate controllers.
-- [ ] In Play, show every required state for the cultivator and all beasts; power pickups pulse.
-- [ ] Preview looping animations for at least three cycles and at least two seconds,
+- [x] Use either one controller with three Override Controllers or four separate controllers.
+- [x] In Play, show every required state for the cultivator and all beasts; power pickups pulse.
+- [x] Preview looping animations for at least three cycles and at least two seconds,
   whichever is longer. Play non-looping animations fully once. Set Exit Time accordingly.
 - [ ] Later movement instances change direction immediately; showcase cycling must not
   override their movement-driven animation state.
+
+The direction-selection mechanism has been verified with Showcase disabled. The final
+item stays open until it is exercised by the actual movement feature. See
+[animation controls](Visual/Animation-Guide.md) and [visual validation](Visual/Visual-Validation.md).
 
 ## 75%: manual level (PDF pages 11-12)
 

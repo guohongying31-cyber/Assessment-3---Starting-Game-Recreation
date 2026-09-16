@@ -109,4 +109,6 @@ for the inventory, production sources, measurements, and actual playback checks.
 
 The sprite library now contains the cultivator, four beasts, pickups, a life icon and six
 base wall tiles. Documentation/Visual records their dimensions, named slices and checks.
-Animation and scene-display validation are tracked separately from image production.
+The scene displays all fifteen reusable sprite prefabs. Six visual controllers contain
+46 clips, and two full Play sessions verified every required state. See
+[the animation guide](Visual/Animation-Guide.md) for preview timings and direction control.
