@@ -1,4 +1,4 @@
-"""Offline interaction-effect synthesis by Codex, outside the Unity runtime."""
+"""Offline interaction-effect synthesis, outside the Unity runtime."""
 
 import json
 import numpy as np

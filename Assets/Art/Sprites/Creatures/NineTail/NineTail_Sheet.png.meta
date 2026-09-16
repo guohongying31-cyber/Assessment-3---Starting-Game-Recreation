@@ -1,0 +1,733 @@
+fileFormatVersion: 2
+guid: 789760dd38cd09a4591eaf874c5d56d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7747596079602525175
+    second: NineTail_Sheet_0
+  - first:
+      213: -2696240851015585754
+    second: NineTail_Sheet_1
+  - first:
+      213: 1139617576121802178
+    second: NineTail_Sheet_2
+  - first:
+      213: -6765953196756917872
+    second: NineTail_Sheet_3
+  - first:
+      213: -7752153842970209711
+    second: NineTail_Sheet_4
+  - first:
+      213: 7448045354708392103
+    second: NineTail_Sheet_5
+  - first:
+      213: 6974776967327936674
+    second: NineTail_Sheet_6
+  - first:
+      213: 4196099748523915805
+    second: NineTail_Sheet_7
+  - first:
+      213: 4642498625432533267
+    second: NineTail_Sheet_8
+  - first:
+      213: 1673186827823176288
+    second: NineTail_Sheet_9
+  - first:
+      213: 2612938693698193842
+    second: NineTail_Sheet_10
+  - first:
+      213: 7987103897744245039
+    second: NineTail_Sheet_11
+  - first:
+      213: 5539392984120099714
+    second: NineTail_Sheet_12
+  - first:
+      213: 3080699019811657437
+    second: NineTail_Sheet_13
+  - first:
+      213: -5995722432552383769
+    second: NineTail_Sheet_14
+  - first:
+      213: 5264588539876819279
+    second: NineTail_Sheet_15
+  - first:
+      213: -2887365829353205205
+    second: NineTail_Sheet_16
+  - first:
+      213: -1388503296166944972
+    second: NineTail_Sheet_17
+  - first:
+      213: -671989946434941234
+    second: NineTail_Sheet_18
+  - first:
+      213: -2304436923185771378
+    second: NineTail_Sheet_19
+  - first:
+      213: 7851307721737502751
+    second: NineTail_Sheet_20
+  - first:
+      213: 8718042023220461133
+    second: NineTail_Sheet_21
+  - first:
+      213: 2166537132083745162
+    second: NineTail_Sheet_22
+  - first:
+      213: -4673004935769409548
+    second: NineTail_Sheet_23
+  - first:
+      213: -7703488379870894756
+    second: NineTail_Sheet_24
+  - first:
+      213: 6454808303027409054
+    second: NineTail_Sheet_25
+  - first:
+      213: -5050356802107589963
+    second: NineTail_Sheet_26
+  - first:
+      213: 4712354955885874631
+    second: NineTail_Sheet_27
+  - first:
+      213: 4612051987914764911
+    second: NineTail_Sheet_28
+  - first:
+      213: 1111253770000014119
+    second: NineTail_Sheet_29
+  - first:
+      213: -7624389069754484695
+    second: NineTail_Sheet_30
+  - first:
+      213: -843986341884079565
+    second: NineTail_Sheet_31
+  - first:
+      213: -3880350433090272213
+    second: NineTail_Sheet_32
+  - first:
+      213: 1771391016395114942
+    second: NineTail_Sheet_33
+  - first:
+      213: 6492661990355621682
+    second: NineTail_Sheet_34
+  - first:
+      213: 1115246810513363366
+    second: NineTail_Sheet_35
+  - first:
+      213: -2192048216017433495
+    second: NineTail_Sheet_36
+  - first:
+      213: -6524808738050601978
+    second: NineTail_Sheet_37
+  - first:
+      213: 943798373192750659
+    second: NineTail_Sheet_38
+  - first:
+      213: -8100310714501675507
+    second: NineTail_Sheet_39
+  - first:
+      213: -3116289220630695543
+    second: NineTail_Sheet_40
+  - first:
+      213: 5097084457245810845
+    second: NineTail_Sheet_41
+  - first:
+      213: 4543554952305017471
+    second: NineTail_Sheet_42
+  - first:
+      213: 8018731337751736338
+    second: NineTail_Sheet_43
+  - first:
+      213: 8207898742435892107
+    second: NineTail_Sheet_44
+  - first:
+      213: -3823010389950720673
+    second: NineTail_Sheet_45
+  - first:
+      213: 4212309355711955741
+    second: NineTail_Sheet_46
+  - first:
+      213: 1461493664650353212
+    second: NineTail_Sheet_47
+  - first:
+      213: -7969529831213230916
+    second: NineTail_Sheet_48
+  - first:
+      213: 6191538204388426331
+    second: NineTail_Sheet_49
+  - first:
+      213: 6585209612441209264
+    second: NineTail_Sheet_50
+  - first:
+      213: -2237305693081095167
+    second: NineTail_Sheet_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 384
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NineTail_Walk_Right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5008929, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65f8fd981ecf5949b16751a7e6f0eac
+      internalID: 1632896616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Walk_Right_01
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1122
+        width: 281
+        height: 280
+      alignment: 9
+      pivot: {x: 0.50088966, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d1d8febcbac0d4dac437609f25e3b2
+      internalID: -1399176990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Walk_Left_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1122
+        width: 281
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4991103, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e62759725aaaa49be3d05d0e6e3ae0
+      internalID: -1114953455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Walk_Left_01
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.49910715, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4facc5243535b44b17d7aaf26004fc
+      internalID: 2105783832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Walk_Up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 841
+        width: 280
+        height: 281
+      alignment: 9
+      pivot: {x: 0.5008929, y: 0.4996441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384502c008219c443b254624bddafa5c
+      internalID: 1280977267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Walk_Up_01
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 841
+        width: 281
+        height: 281
+      alignment: 9
+      pivot: {x: 0.50088966, y: 0.4996441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff135d9c0205d440ad9765e45a46a0a
+      internalID: 871745180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Walk_Down_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 841
+        width: 281
+        height: 281
+      alignment: 9
+      pivot: {x: 0.4991103, y: 0.4996441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ecd7cf55880884f9b169b160dffbc1
+      internalID: -1720198342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Walk_Down_01
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 841
+        width: 280
+        height: 281
+      alignment: 9
+      pivot: {x: 0.49910715, y: 0.4996441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e066bc8ba32f22a40b494cf025758015
+      internalID: -1839221778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Scared_Right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 561
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5008929, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30f5846f7e052c43957fe7dc6a55aac
+      internalID: 1124919663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Scared_Right_01
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 561
+        width: 281
+        height: 280
+      alignment: 9
+      pivot: {x: 0.50088966, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5fba9b02c31954dbc1dd1568a98f56
+      internalID: 662446905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Scared_Left_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 561
+        width: 281
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4991103, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b99f7e0287a7549b8f0c144fb3929a
+      internalID: 580878269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Scared_Left_01
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 561
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.49910715, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadfec1639651d94a840c7667e347e68
+      internalID: -379459224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Scared_Up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 295
+        width: 280
+        height: 266
+      alignment: 9
+      pivot: {x: 0.5008929, y: 0.47218037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0baff57f2ce654691fa4841ac55713
+      internalID: 726223640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Scared_Up_01
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 295
+        width: 281
+        height: 266
+      alignment: 9
+      pivot: {x: 0.50088966, y: 0.47218037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d998cacc523598b4cacf2e27d348ee30
+      internalID: 748501309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Scared_Down_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 295
+        width: 281
+        height: 266
+      alignment: 9
+      pivot: {x: 0.4991103, y: 0.47218037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33fc21eb25e9de4aa7dab5206a6c62e
+      internalID: 585832586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Scared_Down_01
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 295
+        width: 280
+        height: 266
+      alignment: 9
+      pivot: {x: 0.49910715, y: 0.47218037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80f7229b80d6a345957da25c566a552
+      internalID: -1910956294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Recovering_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 280
+        height: 295
+      alignment: 9
+      pivot: {x: 0.5008929, y: 0.47525406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00548435960f0b4419681511dcf90a66
+      internalID: 1248620985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Recovering_01
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 281
+        height: 295
+      alignment: 9
+      pivot: {x: 0.50088966, y: 0.47525406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4af6e68d2cba1489fcb1c33f23db1d
+      internalID: -1238122374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Dead_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 0
+        width: 281
+        height: 295
+      alignment: 9
+      pivot: {x: 0.4991103, y: 0.47525406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5747f9ab26ad4484a9673b6aef5aff99
+      internalID: 834772087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NineTail_Dead_01
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 0
+        width: 280
+        height: 295
+      alignment: 9
+      pivot: {x: 0.49910715, y: 0.47525406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6785ce3033a974e9d29b4e6cb4e415
+      internalID: -1325338565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fe87750d25692b94881bc897418fc30f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NineTail_Dead_00: 834772087
+      NineTail_Dead_01: -1325338565
+      NineTail_Recovering_00: 1248620985
+      NineTail_Recovering_01: -1238122374
+      NineTail_Scared_Down_00: 585832586
+      NineTail_Scared_Down_01: -1910956294
+      NineTail_Scared_Left_00: 580878269
+      NineTail_Scared_Left_01: -379459224
+      NineTail_Scared_Right_00: 1124919663
+      NineTail_Scared_Right_01: 662446905
+      NineTail_Scared_Up_00: 726223640
+      NineTail_Scared_Up_01: 748501309
+      NineTail_Walk_Down_00: -1720198342
+      NineTail_Walk_Down_01: -1839221778
+      NineTail_Walk_Left_00: -1114953455
+      NineTail_Walk_Left_01: 2105783832
+      NineTail_Walk_Right_00: 1632896616
+      NineTail_Walk_Right_01: -1399176990
+      NineTail_Walk_Up_00: 1280977267
+      NineTail_Walk_Up_01: 871745180
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

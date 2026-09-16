@@ -2,7 +2,8 @@
 
 Open Assets/Scenes/RecreatedLevel.unity and press Play.
 The 2.4-second intro is followed by the normal-state music on a continuous loop.
-The scene remains visually empty because sprite and level production belong to later stages.
+The scene now includes an animated sprite showcase. Maze construction and patrol movement
+remain later stages; the audio rig continues to operate independently of the visual preview.
 
 ## Scene organization
 
@@ -52,8 +53,8 @@ The key time is an authored setting, not a runtime calculation of a replacement 
 
 Select any WAV in Assets/Audio Clips and use Unity's audio preview to hear it separately.
 Adjust source Volume on the prefab for balance; the audio files retain headroom.
-For later gameplay, connect the prepared sources to student-authored interaction logic.
-When replacing the opening Animator with a student-written music manager, disable the
+For later gameplay, connect the prepared sources to interaction logic.
+When replacing the opening Animator with a music manager, disable the
 Animator so only one system controls the sources.
 
 ## References

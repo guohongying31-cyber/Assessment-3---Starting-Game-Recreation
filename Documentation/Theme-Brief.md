@@ -1,6 +1,6 @@
 # Shan Hai Spirit Trail: theme and asset guidance
 
-**Codex design advice for the student to select and draw independently; this is not finished artwork.**
+**Visual direction and production specifications. Completion is recorded separately.**
 
 ## Core premise
 
@@ -41,8 +41,9 @@ not claims about the original text.
 
 ## Consistent production specifications
 
-- Suggested canvas: 32 x 32 pixels, transparent background, 32 pixels per unit, one Unity unit per cell.
-- Keep the main silhouette around 24-28 pixels, leaving space for movement and tail motion.
+- Current source sheets retain their native dimensions and use 384 pixels per unit.
+  The visual child scales each logical source cell to one Unity unit; see Documentation/Visual.
+- Keep the main silhouette inside its logical cell, leaving space for movement and tail motion.
   Do not let solid character shapes exceed the corridor width.
 - Import textures as sprites with Point filtering and no lossy compression; use consistent pivots.
 - Name files by role and state, such as `Cultivator_Walk_Right_00` and `NineTail_Scared_Up_01`.
@@ -100,13 +101,14 @@ impact for walls, and fading breath for the cultivator's death.
 Eleven waveform-synthesized clips now implement this direction in Assets/Audio Clips.
 After hearing the first preview, the user requested a more ethereal sound with a weaker
 rhythm. The revised music uses slower, sparse notes, sustained pads, and longer reflections.
-The sounds are Codex-generated, not student performances; no external recordings are used.
+No external recordings are used.
 See [audio provenance](Audio/Audio-Provenance.md) and [validation](Audio/Audio-Validation.md)
 for the inventory, production sources, measurements, and actual playback checks.
 
-## First student-created practice exercise
+## Visual production status
 
-Draw two right-facing walking frames for the cultivator, then two stepping frames for the fox.
-Use the same 32-pixel grid to check silhouette sizes before expanding the other directions.
-Following the grading order, formal visual importing begins on Feature-Visual after
-Feature-Audio is complete. These small exercises do not complete the visual-assets band.
+The sprite library now contains the cultivator, four beasts, pickups, a life icon and six
+base wall tiles. Documentation/Visual records their dimensions, named slices and checks.
+The scene displays all fifteen reusable sprite prefabs. Six visual controllers contain
+46 clips, and two full Play sessions verified every required state. See
+[the animation guide](Visual/Animation-Guide.md) for preview timings and direction control.

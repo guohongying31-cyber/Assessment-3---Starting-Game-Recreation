@@ -1,0 +1,226 @@
+{
+  "pixelsPerUnit": 384,
+  "sheets": [
+    {
+      "id": "Cultivator",
+      "path": "Assets/Art/Sprites/Cultivator/Cultivator_Sheet.png",
+      "columns": 4,
+      "rows": 3,
+      "names": [
+        "Cultivator_Walk_Right_00",
+        "Cultivator_Walk_Right_01",
+        "Cultivator_Walk_Left_00",
+        "Cultivator_Walk_Left_01",
+        "Cultivator_Walk_Up_00",
+        "Cultivator_Walk_Up_01",
+        "Cultivator_Walk_Down_00",
+        "Cultivator_Walk_Down_01",
+        "Cultivator_Dead_00",
+        "Cultivator_Dead_01",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "NineTail",
+      "path": "Assets/Art/Sprites/Creatures/NineTail/NineTail_Sheet.png",
+      "columns": 4,
+      "rows": 5,
+      "names": [
+        "NineTail_Walk_Right_00",
+        "NineTail_Walk_Right_01",
+        "NineTail_Walk_Left_00",
+        "NineTail_Walk_Left_01",
+        "NineTail_Walk_Up_00",
+        "NineTail_Walk_Up_01",
+        "NineTail_Walk_Down_00",
+        "NineTail_Walk_Down_01",
+        "NineTail_Scared_Right_00",
+        "NineTail_Scared_Right_01",
+        "NineTail_Scared_Left_00",
+        "NineTail_Scared_Left_01",
+        "NineTail_Scared_Up_00",
+        "NineTail_Scared_Up_01",
+        "NineTail_Scared_Down_00",
+        "NineTail_Scared_Down_01",
+        "NineTail_Recovering_00",
+        "NineTail_Recovering_01",
+        "NineTail_Dead_00",
+        "NineTail_Dead_01"
+      ],
+      "columnEdges": [
+        0,
+        280,
+        561,
+        842,
+        1122
+      ],
+      "rowEdges": [
+        0,
+        280,
+        561,
+        841,
+        1107,
+        1402
+      ]
+    },
+    {
+      "id": "FlameCrane",
+      "path": "Assets/Art/Sprites/Creatures/FlameCrane/FlameCrane_Sheet.png",
+      "columns": 4,
+      "rows": 5,
+      "names": [
+        "FlameCrane_Walk_Right_00",
+        "FlameCrane_Walk_Right_01",
+        "FlameCrane_Walk_Left_00",
+        "FlameCrane_Walk_Left_01",
+        "FlameCrane_Walk_Up_00",
+        "FlameCrane_Walk_Up_01",
+        "FlameCrane_Walk_Down_00",
+        "FlameCrane_Walk_Down_01",
+        "FlameCrane_Scared_Right_00",
+        "FlameCrane_Scared_Right_01",
+        "FlameCrane_Scared_Left_00",
+        "FlameCrane_Scared_Left_01",
+        "FlameCrane_Scared_Up_00",
+        "FlameCrane_Scared_Up_01",
+        "FlameCrane_Scared_Down_00",
+        "FlameCrane_Scared_Down_01",
+        "FlameCrane_Recovering_00",
+        "FlameCrane_Recovering_01",
+        "FlameCrane_Dead_00",
+        "FlameCrane_Dead_01"
+      ],
+      "columnEdges": [
+        0,
+        284,
+        561,
+        838,
+        1122
+      ],
+      "rowEdges": [
+        0,
+        280,
+        566,
+        840,
+        1112,
+        1402
+      ]
+    },
+    {
+      "id": "WhiteHound",
+      "path": "Assets/Art/Sprites/Creatures/WhiteHound/WhiteHound_Sheet.png",
+      "columns": 4,
+      "rows": 5,
+      "names": [
+        "WhiteHound_Walk_Right_00",
+        "WhiteHound_Walk_Right_01",
+        "WhiteHound_Walk_Left_00",
+        "WhiteHound_Walk_Left_01",
+        "WhiteHound_Walk_Up_00",
+        "WhiteHound_Walk_Up_01",
+        "WhiteHound_Walk_Down_00",
+        "WhiteHound_Walk_Down_01",
+        "WhiteHound_Scared_Right_00",
+        "WhiteHound_Scared_Right_01",
+        "WhiteHound_Scared_Left_00",
+        "WhiteHound_Scared_Left_01",
+        "WhiteHound_Scared_Up_00",
+        "WhiteHound_Scared_Up_01",
+        "WhiteHound_Scared_Down_00",
+        "WhiteHound_Scared_Down_01",
+        "WhiteHound_Recovering_00",
+        "WhiteHound_Recovering_01",
+        "WhiteHound_Dead_00",
+        "WhiteHound_Dead_01"
+      ],
+      "columnEdges": [
+        0,
+        280,
+        561,
+        842,
+        1122
+      ],
+      "rowEdges": [
+        0,
+        280,
+        561,
+        841,
+        1111,
+        1402
+      ]
+    },
+    {
+      "id": "SerpentTortoise",
+      "path": "Assets/Art/Sprites/Creatures/SerpentTortoise/SerpentTortoise_Sheet.png",
+      "columns": 4,
+      "rows": 5,
+      "names": [
+        "SerpentTortoise_Walk_Right_00",
+        "SerpentTortoise_Walk_Right_01",
+        "SerpentTortoise_Walk_Left_00",
+        "SerpentTortoise_Walk_Left_01",
+        "SerpentTortoise_Walk_Up_00",
+        "SerpentTortoise_Walk_Up_01",
+        "SerpentTortoise_Walk_Down_00",
+        "SerpentTortoise_Walk_Down_01",
+        "SerpentTortoise_Scared_Right_00",
+        "SerpentTortoise_Scared_Right_01",
+        "SerpentTortoise_Scared_Left_00",
+        "SerpentTortoise_Scared_Left_01",
+        "SerpentTortoise_Scared_Up_00",
+        "SerpentTortoise_Scared_Up_01",
+        "SerpentTortoise_Scared_Down_00",
+        "SerpentTortoise_Scared_Down_01",
+        "SerpentTortoise_Recovering_00",
+        "SerpentTortoise_Recovering_01",
+        "SerpentTortoise_Dead_00",
+        "SerpentTortoise_Dead_01"
+      ],
+      "columnEdges": [
+        0,
+        287,
+        561,
+        840,
+        1122
+      ],
+      "rowEdges": [
+        0,
+        290,
+        561,
+        841,
+        1119,
+        1402
+      ]
+    },
+    {
+      "id": "Pickups",
+      "path": "Assets/Art/Sprites/Pickups/Pickups_Sheet.png",
+      "columns": 3,
+      "rows": 2,
+      "names": [
+        "SpiritMote_00",
+        "Elixir_Pulse_00",
+        "Elixir_Pulse_01",
+        "CrimsonFruit_00",
+        "SoulJade_00",
+        ""
+      ]
+    },
+    {
+      "id": "Walls",
+      "path": "Assets/Art/Sprites/Walls/Wall_Tiles.png",
+      "columns": 3,
+      "rows": 2,
+      "allowOpaqueEdges": true,
+      "names": [
+        "Wall_OuterCorner",
+        "Wall_OuterStraight",
+        "Wall_InnerCorner",
+        "Wall_InnerStraight",
+        "Wall_TJunction",
+        "Wall_ExitSeal"
+      ]
+    }
+  ]
+}

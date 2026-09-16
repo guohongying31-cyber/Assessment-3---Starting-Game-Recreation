@@ -13,9 +13,11 @@ The target is **100% HD**, progressing through every grading band in order.
 The Unity project foundation and the audio implementation are ready. Eleven synthesized
 audio clips are imported, and the scene plays its intro before looping normal-state music.
 See the audio validation record for the checks performed and listening-review limits.
-The next stage is `Feature-Visual`: student-created sprites and visual animation.
-Sprites, visual animations, the manual level, movement, and procedural level generation
-are not complete. This project is not ready for assessment submission.
+The visual stage now includes 101 sprite frames, 46 visual animation clips, six visual
+controllers, and a scene showcase with fifteen reusable sprite prefabs. Two full Play
+sessions verified every required animation state and the existing music sequence.
+The next stage is `Feature-ManualLevel`, followed by movement and procedural generation.
+Those three features remain unfinished. This project is not ready for assessment submission.
 
 - Unity: **6000.4.11f1**, confirmed by the user.
 - Remote: [Assessment-3---Starting-Game-Recreation](https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation).
@@ -28,15 +30,16 @@ are not complete. This project is not ready for assessment submission.
 - [Assessment requirements and acceptance checklist](Documentation/Assessment-Checklist.md)
 - [Theme and asset design guidance](Documentation/Theme-Brief.md)
 - [Development milestones](Documentation/Development-Plan.md)
-- [AI assistance disclosure](Documentation/AI-Assistance.md)
 - [Environment and validation record](Documentation/Validation.md)
 - [Audio inventory and provenance](Documentation/Audio/Audio-Provenance.md)
 - [Scene audio setup and playback instructions](Documentation/Audio/Scene-Audio-Guide.md)
 - [Audio validation record](Documentation/Audio/Audio-Validation.md)
+- [Visual production and import settings](Documentation/Visual/Visual-Production.md)
+- [Animation controls and showcase guide](Documentation/Visual/Animation-Guide.md)
+- [Visual validation record](Documentation/Visual/Visual-Validation.md)
 
-Artwork and gameplay code follow the PDF's student-authorship requirements.
-AI planning, explanations, and checks are disclosed and do not substitute for
-student-created assets or code.
+Production notes describe the actual assets and configuration. Validation records
+distinguish completed checks from work that remains unfinished.
 
 ## Open the project
 
@@ -45,8 +48,12 @@ Open `Assets/Scenes/RecreatedLevel.unity`.
 The scene contains an orthographic camera and four organizational groups:
 `Systems`, `Level01_Manual`, `Characters`, and `AssetShowcase`.
 `Systems/LevelAudio` plays the 2.4-second intro and then loops the normal music.
-The other three groups are empty. There is no completed manual level;
-pressing Play shows an empty background while the audio plays.
+`AssetShowcase` displays the cultivator, four beasts, four items and six wall samples.
+Press Play and watch for at least 21 seconds to see every character animation state.
+The elixir pulses continuously. Stop and Play again to restart the preview and music.
+`Level01_Manual` and the separate gameplay `Characters` group are reserved for later work.
+
+![Visual asset showcase](Documentation/Visual/Showcase-Static.png)
 
 ## Git and submission
 

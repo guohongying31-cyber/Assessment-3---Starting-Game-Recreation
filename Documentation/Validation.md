@@ -27,10 +27,12 @@ and compilation status.
 
 ## Current implementation limits
 
-- The scene now contains a camera, organizational groups, and the audio rig described in
-  [the scene audio guide](Audio/Scene-Audio-Guide.md). It has no maze, characters, or sprites.
-- The only animation/controller assets operate audio; they do not complete visual animation requirements.
-- No gameplay C# scripts have been committed; the temporary Editor helper was removed.
+- The scene contains the audio rig and a visual showcase with five characters, four items
+  and six wall samples. The manual maze and gameplay character group are still empty.
+- Six visual controllers provide 46 animation states, in addition to the audio opening
+  controller. Every visual state has been observed in two full Play sessions.
+- No gameplay C# scripts have been committed. Temporary authoring and verification helpers
+  are excluded from commits and removed before feature integration.
 - Audio Play checks are recorded in [audio validation](Audio/Audio-Validation.md).
   Player builds, frame-rate movement tests, and generator tests have not run.
 - Map data checks cannot replace manual-layout or LevelGenerator assessment evidence.
@@ -66,5 +68,17 @@ Five music cues and six interaction effects were produced as two separate milest
 Scene integration adds a reusable audio prefab and a built-in Animator opening sequence.
 The revised music follows the user's request for a more ethereal sound and a weaker rhythm.
 The [audio validation record](Audio/Audio-Validation.md) and its JSON evidence describe
-actual Unity Play checks. The [AI disclosure](AI-Assistance.md) identifies the production
-tools and configuration assistance. This stage does not establish completion of later bands.
+actual Unity Play checks. Production sources and configuration are described in the audio
+documentation. This stage does not establish completion of later bands.
+
+## Visual stage
+
+Seven sprite sheets provide 101 named frames, including four directions and distinct
+frightened, recovering and dead appearances. Fifteen reusable prefabs form an English
+showcase in the saved scene. Six controllers contain 46 visual clips with two different
+frames each. Two full Play sessions verified state timing, immediate direction selection,
+disabled showcase transitions, audio startup, normal-music looping and restart behavior.
+
+The [visual validation record](Visual/Visual-Validation.md) links the import, pixel, seam
+and actual playback evidence. The [animation guide](Visual/Animation-Guide.md) explains
+how to inspect the preview and use the controllers in the next stages.

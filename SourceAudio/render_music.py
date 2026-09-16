@@ -1,4 +1,4 @@
-"""Offline audio authoring by Codex; not a Unity gameplay script.
+"""Offline audio authoring, outside the Unity runtime.
 
 Creates original waveform-based music without downloaded recordings or soundfonts.
 Requires Python and NumPy. Run from any directory: python SourceAudio/render_music.py

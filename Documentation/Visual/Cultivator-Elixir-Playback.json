@@ -1,0 +1,97 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T07:58:06.6987358Z",
+    "session": 1,
+    "actorCount": 2,
+    "introStarted": true,
+    "normalStarted": true,
+    "normalLoopWrapped": false,
+    "manualDirectionControl": true,
+    "passed": true,
+    "states": [
+        {
+            "actor": "Cultivator",
+            "state": "WalkingDown",
+            "loop": true,
+            "completed": true,
+            "requiredSeconds": 2.0,
+            "observedSeconds": 2.0000414848327638,
+            "observedCycles": 3.9998767375946047,
+            "frameChanges": 8,
+            "frames": [
+                "Cultivator_Walk_Down_00",
+                "Cultivator_Walk_Down_01"
+            ]
+        },
+        {
+            "actor": "Cultivator",
+            "state": "Dead",
+            "loop": false,
+            "completed": true,
+            "requiredSeconds": 0.75,
+            "observedSeconds": 0.7500882744789124,
+            "observedCycles": 0.9999848008155823,
+            "frameChanges": 1,
+            "frames": [
+                "Cultivator_Dead_00",
+                "Cultivator_Dead_01"
+            ]
+        },
+        {
+            "actor": "Elixir",
+            "state": "Pulse",
+            "loop": true,
+            "completed": true,
+            "requiredSeconds": 3.0,
+            "observedSeconds": 9.000006675720215,
+            "observedCycles": 9.000042915344239,
+            "frameChanges": 18,
+            "frames": [
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01"
+            ]
+        },
+        {
+            "actor": "Cultivator",
+            "state": "WalkingRight",
+            "loop": true,
+            "completed": true,
+            "requiredSeconds": 2.0,
+            "observedSeconds": 2.0000126361846926,
+            "observedCycles": 3.9998621940612795,
+            "frameChanges": 8,
+            "frames": [
+                "Cultivator_Walk_Right_00",
+                "Cultivator_Walk_Right_01"
+            ]
+        },
+        {
+            "actor": "Cultivator",
+            "state": "WalkingLeft",
+            "loop": true,
+            "completed": true,
+            "requiredSeconds": 2.0,
+            "observedSeconds": 2.0000765323638918,
+            "observedCycles": 3.9999942779541017,
+            "frameChanges": 8,
+            "frames": [
+                "Cultivator_Walk_Left_00",
+                "Cultivator_Walk_Left_01"
+            ]
+        },
+        {
+            "actor": "Cultivator",
+            "state": "WalkingUp",
+            "loop": true,
+            "completed": true,
+            "requiredSeconds": 2.0,
+            "observedSeconds": 2.000063180923462,
+            "observedCycles": 3.9999637603759767,
+            "frameChanges": 8,
+            "frames": [
+                "Cultivator_Walk_Up_00",
+                "Cultivator_Walk_Up_01"
+            ]
+        }
+    ]
+}
