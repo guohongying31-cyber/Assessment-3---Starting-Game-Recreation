@@ -70,3 +70,34 @@ Animation behavior is still validated separately; a static render does not prove
   Local log: tmp/unity-cultivator-elixir-play.log.
 - Cultivator-Elixir-Playback.json contains the measured state durations, cycles and frames.
   Animation-Manifest.json maps the clips, controllers, prefab instances and frame names.
+
+## Complete visual playback
+
+- Created four separate GhostAnimator_ controllers with ten states each. Every required
+  walking, scared, recovering and dead state has two distinct sprite references.
+- Ran two complete Play sessions, including Stop and Play again, in Unity 6000.4.11f1.
+  Each session observed all 46 states across five characters and the elixir.
+- Walking previews lasted 2.00 seconds (four cycles); Scared lasted 2.40 seconds
+  (four cycles); Recovering lasted 2.25 seconds (three cycles); Dead played once for
+  0.75 seconds. The elixir pulsed throughout the 28-second observation window.
+- Confirmed immediate Right/Left selection on all five characters with Showcase disabled,
+  then observed the selected Left state for another 2.5 seconds without an automatic transition.
+- Both sessions verified intro playback, handover to normal music, and the normal clip
+  wrapping around its 24-second loop. The second session restarted successfully.
+- Both Play sessions and Unity compilation passed. Local log: tmp/unity-complete-visual-play.log.
+- Animation-Playback-Validation.json retains the two session reports and every measured state.
+
+## Play-mode visual inspection
+
+- Inspected normal and scared snapshots from the running scene at 1920 x 1080.
+  All character poses, four items and six walls remain visible with transparent backgrounds.
+  Frightened creatures are visibly different from their normal appearances.
+- The first batch snapshots used text geometry cached at a smaller editor viewport size.
+  Refreshing canvas layout and font geometry at the capture resolution corrected the blur.
+  This changed only the temporary capture helper, not the saved scene or controllers.
+- Captured and inspected the corrected Play-mode snapshots: Showcase-Normal.png and
+  Showcase-Scared.png. The capture run exited with code 0.
+  Local log: tmp/unity-visual-preview-refresh.log.
+
+These checks validate the visual showcase and reusable assets. They do not establish a
+completed maze, patrol movement, generated level, player build, or final assessment grade.
