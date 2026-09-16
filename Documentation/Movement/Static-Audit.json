@@ -1,0 +1,83 @@
+{
+  "completedUtc": "2026-09-16T11:16:47.862536+00:00",
+  "passed": true,
+  "fileCount": 331,
+  "asciiTextFiles": 303,
+  "uniqueAssetGuids": 129,
+  "bundledPackageReferences": {
+    "fe87c0e1cc204ed48ad3b37840f39efc": "com.unity.ugui@bf94f8b81813/Runtime/UGUI/UI/Core/Image.cs.meta",
+    "5f7201a12d95ffc409449d95f23cf332": "com.unity.ugui@bf94f8b81813/Runtime/UGUI/UI/Core/Text.cs.meta",
+    "0cd44c1031e13a943bb63640046fad76": "com.unity.ugui@bf94f8b81813/Runtime/UGUI/UI/Core/Layout/CanvasScaler.cs.meta"
+  },
+  "spriteCount": 101,
+  "visualClipCount": 46,
+  "visualControllerCount": 6,
+  "playSessions": 2,
+  "maximumCharacterOpaqueExtentInCells": 0.93048128342246,
+  "unchangedAudioClips": 11,
+  "excludedUntrackedPackageSettingsSha256": "34c3beaeb14398adf4b27a6760da103c8c89ddb44f3e09bbb2fa78aee7b3a198",
+  "checks": [
+    "English filenames and text",
+    "PNG and PCM WAV validity",
+    "Local Markdown links",
+    "Asset and folder metadata",
+    "Unique and resolved GUIDs",
+    "Sprite names and unchanged source hashes",
+    "One-cell character bounds",
+    "Clip sprite references and prefab controller references",
+    "Showcase conditions and loop flags",
+    "Playback report completeness",
+    "Unchanged audio hashes",
+    "Three actual movement frame-rate sessions",
+    "Direction states and all eight walking sprites",
+    "Looping movement output with intro and normal music",
+    "Pause, disable and resume regression",
+    "Exact manual placement and prefab regression",
+    "Inspected actual scene and close-up captures",
+    "Clean Unity compilation without temporary helpers",
+    "Unchanged tested asset hashes after clean import"
+  ],
+  "scope": "English authored files and current assets. All three passing final frame-rate sessions and clean import ran in the working project. Temporary tools, caches and pre-existing untracked package settings are excluded. Uncompleted isolated-copy attempts are not passing tests. No standalone player build, generator validation, final assessment grade or submission is claimed.",
+  "runtimeScripts": [
+    "LinearPositionTween.cs",
+    "PacStudentPatrol.cs",
+    "PacStudentPresentation.cs"
+  ],
+  "movementPlaySessions": 3,
+  "requestedFrameRates": [
+    30,
+    60,
+    144
+  ],
+  "measuredFrameRates": [
+    29.457809214995176,
+    60.04642420237922,
+    143.88184473123994
+  ],
+  "lapPeriods": [
+    [
+      7.199999975734719
+    ],
+    [
+      7.199999996161082
+    ],
+    [
+      7.199999973300579
+    ]
+  ],
+  "unchangedManualPlacements": 660,
+  "cleanUnityImport": true,
+  "unchangedAssetFilesAfterCleanImport": 238,
+  "sceneSha256": "36c79aeaf121b908663eab5ca368332f40b884b5168b108dcf48336a55023293",
+  "movementAssetHashes": {
+    "Assets/Prefabs/Characters/PacStudentPatrol.prefab": "32588ac26a05c5ab231832270909868778c1bca14b17d9ab83515c509ded42d7",
+    "Assets/Prefabs/Characters/PacStudentPatrol.prefab.meta": "49a373aa4dab65f0d28e1981112403c10c4179c12d67d21aefa93323fe995020",
+    "Assets/Scripts/Movement/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Assets/Scripts/Movement/LinearPositionTween.cs": "649a356b630bbd14e410bdb26d1f9926538095bebf3f37b12d022c62b443737a",
+    "Assets/Scripts/Movement/LinearPositionTween.cs.meta": "07e975d1c1fee493a267df6a6a9d9f723a3769825445d962f858fb3dd9618b51",
+    "Assets/Scripts/Movement/PacStudentPatrol.cs": "966abdef637ac0fba231cfda7c24eafcb43d7820444730c796f74a0b63352dd4",
+    "Assets/Scripts/Movement/PacStudentPatrol.cs.meta": "c5b4f4f023fff1641d32550cb43021bf2d0f8c87e94bbc4fcf21bcddabd0e790",
+    "Assets/Scripts/Movement/PacStudentPresentation.cs": "53c5b8af8984dd050e74f1ed73f62df0ed4d0da4dfd44fd718a4bf0607c000ba",
+    "Assets/Scripts/Movement/PacStudentPresentation.cs.meta": "6e6b06723bfcb7167eb5ba4a565583b9e059312e3d88e5fe30a0e9ef07e34d14"
+  }
+}

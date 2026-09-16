@@ -1,0 +1,77 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T10:54:21.7214855Z",
+    "phase": "Core",
+    "sceneSha256": "36c79aeaf121b908663eab5ca368332f40b884b5168b108dcf48336a55023293",
+    "requestedFps": 30,
+    "observedFrames": 451,
+    "completedLaps": 2,
+    "gameSeconds": 15.003572803287982,
+    "measuredFps": 30.05950688633076,
+    "maxPositionError": 4.76837158203125e-7,
+    "maxArcSpeedError": 0.000019012592704648057,
+    "minDelta": 0.016934601590037347,
+    "maxDelta": 0.03367210179567337,
+    "pathCorrect": true,
+    "constantSpeed": true,
+    "exactCornerTurns": true,
+    "sceneRestored": true,
+    "passed": true,
+    "lapCrossings": [
+        7.17999997217347,
+        14.380000004289589
+    ],
+    "lapPeriods": [
+        7.200000032116118
+    ],
+    "turns": [
+        {
+            "direction": "Down",
+            "gameTime": 1.9902187996031747,
+            "x": 6.0,
+            "y": -1.0
+        },
+        {
+            "direction": "Left",
+            "gameTime": 3.5902193948412699,
+            "x": 6.0,
+            "y": -5.0
+        },
+        {
+            "direction": "Up",
+            "gameTime": 5.590235799319728,
+            "x": 1.0,
+            "y": -5.0
+        },
+        {
+            "direction": "Right",
+            "gameTime": 7.190217495748299,
+            "x": 1.0,
+            "y": -1.0
+        },
+        {
+            "direction": "Down",
+            "gameTime": 9.190226197562359,
+            "x": 6.0,
+            "y": -1.0
+        },
+        {
+            "direction": "Left",
+            "gameTime": 10.790224794501134,
+            "x": 6.0,
+            "y": -5.0
+        },
+        {
+            "direction": "Up",
+            "gameTime": 12.790232893990929,
+            "x": 1.0,
+            "y": -5.0
+        },
+        {
+            "direction": "Right",
+            "gameTime": 14.390255293367347,
+            "x": 1.0,
+            "y": -1.0
+        }
+    ]
+}

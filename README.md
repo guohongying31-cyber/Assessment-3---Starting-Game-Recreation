@@ -19,8 +19,11 @@ sessions verified every required animation state and the existing music sequence
 The manual level is now saved in the scene: 28 columns by 29 rows, four reflected quadrants,
 660 placed objects, 218 spirit motes and four animated elixirs. Two full Play sessions
 verified the completed maze, retained animation showcase and music restart.
-The next stage is `Feature-Movement`, followed by procedural generation and final validation.
-Those features remain unfinished. This project is not ready for assessment submission.
+The cultivator now patrols the first inner block clockwise at 2.5 units per second,
+with immediate directional animation and continuous movement audio. Real Play tests at
+30, 60 and 144 requested FPS verified a 7.2-second lap and pause/resume behavior.
+The next stage is `Feature-LevelGenerator`, followed by final validation.
+Those stages remain unfinished. This project is not ready for assessment submission.
 
 - Unity: **6000.4.11f1**, confirmed by the user.
 - Remote: [Assessment-3---Starting-Game-Recreation](https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation).
@@ -42,6 +45,8 @@ Those features remain unfinished. This project is not ready for assessment submi
 - [Visual validation record](Documentation/Visual/Visual-Validation.md)
 - [Manual maze layout and scene guide](Documentation/ManualLevel/Manual-Level-Guide.md)
 - [Manual level validation record](Documentation/ManualLevel/Manual-Level-Validation.md)
+- [Patrol controls and tween explanation](Documentation/Movement/Movement-Guide.md)
+- [Movement and frame-rate validation](Documentation/Movement/Movement-Validation.md)
 
 Production notes describe the actual assets and configuration. Validation records
 distinguish completed checks from work that remains unfinished.
@@ -57,10 +62,12 @@ The scene contains an orthographic camera and four organizational groups:
 `AssetShowcase` displays the cultivator, four beasts, four items and six wall samples in
 the side panels. Press Play and watch for at least 28 seconds to see every character
 state and a full normal-music loop. Four maze elixirs and the sidebar elixir pulse.
-Stop and Play again to restart the preview and music. The separate gameplay `Characters`
-group is reserved for the movement stage; the cultivator does not patrol the maze yet.
+`Characters/PacStudent` patrols the maze's first upper-left inner block. Its four-way
+walking animation matches each turn and soft steps loop while it moves. Stop and Play
+again to restart the patrol, preview and music. Movement is automatic; this stage has
+no keyboard control, collision response or pickup collection.
 
-![Manual maze and animated asset showcase](Documentation/ManualLevel/Final-Editor.png)
+![Cultivator patrol and animated asset showcase](Documentation/Movement/Patrol-Play.png)
 
 ## Git and submission
 

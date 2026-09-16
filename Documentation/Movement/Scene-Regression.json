@@ -1,0 +1,10 @@
+{
+    "completedUtc": "2026-09-16T11:13:58.9184751Z",
+    "unityVersion": "6000.4.11f1",
+    "manualCells": 660,
+    "exactPositions": true,
+    "rotationsAndReflections": true,
+    "prefabReferences": true,
+    "patrolAbovePickups": true,
+    "passed": true
+}
