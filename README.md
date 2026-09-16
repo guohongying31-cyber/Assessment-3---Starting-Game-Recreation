@@ -7,11 +7,12 @@
 
 ## 当前阶段
 
-正在建立本地仓库和 Unity 工程基础。尚未完成音频、视觉素材、动画、手动关卡、
-移动或程序化关卡生成；当前内容不能作为已完成作业提交。
+目标为 **100% HD**，按各评分档位顺序推进。已建立并验证 Unity 工程基础，
+下一阶段是 `Feature-Audio` 的音频准备与开场播放。
+尚未完成音频、视觉素材、动画、手动关卡、移动或程序化关卡生成；当前内容不能作为已完成作业提交。
 
 - Unity：**6000.4.11f1**（用户已确认）。
-- 远程仓库：等待用户提供地址。
+- 远程仓库：[Assessment-3---Starting-Game-Recreation](https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation)。
 - 开发分支：`Development`；每次只开展一个功能分支。
 - 主分支：`Main`，最终验收之前不接收开发合并。
 
@@ -23,8 +24,15 @@
 - [AI 协助记录](Documentation/AI-Assistance.md)
 - [环境与验证记录](Documentation/Validation.md)
 
-文档会在工程准备阶段逐步加入。美术和游戏代码的制作遵循 PDF 的本人创作要求；
+美术和游戏代码的制作遵循 PDF 的本人创作要求；
 AI 的计划、解释及检查结果如实记录，不替代学生本人完成的素材和代码。
+
+## 打开工程
+
+在 Unity Hub 中添加本目录，以 6000.4.11f1 打开。
+场景路径：`Assets/Scenes/RecreatedLevel.unity`。
+此场景目前只有正交相机和 `Systems`、`Level01_Manual`、`Characters`、
+`AssetShowcase` 四个空分组；没有已完成的手动关卡，按 Play 只会看到空背景。
 
 ## Git 与提交
 

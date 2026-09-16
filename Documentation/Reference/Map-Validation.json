@@ -1,0 +1,21 @@
+{
+  "numeric_source_rows": 15,
+  "quadrant_columns": 14,
+  "matches_pdf_array": true,
+  "matches_symbolic_table": true,
+  "full_rows": 29,
+  "full_columns": 28,
+  "tile_counts": {
+    "0": 152,
+    "1": 16,
+    "2": 128,
+    "3": 104,
+    "4": 182,
+    "5": 218,
+    "6": 4,
+    "7": 4,
+    "8": 4
+  },
+  "single_center_row": true,
+  "note": "Reference data checks only; no game level or generator has been implemented."
+}
