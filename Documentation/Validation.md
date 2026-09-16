@@ -1,8 +1,8 @@
-# Validation record: project foundation
+# Project validation record
 
 Date: 2026-09-16 (Australia/Sydney). These are actual checks, not final assessment validation.
 
-## Checks performed
+## Foundation checks performed
 
 | Check | Result and scope |
 |---|---|
@@ -27,10 +27,12 @@ and compilation status.
 
 ## Current implementation limits
 
-- The scene contains only a camera and empty groups, with no maze, characters, sprites,
-  animators, or audio.
+- The scene now contains a camera, organizational groups, and the audio rig described in
+  [the scene audio guide](Audio/Scene-Audio-Guide.md). It has no maze, characters, or sprites.
+- The only animation/controller assets operate audio; they do not complete visual animation requirements.
 - No gameplay C# scripts have been committed; the temporary Editor helper was removed.
-- Gameplay Play checks, player builds, frame-rate movement tests, and generator tests have not run.
+- Audio Play checks are recorded in [audio validation](Audio/Audio-Validation.md).
+  Player builds, frame-rate movement tests, and generator tests have not run.
 - Map data checks cannot replace manual-layout or LevelGenerator assessment evidence.
 - No final ZIP exists, and Development has not been merged into Main.
 
@@ -57,3 +59,12 @@ Prompt excerpts were preserved as explicitly labeled English translations.
 
 The language check covers the current project files. Existing Git history and retained
 feature branches are preserved without rewriting previous commits.
+
+## Audio stage
+
+Five music cues and six interaction effects were produced as two separate milestones.
+Scene integration adds a reusable audio prefab and a built-in Animator opening sequence.
+The revised music follows the user's request for a more ethereal sound and a weaker rhythm.
+The [audio validation record](Audio/Audio-Validation.md) and its JSON evidence describe
+actual Unity Play checks. The [AI disclosure](AI-Assistance.md) identifies the production
+tools and configuration assistance. This stage does not establish completion of later bands.

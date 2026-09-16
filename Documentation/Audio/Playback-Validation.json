@@ -1,0 +1,67 @@
+{
+  "scope": "Two actual Unity Play sessions: opening handover, one complete normal-music loop, restart, and individual clip onset output.",
+  "method": "Temporary excluded Editor probe; AudioSource playback state, sample positions and GetOutputData RMS; clock measured from EnteredPlayMode.",
+  "limits": "Session 1 checks the full normal loop. Session 2 checks restart and every clip onset using an isolated temporary AudioSource. These are automated checks, not human listening approval or a player build.",
+  "sessions": [
+    {
+      "unityVersion": "6000.4.11f1",
+      "completedUtc": "2026-09-16T06:10:24.3179139Z",
+      "session": 1,
+      "editorPlayStartOffsetSeconds": 0.5491948979591836,
+      "introPlayed": true,
+      "normalWasSilentDuringIntro": true,
+      "expectedHandoverSeconds": 2.4000000953674316,
+      "observedHandoverSeconds": 2.400013506235828,
+      "introStoppedAfterHandover": true,
+      "normalLoopWrapped": true,
+      "introMaxOutputRms": 0.12358548492193222,
+      "normalMaxOutputRms": 0.10676318407058716,
+      "sourceCount": 11,
+      "clipsVerifiedPlaying": [],
+      "clipOutputRms": [],
+      "passed": true
+    },
+    {
+      "unityVersion": "6000.4.11f1",
+      "completedUtc": "2026-09-16T06:10:28.9930891Z",
+      "session": 2,
+      "editorPlayStartOffsetSeconds": 0.5723694019274376,
+      "introPlayed": true,
+      "normalWasSilentDuringIntro": true,
+      "expectedHandoverSeconds": 2.4000000953674316,
+      "observedHandoverSeconds": 2.400009297052154,
+      "introStoppedAfterHandover": true,
+      "normalLoopWrapped": false,
+      "introMaxOutputRms": 0.11866014450788498,
+      "normalMaxOutputRms": 0.07947567105293274,
+      "sourceCount": 11,
+      "clipsVerifiedPlaying": [
+        "Music_Intro_JadeAwakening",
+        "Music_Normal_ThroughTheSeal",
+        "Music_Menu_CloudTerrace",
+        "Music_Scared_TalismanChase",
+        "Music_Dead_ReturningSpirits",
+        "SFX_Move_SoftSteps",
+        "SFX_Pellet_SpiritMote",
+        "SFX_Ghost_SpiritSeal",
+        "SFX_Cherry_CrimsonFruit",
+        "SFX_Wall_StoneTouch",
+        "SFX_Death_FadingSpirit"
+      ],
+      "clipOutputRms": [
+        0.14253102242946625,
+        0.15268857777118683,
+        0.16399821639060974,
+        0.11814827471971512,
+        0.0025212757755070925,
+        0.04763404652476311,
+        0.05734023451805115,
+        0.004137224517762661,
+        0.04577914997935295,
+        0.07500067353248596,
+        0.0007883836515247822
+      ],
+      "passed": true
+    }
+  ]
+}

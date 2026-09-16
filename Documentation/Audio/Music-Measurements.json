@@ -1,0 +1,67 @@
+[
+  {
+    "file": "Assets/Audio Clips/Music/Music_Intro_JadeAwakening.wav",
+    "duration_seconds": 2.4,
+    "sample_rate": 44100,
+    "channels": 2,
+    "bit_depth": 16,
+    "loop": false,
+    "peak_dbfs": -8.048,
+    "rms_dbfs": -19.576,
+    "boundary_step": 0.0,
+    "clipped_samples": 0,
+    "sha256": "c70c5f8f08b7587039eb5762f4b59633c2ca2fce61252b4444b80b8b50dce68a"
+  },
+  {
+    "file": "Assets/Audio Clips/Music/Music_Menu_CloudTerrace.wav",
+    "duration_seconds": 32.0,
+    "sample_rate": 44100,
+    "channels": 2,
+    "bit_depth": 16,
+    "loop": true,
+    "peak_dbfs": -7.523,
+    "rms_dbfs": -19.576,
+    "boundary_step": 6.586e-05,
+    "clipped_samples": 0,
+    "sha256": "a7e1336fd2b00892e129857fd98f6c42c3a31a84f366c523980f4c3bade45945"
+  },
+  {
+    "file": "Assets/Audio Clips/Music/Music_Normal_ThroughTheSeal.wav",
+    "duration_seconds": 24.0,
+    "sample_rate": 44100,
+    "channels": 2,
+    "bit_depth": 16,
+    "loop": true,
+    "peak_dbfs": -6.889,
+    "rms_dbfs": -19.576,
+    "boundary_step": 0.00019095,
+    "clipped_samples": 0,
+    "sha256": "df87d10115c32e3119d1e8146bf37f74c3c91322d9899fee67b237a903da3d5b"
+  },
+  {
+    "file": "Assets/Audio Clips/Music/Music_Scared_TalismanChase.wav",
+    "duration_seconds": 20.0,
+    "sample_rate": 44100,
+    "channels": 2,
+    "bit_depth": 16,
+    "loop": true,
+    "peak_dbfs": -6.745,
+    "rms_dbfs": -19.706,
+    "boundary_step": 0.00199347,
+    "clipped_samples": 0,
+    "sha256": "6307ac5ed3100f05fb11e68b378ac99fcf5c5404b2cc9cd0cf46f14d0c0a036f"
+  },
+  {
+    "file": "Assets/Audio Clips/Music/Music_Dead_ReturningSpirits.wav",
+    "duration_seconds": 32.0,
+    "sample_rate": 44100,
+    "channels": 2,
+    "bit_depth": 16,
+    "loop": true,
+    "peak_dbfs": -11.981,
+    "rms_dbfs": -21.412,
+    "boundary_step": 8.775e-05,
+    "clipped_samples": 0,
+    "sha256": "bcb709d9f3b89285b7b1cce3d565e7a98afbbd6cfcfb4a18d61f37eecc39442f"
+  }
+]

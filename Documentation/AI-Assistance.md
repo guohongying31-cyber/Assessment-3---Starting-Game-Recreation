@@ -66,6 +66,40 @@ The title, theme, grading requirements, implementation limits, and authorship di
 Future filenames, comments, documentation, asset labels, and game text must use English.
 Earlier Git history is retained without rewriting.
 
+## Audio stage
+
+The user requested (English translation): "Continue to the next stage."
+After receiving a normal-state music preview, the user requested (English translation):
+"I would like it to be more ethereal, with a weaker rhythm."
+
+Codex authored offline Python/NumPy synthesis tools and generated five music cues from
+waveforms without external recordings. The revised arrangements use slower, sparse notes,
+sustained harmony, no normal-state drum part, and longer room reflections.
+The tools are retained in SourceAudio and are not Unity gameplay scripts.
+Music imports were configured and verified through a temporary, excluded Unity Editor helper.
+Provenance and measured audio properties are recorded in Documentation/Audio.
+Codex then synthesized six mono interaction effects for movement, pellets, beast sealing,
+fruit, wall contact, and death. Their source tool and measurements are retained alongside
+the music records. No downloaded recordings or student performance are claimed.
+
+The user subsequently requested (English translation): "Continue the unfinished work."
+Codex configured LevelAudio.prefab, placed it under Systems in RecreatedLevel, and authored
+an audio-only Animator controller and constant-tangent enabled-property curves. These use
+Unity components to play the 2.4-second intro and then loop normal-state music, with no
+runtime gameplay script. The remaining nine sources are prepared for later student-authored logic.
+
+Temporary AI-written Editor tools configured imports and scene assets, measured two real
+Play sessions, and auditioned audio through an isolated test source. During verification,
+Codex corrected an animation binding that worked in editor sampling but failed in Play,
+then corrected the probe's Play-start clock baseline and isolated its audition source from
+Animator-controlled properties. Only successful reruns are counted as passing evidence;
+the diagnostic failures are summarized in the audio validation record.
+The temporary tools are excluded from Git and removed after verification. Their output
+records are retained in Documentation/Audio. No helper is presented as student-written code.
+
+Codex also updated the English README, audio guide, requirements checklist, and progress
+records. Authorship disclosure remains unchanged by the user's configured Git commit identity.
+
 ## Continue the record
 
 For each future use, append the prompt (explicitly labeled as an English translation when needed), utilized advice/output, files affected,

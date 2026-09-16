@@ -1,0 +1,118 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T06:14:08.0378531Z",
+    "scope": "Every clip played in full, with looping disabled on an isolated temporary AudioSource.",
+    "clips": [
+        {
+            "clip": "Music_Dead_ReturningSpirits",
+            "expectedSeconds": 32.0,
+            "observedSeconds": 32.0333812,
+            "totalSamples": 1411200,
+            "furthestSample": 1411199,
+            "maxOutputRms": 0.14452354609966279,
+            "started": true,
+            "endedNaturally": true
+        },
+        {
+            "clip": "Music_Intro_JadeAwakening",
+            "expectedSeconds": 2.4000000953674318,
+            "observedSeconds": 2.4078382000000007,
+            "totalSamples": 105840,
+            "furthestSample": 105369,
+            "maxOutputRms": 0.20597580075263978,
+            "started": true,
+            "endedNaturally": true
+        },
+        {
+            "clip": "Music_Menu_CloudTerrace",
+            "expectedSeconds": 32.0,
+            "observedSeconds": 32.017694,
+            "totalSamples": 1411200,
+            "furthestSample": 1411199,
+            "maxOutputRms": 0.17765161395072938,
+            "started": true,
+            "endedNaturally": true
+        },
+        {
+            "clip": "Music_Normal_ThroughTheSeal",
+            "expectedSeconds": 24.0,
+            "observedSeconds": 24.018095599999996,
+            "totalSamples": 1058400,
+            "furthestSample": 1058399,
+            "maxOutputRms": 0.21352636814117433,
+            "started": true,
+            "endedNaturally": true
+        },
+        {
+            "clip": "Music_Scared_TalismanChase",
+            "expectedSeconds": 20.0,
+            "observedSeconds": 19.99755599999999,
+            "totalSamples": 882000,
+            "furthestSample": 881529,
+            "maxOutputRms": 0.18199372291564942,
+            "started": true,
+            "endedNaturally": true
+        },
+        {
+            "clip": "SFX_Cherry_CrimsonFruit",
+            "expectedSeconds": 0.949999988079071,
+            "observedSeconds": 0.952416999999997,
+            "totalSamples": 41895,
+            "furthestSample": 41395,
+            "maxOutputRms": 0.08093244582414627,
+            "started": true,
+            "endedNaturally": true
+        },
+        {
+            "clip": "SFX_Death_FadingSpirit",
+            "expectedSeconds": 1.7999999523162842,
+            "observedSeconds": 1.7955546999999968,
+            "totalSamples": 79380,
+            "furthestSample": 79027,
+            "maxOutputRms": 0.09072303771972656,
+            "started": true,
+            "endedNaturally": true
+        },
+        {
+            "clip": "SFX_Ghost_SpiritSeal",
+            "expectedSeconds": 0.8500000238418579,
+            "observedSeconds": 0.8525776999999977,
+            "totalSamples": 37485,
+            "furthestSample": 36691,
+            "maxOutputRms": 0.10235736519098282,
+            "started": true,
+            "endedNaturally": true
+        },
+        {
+            "clip": "SFX_Move_SoftSteps",
+            "expectedSeconds": 0.800000011920929,
+            "observedSeconds": 0.8125739999999979,
+            "totalSamples": 35280,
+            "furthestSample": 34809,
+            "maxOutputRms": 0.06123902276158333,
+            "started": true,
+            "endedNaturally": true
+        },
+        {
+            "clip": "SFX_Pellet_SpiritMote",
+            "expectedSeconds": 0.23999999463558198,
+            "observedSeconds": 0.24273560000000317,
+            "totalSamples": 10584,
+            "furthestSample": 10348,
+            "maxOutputRms": 0.06366788595914841,
+            "started": true,
+            "endedNaturally": true
+        },
+        {
+            "clip": "SFX_Wall_StoneTouch",
+            "expectedSeconds": 0.1899999976158142,
+            "observedSeconds": 0.18435049999999365,
+            "totalSamples": 8379,
+            "furthestSample": 7526,
+            "maxOutputRms": 0.07500067353248596,
+            "started": true,
+            "endedNaturally": true
+        }
+    ],
+    "passed": true
+}

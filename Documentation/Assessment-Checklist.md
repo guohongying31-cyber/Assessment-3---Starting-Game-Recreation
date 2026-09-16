@@ -37,7 +37,7 @@ Assessment 3 does not require keyboard input, pellet or wall collisions, or enem
 
 - [x] Keep `.git` and `.gitignore` beside `Assets` and `ProjectSettings`.
 - [x] Base `.gitignore` on the specified GitHub Unity template.
-- [ ] Connect the repository to a real GitHub, GitLab, or Bitbucket remote.
+- [x] Connect the repository to a real GitHub, GitLab, or Bitbucket remote.
 - [ ] Maintain genuine milestone commits throughout development; do not fabricate history or dates.
 - [ ] Retain `Main`, `Development`, `Feature-Audio`, `Feature-Visual`,
   `Feature-ManualLevel`, `Feature-Movement`, and `Feature-LevelGenerator`.
@@ -54,21 +54,27 @@ Assessment 3 does not require keyboard input, pellet or wall collisions, or enem
 
 Import all **11 audio categories** into `Assets/Audio Clips`, with names indicating their purpose.
 
-- [ ] Intro: music when the level starts.
-- [ ] StartScene: future menu music; the clip is still required for Assessment 3.
-- [ ] Ghost Normal: looping music for the beasts' normal state.
-- [ ] Ghost Scared: music for the beasts' frightened state.
-- [ ] Ghost Dead: music while at least one beast is in its dead state.
-- [ ] Move: the cultivator moving without collecting a spirit mote.
-- [ ] Pellet: collecting a spirit mote.
-- [ ] Eat Ghost: sealing a beast.
-- [ ] Cherry: collecting a crimson fruit.
-- [ ] Wall: hitting a wall.
-- [ ] Death: the cultivator's death or dissolving spirit.
-- [ ] Include an AudioSource. On Play, start Intro, then switch to looping Ghost Normal
+- [x] Intro: music when the level starts.
+- [x] StartScene: future menu music; the clip is still required for Assessment 3.
+- [x] Ghost Normal: looping music for the beasts' normal state.
+- [x] Ghost Scared: music for the beasts' frightened state.
+- [x] Ghost Dead: music while at least one beast is in its dead state.
+- [x] Move: the cultivator moving without collecting a spirit mote.
+- [x] Pellet: collecting a spirit mote.
+- [x] Eat Ghost: sealing a beast.
+- [x] Cherry: collecting a crimson fruit.
+- [x] Wall: hitting a wall.
+- [x] Death: the cultivator's death or dissolving spirit.
+- [x] Include an AudioSource. On Play, start Intro, then switch to looping Ghost Normal
   when the clip ends or three seconds pass, whichever comes first.
 - [ ] Audition every clip for playback, unintended silence, truncation, appropriate volume,
   and traceable source/license information.
+
+The category checks confirm imported clips, not completed interaction logic or a StartScene.
+See [audio validation](Audio/Audio-Validation.md) for measured levels, full playback results,
+and the intro/loop checks. The final listening-review item remains open: automated checks
+do not establish the student's approval of the sound, transitions, or relative volume.
+This checklist does not award a grade.
 
 ## 50%: sprites (PDF pages 9 and 11-12)
 
