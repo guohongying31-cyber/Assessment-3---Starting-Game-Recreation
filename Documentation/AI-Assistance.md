@@ -10,9 +10,9 @@ Tool: Codex. User: HongYing Guo.
 ### Prompts received
 
 The user supplied the assessment PDF, the PacMan CSV, the Week 4 workshop transcript,
-and a Canvas screenshot, with this task prompt:
+and a Canvas screenshot, with the following task prompt (English translation):
 
-> 按照要求完成这个任务, 我想要的主题是修仙者和山海经怪兽。
+> Complete this task according to the requirements. I want a cultivator and mythical beasts from the Classic of Mountains and Seas as the theme.
 
 The user also required Git milestones, exact descriptive commit messages, a single active
 feature branch, testing before merging to Development, preservation of feature branches,
@@ -24,7 +24,7 @@ the user's name and email for local Git configuration.
 
 The user then supplied the repository
 `https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation.git`
-and requested: “按照HD的流程来。” The plan therefore targets all grading bands through 100% HD.
+and requested (English translation): "Follow the HD process." The plan therefore targets all grading bands through 100% HD.
 
 ### Assistance utilized in this preparation stage
 
@@ -55,8 +55,19 @@ manual maze or procedural maze is claimed as completed by this preparation stage
 - Public-domain Shan Hai Jing text, linked in Theme-Brief.md, for creature inspiration;
   no existing creature illustrations were copied into the project.
 
+## English-only project update
+
+The user requested (English translation): "All files must contain English only, with no text in other languages."
+They clarified (English translation): "You may speak to me in Chinese; only the written assessment must not be in Chinese."
+
+Codex translated the existing project documentation into English, including the task-prompt
+excerpts above. These excerpts are explicitly labeled as translations rather than verbatim quotations.
+The title, theme, grading requirements, implementation limits, and authorship disclosure were retained.
+Future filenames, comments, documentation, asset labels, and game text must use English.
+Earlier Git history is retained without rewriting.
+
 ## Continue the record
 
-For each future use, append the actual prompt, utilized advice/output, files affected,
+For each future use, append the prompt (explicitly labeled as an English translation when needed), utilized advice/output, files affected,
 the student's implementation or revision, and checks actually performed. Do not remove
 AI involvement merely because the student later edits a file.

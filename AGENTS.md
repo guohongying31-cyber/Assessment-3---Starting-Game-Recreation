@@ -4,6 +4,11 @@
 
 - Theme: a cultivation practitioner and monsters inspired by Shan Hai Jing.
 - Use the confirmed Unity editor version 6000.4.11f1.
+- All authored project files and filenames must use English only, including documentation,
+  code comments, asset/scene labels, text in artwork, and game UI. Communication with the
+  user may be in Chinese. Record non-English user prompts as labeled English translations.
+- Check filenames and text for non-English content before committing. Preserve technical
+  identifiers and encode non-ASCII source URL paths without breaking the links.
 - Develop in meaningful stages, with honest timestamps and real validation.
 - Before EVERY Git command batch, tell the user the current branch, planned change,
   planned commit message (or "no commit" for inspection), and whether a merge occurs.

@@ -1,92 +1,109 @@
-# 山海灵途：主题与素材制作建议
+# Shan Hai Spirit Trail: theme and asset guidance
 
-**性质：Codex 提供的设计建议，供学生选择和自行绘制；不是已完成的游戏美术。**
+**Codex design advice for the student to select and draw independently; this is not finished artwork.**
 
-## 核心设定
+## Core premise
 
-青衣修仙者进入古老山海封印阵，沿阵中石道收集逸散灵气。四只受邪气影响的
-异兽在阵中徘徊。破厄丹短暂增强修仙者，使其能封印异兽；朱果提供额外奖励。
-原作的追逐、收集和短暂反转关系保留，画面采用夜色、玉石、符纸与灵光。
+A cultivator in jade robes enters an ancient sealing maze, collecting scattered spirit energy
+along its stone paths. Four mythical beasts affected by a dark influence roam the maze.
+A ward-breaking elixir briefly empowers the cultivator to seal them; crimson fruit grants
+bonus points. Preserve the original collection, pursuit, and temporary reversal mechanics,
+using night colors, jade, talisman paper, and spirit light.
 
-这是本项目自由设计的故事。并非《山海经》原文剧情，不套用现代游戏／动画造型。
+This is an original proposed story, not a plot from the Classic of Mountains and Seas.
+Do not adopt character designs from modern games or animation.
 
-## 角色与交互映射
+## Character and interaction mapping
 
-| 作业用途 | 主题对应 | 轮廓与制作重点 |
+| Assessment role | Theme equivalent | Silhouette and production priorities |
 |---|---|---|
-| PacStudent | 青衣修仙者 | 发髻、短披肩、窄袖、玉白腰带；背剑不过分伸出一格 |
-| Ghost 1 | 九尾狐 | 扇形分叉尾群、尖耳；暖朱砂配色 |
-| Ghost 2 | 毕方 | 单足鸟、长喙、抬起的双翼；青羽与赤纹 |
-| Ghost 3 | 天狗 | 四足小兽、白色头部、深色躯干；用脸与步态区分于狐狸 |
-| Ghost 4 | 旋龟 | 低矮宽甲、鸟首、细长蛇形尾；铜绿和琥珀色 |
-| Standard pellet | 凝聚灵气 | 小菱形光点，路径一眼可读 |
-| Power pellet | 破厄丹 | 圆丹与方形符环交替闪动，比灵气更大 |
-| Bonus cherry | 朱果 | 两片叶托起一颗红果，不能与灵气混淆 |
-| Life indicator | 本命玉佩 | 单独绘制玉佩轮廓，后续可并排显示生命数 |
-| Outer walls | 护山阵石 | 厚玉石边缘与内侧浅金线，几何轮廓优先 |
-| Inner walls | 阵中石脉 | 较细青玉脉线，与外墙区别清楚 |
-| T junction | 三岔阵节点 | 一张基础 T 形，通过旋转／镜像复用 |
-| Ghost exit | 封灵符门 | 淡紫色横向符带，和坚固墙体有明显区别 |
+| PacStudent | Jade-robed cultivator | Hair knot, short cape, narrow sleeves, pale jade belt; keep the sheathed sword within one cell |
+| Ghost 1 | Nine-tailed fox | Fan-shaped tail cluster and pointed ears, with warm vermilion colors |
+| Ghost 2 | One-legged flame crane | Long beak, raised wings, blue-green feathers and red markings |
+| Ghost 3 | White-headed hound | Four-legged creature with a white head and dark body; distinguish it from the fox by face and gait |
+| Ghost 4 | Serpent-tailed tortoise | Broad low shell, birdlike head, and slender snake tail; bronze green and amber |
+| Standard pellet | Spirit mote | Small diamond of light that clearly marks the route |
+| Power pellet | Ward-breaking elixir | Round elixir and flashing square talisman ring, larger than a spirit mote |
+| Bonus cherry | Crimson fruit | One red fruit with two leaves; visually distinct from spirit motes |
+| Life indicator | Soul jade pendant | A separate pendant silhouette that can later be repeated to show remaining lives |
+| Outer walls | Guardian stones | Thick jade edges with an inner pale gold line; prioritize a clear geometric outline |
+| Inner walls | Inner jade channels | Thinner jade lines, clearly distinct from outer walls |
+| T junction | Three-way seal junction | One base T-shaped image reused through rotation and reflection |
+| Ghost exit | Spirit-seal gate | A pale violet talisman strip, clearly different from a solid wall |
 
-典籍只作为文字灵感来源。九尾狐和旋龟见
-[《南山经》](https://zh.wikisource.org/zh-hans/山海經/南山經)，
-毕方和天狗见[《西山经》](https://ctext.org/shan-hai-jing/xi-shan-jing/zh)。
-此处的颜色、服饰、性格和游戏机制是本项目建议，不是典籍考据结论。
+Use the classic only as a source of written inspiration. The fox and tortoise appear in
+[Southern Mountains](https://zh.wikisource.org/zh-hans/%E5%B1%B1%E6%B5%B7%E7%B6%93/%E5%8D%97%E5%B1%B1%E7%B6%93);
+the crane and hound appear in
+[Western Mountains](https://ctext.org/shan-hai-jing/xi-shan-jing/zh).
+The English creature labels above are descriptive design names, not formal translations.
+The proposed colors, clothing, personalities, and mechanics are project design choices,
+not claims about the original text.
 
-## 统一制作规格
+## Consistent production specifications
 
-- 基础画布建议 32 × 32 px，透明背景；PPU 32，每格对应 1 Unity unit。
-- 主体约 24–28 px，留出移动与尾巴摆动余量。不要让实体轮廓超过通道宽度。
-- 贴图按 Sprite 导入，Point 过滤、无有损压缩；角色 Pivot 统一。
-- 以 `Cultivator_Walk_Right_00`、`NineTail_Scared_Up_01` 等含用途的名称保存。
-- 四方向行走分别画正面、背面及侧面的姿态；不只旋转一个侧面图。
-- 每状态至少 2 帧，推荐行走 4 帧；以四肢、袖摆、尾群或羽翼变化表现动画。
-- 保存绘图源文件到 `SourceArt`，导出 PNG 到 `Assets/Art/Sprites`，跟踪实际制作过程。
+- Suggested canvas: 32 x 32 pixels, transparent background, 32 pixels per unit, one Unity unit per cell.
+- Keep the main silhouette around 24-28 pixels, leaving space for movement and tail motion.
+  Do not let solid character shapes exceed the corridor width.
+- Import textures as sprites with Point filtering and no lossy compression; use consistent pivots.
+- Name files by role and state, such as `Cultivator_Walk_Right_00` and `NineTail_Scared_Up_01`.
+- Draw front, back, and side walking poses separately; do not rotate a single side-view image.
+- Use at least two frames per state; four walking frames are recommended. Animate limbs,
+  sleeves, tails, or wings so the frame changes are visible.
+- Save editable artwork in `SourceArt`, export PNG files to `Assets/Art/Sprites`,
+  and preserve the actual creation process.
+- Keep all filenames, asset labels, text in images, and game interface text in English.
 
-| 色彩作用 | 建议颜色 | 用法 |
+| Color role | Suggested value | Use |
 |---|---|---|
-| 夜幕 | `#101D2A` | 背景和留白 |
-| 深玉 | `#285958` | 阵墙主体 |
-| 玉青 | `#72C8B1` | 主角与墙体高光 |
-| 暖金 | `#E6C477` | 灵气和符纹 |
-| 朱砂 | `#D96956` | 九尾狐、朱果及部分纹饰 |
-| 米白 | `#F0E6CA` | 主角面部、白首及强调 |
-| 紫灰 | `#8E7AAE` | 封印和死亡魂印 |
+| Night | `#101D2A` | Background and negative space |
+| Deep jade | `#285958` | Main wall surfaces |
+| Light jade | `#72C8B1` | Cultivator and wall highlights |
+| Warm gold | `#E6C477` | Spirit motes and seal markings |
+| Vermilion | `#D96956` | Fox, fruit, and selected markings |
+| Ivory | `#F0E6CA` | Faces, white head, and emphasis |
+| Muted violet | `#8E7AAE` | Seals and dead-state spirit emblems |
 
-颜色是辅助，四只异兽必须依靠轮廓也能区分。畏惧状态可用收拢姿态、抖动和
-额前封印符共同表达；恢复状态交替显示正常／畏惧外观；死亡状态改为破碎魂印，
-不要照搬原作的两只眼睛。
+Color supports recognition; all four beasts must also have distinct silhouettes.
+Show fear through a crouched pose, trembling, and a moving forehead talisman.
+Alternate normal and frightened appearances while recovering. For the dead state,
+use a broken spirit emblem rather than the original game's floating eyes.
 
-## 动画制作清单
+## Animation production checklist
 
-修仙者 5 个状态，四只异兽各 10 个状态，破厄丹 1 个状态，共 46 个展示状态。
-如果每只异兽独立绘制全部状态且每个仅两帧，需至少 92 个状态帧。
-这是当前独立控制器方案的制作量估算；合规复用共同状态时可减少独立图片数量。
+The cultivator has five states, each of four beasts has ten, and the elixir has one:
+46 preview states. Drawing each beast independently with only two frames per state
+would require at least 92 state frames. This is an estimate for the separate-controller
+plan; permitted reuse of shared states can reduce the number of unique images.
 
-| 对象 | 必需状态 | 动作建议 |
+| Character or object | Required states | Suggested motion |
 |---|---|---|
-| 修仙者 | Walk Left/Right/Up/Down | 脚步交替、袖摆和玉带摆动 |
-| 修仙者 | Dead | 身体失去灵光、化为散开的玉色符片；非循环 |
-| 每只异兽 | Walk Left/Right/Up/Down | 对应自身结构的步态或振翅 |
-| 每只异兽 | Scared Left/Right/Up/Down | 缩身、颤抖、符纸轻动 |
-| 每只异兽 | Recovering | 正常外观与畏惧外观交替，足够明显 |
-| 每只异兽 | Dead | 可辨认的魂印破碎／重聚两帧 |
-| 破厄丹 | Pulse | 丹体和符环亮暗、大小变化 |
+| Cultivator | Walk Left/Right/Up/Down | Alternating steps, sleeves, and belt movement |
+| Cultivator | Dead | Spirit light fades and the body dissolves into jade fragments; non-looping |
+| Each beast | Walk Left/Right/Up/Down | Steps or wingbeats suited to its anatomy |
+| Each beast | Scared Left/Right/Up/Down | Crouching, trembling, and moving talisman paper |
+| Each beast | Recovering | Clearly alternate normal and frightened appearances |
+| Each beast | Dead | Two distinct frames of a recognizable spirit emblem breaking or reforming |
+| Elixir | Pulse | Change the elixir and seal ring's brightness and size |
 
-布局资源以 1–8 号八类为单位管理。墙体只画六张基础贴图，不导出旋转变体。
-普通灵气一张；破厄丹有独立动画帧。不要为解决拼接问题不断增加新墙体种类。
+Organize layout resources by tile categories 1-8. Draw six base wall images without
+additional rotation variants. Use one spirit-mote image and separate elixir animation frames.
+Do not continually add new wall categories to solve connection problems.
 
-## 声音方向
+## Audio direction
 
-开场短钟声与拨弦；菜单疏落的五声音阶；正常追逐柔和节拍；畏惧状态高音符铃；
-死亡异兽状态低沉空灵的持续声。移动用轻靴步，灵气用短玉磬，封印用纸符轻响，
-朱果用向上琶音，撞墙用短石击，修仙者死亡用逐渐散开的气声。
+Use a short bell and plucked strings for the intro, sparse pentatonic notes for the menu,
+a gentle rhythm for normal pursuit, high chimes for frightened beasts, and a low atmospheric
+tone for dead beasts. Use soft boot steps for movement, a short jade chime for spirit motes,
+paper and seal sounds for trapping a beast, an ascending arpeggio for fruit, a short stone
+impact for walls, and fading breath for the cultivator's death.
 
-这些只是选材建议。必须逐一试听，确认音效在重复触发时仍然舒适；为实际使用
-的每条音频记录作者、原始页面、许可、下载时间及剪辑处理。此阶段尚未导入音频。
+These are selection suggestions. Audition each actual clip, including repeated playback.
+Record the author, original source page, license, download date, and any editing.
+No audio has been imported at this stage.
 
-## 第一个本人制作的小练习
+## First student-created practice exercise
 
-先画修仙者向右行走的两帧，再画九尾狐的两帧静地踏步，用统一 32 px 格子
-检查轮廓大小；检查后扩展其余方向。按评分顺序，正式导入视觉资源的工作在
-Feature-Audio 完成后才进入 Feature-Visual。这两组练习不等同于完整素材档位。
+Draw two right-facing walking frames for the cultivator, then two stepping frames for the fox.
+Use the same 32-pixel grid to check silhouette sizes before expanding the other directions.
+Following the grading order, formal visual importing begins on Feature-Visual after
+Feature-Audio is complete. These small exercises do not complete the visual-assets band.
