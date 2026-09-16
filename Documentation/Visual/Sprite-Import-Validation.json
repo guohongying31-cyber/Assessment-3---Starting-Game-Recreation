@@ -1,0 +1,28 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T07:24:19.8217704Z",
+    "sheets": [
+        {
+            "id": "Cultivator",
+            "path": "Assets/Art/Sprites/Cultivator/Cultivator_Sheet.png",
+            "width": 1448,
+            "height": 1086,
+            "spriteCount": 10,
+            "pixelsPerUnit": 384.0,
+            "visualScale": 1.060773491859436,
+            "spriteNames": [
+                "Cultivator_Dead_00",
+                "Cultivator_Dead_01",
+                "Cultivator_Walk_Down_00",
+                "Cultivator_Walk_Down_01",
+                "Cultivator_Walk_Left_00",
+                "Cultivator_Walk_Left_01",
+                "Cultivator_Walk_Right_00",
+                "Cultivator_Walk_Right_01",
+                "Cultivator_Walk_Up_00",
+                "Cultivator_Walk_Up_01"
+            ]
+        }
+    ],
+    "passed": true
+}

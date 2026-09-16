@@ -1,0 +1,197 @@
+{
+  "completedUtc": "2026-09-16T07:28:19.779628+00:00",
+  "sheets": [
+    {
+      "id": "Cultivator",
+      "file": "Assets/Art/Sprites/Cultivator/Cultivator_Sheet.png",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "e2395809906f94e43a955bcbcbbd07aa0c169e1079b2e8e7d051b4aee5199c4e",
+      "frames": [
+        {
+          "name": "Cultivator_Walk_Right_00",
+          "rectTopLeft": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "opaqueBounds": [
+            64,
+            37,
+            278,
+            343
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Cultivator_Walk_Right_01",
+          "rectTopLeft": [
+            362,
+            0,
+            362,
+            362
+          ],
+          "opaqueBounds": [
+            68,
+            36,
+            274,
+            343
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Cultivator_Walk_Left_00",
+          "rectTopLeft": [
+            724,
+            0,
+            362,
+            362
+          ],
+          "opaqueBounds": [
+            78,
+            37,
+            286,
+            343
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Cultivator_Walk_Left_01",
+          "rectTopLeft": [
+            1086,
+            0,
+            362,
+            362
+          ],
+          "opaqueBounds": [
+            80,
+            36,
+            290,
+            343
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Cultivator_Walk_Up_00",
+          "rectTopLeft": [
+            0,
+            362,
+            362,
+            362
+          ],
+          "opaqueBounds": [
+            76,
+            26,
+            281,
+            340
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Cultivator_Walk_Up_01",
+          "rectTopLeft": [
+            362,
+            362,
+            362,
+            362
+          ],
+          "opaqueBounds": [
+            68,
+            26,
+            274,
+            340
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Cultivator_Walk_Down_00",
+          "rectTopLeft": [
+            724,
+            362,
+            362,
+            362
+          ],
+          "opaqueBounds": [
+            78,
+            26,
+            273,
+            346
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Cultivator_Walk_Down_01",
+          "rectTopLeft": [
+            1086,
+            362,
+            362,
+            362
+          ],
+          "opaqueBounds": [
+            78,
+            26,
+            284,
+            346
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Cultivator_Dead_00",
+          "rectTopLeft": [
+            0,
+            724,
+            362,
+            362
+          ],
+          "opaqueBounds": [
+            73,
+            62,
+            316,
+            312
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Cultivator_Dead_01",
+          "rectTopLeft": [
+            362,
+            724,
+            362,
+            362
+          ],
+          "opaqueBounds": [
+            76,
+            24,
+            331,
+            324
+          ],
+          "opaqueEdgePixels": 0
+        }
+      ],
+      "pairDifferences": [
+        {
+          "state": "Cultivator_Walk_Right",
+          "changedVisibleFraction": 0.71958
+        },
+        {
+          "state": "Cultivator_Walk_Left",
+          "changedVisibleFraction": 0.59502
+        },
+        {
+          "state": "Cultivator_Walk_Up",
+          "changedVisibleFraction": 0.6915
+        },
+        {
+          "state": "Cultivator_Walk_Down",
+          "changedVisibleFraction": 0.58218
+        },
+        {
+          "state": "Cultivator_Dead",
+          "changedVisibleFraction": 0.94608
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

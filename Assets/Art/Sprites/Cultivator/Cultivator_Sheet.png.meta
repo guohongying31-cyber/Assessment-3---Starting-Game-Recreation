@@ -1,0 +1,635 @@
+fileFormatVersion: 2
+guid: 24f1542d37aee724e84a58d9f034202f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6138980236411281669
+    second: Cultivator_Sheet_0
+  - first:
+      213: -6322012961233273698
+    second: Cultivator_Sheet_1
+  - first:
+      213: 5128680811939185306
+    second: Cultivator_Sheet_2
+  - first:
+      213: 5447791981286171735
+    second: Cultivator_Sheet_3
+  - first:
+      213: -3658085944289465541
+    second: Cultivator_Sheet_4
+  - first:
+      213: 5139904530278532710
+    second: Cultivator_Sheet_5
+  - first:
+      213: 6591696389814533105
+    second: Cultivator_Sheet_6
+  - first:
+      213: 8225599957201384562
+    second: Cultivator_Sheet_7
+  - first:
+      213: 2486288723000570949
+    second: Cultivator_Sheet_8
+  - first:
+      213: 1611666198771139970
+    second: Cultivator_Sheet_9
+  - first:
+      213: 3243293227542112810
+    second: Cultivator_Sheet_10
+  - first:
+      213: 3422130930292833051
+    second: Cultivator_Sheet_11
+  - first:
+      213: 7033672588264281985
+    second: Cultivator_Sheet_12
+  - first:
+      213: -124972862791923786
+    second: Cultivator_Sheet_13
+  - first:
+      213: -3194438042696407061
+    second: Cultivator_Sheet_14
+  - first:
+      213: -6057340998412538257
+    second: Cultivator_Sheet_15
+  - first:
+      213: 6585616342166530948
+    second: Cultivator_Sheet_16
+  - first:
+      213: 9086441770900474086
+    second: Cultivator_Sheet_17
+  - first:
+      213: 6606389636086196146
+    second: Cultivator_Sheet_18
+  - first:
+      213: -8029783130443468286
+    second: Cultivator_Sheet_19
+  - first:
+      213: 7680095147949764065
+    second: Cultivator_Sheet_20
+  - first:
+      213: -3626397243663879816
+    second: Cultivator_Sheet_21
+  - first:
+      213: -2164530994885694355
+    second: Cultivator_Sheet_22
+  - first:
+      213: 3920443908670827155
+    second: Cultivator_Sheet_23
+  - first:
+      213: -7050353817793902033
+    second: Cultivator_Sheet_24
+  - first:
+      213: -5773623081154715886
+    second: Cultivator_Sheet_25
+  - first:
+      213: -4312601203155247937
+    second: Cultivator_Sheet_26
+  - first:
+      213: 3295348362485335259
+    second: Cultivator_Sheet_27
+  - first:
+      213: -3815524429467303022
+    second: Cultivator_Sheet_28
+  - first:
+      213: 6516174887617254359
+    second: Cultivator_Sheet_29
+  - first:
+      213: 2087025908699131565
+    second: Cultivator_Sheet_30
+  - first:
+      213: -3539173050195400873
+    second: Cultivator_Sheet_31
+  - first:
+      213: -1498309904295100265
+    second: Cultivator_Sheet_32
+  - first:
+      213: -554549850183519377
+    second: Cultivator_Sheet_33
+  - first:
+      213: -52404733824376795
+    second: Cultivator_Sheet_34
+  - first:
+      213: 1696316242045730591
+    second: Cultivator_Sheet_35
+  - first:
+      213: 5585686525041815802
+    second: Cultivator_Sheet_36
+  - first:
+      213: 7548409084137828413
+    second: Cultivator_Sheet_37
+  - first:
+      213: 919359686143941799
+    second: Cultivator_Sheet_38
+  - first:
+      213: 4213781464826314759
+    second: Cultivator_Sheet_39
+  - first:
+      213: -1615594936548697348
+    second: Cultivator_Sheet_40
+  - first:
+      213: 8301121434472998962
+    second: Cultivator_Sheet_41
+  - first:
+      213: 4040062044486498375
+    second: Cultivator_Sheet_42
+  - first:
+      213: -6410625520669638409
+    second: Cultivator_Sheet_43
+  - first:
+      213: 5197681614968100644
+    second: Cultivator_Sheet_44
+  - first:
+      213: 4118369442473388471
+    second: Cultivator_Sheet_45
+  - first:
+      213: -7789098063185187251
+    second: Cultivator_Sheet_46
+  - first:
+      213: 355147982684778611
+    second: Cultivator_Sheet_47
+  - first:
+      213: 1422996840217078463
+    second: Cultivator_Sheet_48
+  - first:
+      213: -7024445083274403138
+    second: Cultivator_Sheet_49
+  - first:
+      213: -7491320279035285901
+    second: Cultivator_Sheet_50
+  - first:
+      213: -3481139526092844687
+    second: Cultivator_Sheet_51
+  - first:
+      213: 8069992271539284437
+    second: Cultivator_Sheet_52
+  - first:
+      213: -6547766699918725361
+    second: Cultivator_Sheet_53
+  - first:
+      213: -198309210439241228
+    second: Cultivator_Sheet_54
+  - first:
+      213: 7354357701786236583
+    second: Cultivator_Sheet_55
+  - first:
+      213: 1609810433147426714
+    second: Cultivator_Sheet_56
+  - first:
+      213: -1680956496774420665
+    second: Cultivator_Sheet_57
+  - first:
+      213: -3962770961825377437
+    second: Cultivator_Sheet_58
+  - first:
+      213: -1438838030033201136
+    second: Cultivator_Sheet_59
+  - first:
+      213: 4700121178906530223
+    second: Cultivator_Sheet_60
+  - first:
+      213: -1619454437871336843
+    second: Cultivator_Sheet_61
+  - first:
+      213: 2432970249744631476
+    second: Cultivator_Sheet_62
+  - first:
+      213: -7130782805895163673
+    second: Cultivator_Sheet_63
+  - first:
+      213: 8143400077713612889
+    second: Cultivator_Sheet_64
+  - first:
+      213: 9168063828540335744
+    second: Cultivator_Sheet_65
+  - first:
+      213: -737878682446113279
+    second: Cultivator_Sheet_66
+  - first:
+      213: 5119761633854809293
+    second: Cultivator_Sheet_67
+  - first:
+      213: -3549231543523401456
+    second: Cultivator_Sheet_68
+  - first:
+      213: 5059442630429435704
+    second: Cultivator_Sheet_69
+  - first:
+      213: -3503647195309788911
+    second: Cultivator_Sheet_70
+  - first:
+      213: 8258021661837216135
+    second: Cultivator_Sheet_71
+  - first:
+      213: 5227369658920404296
+    second: Cultivator_Sheet_72
+  - first:
+      213: -8746734916742908987
+    second: Cultivator_Sheet_73
+  - first:
+      213: -768665562384703963
+    second: Cultivator_Sheet_74
+  - first:
+      213: 7653615308429701176
+    second: Cultivator_Sheet_75
+  - first:
+      213: 5054963742809175344
+    second: Cultivator_Sheet_76
+  - first:
+      213: -3469425894970676993
+    second: Cultivator_Sheet_77
+  - first:
+      213: -5365962403978165620
+    second: Cultivator_Sheet_78
+  - first:
+      213: 5263114222569347367
+    second: Cultivator_Sheet_79
+  - first:
+      213: -928504509186238054
+    second: Cultivator_Sheet_80
+  - first:
+      213: 784689673690208748
+    second: Cultivator_Sheet_81
+  - first:
+      213: 8027287583624847903
+    second: Cultivator_Sheet_82
+  - first:
+      213: -5075743542976400976
+    second: Cultivator_Sheet_83
+  - first:
+      213: -5202807377222069353
+    second: Cultivator_Sheet_84
+  - first:
+      213: 7590170211414869737
+    second: Cultivator_Sheet_85
+  - first:
+      213: 1513125359093834746
+    second: Cultivator_Sheet_86
+  - first:
+      213: 5318850431676500216
+    second: Cultivator_Sheet_87
+  - first:
+      213: 7088788917880616184
+    second: Cultivator_Sheet_88
+  - first:
+      213: 8527337564367179140
+    second: Cultivator_Sheet_89
+  - first:
+      213: 5785983271989964635
+    second: Cultivator_Sheet_90
+  - first:
+      213: 3429228897788760094
+    second: Cultivator_Sheet_91
+  - first:
+      213: 2812115818795353904
+    second: Cultivator_Sheet_92
+  - first:
+      213: -6152893430115075222
+    second: Cultivator_Sheet_93
+  - first:
+      213: -6813539582078312289
+    second: Cultivator_Sheet_94
+  - first:
+      213: 418578748829484040
+    second: Cultivator_Sheet_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 384
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cultivator_Walk_Right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 724
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0af97edff04cea4b8d467991a234558
+      internalID: 1658768734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultivator_Walk_Right_01
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 724
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff486b6514bb096459987329e636d24c
+      internalID: -333153411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultivator_Walk_Left_00
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 724
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc43cd82a076f2478eec95d68546609
+      internalID: -1968342871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultivator_Walk_Left_01
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 724
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad89826ff5eaedb4485b97c26cf91577
+      internalID: 886655567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultivator_Walk_Up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 362
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dcccbd9dbfdbd49a3d6ec284f69313
+      internalID: -1168166454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultivator_Walk_Up_01
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 362
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1711538b23250ce49a5eaa62fc3d5aea
+      internalID: -191459027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultivator_Walk_Down_00
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 362
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfa156323dbb1b41879ea8baba9a225
+      internalID: -768722418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultivator_Walk_Down_01
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 362
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8286a05f403e45143949e627edd794ec
+      internalID: -835129443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultivator_Dead_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5286a9500b60f654ba52ce0b62c9d87f
+      internalID: 2017857560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cultivator_Dead_01
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21868a4d7155b9a43a0afc224642fe66
+      internalID: -1017571882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4501dc54e820d7044881877dd61d3f37
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cultivator_Dead_00: 2017857560
+      Cultivator_Dead_01: -1017571882
+      Cultivator_Walk_Down_00: -768722418
+      Cultivator_Walk_Down_01: -835129443
+      Cultivator_Walk_Left_00: -1968342871
+      Cultivator_Walk_Left_01: 886655567
+      Cultivator_Walk_Right_00: 1658768734
+      Cultivator_Walk_Right_01: -333153411
+      Cultivator_Walk_Up_00: -1168166454
+      Cultivator_Walk_Up_01: -191459027
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,18 @@
+{
+  "pixelsPerUnit": 384,
+  "sheets": [
+    {
+      "id": "Cultivator",
+      "path": "Assets/Art/Sprites/Cultivator/Cultivator_Sheet.png",
+      "columns": 4,
+      "rows": 3,
+      "names": [
+        "Cultivator_Walk_Right_00", "Cultivator_Walk_Right_01",
+        "Cultivator_Walk_Left_00", "Cultivator_Walk_Left_01",
+        "Cultivator_Walk_Up_00", "Cultivator_Walk_Up_01",
+        "Cultivator_Walk_Down_00", "Cultivator_Walk_Down_01",
+        "Cultivator_Dead_00", "Cultivator_Dead_01", "", ""
+      ]
+    }
+  ]
+}
