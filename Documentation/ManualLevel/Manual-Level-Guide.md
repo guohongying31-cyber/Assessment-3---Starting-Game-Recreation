@@ -35,9 +35,27 @@ rotated image variants or extra wall categories. The power pickup keeps its own 
 Prefab instance roots retain unit scale before quadrant reflection; the Visual child
 normalizes source image dimensions as described in the visual production guide.
 
+## Mirrored quadrants
+
+| Scene group | Origin | Group scale | Source rows |
+|---|---|---|---|
+| TopLeft | (0, 0) | (1, 1, 1) | 0 through 14 |
+| TopRight | (27, 0) | (-1, 1, 1) | 0 through 14 |
+| BottomLeft | (0, -28) | (1, -1, 1) | 0 through 13 |
+| BottomRight | (27, -28) | (-1, -1, 1) | 0 through 13 |
+
+The bottom quadrants omit Row14. Its two source placements are already represented by
+the top quadrants, producing four occupied cells on the single center row. Mirroring
+acts on the group transforms, preserving the explicit rotations of the placed copies.
+A rotation is not substituted for a reflection.
+
+The complete level spans 28 columns and 29 rows, with 660 nonempty cells: 438 walls,
+218 spirit motes and four animated elixirs. Row14 is the side-tunnel row; its outer six
+columns on each side are empty. The upper and lower tunnel walls end at the map boundary.
+
 ## Milestone status
 
-The top-left quadrant has been placed and checked. Full mirroring, final camera framing
-and the combined level/showcase presentation are the remaining steps of this feature.
+The saved full maze has passed placement, reflection, seam and Play checks. The combined
+level/showcase presentation and final integration checks remain in this feature.
 
 See [validation](Manual-Level-Validation.md) for actual checks and saved evidence.

@@ -30,3 +30,25 @@ Evidence: TopLeft-Layout-Validation.json, TopLeft-Scene-Validation.json,
 TopLeft-Play-Session1.json and TopLeft-Editor.png.
 
 The top-left milestone alone does not complete the four-quadrant manual level.
+
+## Four-quadrant mirror milestone
+
+- Duplicated the saved top-left placements into the three remaining quadrant groups.
+  Reflected X around x=13.5 and Y around y=-14 using group scales and offsets.
+  Omitted Row14 from both lower quadrants.
+- Verified 660 unique cells against the expected reflections: 438 wall pieces,
+  218 spirit motes and four elixirs. Only four cells are occupied on the center row.
+  All twelve outer tunnel cells on that row are empty.
+- Compared 438 connected source alpha edges after rotation/reflection; all matched.
+  434 color edges also matched. The four intentional color changes occur at the seals.
+  The only boundary-ending wall arms are the four tunnel-wall ends.
+- Inspected the rendered full map: four reflected quadrants, a single central corridor,
+  joined middle walls and seals, and clear one-cell side exits. All quadrants fit the camera.
+- Reopened and checked every world position, transform basis, prefab reference and sprite.
+  The transform-basis check distinguishes true reflection from a substituted rotation.
+- The Play check observed all four elixirs changing frames, intro-to-normal audio and
+  unchanged placement counts before, during and after Play. The saved scene hash stayed
+  unchanged after Stop. Unity compilation and the Play run exited with code 0.
+- Local logs: tmp/manual-level/unity-mirrored-build.log and unity-mirrored-play.log.
+  Evidence: Full-Layout-Validation.json, Mirrored-Scene-Validation.json,
+  Mirrored-Play-Session1.json and Mirrored-Editor.png.
