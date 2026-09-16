@@ -117,3 +117,6 @@ InitTestScene*.unity*
 # Temporary editor setup helper (not a gameplay asset)
 /Assets/Editor/LocalSetup/
 /Assets/Editor/LocalSetup.meta
+# Temporary Play-mode verification components
+/Assets/LocalVerification/
+/Assets/LocalVerification.meta
