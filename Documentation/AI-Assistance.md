@@ -82,6 +82,24 @@ Codex then synthesized six mono interaction effects for movement, pellets, beast
 fruit, wall contact, and death. Their source tool and measurements are retained alongside
 the music records. No downloaded recordings or student performance are claimed.
 
+The user subsequently requested (English translation): "Continue the unfinished work."
+Codex configured LevelAudio.prefab, placed it under Systems in RecreatedLevel, and authored
+an audio-only Animator controller and constant-tangent enabled-property curves. These use
+Unity components to play the 2.4-second intro and then loop normal-state music, with no
+runtime gameplay script. The remaining nine sources are prepared for later student-authored logic.
+
+Temporary AI-written Editor tools configured imports and scene assets, measured two real
+Play sessions, and auditioned audio through an isolated test source. During verification,
+Codex corrected an animation binding that worked in editor sampling but failed in Play,
+then corrected the probe's Play-start clock baseline and isolated its audition source from
+Animator-controlled properties. Only successful reruns are counted as passing evidence;
+the diagnostic failures are summarized in the audio validation record.
+The temporary tools are excluded from Git and removed after verification. Their output
+records are retained in Documentation/Audio. No helper is presented as student-written code.
+
+Codex also updated the English README, audio guide, requirements checklist, and progress
+records. Authorship disclosure remains unchanged by the user's configured Git commit identity.
+
 ## Continue the record
 
 For each future use, append the prompt (explicitly labeled as an English translation when needed), utilized advice/output, files affected,

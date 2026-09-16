@@ -10,9 +10,11 @@ level and movement rules.
 ## Current stage
 
 The target is **100% HD**, progressing through every grading band in order.
-The Unity project foundation has been created and verified. The next stage is
-`Feature-Audio`: audio preparation and the opening music sequence.
-Audio, sprites, animations, the manual level, movement, and procedural level generation
+The Unity project foundation and the audio implementation are ready. Eleven synthesized
+audio clips are imported, and the scene plays its intro before looping normal-state music.
+See the audio validation record for the checks performed and listening-review limits.
+The next stage is `Feature-Visual`: student-created sprites and visual animation.
+Sprites, visual animations, the manual level, movement, and procedural level generation
 are not complete. This project is not ready for assessment submission.
 
 - Unity: **6000.4.11f1**, confirmed by the user.
@@ -28,6 +30,9 @@ are not complete. This project is not ready for assessment submission.
 - [Development milestones](Documentation/Development-Plan.md)
 - [AI assistance disclosure](Documentation/AI-Assistance.md)
 - [Environment and validation record](Documentation/Validation.md)
+- [Audio inventory and provenance](Documentation/Audio/Audio-Provenance.md)
+- [Scene audio setup and playback instructions](Documentation/Audio/Scene-Audio-Guide.md)
+- [Audio validation record](Documentation/Audio/Audio-Validation.md)
 
 Artwork and gameplay code follow the PDF's student-authorship requirements.
 AI planning, explanations, and checks are disclosed and do not substitute for
@@ -37,9 +42,11 @@ student-created assets or code.
 
 Add this directory in Unity Hub and open it with version 6000.4.11f1.
 Open `Assets/Scenes/RecreatedLevel.unity`.
-The scene currently contains an orthographic camera and four empty groups:
+The scene contains an orthographic camera and four organizational groups:
 `Systems`, `Level01_Manual`, `Characters`, and `AssetShowcase`.
-There is no completed manual level; pressing Play shows an empty background.
+`Systems/LevelAudio` plays the 2.4-second intro and then loops the normal music.
+The other three groups are empty. There is no completed manual level;
+pressing Play shows an empty background while the audio plays.
 
 ## Git and submission
 

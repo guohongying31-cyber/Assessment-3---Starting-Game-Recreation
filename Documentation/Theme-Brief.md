@@ -92,14 +92,17 @@ Do not continually add new wall categories to solve connection problems.
 ## Audio direction
 
 Use a short bell and plucked strings for the intro, sparse pentatonic notes for the menu,
-a gentle rhythm for normal pursuit, high chimes for frightened beasts, and a low atmospheric
+floating sustained harmony without drums for normal pursuit, high chimes for frightened beasts, and a low atmospheric
 tone for dead beasts. Use soft boot steps for movement, a short jade chime for spirit motes,
 paper and seal sounds for trapping a beast, an ascending arpeggio for fruit, a short stone
 impact for walls, and fading breath for the cultivator's death.
 
-These are selection suggestions. Audition each actual clip, including repeated playback.
-Record the author, original source page, license, download date, and any editing.
-No audio has been imported at this stage.
+Eleven waveform-synthesized clips now implement this direction in Assets/Audio Clips.
+After hearing the first preview, the user requested a more ethereal sound with a weaker
+rhythm. The revised music uses slower, sparse notes, sustained pads, and longer reflections.
+The sounds are Codex-generated, not student performances; no external recordings are used.
+See [audio provenance](Audio/Audio-Provenance.md) and [validation](Audio/Audio-Validation.md)
+for the inventory, production sources, measurements, and actual playback checks.
 
 ## First student-created practice exercise
 
