@@ -54,3 +54,19 @@ completed animation-controller or Play-mode showcase behavior.
 - Showcase-Static.png is an actual Unity camera render of the saved scene.
 
 Animation behavior is still validated separately; a static render does not prove a state cycle.
+
+## Cultivator and elixir animation milestone
+
+- Created PacStudentAnimator with four walking states and one non-looping Dead state.
+  Created ElixirAnimator with a continuous Pulse state. All six clips use two different sprites.
+- Entered Play mode in the saved scene. Observed all six states and their actual sprite changes.
+  Each walking preview lasted two seconds (four cycles); Dead completed once in 0.75 seconds.
+  Pulse remained active for the nine-second observation window.
+- Disabled the Showcase parameter, selected Right and Left immediately, and verified that
+  the selected direction remained active for another 2.5 seconds.
+- Confirmed opening music playback and its transition to the normal loop. This short run
+  did not include a complete 24-second normal-music loop.
+- Unity compilation and the Play verification exited with code 0.
+  Local log: tmp/unity-cultivator-elixir-play.log.
+- Cultivator-Elixir-Playback.json contains the measured state durations, cycles and frames.
+  Animation-Manifest.json maps the clips, controllers, prefab instances and frame names.

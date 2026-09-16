@@ -1,0 +1,96 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T07:55:04.5642330Z",
+    "actors": [
+        {
+            "id": "Cultivator",
+            "scenePath": "AssetShowcase/Characters/PacStudent",
+            "prefabPath": "Assets/Prefabs/Characters/PacStudent.prefab",
+            "controllerPath": "Assets/Animations/Controllers/PacStudentAnimator.controller",
+            "defaultState": "WalkingDown",
+            "states": [
+                {
+                    "name": "WalkingRight",
+                    "clipPath": "Assets/Animations/Clips/Cultivator/Cultivator_WalkingRight.anim",
+                    "frames": [
+                        "Cultivator_Walk_Right_00",
+                        "Cultivator_Walk_Right_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingLeft",
+                    "clipPath": "Assets/Animations/Clips/Cultivator/Cultivator_WalkingLeft.anim",
+                    "frames": [
+                        "Cultivator_Walk_Left_00",
+                        "Cultivator_Walk_Left_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingUp",
+                    "clipPath": "Assets/Animations/Clips/Cultivator/Cultivator_WalkingUp.anim",
+                    "frames": [
+                        "Cultivator_Walk_Up_00",
+                        "Cultivator_Walk_Up_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingDown",
+                    "clipPath": "Assets/Animations/Clips/Cultivator/Cultivator_WalkingDown.anim",
+                    "frames": [
+                        "Cultivator_Walk_Down_00",
+                        "Cultivator_Walk_Down_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "Dead",
+                    "clipPath": "Assets/Animations/Clips/Cultivator/Cultivator_Dead.anim",
+                    "frames": [
+                        "Cultivator_Dead_00",
+                        "Cultivator_Dead_01"
+                    ],
+                    "fps": 4.0,
+                    "duration": 0.75,
+                    "exitCycles": 1.0,
+                    "loop": false
+                }
+            ]
+        },
+        {
+            "id": "Elixir",
+            "scenePath": "AssetShowcase/Pickups/Elixir",
+            "prefabPath": "Assets/Prefabs/Pickups/Elixir.prefab",
+            "controllerPath": "Assets/Animations/Controllers/ElixirAnimator.controller",
+            "defaultState": "Pulse",
+            "states": [
+                {
+                    "name": "Pulse",
+                    "clipPath": "Assets/Animations/Clips/Elixir/Elixir_Pulse.anim",
+                    "frames": [
+                        "Elixir_Pulse_00",
+                        "Elixir_Pulse_01"
+                    ],
+                    "fps": 3.0,
+                    "duration": 1.0,
+                    "exitCycles": 3.0,
+                    "loop": true
+                }
+            ]
+        }
+    ]
+}
