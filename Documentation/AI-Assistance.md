@@ -66,6 +66,19 @@ The title, theme, grading requirements, implementation limits, and authorship di
 Future filenames, comments, documentation, asset labels, and game text must use English.
 Earlier Git history is retained without rewriting.
 
+## Audio stage
+
+The user requested (English translation): "Continue to the next stage."
+After receiving a normal-state music preview, the user requested (English translation):
+"I would like it to be more ethereal, with a weaker rhythm."
+
+Codex authored offline Python/NumPy synthesis tools and generated five music cues from
+waveforms without external recordings. The revised arrangements use slower, sparse notes,
+sustained harmony, no normal-state drum part, and longer room reflections.
+The tools are retained in SourceAudio and are not Unity gameplay scripts.
+Music imports were configured and verified through a temporary, excluded Unity Editor helper.
+Provenance and measured audio properties are recorded in Documentation/Audio.
+
 ## Continue the record
 
 For each future use, append the prompt (explicitly labeled as an English translation when needed), utilized advice/output, files affected,
