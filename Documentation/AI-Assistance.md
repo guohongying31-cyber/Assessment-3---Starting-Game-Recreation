@@ -78,6 +78,9 @@ sustained harmony, no normal-state drum part, and longer room reflections.
 The tools are retained in SourceAudio and are not Unity gameplay scripts.
 Music imports were configured and verified through a temporary, excluded Unity Editor helper.
 Provenance and measured audio properties are recorded in Documentation/Audio.
+Codex then synthesized six mono interaction effects for movement, pellets, beast sealing,
+fruit, wall contact, and death. Their source tool and measurements are retained alongside
+the music records. No downloaded recordings or student performance are claimed.
 
 ## Continue the record
 

@@ -35,3 +35,19 @@ are in Music-Measurements.json. Measurements are not a claim of human listening 
 After hearing the first normal-state preview, the user requested a more ethereal sound
 with a weaker rhythm. The final arrangements slow the tempo, add rests and sustained
 harmony, remove the normal-state percussion, and extend the room reflections.
+
+## Interaction-effect inventory
+
+All paths below are relative to Assets/Audio Clips/SFX. Source: SourceAudio/render_effects.py.
+
+| Assessment role | File | Duration | Loop | Synthesis approach |
+|---|---|---|---|---|
+| Moving without a pellet | SFX_Move_SoftSteps.wav | 0.8 seconds | Yes | Two quiet filtered-noise footfalls with low body tones |
+| Eating a pellet | SFX_Pellet_SpiritMote.wav | 0.24 seconds | No | One short jade chime |
+| Eating a ghost | SFX_Ghost_SpiritSeal.wav | 0.85 seconds | No | Paper-like noise and falling seal tones |
+| Eating a cherry | SFX_Cherry_CrimsonFruit.wav | 0.95 seconds | No | A short rising four-note chime |
+| Hitting a wall | SFX_Wall_StoneTouch.wav | 0.19 seconds | No | Soft stone-like resonances and a brief noise transient |
+| PacStudent death | SFX_Death_FadingSpirit.wav | 1.8 seconds | No | Falling tones and an airy fading envelope |
+
+Effects are 44.1 kHz, 16-bit mono PCM. One-shots have short edge fades to avoid
+abrupt waveform cuts. Exact hashes and measured levels are in Effects-Measurements.json.

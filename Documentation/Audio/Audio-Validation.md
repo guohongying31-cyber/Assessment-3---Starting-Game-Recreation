@@ -17,4 +17,14 @@ Music-Measurements.json records measured levels and file hashes. The user review
 initial style and requested the revision; this record does not claim that the user has
 listened to and approved every final clip. A playable preview is provided separately.
 
-Interaction effects and scene playback validation will be recorded when completed.
+## Interaction-effect milestone
+
+- All six required effects rendered and imported successfully as mono PCM at 44.1 kHz.
+- Movement is an 0.8-second loop; pellet, seal, fruit, wall, and death are one-shots.
+- All six contain a non-silent signal and zero clipped samples.
+- All six have matching first/last sample values after their fade or loop preparation.
+- Unity reported the expected lengths and channel counts for every effect and exited with code 0.
+- Local import log: tmp/unity-audio-effects-import.log (not committed).
+- Exact levels and hashes are in Effects-Measurements.json.
+
+Scene playback validation will be recorded when completed.
