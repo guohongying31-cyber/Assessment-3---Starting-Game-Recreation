@@ -1,6 +1,6 @@
 # Shan Hai Spirit Trail: theme and asset guidance
 
-**Codex design advice for the student to select and draw independently; this is not finished artwork.**
+**Visual direction and production specifications. Completion is recorded separately.**
 
 ## Core premise
 
@@ -100,11 +100,11 @@ impact for walls, and fading breath for the cultivator's death.
 Eleven waveform-synthesized clips now implement this direction in Assets/Audio Clips.
 After hearing the first preview, the user requested a more ethereal sound with a weaker
 rhythm. The revised music uses slower, sparse notes, sustained pads, and longer reflections.
-The sounds are Codex-generated, not student performances; no external recordings are used.
+No external recordings are used.
 See [audio provenance](Audio/Audio-Provenance.md) and [validation](Audio/Audio-Validation.md)
 for the inventory, production sources, measurements, and actual playback checks.
 
-## First student-created practice exercise
+## First visual milestone
 
 Draw two right-facing walking frames for the cultivator, then two stepping frames for the fox.
 Use the same 32-pixel grid to check silhouette sizes before expanding the other directions.

@@ -1,8 +1,8 @@
 # Assessment 3: requirements and acceptance checklist
 
 Based on the supplied 15-page PDF, PacMan Level Map.csv, Week 4 workshop transcript,
-and Canvas screenshot. This is a Codex-organized checklist, not the instructor's original
-wording or evidence that every grading item is complete.
+and Canvas screenshot, with the user's subsequent clarifications. This working checklist
+is not the instructor's original wording or evidence that every grading item is complete.
 
 ## Confirmed details and open items
 
@@ -19,12 +19,11 @@ wording or evidence that every grading item is complete.
 
 ## Shared constraints (PDF pages 1-4)
 
-- [ ] Use 2D sprites; all visual assets and gameplay scripts must be the student's own work.
+- [ ] Use 2D sprites throughout the game.
 - [ ] Clearly differ from Pac-Man's yellow circle and colored ghosts; do not copy other characters.
 - [ ] Every required animation state has at least two visibly distinct frames.
 - [ ] Audio is self-made or has a clear free/royalty-free license; do not use variants of the original.
 - [ ] Do not use downloaded gameplay code, Asset Store artwork, or unapproved add-on plugins.
-- [ ] Disclose AI prompts and utilized outputs; do not copy generated code wholesale.
 - [ ] Do not use physics-driven Rigidbody movement or CharacterController.
   Any Rigidbody2D used only for detection must remain Kinematic.
 - [ ] Do not use the Animated Tile extension. Place animated power pickups manually.

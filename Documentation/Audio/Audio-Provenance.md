@@ -1,17 +1,17 @@
 # Audio provenance
 
-Project: Shan Hai Spirit Trail. Prepared with Codex assistance on 2026-09-16.
+Project: Shan Hai Spirit Trail. Prepared on 2026-09-16.
 
-## Source and authorship
+## Production
 
 All listed recordings are newly synthesized within this project from mathematical
-waveforms and deterministic noise. Codex authored the offline synthesis tools and
-arrangements at the user's request. No external recordings, soundfonts, samples,
+waveforms and deterministic noise, using the retained offline synthesis tools and
+arrangements. No external recordings, soundfonts, samples,
 Pac-Man music, or downloaded audio libraries were used.
 
 Production sources are retained in SourceAudio. They are not Unity gameplay code.
 External recording licenses and download URLs are not applicable because no third-party
-recorded audio is incorporated. This record does not claim student composition or performance.
+recorded audio is incorporated.
 
 ## Music inventory
 

@@ -13,7 +13,7 @@ The target is **100% HD**, progressing through every grading band in order.
 The Unity project foundation and the audio implementation are ready. Eleven synthesized
 audio clips are imported, and the scene plays its intro before looping normal-state music.
 See the audio validation record for the checks performed and listening-review limits.
-The next stage is `Feature-Visual`: student-created sprites and visual animation.
+The current stage is `Feature-Visual`: sprites and visual animation.
 Sprites, visual animations, the manual level, movement, and procedural level generation
 are not complete. This project is not ready for assessment submission.
 
@@ -28,15 +28,13 @@ are not complete. This project is not ready for assessment submission.
 - [Assessment requirements and acceptance checklist](Documentation/Assessment-Checklist.md)
 - [Theme and asset design guidance](Documentation/Theme-Brief.md)
 - [Development milestones](Documentation/Development-Plan.md)
-- [AI assistance disclosure](Documentation/AI-Assistance.md)
 - [Environment and validation record](Documentation/Validation.md)
 - [Audio inventory and provenance](Documentation/Audio/Audio-Provenance.md)
 - [Scene audio setup and playback instructions](Documentation/Audio/Scene-Audio-Guide.md)
 - [Audio validation record](Documentation/Audio/Audio-Validation.md)
 
-Artwork and gameplay code follow the PDF's student-authorship requirements.
-AI planning, explanations, and checks are disclosed and do not substitute for
-student-created assets or code.
+Production notes describe the actual assets and configuration. Validation records
+distinguish completed checks from work that remains unfinished.
 
 ## Open the project
 

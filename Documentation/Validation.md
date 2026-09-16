@@ -66,5 +66,5 @@ Five music cues and six interaction effects were produced as two separate milest
 Scene integration adds a reusable audio prefab and a built-in Animator opening sequence.
 The revised music follows the user's request for a more ethereal sound and a weaker rhythm.
 The [audio validation record](Audio/Audio-Validation.md) and its JSON evidence describe
-actual Unity Play checks. The [AI disclosure](AI-Assistance.md) identifies the production
-tools and configuration assistance. This stage does not establish completion of later bands.
+actual Unity Play checks. Production sources and configuration are described in the audio
+documentation. This stage does not establish completion of later bands.

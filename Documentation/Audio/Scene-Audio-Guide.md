@@ -52,8 +52,8 @@ The key time is an authored setting, not a runtime calculation of a replacement 
 
 Select any WAV in Assets/Audio Clips and use Unity's audio preview to hear it separately.
 Adjust source Volume on the prefab for balance; the audio files retain headroom.
-For later gameplay, connect the prepared sources to student-authored interaction logic.
-When replacing the opening Animator with a student-written music manager, disable the
+For later gameplay, connect the prepared sources to interaction logic.
+When replacing the opening Animator with a music manager, disable the
 Animator so only one system controls the sources.
 
 ## References

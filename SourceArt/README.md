@@ -1,7 +1,8 @@
-# Student artwork sources
+# Visual production files
 
-Save your original editable drawing/animation source files here as you create them.
-Export the runtime sprites into Assets/Art/Sprites and keep their Unity .meta files.
+Final sprite sheets are stored in Assets/Art/Sprites with their Unity metadata.
+Keep editable source material here when it differs from the imported image.
+Theme-Brief.md describes the visual direction; Documentation/Visual records asset
+dimensions, frame names, import settings, and verification as each milestone is completed.
 
-No student artwork has been added yet. Theme-Brief.md contains AI-assisted design advice;
-it is not a source artwork file or evidence that the visual requirements are complete.
+Do not count blank worksheets or temporary test images as completed sprite assets.
