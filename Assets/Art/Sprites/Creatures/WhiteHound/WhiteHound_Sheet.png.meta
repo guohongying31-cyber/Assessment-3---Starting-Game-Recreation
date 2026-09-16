@@ -1,0 +1,685 @@
+fileFormatVersion: 2
+guid: f5b618e130b2eab4395938b6e6e216d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5929497821654839887
+    second: WhiteHound_Sheet_0
+  - first:
+      213: 6637718911994519755
+    second: WhiteHound_Sheet_1
+  - first:
+      213: -7796708709383017067
+    second: WhiteHound_Sheet_2
+  - first:
+      213: -8471329638633267767
+    second: WhiteHound_Sheet_3
+  - first:
+      213: 1102723116438765627
+    second: WhiteHound_Sheet_4
+  - first:
+      213: -3118553307981997922
+    second: WhiteHound_Sheet_5
+  - first:
+      213: -1403871940195900783
+    second: WhiteHound_Sheet_6
+  - first:
+      213: 1495394567735988445
+    second: WhiteHound_Sheet_7
+  - first:
+      213: 4450408927474912023
+    second: WhiteHound_Sheet_8
+  - first:
+      213: -7114547564426923092
+    second: WhiteHound_Sheet_9
+  - first:
+      213: 9132092530528583072
+    second: WhiteHound_Sheet_10
+  - first:
+      213: 8719553642831782943
+    second: WhiteHound_Sheet_11
+  - first:
+      213: 4925131258971455531
+    second: WhiteHound_Sheet_12
+  - first:
+      213: 8590456900455646288
+    second: WhiteHound_Sheet_13
+  - first:
+      213: -1191086103034288008
+    second: WhiteHound_Sheet_14
+  - first:
+      213: 4079337667618510584
+    second: WhiteHound_Sheet_15
+  - first:
+      213: -2236504240277601020
+    second: WhiteHound_Sheet_16
+  - first:
+      213: -1984306427857302862
+    second: WhiteHound_Sheet_17
+  - first:
+      213: 7055672362783225417
+    second: WhiteHound_Sheet_18
+  - first:
+      213: -6123600982405497340
+    second: WhiteHound_Sheet_19
+  - first:
+      213: -5415426360492930069
+    second: WhiteHound_Sheet_20
+  - first:
+      213: 7875988047988367771
+    second: WhiteHound_Sheet_21
+  - first:
+      213: -4978891407467155901
+    second: WhiteHound_Sheet_22
+  - first:
+      213: -887380158470259031
+    second: WhiteHound_Sheet_23
+  - first:
+      213: 6873571757165548009
+    second: WhiteHound_Sheet_24
+  - first:
+      213: 717724246871786385
+    second: WhiteHound_Sheet_25
+  - first:
+      213: -5220840852435797600
+    second: WhiteHound_Sheet_26
+  - first:
+      213: 4786727614796662976
+    second: WhiteHound_Sheet_27
+  - first:
+      213: 1545179841306697742
+    second: WhiteHound_Sheet_28
+  - first:
+      213: 1489164770342853234
+    second: WhiteHound_Sheet_29
+  - first:
+      213: 2317239828046718969
+    second: WhiteHound_Sheet_30
+  - first:
+      213: 5927725520481219238
+    second: WhiteHound_Sheet_31
+  - first:
+      213: 6041806674611053314
+    second: WhiteHound_Sheet_32
+  - first:
+      213: -7468644349865513695
+    second: WhiteHound_Sheet_33
+  - first:
+      213: 4866940990439403726
+    second: WhiteHound_Sheet_34
+  - first:
+      213: -6540845257318353383
+    second: WhiteHound_Sheet_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 384
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WhiteHound_Walk_Right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5008929, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e51a84abf47c24396b57bff00bc39e
+      internalID: 643746368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Walk_Right_01
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1122
+        width: 281
+        height: 280
+      alignment: 9
+      pivot: {x: 0.50088966, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a3562c59218064c8bc81c3e68a089e
+      internalID: -550076767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Walk_Left_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1122
+        width: 281
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4991103, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990ba9f51c73d524880ed45539597674
+      internalID: 792905375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Walk_Left_01
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1122
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.49910715, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f30ee1aadb9ab498b16e64feaa25b2
+      internalID: 2142328068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Walk_Up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 841
+        width: 280
+        height: 281
+      alignment: 9
+      pivot: {x: 0.5008929, y: 0.4996441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40783697788872a4bb4e194e7c82a37b
+      internalID: -1023257861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Walk_Up_01
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 841
+        width: 281
+        height: 281
+      alignment: 9
+      pivot: {x: 0.50088966, y: 0.4996441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dba732621481f429ab9c7128a02616
+      internalID: 749843407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Walk_Down_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 841
+        width: 281
+        height: 281
+      alignment: 9
+      pivot: {x: 0.4991103, y: 0.4996441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1fab11ebb40034a8d9ac18d7ccbda6
+      internalID: 669528347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Walk_Down_01
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 841
+        width: 280
+        height: 281
+      alignment: 9
+      pivot: {x: 0.49910715, y: 0.4996441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3a195549fc9464fb0e3a4158e9ea3e
+      internalID: -225761646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Scared_Right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 561
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5008929, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d985d8f63590b74ea5ce36ce139458d
+      internalID: -892109223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Scared_Right_01
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 561
+        width: 281
+        height: 280
+      alignment: 9
+      pivot: {x: 0.50088966, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a1e1e17c06dc548897e190be343b03
+      internalID: 738041843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Scared_Left_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 561
+        width: 281
+        height: 280
+      alignment: 9
+      pivot: {x: 0.4991103, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18faf832d3b780d49ab18ad2be447038
+      internalID: 301619566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Scared_Left_01
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 561
+        width: 280
+        height: 280
+      alignment: 9
+      pivot: {x: 0.49910715, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e4ff9d69afa014393da176a1fd159f
+      internalID: 779707075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Scared_Up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291
+        width: 280
+        height: 270
+      alignment: 9
+      pivot: {x: 0.5008929, y: 0.4799999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c65ee6fb501dc44a87734c3ef2f68dd
+      internalID: -1002830032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Scared_Up_01
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 291
+        width: 281
+        height: 270
+      alignment: 9
+      pivot: {x: 0.50088966, y: 0.4799999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a87681b9d991447b3d1b71d4a130cf
+      internalID: -1042639058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Scared_Down_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 291
+        width: 281
+        height: 270
+      alignment: 9
+      pivot: {x: 0.4991103, y: 0.4799999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965ea1abf08442c4c8754ce3d5c7561c
+      internalID: -1153609893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Scared_Down_01
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 291
+        width: 280
+        height: 270
+      alignment: 9
+      pivot: {x: 0.49910715, y: 0.4799999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797a2f2a106b42c4faa0124dfcc2cc04
+      internalID: -1366292378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Recovering_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 280
+        height: 291
+      alignment: 9
+      pivot: {x: 0.5008929, y: 0.4817868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162c4f3d518e32a409649f5959b96d92
+      internalID: 1430449533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Recovering_01
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 281
+        height: 291
+      alignment: 9
+      pivot: {x: 0.50088966, y: 0.4817868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ef3d26fe6fb5e44bde0899bc43a399
+      internalID: -1058186079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Dead_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 0
+        width: 281
+        height: 291
+      alignment: 9
+      pivot: {x: 0.4991103, y: 0.4817868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30af1fc4364d7b4f96e5cc11dd8b1b3
+      internalID: 1917762597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteHound_Dead_01
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 0
+        width: 280
+        height: 291
+      alignment: 9
+      pivot: {x: 0.49910715, y: 0.4817868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a96771e12f81904d846a55146670ab4
+      internalID: 425800104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6d5973e2887d2b14280cacf4d41cdf2d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WhiteHound_Dead_00: 1917762597
+      WhiteHound_Dead_01: 425800104
+      WhiteHound_Recovering_00: 1430449533
+      WhiteHound_Recovering_01: -1058186079
+      WhiteHound_Scared_Down_00: -1153609893
+      WhiteHound_Scared_Down_01: -1366292378
+      WhiteHound_Scared_Left_00: 301619566
+      WhiteHound_Scared_Left_01: 779707075
+      WhiteHound_Scared_Right_00: -892109223
+      WhiteHound_Scared_Right_01: 738041843
+      WhiteHound_Scared_Up_00: -1002830032
+      WhiteHound_Scared_Up_01: -1042639058
+      WhiteHound_Walk_Down_00: 669528347
+      WhiteHound_Walk_Down_01: -225761646
+      WhiteHound_Walk_Left_00: 792905375
+      WhiteHound_Walk_Left_01: 2142328068
+      WhiteHound_Walk_Right_00: 643746368
+      WhiteHound_Walk_Right_01: -550076767
+      WhiteHound_Walk_Up_00: -1023257861
+      WhiteHound_Walk_Up_01: 749843407
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
