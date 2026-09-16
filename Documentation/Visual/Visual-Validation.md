@@ -28,3 +28,15 @@ Unity version: 6000.4.11f1. Checks below describe completed work only.
 Sprite-Import-Validation.json records Unity results; Sprite-Pixel-Validation.json records
 source hashes, transparency and frame bounds. These import checks do not establish
 completed animation-controller or Play-mode showcase behavior.
+
+## Pickup and wall milestone
+
+- Imported five item frames, including two visibly different elixir pulse frames.
+- Confirmed item transparency and an empty unused atlas cell.
+- Rendered six geometric wall sprites from their retained source geometry.
+- Compared seven connecting RGBA edge pairs and the gate's alpha edge profile; all matched.
+- Verified the intended open edges for each wall. Wall edges deliberately reach their
+  tile boundary; character/item boundary checks use a different rule.
+- Imported all 101 sprite frames across seven sheets. Unity completed import/compilation
+  with exit code 0. Local log: tmp/unity-complete-sprite-import.log.
+- Wall-Connection-Validation.json records the seam checks and atlas hash.

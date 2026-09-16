@@ -1,6 +1,6 @@
 {
     "unityVersion": "6000.4.11f1",
-    "completedUtc": "2026-09-16T07:34:33.9737502Z",
+    "completedUtc": "2026-09-16T07:42:53.3148825Z",
     "sheets": [
         {
             "id": "Cultivator",
@@ -145,6 +145,39 @@
                 "SerpentTortoise_Walk_Right_01",
                 "SerpentTortoise_Walk_Up_00",
                 "SerpentTortoise_Walk_Up_01"
+            ]
+        },
+        {
+            "id": "Pickups",
+            "path": "Assets/Art/Sprites/Pickups/Pickups_Sheet.png",
+            "width": 1536,
+            "height": 1024,
+            "spriteCount": 5,
+            "pixelsPerUnit": 384.0,
+            "visualScale": 0.75,
+            "spriteNames": [
+                "CrimsonFruit_00",
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01",
+                "SoulJade_00",
+                "SpiritMote_00"
+            ]
+        },
+        {
+            "id": "Walls",
+            "path": "Assets/Art/Sprites/Walls/Wall_Tiles.png",
+            "width": 1152,
+            "height": 768,
+            "spriteCount": 6,
+            "pixelsPerUnit": 384.0,
+            "visualScale": 1.0,
+            "spriteNames": [
+                "Wall_ExitSeal",
+                "Wall_InnerCorner",
+                "Wall_InnerStraight",
+                "Wall_OuterCorner",
+                "Wall_OuterStraight",
+                "Wall_TJunction"
             ]
         }
     ],

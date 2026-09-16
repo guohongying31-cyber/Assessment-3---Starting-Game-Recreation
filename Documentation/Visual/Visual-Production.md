@@ -14,6 +14,17 @@ NineTail, FlameCrane, WhiteHound and SerpentTortoise each use twenty frames: two
 for Walking Right/Left/Up/Down, Scared Right/Left/Up/Down, Recovering and Dead.
 Normal, frightened and dissolving appearances are visibly different.
 
+Pickups_Sheet contains the spirit mote, two elixir pulse frames, crimson fruit and soul-jade
+life icon. Its empty sixth cell is not imported. Diffuse color in fully transparent pixels
+is invisible in Unity; the stored alpha channel determines the actual sprite boundary.
+
+Wall_Tiles contains six base sprites, in manifest order. The editable SVGs and the shared
+geometry renderer are in SourceArt/Walls and SourceArt/Tools. These geometric tiles use
+a 32-unit design grid rendered at 384 pixels per tile without smoothing.
+The outer wall has a gold center, the inner wall is narrower, and the exit seal is violet.
+The T junction joins two outer-wall arms and an inner-wall stem. Rotation and reflection
+are performed on the base sprites during level placement; no rotated image variants are stored.
+
 ## Import settings
 
 - Unity 6000.4.11f1 with the editor's bundled 2D Sprite package.

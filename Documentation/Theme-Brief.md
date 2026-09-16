@@ -41,8 +41,9 @@ not claims about the original text.
 
 ## Consistent production specifications
 
-- Suggested canvas: 32 x 32 pixels, transparent background, 32 pixels per unit, one Unity unit per cell.
-- Keep the main silhouette around 24-28 pixels, leaving space for movement and tail motion.
+- Current source sheets retain their native dimensions and use 384 pixels per unit.
+  The visual child scales each logical source cell to one Unity unit; see Documentation/Visual.
+- Keep the main silhouette inside its logical cell, leaving space for movement and tail motion.
   Do not let solid character shapes exceed the corridor width.
 - Import textures as sprites with Point filtering and no lossy compression; use consistent pivots.
 - Name files by role and state, such as `Cultivator_Walk_Right_00` and `NineTail_Scared_Up_01`.
@@ -104,9 +105,8 @@ No external recordings are used.
 See [audio provenance](Audio/Audio-Provenance.md) and [validation](Audio/Audio-Validation.md)
 for the inventory, production sources, measurements, and actual playback checks.
 
-## First visual milestone
+## Visual production status
 
-Draw two right-facing walking frames for the cultivator, then two stepping frames for the fox.
-Use the same 32-pixel grid to check silhouette sizes before expanding the other directions.
-Following the grading order, formal visual importing begins on Feature-Visual after
-Feature-Audio is complete. These small exercises do not complete the visual-assets band.
+The sprite library now contains the cultivator, four beasts, pickups, a life icon and six
+base wall tiles. Documentation/Visual records their dimensions, named slices and checks.
+Animation and scene-display validation are tracked separately from image production.

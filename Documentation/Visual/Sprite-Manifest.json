@@ -192,6 +192,35 @@
         1119,
         1402
       ]
+    },
+    {
+      "id": "Pickups",
+      "path": "Assets/Art/Sprites/Pickups/Pickups_Sheet.png",
+      "columns": 3,
+      "rows": 2,
+      "names": [
+        "SpiritMote_00",
+        "Elixir_Pulse_00",
+        "Elixir_Pulse_01",
+        "CrimsonFruit_00",
+        "SoulJade_00",
+        ""
+      ]
+    },
+    {
+      "id": "Walls",
+      "path": "Assets/Art/Sprites/Walls/Wall_Tiles.png",
+      "columns": 3,
+      "rows": 2,
+      "allowOpaqueEdges": true,
+      "names": [
+        "Wall_OuterCorner",
+        "Wall_OuterStraight",
+        "Wall_InnerCorner",
+        "Wall_InnerStraight",
+        "Wall_TJunction",
+        "Wall_ExitSeal"
+      ]
     }
   ]
 }

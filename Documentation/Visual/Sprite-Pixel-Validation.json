@@ -1,5 +1,5 @@
 {
-  "completedUtc": "2026-09-16T07:34:21.653863+00:00",
+  "completedUtc": "2026-09-16T07:42:26.663636+00:00",
   "sheets": [
     {
       "id": "Cultivator",
@@ -1675,6 +1675,207 @@
           "changedVisibleFraction": 0.91935
         }
       ]
+    },
+    {
+      "id": "Pickups",
+      "file": "Assets/Art/Sprites/Pickups/Pickups_Sheet.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e35bc5db098d2c8772c25198d92a479d5ef0f523266e5323cdf22ec95beb9b24",
+      "frames": [
+        {
+          "name": "SpiritMote_00",
+          "rectTopLeft": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "opaqueBounds": [
+            170,
+            166,
+            334,
+            355
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Elixir_Pulse_00",
+          "rectTopLeft": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "opaqueBounds": [
+            60,
+            56,
+            455,
+            457
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "Elixir_Pulse_01",
+          "rectTopLeft": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "opaqueBounds": [
+            26,
+            48,
+            488,
+            473
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "CrimsonFruit_00",
+          "rectTopLeft": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "opaqueBounds": [
+            78,
+            98,
+            439,
+            421
+          ],
+          "opaqueEdgePixels": 0
+        },
+        {
+          "name": "SoulJade_00",
+          "rectTopLeft": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "opaqueBounds": [
+            113,
+            27,
+            476,
+            449
+          ],
+          "opaqueEdgePixels": 0
+        }
+      ],
+      "pairDifferences": [
+        {
+          "state": "Elixir_Pulse",
+          "changedVisibleFraction": 0.9356
+        }
+      ]
+    },
+    {
+      "id": "Walls",
+      "file": "Assets/Art/Sprites/Walls/Wall_Tiles.png",
+      "width": 1152,
+      "height": 768,
+      "sha256": "88f25d0851583f6cc3f1b9e2dc6fe0afbb40a2dc74e368b4611448542f80fcef",
+      "frames": [
+        {
+          "name": "Wall_OuterCorner",
+          "rectTopLeft": [
+            0,
+            0,
+            384,
+            384
+          ],
+          "opaqueBounds": [
+            144,
+            144,
+            384,
+            384
+          ],
+          "opaqueEdgePixels": 192
+        },
+        {
+          "name": "Wall_OuterStraight",
+          "rectTopLeft": [
+            384,
+            0,
+            384,
+            384
+          ],
+          "opaqueBounds": [
+            0,
+            144,
+            384,
+            240
+          ],
+          "opaqueEdgePixels": 192
+        },
+        {
+          "name": "Wall_InnerCorner",
+          "rectTopLeft": [
+            768,
+            0,
+            384,
+            384
+          ],
+          "opaqueBounds": [
+            156,
+            156,
+            384,
+            384
+          ],
+          "opaqueEdgePixels": 144
+        },
+        {
+          "name": "Wall_InnerStraight",
+          "rectTopLeft": [
+            0,
+            384,
+            384,
+            384
+          ],
+          "opaqueBounds": [
+            0,
+            156,
+            384,
+            228
+          ],
+          "opaqueEdgePixels": 144
+        },
+        {
+          "name": "Wall_TJunction",
+          "rectTopLeft": [
+            384,
+            384,
+            384,
+            384
+          ],
+          "opaqueBounds": [
+            0,
+            144,
+            384,
+            384
+          ],
+          "opaqueEdgePixels": 264
+        },
+        {
+          "name": "Wall_ExitSeal",
+          "rectTopLeft": [
+            768,
+            384,
+            384,
+            384
+          ],
+          "opaqueBounds": [
+            0,
+            156,
+            384,
+            228
+          ],
+          "opaqueEdgePixels": 144
+        }
+      ],
+      "pairDifferences": []
     }
   ],
   "passed": true
