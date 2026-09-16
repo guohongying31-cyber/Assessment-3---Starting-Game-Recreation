@@ -22,5 +22,44 @@ component was inside an Editor folder. The helper was moved to a temporary
 runtime folder and given a timeout. That incomplete attempt is not a passing
 test; the linked report is from the subsequent successful run.
 
-Directional animation, movement audio, and additional frame rates are not yet
-validated at this core milestone. No standalone player build has been tested.
+Directional animation, movement audio, and additional frame rates were outside
+that core milestone. No standalone player build has been tested.
+
+## Direction animation and audio milestone
+
+The patrol prefab variant now enables the shared Animator with scaled time and
+adds a dedicated 2D footstep AudioSource. Its presentation component selects and
+evaluates the matching direction at each corner without interrupting audio.
+
+| Requested frame rate | Measured FPS | Observed frames | Measured lap period | Report |
+| --- | --- | --- | --- | --- |
+| 60 | 60.0464 | 901 | 7.199999996 s | [60 FPS Play](Presentation-Play-60fps.json) |
+| 144 | 143.8818 | 2159 | 7.199999973 s | [144 FPS Play](Presentation-Play-144fps.json) |
+
+Each session observed at least 15 game seconds, two completed laps and eight
+corner events. Matching Animator states and sprite directions were checked at
+the corner event itself and on every observed frame. All eight walking sprites
+were observed in each session. Peak route-position error was below 0.000001
+units. Arc-speed error remained below 0.000102 units/s.
+
+The movement AudioSource stayed active throughout the measured patrol, wrapped
+its loop 19 times and produced nonzero output samples. Intro and normal music
+also played. The showcase sprites retained their positions and all five gallery
+character Animators retained `Showcase = true`.
+
+Each session then disabled and resumed the patrol, paused and restored time
+scale, and disabled and re-enabled the presentation component. Position,
+animation and sound paused together when the patrol stopped. Playback and the
+correct facing state returned on resume. Stop restored the saved scene.
+
+An initial 60 FPS check exposed a one-frame animation advance after disabling
+the patrol. Playback synchronization was moved from LateUpdate to Update, before
+Unity evaluates animation. The linked 60 FPS rerun and 144 FPS session passed
+with this correction. The final 30 FPS rerun and pre-merge checks remain pending.
+
+The [full scene](Patrol-Play.png) and [patrol close-up](Patrol-Closeup.png) are actual
+camera renders captured after the 60 FPS timing window. The close-up temporarily
+changes the camera and hides the showcase labels; these changes were restored
+without saving. Both renders were inspected for character visibility, passage
+scale and English labels. Pickups remain present because collection is outside
+this feature's scope.

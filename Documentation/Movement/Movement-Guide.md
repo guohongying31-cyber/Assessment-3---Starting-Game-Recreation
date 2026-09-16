@@ -22,8 +22,38 @@ There is no velocity integration, physics movement, keyboard input, collision
 response, or pickup collection in this feature.
 
 The `PacStudentPatrol` prefab is a variant of the existing cultivator prefab.
-The gallery's cultivator remains a separate showcase instance. The core milestone
-uses a stationary right-facing sprite while the transform follows the route;
-directional animation and movement audio are the next milestone.
+The gallery's cultivator remains a separate showcase instance. The patrol root
+has unit scale and its sprite renders above the maze pickups.
+
+## Animation and audio
+
+`PacStudentPresentation` disables the patrol Animator's `Showcase` parameter and
+selects `WalkingRight`, `WalkingDown`, `WalkingLeft`, or `WalkingUp` when the
+patrol changes direction. It evaluates the new state immediately. The existing
+two-frame clips keep looping between corners. The gallery still uses its
+automatic preview cycles.
+
+The patrol's dedicated AudioSource plays `SFX_Move_SoftSteps` as a continuous
+0.8-second loop at volume 0.5. It uses 2D playback with no Doppler or reverb-zone
+processing. Turns do not restart the sound. The original audio-library source
+remains idle; intro and normal music continue through `Systems/LevelAudio`.
+
+Animation uses scaled time. Setting `Time.timeScale` to zero or disabling the
+patrol component freezes movement and animation and stops its audio. Resuming
+continues the route and restarts the footstep loop. Disabling the presentation
+component stops its animation and audio; it does not disable the separate patrol.
+
+## Inspect in Unity
+
+1. Open `Assets/Scenes/RecreatedLevel.unity` and press Play.
+2. Watch the small cultivator in the maze's upper-left passage for at least two
+   laps. The large cultivator at the left is the animation showcase.
+3. Select `Characters/PacStudent` to inspect its patrol, Animator and AudioSource.
+4. Disable and re-enable the patrol to check pause and resume. Stop and Play
+   again to restart at `(1, -1)` facing right.
+
+Set `Units Per Second` on the patrol prefab before Play to adjust the speed.
+Each segment then receives a new duration based on its own distance. Keep the
+root scale at one and retain the `Visual` child path used by the animation clips.
 
 See [validation](Movement-Validation.md) for checks that actually ran.

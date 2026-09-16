@@ -67,9 +67,10 @@ The camera, level root and scene objects have descriptive English names and labe
 
 Press Play and observe at least 28 seconds. Four elixirs pulse in the maze, five characters
 cycle through their preview states, and the opening music switches to its normal loop.
-The sidebar elixir also pulses. Stop returns to the same saved maze. This stage does not
-add keyboard control, patrol movement, collision handling, pickup collection or a runtime
-LevelGenerator. The separate Characters group is reserved for the movement stage.
+The sidebar elixir also pulses. Stop returns to the same saved maze. The subsequent
+movement feature adds `Characters/PacStudent`, which patrols the first inner block;
+see [the movement guide](../Movement/Movement-Guide.md). Keyboard control, collision
+handling, pickup collection and a runtime LevelGenerator are not part of this manual layout.
 
 To adjust a cell in the Inspector, use integer positions and 90-degree rotations. Update
 the placement worksheet and repeat mirror/seam checks when changing the source design.

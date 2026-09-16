@@ -40,7 +40,7 @@ returns to WalkingDown. One complete creature pass takes 20.6 seconds.
 Each character prefab has an Animator on its root and a SpriteRenderer on the Visual
 child. Clips animate only Visual's sprite property. Root motion is disabled. The Visual
 child supplies the scale that normalizes the source cell to one world unit; leave actor
-root scale at one for later movement work.
+root scale at one for maze movement.
 
 ## Using the prefabs in the movement stage
 
@@ -50,8 +50,11 @@ matching WalkingRight, WalkingLeft, WalkingUp or WalkingDown state immediately t
 Animator.Play. The disabled Showcase parameter prevents automatic preview transitions
 from taking control again. The showcase instances can retain their automatic cycles.
 
-This control configuration has a Play-mode verification, but patrol movement itself
-belongs to a later feature. These prefabs do not yet implement movement or collisions.
+The `PacStudentPatrol` variant now applies this control through
+`PacStudentPresentation`. Its Animator uses scaled time, while showcase instances
+keep unscaled time. See [the patrol guide](../Movement/Movement-Guide.md) for the
+fixed clockwise route, animation selection and movement audio. Collisions and
+pickup interactions are not implemented in this assessment stage.
 
 ## Inspecting and editing
 

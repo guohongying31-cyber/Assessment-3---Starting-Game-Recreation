@@ -2,8 +2,8 @@
 
 Open Assets/Scenes/RecreatedLevel.unity and press Play.
 The 2.4-second intro is followed by the normal-state music on a continuous loop.
-The scene includes the complete manual maze and an animated sprite showcase. Patrol movement
-remains a later stage; the audio rig continues to operate independently of the visual preview.
+The scene includes the complete manual maze, a patrol cultivator and an animated sprite
+showcase. The opening audio rig operates independently of patrol movement.
 
 ## Scene organization
 
@@ -26,8 +26,11 @@ Systems/LevelAudio is an instance of Assets/Prefabs/Audio/LevelAudio.prefab.
 All AudioSources use 2D playback, no Doppler shift, and no reverb-zone processing.
 The wave files already include their intended room reflections. Music is stereo and
 effects are mono. Audio data is preloaded and kept as PCM to preserve predictable timing.
-The remaining nine sources are available for later integration; they do not play together
-or respond to interactions at this stage.
+The nine audio-library sources remain idle. The patrol uses a dedicated AudioSource on
+`Characters/PacStudent` for the same soft-step clip: 2D, looping, volume 0.5, with
+Play On Awake disabled. `PacStudentPresentation` starts it while the patrol is active,
+stops it on pause and preserves continuous playback across turns. See
+[movement controls](../Movement/Movement-Guide.md). Other interactions remain unimplemented.
 
 ## Opening sequence
 
@@ -42,7 +45,8 @@ two opening AudioSources with constant-tangent curves:
 
 The controller uses Unscaled Time and Always Animate. There are no runtime C# scripts
 for this configuration. This audio-control clip is not counted as a character or power-pellet
-sprite animation; all visual animation requirements remain for Feature-Visual.
+sprite animation; the visual controllers are documented in the
+[animation guide](../Visual/Animation-Guide.md).
 
 For the supplied intro, the configured switch time is min(2.4 seconds, 3 seconds).
 If replacing the intro clip, move both final control keys to the earlier of the new
