@@ -77,3 +77,26 @@ The top-left milestone alone does not complete the four-quadrant manual level.
 
 This completes the manual layout and scene presentation checks. Patrol movement,
 runtime generation, player builds and final packaging belong to later validation stages.
+
+## Clean import and final audit
+
+- Removed all temporary Editor tools and metadata from Assets. Unity reopened and
+  completed a clean import/compilation run with exit code 0. The log contains no C#
+  compilation error, compilation failure or exception. Local log: unity-clean-import.log
+  under tmp/manual-level, excluded from commits.
+- Compared all 230 current files under Assets before and after this clean import; their
+  hashes were identical. The final saved scene therefore retains the tested placements,
+  transforms, references and presentation.
+- Audited 313 current authored files, including the audit report: 287 English/ASCII text
+  files, fifteen valid PNG files and eleven PCM WAV files. Local Markdown links resolve.
+- All source assets and folders have metadata, all 125 asset GUIDs are unique, and
+  references resolve to project assets or bundled Unity UI components. All seven sprite
+  sheets and eleven audio clips retain their previously validated hashes.
+- Cross-checked the final scene's recorded 660 cell positions and categories against the
+  mirrored numeric source, then verified the seam report and both final Play reports.
+- No runtime/helper C#, DLL or Python file remains under Assets. The pre-existing untracked
+  ProjectSettings/PackageManagerSettings.asset is unchanged and excluded from this feature.
+  Static-Audit.json records its hash, the scene hash, counts and validation scope.
+
+Movement and generation remain unfinished. This is a completed manual-level feature,
+not a final submission or a claim of an awarded grade.

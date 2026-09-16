@@ -27,8 +27,9 @@ and compilation status.
 
 ## Current implementation limits
 
-- The scene contains the audio rig and a visual showcase with five characters, four items
-  and six wall samples. The manual maze and gameplay character group are still empty.
+- The scene contains the audio rig, a complete manual maze and a visual showcase with
+  five characters, four items and six wall samples. The gameplay character group is
+  reserved for patrol movement, which has not yet been implemented.
 - Six visual controllers provide 46 animation states, in addition to the audio opening
   controller. Every visual state has been observed in two full Play sessions.
 - No gameplay C# scripts have been committed. Temporary authoring and verification helpers
@@ -82,3 +83,16 @@ disabled showcase transitions, audio startup, normal-music looping and restart b
 The [visual validation record](Visual/Visual-Validation.md) links the import, pixel, seam
 and actual playback evidence. The [animation guide](Visual/Animation-Guide.md) explains
 how to inspect the preview and use the controllers in the next stages.
+
+## Manual level stage
+
+The saved scene now contains the specified mirrored maze: 28 columns, 29 rows, 660
+nonempty placements, 218 spirit motes and four animated elixirs. The top-left worksheet
+records explicit cell rotations. The lower groups omit the center row; all side-tunnel
+cells are empty. Pixel-edge checks verified 438 wall connections after rotation/reflection.
+
+The [manual level validation record](ManualLevel/Manual-Level-Validation.md) covers scene
+reload, exact transforms and references, two final 28-second Play sessions, all 46
+showcase states, audio restart and loop behavior, and unchanged saved scenes after Stop.
+Actual renders were inspected at 1080p and 720p, both 16:9. Movement, runtime generation,
+player builds and final submission validation remain separate future work.

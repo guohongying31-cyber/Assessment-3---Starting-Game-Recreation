@@ -56,7 +56,7 @@ columns on each side are empty. The upper and lower tunnel walls end at the map 
 ## Open and inspect
 
 Open RecreatedLevel in Unity 6000.4.11f1. The maze is visible in Scene View before Play.
-Select Level01_Manual to inspect its four quadrant groups, row groups and individual
+Select Level01_Manual and press F in Scene View to frame all quadrants. Inspect its row groups and individual
 prefab instances. Expand TopLeft/Row03 to find the source elixir placement at column 01.
 The other three elixirs are reflected copies at world cells (3,26), (25,1) and (25,26).
 

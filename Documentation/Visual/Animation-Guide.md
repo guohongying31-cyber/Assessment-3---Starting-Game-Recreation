@@ -1,7 +1,8 @@
 # Visual animation guide
 
 Open Assets/Scenes/RecreatedLevel.unity with Unity 6000.4.11f1 and press Play.
-The AssetShowcase displays five characters, four items and six wall samples.
+The AssetShowcase displays five characters, four items and six wall samples in side panels
+beside the manual maze. See the [manual scene guide](../ManualLevel/Manual-Level-Guide.md).
 Characters cycle through their states automatically; the elixir pulses continuously.
 The opening music switches to the normal loop after its 2.4-second intro.
 
