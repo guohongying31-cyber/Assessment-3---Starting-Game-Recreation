@@ -7,7 +7,7 @@ inspired by the Classic of Mountains and Seas. Spirit collection, ward-breaking 
 and sealing rituals reinterpret the original interactions while preserving the required
 level and movement rules.
 
-## Current stage
+## Project status
 
 The target is **100% HD**, progressing through every grading band in order.
 The Unity project foundation and the audio implementation are ready. Eleven synthesized
@@ -25,8 +25,12 @@ with immediate directional animation and continuous movement audio. Real Play te
 The generator now recreates the maze at runtime using neighboring wall connections,
 four reflected quadrants and adaptive camera/showcase placement. Five maps and twenty
 map/aspect combinations passed Play validation. The saved manual scene returns after Stop.
-The next stage is final validation and packaging. This project is not yet ready for
-assessment submission; Main remains unchanged until that final review passes.
+Final technical validation includes a successful Windows build, a 35-second player
+launch check and five-map Play verification from a ZIP extracted without caches.
+See [final validation](Documentation/FinalValidation/Final-Validation.md) and the
+[submission guide](Documentation/FinalValidation/Submission-Guide.md).
+The release archive is named `26151833_Assess3.zip`; its adjacent validation receipt
+records the exact Main commit, ZIP checksum and final extracted-archive checks.
 
 - Unity: **6000.4.11f1**, confirmed by the user.
 - Remote: [Assessment-3---Starting-Game-Recreation](https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation).
@@ -53,6 +57,8 @@ assessment submission; Main remains unchanged until that final review passes.
 - [Generator array, wall rules and camera controls](Documentation/LevelGenerator/Generator-Guide.md)
 - [Generator validation and replacement-map evidence](Documentation/LevelGenerator/Generator-Validation.md)
 - [Visual clarity improvements and before/after captures](Documentation/VisualClarity/Clarity-Validation.md)
+- [Final build, clean-project and repository validation](Documentation/FinalValidation/Final-Validation.md)
+- [Submission and opening instructions](Documentation/FinalValidation/Submission-Guide.md)
 
 Production notes describe the actual assets and configuration. Validation records
 distinguish completed checks from work that remains unfinished.
@@ -84,7 +90,7 @@ no keyboard control, collision response or pickup collection.
 Commit each completed, reviewable milestone separately. Create every feature branch
 from the latest `Development`, test it, merge it back, and retain the feature branch.
 Only after final validation should Development merge into `Main`.
-Package the project as `studentNumber_Assess3.zip`, including `.git` and
+Package the project as `26151833_Assess3.zip`, including `.git` and
 `.gitignore` and excluding `Library`.
 
 The `.gitignore` is based on the assessment-specified

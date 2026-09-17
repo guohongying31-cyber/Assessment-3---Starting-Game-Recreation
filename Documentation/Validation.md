@@ -1,7 +1,8 @@
 # Project validation record
 
 Record started: 2026-09-16 (Australia/Sydney). Latest feature validation: 2026-09-17.
-These are actual checks, not final assessment validation.
+This chronological record distinguishes each milestone from the completed
+[final technical validation](FinalValidation/Final-Validation.md).
 
 ## Foundation checks performed
 
@@ -38,9 +39,11 @@ and compilation status.
 - Audio Play checks are recorded in [audio validation](Audio/Audio-Validation.md).
   Movement frame-rate tests are recorded in [movement validation](Movement/Movement-Validation.md).
   Generator tests are recorded in [generator validation](LevelGenerator/Generator-Validation.md).
-  A standalone player build and final extracted-submission validation have not run.
+  A Windows player build, launch smoke check and clean extracted-candidate Play
+  verification are recorded in the final validation section.
 - Map data checks cannot replace manual-layout or LevelGenerator assessment evidence.
-- No final ZIP exists, and Development has not been merged into Main.
+- Final Main integration and the delivered ZIP identity are recorded in the
+  external delivery receipt described by the submission guide.
 
 ## Foundation Git milestone
 
@@ -99,7 +102,8 @@ reload, exact transforms and references, two final 28-second Play sessions, all 
 showcase states, audio restart and loop behavior, and unchanged saved scenes after Stop.
 Actual renders were inspected at 1080p and 720p, both 16:9. These checks cover the
 manual-stage implementation. Runtime generation is verified separately below;
-a standalone player build and final submission validation remain pending.
+a standalone player build and final submission validation were still pending at
+that milestone. Their later results appear in the final validation section below.
 
 ## Movement stage
 
@@ -130,7 +134,9 @@ Pixel comparisons verify every active wall seam after rotation and reflection.
 
 The [generator validation record](LevelGenerator/Generator-Validation.md) contains the
 reports, camera examples, corrections and clean-compilation scope. Final whole-project
-review, a standalone build, the Main merge and ZIP inspection remain for the next stage.
+review, a standalone build, the Main merge and ZIP inspection were reserved for
+the following stage. The completed technical checks are recorded below, with
+the final merge and ZIP identity recorded in the external delivery receipt.
 
 ## Visual clarity follow-up
 
@@ -140,4 +146,19 @@ sampling and a same-aspect font-density check. The five-map Play regression and
 clean compilation passed again. The local saved Game view preference was changed
 from low-resolution aspect rendering at 1.5x to normal-resolution rendering at 1x;
 its next interactive Editor launch has not been observed. The saved scene, source
-artwork and audio remain unchanged. Final build and submission review are pending.
+artwork and audio remain unchanged. Final build and submission review were still
+pending at that milestone; their later results follow below.
+
+## Final technical validation
+
+The Windows build succeeded with zero errors/warnings and its uninstrumented player
+ran for 35 seconds without exceptions or early exit. A candidate ZIP containing the
+full project and Git history was extracted without Library, Temp, Logs or UserSettings.
+All 387 candidate project files retained their hashes after fresh import and Play.
+Five extracted-copy Play sessions passed, including twenty map/aspect combinations
+and the default 28-second animation, patrol and music regression.
+
+The [final validation record](FinalValidation/Final-Validation.md) contains build,
+clean-copy and repository evidence and describes the two temporary-harness issues
+encountered and corrected. The release procedure runs final Main/ZIP checks afterward
+and records their exact hashes in the receipt delivered beside `26151833_Assess3.zip`.

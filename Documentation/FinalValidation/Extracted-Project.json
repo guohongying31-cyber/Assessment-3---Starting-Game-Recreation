@@ -1,0 +1,34 @@
+{
+  "completedUtc": "2026-09-17T04:55:56.238959+00:00",
+  "unityVersion": "6000.4.11f1",
+  "candidateCommit": "43da8e5bc5163eb74086118ebabe6e5447cedbc1",
+  "candidateArchiveSha256": "c9c8b466ba11dda5987f0c04390920eca571585c4ebf0103d0c8a35cfef2929c",
+  "candidateProjectFiles": 387,
+  "candidateGitFiles": 843,
+  "initiallyExcludedCaches": [
+    "Library",
+    "Temp",
+    "Logs",
+    "UserSettings"
+  ],
+  "cleanImportExitCode": 0,
+  "unchangedProjectFilesAfterImportAndPlay": 387,
+  "playExitCode": 0,
+  "playMaps": [
+    "Default",
+    "Small",
+    "Wide",
+    "Tall",
+    "AllTAndGateOrientations"
+  ],
+  "mapAspectChecks": 20,
+  "defaultGameSeconds": 28.010066999716553,
+  "defaultPatrolLaps": 3,
+  "defaultObservedShowcaseStates": 46,
+  "defaultNormalMusicLoop": true,
+  "manualRestoredForEveryMap": true,
+  "firstAttempt": "Immediate automated Play during first Editor search indexing reported a UnityEditor.Search ArgumentOutOfRangeException and reached the 100-second test timeout. It was not counted as passing.",
+  "correction": "The temporary runner waits ten seconds for Editor startup and for import/compilation to finish before entering Play. The subsequent five-map run passed without changing project assets or submitted settings.",
+  "scope": "Clean extracted candidate before final documentation, Development integration and Main integration. Final archive identity and Main checkout are verified separately in the external delivery receipt. Temporary probes exist only in the extracted test copy and are absent from the archive.",
+  "passed": true
+}

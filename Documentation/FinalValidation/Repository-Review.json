@@ -1,0 +1,502 @@
+{
+  "reviewedUtc": "2026-09-17T04:48:28.345440+00:00",
+  "scope": "Initial final-validation snapshot, before final-validation milestone commits and before the Development-to-Main merge. This report records exported history and does not describe the later packaged repository state.",
+  "method": "Read three TSV files exported from actual Git inspection by the root agent. No Git or Unity commands were run by this reviewer.",
+  "sourceSnapshots": [
+    {
+      "path": "tmp/final-validation/git-history.tsv",
+      "sha256": "30fde93319d699fef52779f8cfa5e8180f5ecc8e2604cafe3ede6269b5174425"
+    },
+    {
+      "path": "tmp/final-validation/git-branches.tsv",
+      "sha256": "b4b90d53ccdd42c5c14e464a8a5e4185b4366681be71556bd8458ef71fd44b27"
+    },
+    {
+      "path": "tmp/final-validation/git-merges.tsv",
+      "sha256": "87fc39e0454832fc3967762d2ddaff7dac2481b641fcf63d1d43364625a31790"
+    }
+  ],
+  "studentNumber": "26151833",
+  "requiredArchiveName": "26151833_Assess3.zip",
+  "initialCommitCount": 36,
+  "initialMergeCommitCount": 8,
+  "initialNonMergeCommitCount": 28,
+  "branchCount": 11,
+  "branchHashes": {
+    "Development": "6b285d4a6337d23b560e5c60bf38b3478fdf8ac5",
+    "Feature-Audio": "1d76c608e680fb75a9e06196fea72e3b976dfd4a",
+    "Feature-EnglishOnly": "f395af8c8b70fe5f42965639d47b95c0a73ad6c0",
+    "Feature-LevelGenerator": "2ce33321f320d772b13eca258fa79e6b43d10c7d",
+    "Feature-ManualLevel": "29ec3d2c69a408e7ca7fa4e4c4ab33bca78d22e8",
+    "Feature-Movement": "4527f5d1e6e832768c42b37187040276eca570e2",
+    "Feature-Setup": "ee092233532fb5a96c4c3aa604cb434039aa300f",
+    "Feature-Visual": "c19277d30f96ce7bea65023b257f01d0072e02dc",
+    "Main": "68dad741ec1bdecd9257bf4a2809a335f6d2af98",
+    "codex/final-validation": "6b285d4a6337d23b560e5c60bf38b3478fdf8ac5",
+    "codex/visual-clarity": "78c6b27ab6228c8a802daa6350d1b77fc3b83836"
+  },
+  "requiredBranches": [
+    "Main",
+    "Development",
+    "Feature-Audio",
+    "Feature-Visual",
+    "Feature-ManualLevel",
+    "Feature-Movement",
+    "Feature-LevelGenerator"
+  ],
+  "requiredSevenBranchesPresent": true,
+  "allReferencedParentsPresentInExport": true,
+  "developmentFirstParentChainNewestFirst": [
+    "6b285d4a6337d23b560e5c60bf38b3478fdf8ac5",
+    "2f12d2efb8ac2a2665f9644b5b6df66e03df8d26",
+    "7bda84a6fd0ea9d78456ea0e6edcacdc98813c8d",
+    "2cb8e6c39bfcb27d442df6697e0f2b5fe3d9043e",
+    "13dc017f2cbed3a405b5ce8682a3780d468117ef",
+    "cb961e9284bc8e5c3634162bac71297530942693",
+    "9f1843d8b70295d35b81d07f69e0ff0201b04b59",
+    "f15a74650d501a83f72fe42f6bde73dfef2599f2",
+    "68dad741ec1bdecd9257bf4a2809a335f6d2af98"
+  ],
+  "mergedFeatureReviewsOldestFirst": [
+    {
+      "featureBranch": "Feature-Setup",
+      "featureTip": "ee092233532fb5a96c4c3aa604cb434039aa300f",
+      "mergeCommit": "f15a74650d501a83f72fe42f6bde73dfef2599f2",
+      "mergeSubject": "merge: integrate verified Unity project foundation",
+      "mergeParents": [
+        "68dad741ec1bdecd9257bf4a2809a335f6d2af98",
+        "ee092233532fb5a96c4c3aa604cb434039aa300f"
+      ],
+      "precedingDevelopment": "68dad741ec1bdecd9257bf4a2809a335f6d2af98",
+      "featureBase": "68dad741ec1bdecd9257bf4a2809a335f6d2af98",
+      "baseMatchesPrecedingDevelopment": true,
+      "retainedBranchMatchesSecondParent": true,
+      "featureCommitCount": 2,
+      "featureCommits": [
+        {
+          "commit": "6b94397d9bbc56ab7d2161b4eb10eabd2fe1981d",
+          "parents": [
+            "68dad741ec1bdecd9257bf4a2809a335f6d2af98"
+          ],
+          "authorDate": "2026-09-16T14:34:25+10:00",
+          "committerDate": "2026-09-16T14:34:25+10:00",
+          "subject": "chore: create Unity 6000.4.11f1 2D project foundation"
+        },
+        {
+          "commit": "ee092233532fb5a96c4c3aa604cb434039aa300f",
+          "parents": [
+            "6b94397d9bbc56ab7d2161b4eb10eabd2fe1981d"
+          ],
+          "authorDate": "2026-09-16T14:35:23+10:00",
+          "committerDate": "2026-09-16T14:35:23+10:00",
+          "subject": "docs: map assessment requirements to Shan Hai development milestones"
+        }
+      ],
+      "mergeAuthorDate": "2026-09-16T14:36:07+10:00",
+      "mergeCommitterDate": "2026-09-16T14:36:07+10:00"
+    },
+    {
+      "featureBranch": "Feature-EnglishOnly",
+      "featureTip": "f395af8c8b70fe5f42965639d47b95c0a73ad6c0",
+      "mergeCommit": "9f1843d8b70295d35b81d07f69e0ff0201b04b59",
+      "mergeSubject": "merge: apply English-only project documentation",
+      "mergeParents": [
+        "f15a74650d501a83f72fe42f6bde73dfef2599f2",
+        "f395af8c8b70fe5f42965639d47b95c0a73ad6c0"
+      ],
+      "precedingDevelopment": "f15a74650d501a83f72fe42f6bde73dfef2599f2",
+      "featureBase": "f15a74650d501a83f72fe42f6bde73dfef2599f2",
+      "baseMatchesPrecedingDevelopment": true,
+      "retainedBranchMatchesSecondParent": true,
+      "featureCommitCount": 1,
+      "featureCommits": [
+        {
+          "commit": "f395af8c8b70fe5f42965639d47b95c0a73ad6c0",
+          "parents": [
+            "f15a74650d501a83f72fe42f6bde73dfef2599f2"
+          ],
+          "authorDate": "2026-09-16T14:50:22+10:00",
+          "committerDate": "2026-09-16T14:50:22+10:00",
+          "subject": "docs: translate project text to English and enforce English-only content"
+        }
+      ],
+      "mergeAuthorDate": "2026-09-16T14:50:22+10:00",
+      "mergeCommitterDate": "2026-09-16T14:50:22+10:00"
+    },
+    {
+      "featureBranch": "Feature-Audio",
+      "featureTip": "1d76c608e680fb75a9e06196fea72e3b976dfd4a",
+      "mergeCommit": "cb961e9284bc8e5c3634162bac71297530942693",
+      "mergeSubject": "merge: integrate verified audio assets and scene playback",
+      "mergeParents": [
+        "9f1843d8b70295d35b81d07f69e0ff0201b04b59",
+        "1d76c608e680fb75a9e06196fea72e3b976dfd4a"
+      ],
+      "precedingDevelopment": "9f1843d8b70295d35b81d07f69e0ff0201b04b59",
+      "featureBase": "9f1843d8b70295d35b81d07f69e0ff0201b04b59",
+      "baseMatchesPrecedingDevelopment": true,
+      "retainedBranchMatchesSecondParent": true,
+      "featureCommitCount": 3,
+      "featureCommits": [
+        {
+          "commit": "26b4e3ef4ae0a3d3e42e360a46c00ea1f76f21de",
+          "parents": [
+            "9f1843d8b70295d35b81d07f69e0ff0201b04b59"
+          ],
+          "authorDate": "2026-09-16T15:43:16+10:00",
+          "committerDate": "2026-09-16T15:43:16+10:00",
+          "subject": "audio: add five synthesized music cues and provenance"
+        },
+        {
+          "commit": "5c6d7ba5ab990b3d3ca8aadb55aaa1fa479946b2",
+          "parents": [
+            "26b4e3ef4ae0a3d3e42e360a46c00ea1f76f21de"
+          ],
+          "authorDate": "2026-09-16T15:45:48+10:00",
+          "committerDate": "2026-09-16T15:45:48+10:00",
+          "subject": "audio: add six synthesized interaction effects and validation"
+        },
+        {
+          "commit": "1d76c608e680fb75a9e06196fea72e3b976dfd4a",
+          "parents": [
+            "5c6d7ba5ab990b3d3ca8aadb55aaa1fa479946b2"
+          ],
+          "authorDate": "2026-09-16T16:18:22+10:00",
+          "committerDate": "2026-09-16T16:18:22+10:00",
+          "subject": "feat: configure and verify intro-to-normal scene audio"
+        }
+      ],
+      "mergeAuthorDate": "2026-09-16T16:18:59+10:00",
+      "mergeCommitterDate": "2026-09-16T16:18:59+10:00"
+    },
+    {
+      "featureBranch": "Feature-Visual",
+      "featureTip": "c19277d30f96ce7bea65023b257f01d0072e02dc",
+      "mergeCommit": "13dc017f2cbed3a405b5ce8682a3780d468117ef",
+      "mergeSubject": "merge: integrate verified sprite assets and animation showcase",
+      "mergeParents": [
+        "cb961e9284bc8e5c3634162bac71297530942693",
+        "c19277d30f96ce7bea65023b257f01d0072e02dc"
+      ],
+      "precedingDevelopment": "cb961e9284bc8e5c3634162bac71297530942693",
+      "featureBase": "cb961e9284bc8e5c3634162bac71297530942693",
+      "baseMatchesPrecedingDevelopment": true,
+      "retainedBranchMatchesSecondParent": true,
+      "featureCommitCount": 8,
+      "featureCommits": [
+        {
+          "commit": "5a436e2cfed0be1ca58cf0eb2b17aec1654b33fe",
+          "parents": [
+            "cb961e9284bc8e5c3634162bac71297530942693"
+          ],
+          "authorDate": "2026-09-16T17:22:01+10:00",
+          "committerDate": "2026-09-16T17:22:01+10:00",
+          "subject": "docs: update source documentation and production notes"
+        },
+        {
+          "commit": "51173df08e9a025a2e2ab8a8ae906258a1b257b9",
+          "parents": [
+            "5a436e2cfed0be1ca58cf0eb2b17aec1654b33fe"
+          ],
+          "authorDate": "2026-09-16T17:29:02+10:00",
+          "committerDate": "2026-09-16T17:29:02+10:00",
+          "subject": "art: import cultivator directional and death frames"
+        },
+        {
+          "commit": "f6b0ced42608d8f4b03c1f2403cb2e98cbed46a5",
+          "parents": [
+            "51173df08e9a025a2e2ab8a8ae906258a1b257b9"
+          ],
+          "authorDate": "2026-09-16T17:35:45+10:00",
+          "committerDate": "2026-09-16T17:35:45+10:00",
+          "subject": "art: add four Shan Hai creature sprite sets"
+        },
+        {
+          "commit": "15d35556da4eccec4aa9af8ac586b354ae21fed7",
+          "parents": [
+            "f6b0ced42608d8f4b03c1f2403cb2e98cbed46a5"
+          ],
+          "authorDate": "2026-09-16T17:45:32+10:00",
+          "committerDate": "2026-09-16T17:45:32+10:00",
+          "subject": "art: add pickups life icon and six base wall sprites"
+        },
+        {
+          "commit": "d6bf5cba7065c71285228dbb69c3da48df94b24f",
+          "parents": [
+            "15d35556da4eccec4aa9af8ac586b354ae21fed7"
+          ],
+          "authorDate": "2026-09-16T17:52:58+10:00",
+          "committerDate": "2026-09-16T17:52:58+10:00",
+          "subject": "scene: add English sprite showcase and reusable prefabs"
+        },
+        {
+          "commit": "987c4502c269e7e2d449ebc2f7015831bde3d988",
+          "parents": [
+            "d6bf5cba7065c71285228dbb69c3da48df94b24f"
+          ],
+          "authorDate": "2026-09-16T18:02:15+10:00",
+          "committerDate": "2026-09-16T18:02:15+10:00",
+          "subject": "anim: configure and verify cultivator and elixir controllers"
+        },
+        {
+          "commit": "eff9f19688f162e78413d1a5cbf4937cb9a6a780",
+          "parents": [
+            "987c4502c269e7e2d449ebc2f7015831bde3d988"
+          ],
+          "authorDate": "2026-09-16T18:09:35+10:00",
+          "committerDate": "2026-09-16T18:09:35+10:00",
+          "subject": "anim: add verified creature state cycles and showcase playback"
+        },
+        {
+          "commit": "c19277d30f96ce7bea65023b257f01d0072e02dc",
+          "parents": [
+            "eff9f19688f162e78413d1a5cbf4937cb9a6a780"
+          ],
+          "authorDate": "2026-09-16T18:12:03+10:00",
+          "committerDate": "2026-09-16T18:12:03+10:00",
+          "subject": "docs: record visual feature validation and next development stage"
+        }
+      ],
+      "mergeAuthorDate": "2026-09-16T18:12:48+10:00",
+      "mergeCommitterDate": "2026-09-16T18:12:48+10:00"
+    },
+    {
+      "featureBranch": "Feature-ManualLevel",
+      "featureTip": "29ec3d2c69a408e7ca7fa4e4c4ab33bca78d22e8",
+      "mergeCommit": "2cb8e6c39bfcb27d442df6697e0f2b5fe3d9043e",
+      "mergeSubject": "merge: integrate verified manual maze and scene presentation",
+      "mergeParents": [
+        "13dc017f2cbed3a405b5ce8682a3780d468117ef",
+        "29ec3d2c69a408e7ca7fa4e4c4ab33bca78d22e8"
+      ],
+      "precedingDevelopment": "13dc017f2cbed3a405b5ce8682a3780d468117ef",
+      "featureBase": "13dc017f2cbed3a405b5ce8682a3780d468117ef",
+      "baseMatchesPrecedingDevelopment": true,
+      "retainedBranchMatchesSecondParent": true,
+      "featureCommitCount": 4,
+      "featureCommits": [
+        {
+          "commit": "9c2df9cafb4a9e2029dc638ec9ce496915c53664",
+          "parents": [
+            "13dc017f2cbed3a405b5ce8682a3780d468117ef"
+          ],
+          "authorDate": "2026-09-16T19:37:01+10:00",
+          "committerDate": "2026-09-16T19:37:01+10:00",
+          "subject": "level: place and verify the top-left maze quadrant"
+        },
+        {
+          "commit": "f6762d464af85d8959c4e0d0a59c614c63b7b3e9",
+          "parents": [
+            "9c2df9cafb4a9e2029dc638ec9ce496915c53664"
+          ],
+          "authorDate": "2026-09-16T19:40:28+10:00",
+          "committerDate": "2026-09-16T19:40:28+10:00",
+          "subject": "level: mirror quadrants with a single center row and clear tunnels"
+        },
+        {
+          "commit": "4df4feb6f1966b551d9751bf60f558fe55f4b3cc",
+          "parents": [
+            "f6762d464af85d8959c4e0d0a59c614c63b7b3e9"
+          ],
+          "authorDate": "2026-09-16T19:46:17+10:00",
+          "committerDate": "2026-09-16T19:46:17+10:00",
+          "subject": "scene: frame the manual maze with animated side showcases"
+        },
+        {
+          "commit": "29ec3d2c69a408e7ca7fa4e4c4ab33bca78d22e8",
+          "parents": [
+            "4df4feb6f1966b551d9751bf60f558fe55f4b3cc"
+          ],
+          "authorDate": "2026-09-16T19:51:08+10:00",
+          "committerDate": "2026-09-16T19:51:08+10:00",
+          "subject": "docs: record manual level validation and movement handoff"
+        }
+      ],
+      "mergeAuthorDate": "2026-09-16T19:51:59+10:00",
+      "mergeCommitterDate": "2026-09-16T19:51:59+10:00"
+    },
+    {
+      "featureBranch": "Feature-Movement",
+      "featureTip": "4527f5d1e6e832768c42b37187040276eca570e2",
+      "mergeCommit": "7bda84a6fd0ea9d78456ea0e6edcacdc98813c8d",
+      "mergeSubject": "merge: integrate validated cultivator patrol",
+      "mergeParents": [
+        "2cb8e6c39bfcb27d442df6697e0f2b5fe3d9043e",
+        "4527f5d1e6e832768c42b37187040276eca570e2"
+      ],
+      "precedingDevelopment": "2cb8e6c39bfcb27d442df6697e0f2b5fe3d9043e",
+      "featureBase": "2cb8e6c39bfcb27d442df6697e0f2b5fe3d9043e",
+      "baseMatchesPrecedingDevelopment": true,
+      "retainedBranchMatchesSecondParent": true,
+      "featureCommitCount": 3,
+      "featureCommits": [
+        {
+          "commit": "e5838348a7873479b3649e01f93ec1037ec73458",
+          "parents": [
+            "2cb8e6c39bfcb27d442df6697e0f2b5fe3d9043e"
+          ],
+          "authorDate": "2026-09-16T20:58:40+10:00",
+          "committerDate": "2026-09-16T20:58:40+10:00",
+          "subject": "feat: tween cultivator clockwise around the first inner block"
+        },
+        {
+          "commit": "6f0f6588af73904d9d6b537e06ee568fd95d19b2",
+          "parents": [
+            "e5838348a7873479b3649e01f93ec1037ec73458"
+          ],
+          "authorDate": "2026-09-16T21:08:56+10:00",
+          "committerDate": "2026-09-16T21:08:56+10:00",
+          "subject": "anim: synchronize patrol direction changes and movement audio"
+        },
+        {
+          "commit": "4527f5d1e6e832768c42b37187040276eca570e2",
+          "parents": [
+            "6f0f6588af73904d9d6b537e06ee568fd95d19b2"
+          ],
+          "authorDate": "2026-09-16T21:17:10+10:00",
+          "committerDate": "2026-09-16T21:17:10+10:00",
+          "subject": "docs: record patrol timing and movement validation"
+        }
+      ],
+      "mergeAuthorDate": "2026-09-16T21:18:06+10:00",
+      "mergeCommitterDate": "2026-09-16T21:18:06+10:00"
+    },
+    {
+      "featureBranch": "Feature-LevelGenerator",
+      "featureTip": "2ce33321f320d772b13eca258fa79e6b43d10c7d",
+      "mergeCommit": "2f12d2efb8ac2a2665f9644b5b6df66e03df8d26",
+      "mergeSubject": "merge: integrate validated procedural level generation",
+      "mergeParents": [
+        "7bda84a6fd0ea9d78456ea0e6edcacdc98813c8d",
+        "2ce33321f320d772b13eca258fa79e6b43d10c7d"
+      ],
+      "precedingDevelopment": "7bda84a6fd0ea9d78456ea0e6edcacdc98813c8d",
+      "featureBase": "7bda84a6fd0ea9d78456ea0e6edcacdc98813c8d",
+      "baseMatchesPrecedingDevelopment": true,
+      "retainedBranchMatchesSecondParent": true,
+      "featureCommitCount": 4,
+      "featureCommits": [
+        {
+          "commit": "db6836e2d2e101822abff19973f827c1a19f974d",
+          "parents": [
+            "7bda84a6fd0ea9d78456ea0e6edcacdc98813c8d"
+          ],
+          "authorDate": "2026-09-17T12:56:31+10:00",
+          "committerDate": "2026-09-17T12:56:31+10:00",
+          "subject": "feat: derive mirrored level cells from replaceable map"
+        },
+        {
+          "commit": "8ad45c3d3c1232eaa8f1d550b9bfb269b503a2e2",
+          "parents": [
+            "db6836e2d2e101822abff19973f827c1a19f974d"
+          ],
+          "authorDate": "2026-09-17T13:06:39+10:00",
+          "committerDate": "2026-09-17T13:06:39+10:00",
+          "subject": "feat: generate mirrored maze from compatible wall connections"
+        },
+        {
+          "commit": "c9f7e6c578d0e501f53e3f5ea81643d9e4df2e59",
+          "parents": [
+            "8ad45c3d3c1232eaa8f1d550b9bfb269b503a2e2"
+          ],
+          "authorDate": "2026-09-17T13:19:35+10:00",
+          "committerDate": "2026-09-17T13:19:35+10:00",
+          "subject": "feat: fit generated levels and showcase to screen dimensions"
+        },
+        {
+          "commit": "2ce33321f320d772b13eca258fa79e6b43d10c7d",
+          "parents": [
+            "c9f7e6c578d0e501f53e3f5ea81643d9e4df2e59"
+          ],
+          "authorDate": "2026-09-17T13:27:29+10:00",
+          "committerDate": "2026-09-17T13:27:29+10:00",
+          "subject": "docs: record generator validation and final review handoff"
+        }
+      ],
+      "mergeAuthorDate": "2026-09-17T13:28:13+10:00",
+      "mergeCommitterDate": "2026-09-17T13:28:13+10:00"
+    },
+    {
+      "featureBranch": "codex/visual-clarity",
+      "featureTip": "78c6b27ab6228c8a802daa6350d1b77fc3b83836",
+      "mergeCommit": "6b285d4a6337d23b560e5c60bf38b3478fdf8ac5",
+      "mergeSubject": "merge: integrate validated visual clarity improvements",
+      "mergeParents": [
+        "2f12d2efb8ac2a2665f9644b5b6df66e03df8d26",
+        "78c6b27ab6228c8a802daa6350d1b77fc3b83836"
+      ],
+      "precedingDevelopment": "2f12d2efb8ac2a2665f9644b5b6df66e03df8d26",
+      "featureBase": "2f12d2efb8ac2a2665f9644b5b6df66e03df8d26",
+      "baseMatchesPrecedingDevelopment": true,
+      "retainedBranchMatchesSecondParent": true,
+      "featureCommitCount": 2,
+      "featureCommits": [
+        {
+          "commit": "3c0f3d38990a3efc1f6bf7d3df4dcbbe5633925d",
+          "parents": [
+            "2f12d2efb8ac2a2665f9644b5b6df66e03df8d26"
+          ],
+          "authorDate": "2026-09-17T13:56:20+10:00",
+          "committerDate": "2026-09-17T13:56:20+10:00",
+          "subject": "fix: sharpen scene text and smooth character sprites"
+        },
+        {
+          "commit": "78c6b27ab6228c8a802daa6350d1b77fc3b83836",
+          "parents": [
+            "3c0f3d38990a3efc1f6bf7d3df4dcbbe5633925d"
+          ],
+          "authorDate": "2026-09-17T14:00:48+10:00",
+          "committerDate": "2026-09-17T14:00:48+10:00",
+          "subject": "docs: record visual clarity comparisons and regression checks"
+        }
+      ],
+      "mergeAuthorDate": "2026-09-17T14:01:27+10:00",
+      "mergeCommitterDate": "2026-09-17T14:01:27+10:00"
+    }
+  ],
+  "allMergedFeatureBasesMatchPrecedingDevelopment": true,
+  "allMergedFeatureBranchesPreserved": true,
+  "twoParentMergeStructurePreserved": true,
+  "mainBeforeFinalValidation": {
+    "commit": "68dad741ec1bdecd9257bf4a2809a335f6d2af98",
+    "isInitialParentlessBootstrap": true,
+    "containsNoDevelopmentFeatureMergeYet": true,
+    "expected": true
+  },
+  "finalValidationBranch": {
+    "name": "codex/final-validation",
+    "commit": "6b285d4a6337d23b560e5c60bf38b3478fdf8ac5",
+    "equalsCurrentDevelopment": true,
+    "distinctCommitsAtSnapshot": 0,
+    "featureSpecificMergeRecorded": false,
+    "status": "Validation work is in progress; its milestone has not yet been integrated."
+  },
+  "timestampObservations": {
+    "earliestCommitterDate": "2026-09-16T14:23:35+10:00",
+    "latestCommitterDate": "2026-09-17T14:01:27+10:00",
+    "authorAndCommitterDatesEqualForAllExportedCommits": true,
+    "parentCommitterDatesNotLaterThanChild": true,
+    "interpretation": "These are recorded Git metadata observations. They do not prove developer motives, time spent per task, or the absence of any historical rewriting."
+  },
+  "integrityCheck": {
+    "command": "git fsck",
+    "exitCode": 0,
+    "source": "Actual Git integrity-check result reported by the root agent; this reviewer did not rerun the command.",
+    "reportedDanglingObjectTypes": [
+      "tree",
+      "blob"
+    ],
+    "danglingObjectCountsNotCapturedInTheseExports": true,
+    "corruptionReported": false,
+    "interpretation": "Unreferenced dangling trees and blobs were reported; these are not repository corruption.",
+    "pruningPerformed": false
+  },
+  "notEstablishedByThisSnapshot": [
+    "Remote branch synchronization",
+    "Final validation branch commits or integration",
+    "Final Main merge or Main checkout",
+    "Archive contents and extracted-project validation",
+    "Content validation of individual milestone changes"
+  ],
+  "passed": true
+}
