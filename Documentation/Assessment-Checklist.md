@@ -11,7 +11,7 @@ is not the instructor's original wording or evidence that every grading item is 
 - Remote: the user supplied `guohongying31-cyber/Assessment-3---Starting-Game-Recreation`.
   The local origin is configured. Consult Git history and remote branches for synchronization.
   Required feature implementations are complete; final repository and submission checks remain.
-- Student number: requires confirmation for the final ZIP filename.
+- Student number: 26151833, confirmed by the user. ZIP filename: `26151833_Assess3.zip`.
 - Deadline: the screenshot says Monday 23:59; PDF page 2 and the workshop say
   Friday of Week 8 at 23:59. The screenshot has no calendar date, so the current deadline
   cannot be inferred from these materials. Check the current Canvas page and any extension.

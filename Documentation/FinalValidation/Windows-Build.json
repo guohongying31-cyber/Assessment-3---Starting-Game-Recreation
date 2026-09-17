@@ -1,0 +1,16 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "target": "StandaloneWindows64",
+    "result": "Succeeded",
+    "startedUtc": "2026-09-17T04:44:44.7406073Z",
+    "completedUtc": "2026-09-17T04:44:54.9428982Z",
+    "output": "output/final-validation/Windows/ShanHaiSpiritTrail.exe",
+    "scenes": [
+        "Assets/Scenes/RecreatedLevel.unity"
+    ],
+    "buildSeconds": 10.0397772,
+    "totalBytes": 153527054,
+    "errors": 0,
+    "warnings": 0,
+    "passed": true
+}
