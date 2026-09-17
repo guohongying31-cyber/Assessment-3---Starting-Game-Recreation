@@ -1,0 +1,81 @@
+{
+  "phase": "Before",
+  "unityVersion": "6000.4.11f1",
+  "completedUtc": "2026-09-17T03:50:23.6679128Z",
+  "passed": true,
+  "manualRestored": true,
+  "captures": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "generatedCells": 660,
+      "labelCount": 26,
+      "minimumFontSize": 14,
+      "glyphDensity": 1.0,
+      "mapVisible": true,
+      "labelsVisible": true,
+      "allTextFits": true,
+      "image": "Documentation/VisualClarity/Before-1920x1080.png"
+    },
+    {
+      "width": 1536,
+      "height": 740,
+      "generatedCells": 660,
+      "labelCount": 26,
+      "minimumFontSize": 14,
+      "glyphDensity": 1.0,
+      "mapVisible": true,
+      "labelsVisible": true,
+      "allTextFits": true,
+      "image": "Documentation/VisualClarity/Before-1536x740.png"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "generatedCells": 660,
+      "labelCount": 26,
+      "minimumFontSize": 14,
+      "glyphDensity": 1.0,
+      "mapVisible": true,
+      "labelsVisible": true,
+      "allTextFits": true,
+      "image": "Documentation/VisualClarity/Before-1280x720.png"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "generatedCells": 660,
+      "labelCount": 26,
+      "minimumFontSize": 14,
+      "glyphDensity": 1.0,
+      "mapVisible": true,
+      "labelsVisible": true,
+      "allTextFits": true,
+      "image": "Documentation/VisualClarity/Before-1024x768.png"
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "generatedCells": 660,
+      "labelCount": 26,
+      "minimumFontSize": 14,
+      "glyphDensity": 1.0,
+      "mapVisible": true,
+      "labelsVisible": true,
+      "allTextFits": true,
+      "image": "Documentation/VisualClarity/Before-720x1280.png"
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "generatedCells": 660,
+      "labelCount": 26,
+      "minimumFontSize": 14,
+      "glyphDensity": 1.0,
+      "mapVisible": true,
+      "labelsVisible": true,
+      "allTextFits": true,
+      "image": "Documentation/VisualClarity/Before-2560x1440.png"
+    }
+  ]
+}

@@ -52,6 +52,7 @@ assessment submission; Main remains unchanged until that final review passes.
 - [Movement and frame-rate validation](Documentation/Movement/Movement-Validation.md)
 - [Generator array, wall rules and camera controls](Documentation/LevelGenerator/Generator-Guide.md)
 - [Generator validation and replacement-map evidence](Documentation/LevelGenerator/Generator-Validation.md)
+- [Visual clarity improvements and before/after captures](Documentation/VisualClarity/Clarity-Validation.md)
 
 Production notes describe the actual assets and configuration. Validation records
 distinguish completed checks from work that remains unfinished.
@@ -76,7 +77,7 @@ walking animation matches each turn and soft steps loop while it moves. Stop and
 again to restart the patrol, preview and music. Movement is automatic; this stage has
 no keyboard control, collision response or pickup collection.
 
-![Generated maze with cultivator patrol and animated asset showcase](Documentation/LevelGenerator/Default-1920x1080.png)
+![Generated maze with improved text and sprite clarity](Documentation/VisualClarity/After-1920x1080.png)
 
 ## Git and submission
 

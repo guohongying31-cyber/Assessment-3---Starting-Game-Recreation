@@ -45,7 +45,9 @@ not claims about the original text.
   The visual child scales each logical source cell to one Unity unit; see Documentation/Visual.
 - Keep the main silhouette inside its logical cell, leaving space for movement and tail motion.
   Do not let solid character shapes exceed the corridor width.
-- Import textures as sprites with Point filtering and no lossy compression; use consistent pivots.
+- Import textures as sprites with consistent pivots and no lossy compression.
+  Use Bilinear filtering for characters and pickups, and Point filtering for
+  connecting wall tiles; keep mipmaps disabled for the unpadded sprite sheets.
 - Name files by role and state, such as `Cultivator_Walk_Right_00` and `NineTail_Scared_Up_01`.
 - Draw front, back, and side walking poses separately; do not rotate a single side-view image.
 - Use at least two frames per state; four walking frames are recommended. Animate limbs,

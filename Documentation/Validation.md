@@ -131,3 +131,13 @@ Pixel comparisons verify every active wall seam after rotation and reflection.
 The [generator validation record](LevelGenerator/Generator-Validation.md) contains the
 reports, camera examples, corrections and clean-compilation scope. Final whole-project
 review, a standalone build, the Main merge and ZIP inspection remain for the next stage.
+
+## Visual clarity follow-up
+
+The [clarity validation](VisualClarity/Clarity-Validation.md) records six before/after
+resolution comparisons, larger and sharper captions, smoother character/pickup
+sampling and a same-aspect font-density check. The five-map Play regression and
+clean compilation passed again. The local saved Game view preference was changed
+from low-resolution aspect rendering at 1.5x to normal-resolution rendering at 1x;
+its next interactive Editor launch has not been observed. The saved scene, source
+artwork and audio remain unchanged. Final build and submission review are pending.

@@ -67,6 +67,10 @@ their examples. Aspect changes and later generation refresh the layout. The
 component also refreshes after being disabled and re-enabled. Stop restores the
 original saved camera and canvas configuration.
 
+Runtime labels use a minimum font size of 18 and an adaptive glyph rasterization
+density of 2-4. Changes to pixel resolution at the same aspect update text density
+without shifting the layout. See the [clarity checks](../VisualClarity/Clarity-Validation.md).
+
 ## Try another map
 
 1. Stop Play and edit the `levelMap` array literal in `LevelGenerator.cs`.

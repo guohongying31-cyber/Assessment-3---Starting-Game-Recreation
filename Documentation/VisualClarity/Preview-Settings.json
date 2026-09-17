@@ -1,0 +1,15 @@
+{
+  "completedUtc": "2026-09-17T03:58:48.537732+00:00",
+  "settingsFile": "UserSettings/Layouts/default-6000.dwlt",
+  "before": {
+    "lowResolutionAspectRatios": true,
+    "previewScale": 1.5
+  },
+  "after": {
+    "lowResolutionAspectRatios": false,
+    "previewScale": 1.0
+  },
+  "beforeSha256": "373c3b2ac251c8c81b8924d02f3379b3af0c6f4165c59430c0a5b771dfd8cb5d",
+  "afterSha256": "889275df7566eacc65a554d175e4932c3b073fd883b6a7b75893a31fdb68c553",
+  "scope": "Local saved Editor layout updated while Unity was closed. The next interactive Editor launch has not been observed. UserSettings remain excluded from Git and submission."
+}
