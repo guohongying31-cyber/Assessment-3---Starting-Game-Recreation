@@ -54,6 +54,32 @@ or construction failures preserve the existing level. `GenerateLevel()` supports
 another runtime generation and rejects Edit-mode calls. Stop restores the saved
 manual layout. The patrol is separate and retains its original fixed world route.
 
-Camera and gallery adaptation for replacement dimensions are the next milestone.
+## Camera and showcase
+
+`GeneratedLevelView` fits the camera around the full map, the fifteen showcase
+sprites and their English labels. Landscape and square displays keep the two
+showcase panels beside the maze. Portrait displays place them below the maze.
+The title and inventory follow the actual map dimensions and pickup counts.
+
+During Play the label canvas uses world coordinates. Labels and their matching
+sprites move by the same offsets, so resizing does not detach captions from
+their examples. Aspect changes and later generation refresh the layout. The
+component also refreshes after being disabled and re-enabled. Stop restores the
+original saved camera and canvas configuration.
+
+## Try another map
+
+1. Stop Play and edit the `levelMap` array literal in `LevelGenerator.cs`.
+2. Use a rectangular quadrant with categories 0-8. Category 1 at `(0,0)` has the
+   default right/down orientation, as guaranteed by the assessment.
+3. Use smooth reciprocal wall connections. T junctions join outer walls to inner
+   walls. The shared final source row must remain valid after vertical reflection.
+4. Press Play. The generated map and camera adapt to the new dimensions.
+5. Stop to recover the saved manual scene. Restore the supplied array after testing.
+
+Unity does not serialize multidimensional arrays into the Inspector. The array
+literal in this script is the replacement point. The supplied validation maps
+include smaller, wider and taller examples with independent expected angles.
+Changing a map intentionally does not move or reshape the original patrol.
 
 See [validation](Generator-Validation.md) for evidence and current scope.

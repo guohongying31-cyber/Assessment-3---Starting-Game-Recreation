@@ -28664,6 +28664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1258083036}
   - component: {fileID: 1258083037}
+  - component: {fileID: 1258083038}
   m_Layer: 0
   m_Name: LevelGenerator
   m_TagString: Untagged
@@ -28709,6 +28710,22 @@ MonoBehaviour:
   - {fileID: 1764597660908029547, guid: 911747da4cfd9cc43845a42f3e18e428, type: 3}
   - {fileID: 3394192647048264518, guid: 060a0d73206e9ab48b2eded533ffc6ca, type: 3}
   - {fileID: 6820843802587414358, guid: de1bd6bb46764cb4997537fc2e06e568, type: 3}
+--- !u!114 &1258083038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258083035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7caee142b8efd8f48ac59c10054bc926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShanHaiSpiritTrail.GeneratedLevelView
+  showcase: {fileID: 498484642}
+  levelCamera: {fileID: 1750239635}
+  panelGap: 1
+  cameraPadding: 0.8
 --- !u!1001 &1258683560
 PrefabInstance:
   m_ObjectHideFlags: 0

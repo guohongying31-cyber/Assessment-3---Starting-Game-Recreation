@@ -43,3 +43,50 @@ before Start. Only the subsequent passing report is counted here.
 This short core session does not establish complete music/showcase coverage,
 alternate-map Play behavior or camera adaptation. Those checks follow in the
 presentation milestone.
+
+## Adaptive presentation and alternate-map Play
+
+Five actual Play sessions exercise the generated scene. The default session
+runs for at least 28 seconds; each alternate session observes both elixir frames
+and the unchanged patrol before additional regeneration and camera checks.
+
+| Map | Full columns x rows | Objects | Matching wall seams | Play evidence |
+| --- | --- | --- | --- | --- |
+| Default | 28 x 29 | 660 | 438 | [Default](Final-Play-Default.json) |
+| Small | 16 x 17 | 220 | 146 | [Small](Final-Play-Small.json) |
+| Wide | 40 x 17 | 364 | 194 | [Wide](Final-Play-Wide.json) |
+| Tall | 16 x 41 | 364 | 194 | [Tall](Final-Play-Tall.json) |
+| All T and gate orientations | 28 x 29 | 440 | 306 | [Orientation coverage](Final-Play-AllTAndGateOrientations.json) |
+
+Every generated object's position, reflected basis vectors and source sprite
+are compared with the independent fixture, rather than reusing the generator's
+angle calculation as the expected result. The [pixel seam check](Seam-Validation.json)
+compares the source wall edges after those verified transforms. All active edges
+connect with identical alpha profiles; color differences occur only at the
+intentional purple seal transitions. Four boundary wall ends form the side exits
+in each map.
+
+Each session rejects an incompatible-map retry and a missing-prefab retry while
+preserving the current valid level. Repeated valid calls replace the previous
+roots, with only one generated hierarchy remaining after deferred destruction.
+The display is also disabled during a different-map generation and re-enabled
+without changing aspect, checking that both camera and inventory catch up.
+
+The default session observes all 46 showcase states, three completed patrol
+laps, intro music, the normal music transition and one full normal loop. Other
+maps keep the original patrol start, path, speed and footstep audio, even where
+that fixed route crosses a replacement wall. This behavior is required by the
+assessment. Stop restores the same saved scene hash and all 660 manual objects
+after every session.
+
+Camera checks cover 1920x1080 (16:9), 1024x768 (4:3), 720x1280 (9:16) and
+1680x720 (21:9) for every map: 20 map/aspect combinations. Each checks the entire
+cell envelope, fifteen showcase sprites, all text rectangles and caption offsets.
+Ten representative camera renders are saved. Examples: [default landscape](Default-1920x1080.png),
+[default portrait](Default-720x1280.png), [wide map](Wide-1680x720.png) and
+[tall portrait](Tall-720x1280.png).
+
+Visual review of the first camera run found that the stacked layout made 4:3
+labels unnecessarily small. Stacking now applies only when width is less than
+height. A missed refresh after re-enabling the view was also corrected. The
+linked final reports and captures include both corrections.
