@@ -1,6 +1,7 @@
 # Project validation record
 
-Date: 2026-09-16 (Australia/Sydney). These are actual checks, not final assessment validation.
+Record started: 2026-09-16 (Australia/Sydney). Latest feature validation: 2026-09-17.
+These are actual checks, not final assessment validation.
 
 ## Foundation checks performed
 
@@ -31,12 +32,13 @@ and compilation status.
   cultivator and a visual showcase with five characters, four items and six wall samples.
 - Six visual controllers provide 46 animation states, in addition to the audio opening
   controller. Every visual state has been observed in two full Play sessions.
-- Three runtime scripts implement linear tweening, the fixed patrol and animation/audio
+- Seven runtime scripts implement movement, procedural generation and adaptive scene
   presentation. Temporary authoring and verification helpers are excluded from commits
   and removed before feature integration.
 - Audio Play checks are recorded in [audio validation](Audio/Audio-Validation.md).
   Movement frame-rate tests are recorded in [movement validation](Movement/Movement-Validation.md).
-  Player builds and generator tests have not run.
+  Generator tests are recorded in [generator validation](LevelGenerator/Generator-Validation.md).
+  A standalone player build and final extracted-submission validation have not run.
 - Map data checks cannot replace manual-layout or LevelGenerator assessment evidence.
 - No final ZIP exists, and Development has not been merged into Main.
 
@@ -95,8 +97,9 @@ cells are empty. Pixel-edge checks verified 438 wall connections after rotation/
 The [manual level validation record](ManualLevel/Manual-Level-Validation.md) covers scene
 reload, exact transforms and references, two final 28-second Play sessions, all 46
 showcase states, audio restart and loop behavior, and unchanged saved scenes after Stop.
-Actual renders were inspected at 1080p and 720p, both 16:9. Runtime generation,
-player builds and final submission validation remain separate future work.
+Actual renders were inspected at 1080p and 720p, both 16:9. These checks cover the
+manual-stage implementation. Runtime generation is verified separately below;
+a standalone player build and final submission validation remain pending.
 
 ## Movement stage
 
@@ -110,3 +113,21 @@ Disabling movement, pausing time scale and resuming passed the presentation chec
 The final scene regression verified all 660 manual placements and prefab references.
 The [movement validation record](Movement/Movement-Validation.md) includes actual measured
 frame rates, failed attempts, corrections, screenshots and scope limits.
+
+## Procedural generator stage
+
+On 2026-09-17, source dimensions and mirror coordinates passed 25 geometry cases.
+Neighbor-based wall orientation matched all 110 manual wall angles, four independent
+replacement-map oracles and a deterministic ambiguous layout. Runtime Start generated
+the full default maze and preserved the manual scene after Stop.
+
+The final five-map Play suite covers a 28-second default session and smaller, wider,
+taller and expanded-orientation maps. It verifies generated transforms and sprites,
+all default showcase states, music looping, original patrol motion, animated elixirs,
+invalid-input preservation, repeated generation and re-enabled camera updates.
+Twenty map/aspect checks and ten actual renders cover landscape and portrait displays.
+Pixel comparisons verify every active wall seam after rotation and reflection.
+
+The [generator validation record](LevelGenerator/Generator-Validation.md) contains the
+reports, camera examples, corrections and clean-compilation scope. Final whole-project
+review, a standalone build, the Main merge and ZIP inspection remain for the next stage.

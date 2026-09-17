@@ -22,8 +22,11 @@ verified the completed maze, retained animation showcase and music restart.
 The cultivator now patrols the first inner block clockwise at 2.5 units per second,
 with immediate directional animation and continuous movement audio. Real Play tests at
 30, 60 and 144 requested FPS verified a 7.2-second lap and pause/resume behavior.
-The next stage is `Feature-LevelGenerator`, followed by final validation.
-Those stages remain unfinished. This project is not ready for assessment submission.
+The generator now recreates the maze at runtime using neighboring wall connections,
+four reflected quadrants and adaptive camera/showcase placement. Five maps and twenty
+map/aspect combinations passed Play validation. The saved manual scene returns after Stop.
+The next stage is final validation and packaging. This project is not yet ready for
+assessment submission; Main remains unchanged until that final review passes.
 
 - Unity: **6000.4.11f1**, confirmed by the user.
 - Remote: [Assessment-3---Starting-Game-Recreation](https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation).
@@ -47,6 +50,8 @@ Those stages remain unfinished. This project is not ready for assessment submiss
 - [Manual level validation record](Documentation/ManualLevel/Manual-Level-Validation.md)
 - [Patrol controls and tween explanation](Documentation/Movement/Movement-Guide.md)
 - [Movement and frame-rate validation](Documentation/Movement/Movement-Validation.md)
+- [Generator array, wall rules and camera controls](Documentation/LevelGenerator/Generator-Guide.md)
+- [Generator validation and replacement-map evidence](Documentation/LevelGenerator/Generator-Validation.md)
 
 Production notes describe the actual assets and configuration. Validation records
 distinguish completed checks from work that remains unfinished.
@@ -59,15 +64,19 @@ The scene contains an orthographic camera and four organizational groups:
 `Systems`, `Level01_Manual`, `Characters`, and `AssetShowcase`.
 `Systems/LevelAudio` plays the 2.4-second intro and then loops the normal music.
 `Level01_Manual` contains the four saved maze quadrants, visible before Play.
+`Systems/LevelGenerator` replaces them with `Level01_Generated` during Play. Editing
+the `levelMap` array in `Assets/Scripts/Level/LevelGenerator.cs` changes the runtime
+layout; camera framing, panel placement and inventory labels adapt to its dimensions.
 `AssetShowcase` displays the cultivator, four beasts, four items and six wall samples in
-the side panels. Press Play and watch for at least 28 seconds to see every character
+panels beside the maze in landscape and below it in portrait. Press Play and watch
+for at least 28 seconds to see every character
 state and a full normal-music loop. Four maze elixirs and the sidebar elixir pulse.
 `Characters/PacStudent` patrols the maze's first upper-left inner block. Its four-way
 walking animation matches each turn and soft steps loop while it moves. Stop and Play
 again to restart the patrol, preview and music. Movement is automatic; this stage has
 no keyboard control, collision response or pickup collection.
 
-![Cultivator patrol and animated asset showcase](Documentation/Movement/Patrol-Play.png)
+![Generated maze with cultivator patrol and animated asset showcase](Documentation/LevelGenerator/Default-1920x1080.png)
 
 ## Git and submission
 

@@ -73,10 +73,13 @@ The display is also disabled during a different-map generation and re-enabled
 without changing aspect, checking that both camera and inventory catch up.
 
 The default session observes all 46 showcase states, three completed patrol
-laps, intro music, the normal music transition and one full normal loop. Other
-maps keep the original patrol start, path, speed and footstep audio, even where
-that fixed route crosses a replacement wall. This behavior is required by the
-assessment. Stop restores the same saved scene hash and all 660 manual objects
+laps, intro music, the normal music transition and one full normal loop. The
+short alternate-map sessions verify the unchanged patrol start, initial rightward
+movement, speed and footstep audio; they do not cover a full lap. Full-route
+coverage comes from the default session and earlier movement tests. The patrol
+retains its fixed world route when the map changes, even where that route crosses
+a replacement wall, as required by the assessment. Stop restores the same saved
+scene hash and all 660 manual objects
 after every session.
 
 Camera checks cover 1920x1080 (16:9), 1024x768 (4:3), 720x1280 (9:16) and
@@ -90,3 +93,24 @@ Visual review of the first camera run found that the stacked layout made 4:3
 labels unnecessarily small. Stacking now applies only when width is less than
 height. A missed refresh after re-enabling the view was also corrected. The
 linked final reports and captures include both corrections.
+
+## Clean project and pre-merge review
+
+Temporary Editor and runtime verification helpers were removed from Assets
+after the Play checks. Unity 6000.4.11f1 then completed a clean batch import
+without compilation errors or exceptions. All 246 asset files retained their
+pre-import hashes. The project contains seven runtime C# scripts, with no
+temporary verification components. All 237 prior-stage asset files other than
+the intentionally updated scene retain their earlier hashes.
+
+The [static audit](Static-Audit.json) checks 362 authored files, including 324
+ASCII text files, valid image and audio files, Markdown links, asset/meta pairs
+and 133 unique asset GUIDs. It also cross-checks the geometry, independent wall
+oracles, five Play reports, twenty camera cases, ten inspected captures and
+1,278 matching wall-edge alpha profiles against the current scene and assets.
+The pre-existing untracked package settings file remains outside this feature.
+
+This completes the LevelGenerator feature checks. The final whole-project
+review, standalone player build, Main integration and extracted submission ZIP
+validation remain a separate stage. These results do not claim a grade or a
+completed submission.

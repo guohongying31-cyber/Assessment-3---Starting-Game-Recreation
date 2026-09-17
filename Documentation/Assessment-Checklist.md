@@ -10,7 +10,7 @@ is not the instructor's original wording or evidence that every grading item is 
 - Git author name and email: supplied by the user and configured only for this repository.
 - Remote: the user supplied `guohongying31-cyber/Assessment-3---Starting-Game-Recreation`.
   The local origin is configured. Consult Git history and remote branches for synchronization.
-  The remaining required gameplay feature branches have not been developed.
+  Required feature implementations are complete; final repository and submission checks remain.
 - Student number: requires confirmation for the final ZIP filename.
 - Deadline: the screenshot says Monday 23:59; PDF page 2 and the workshop say
   Friday of Week 8 at 23:59. The screenshot has no calendar date, so the current deadline
@@ -141,20 +141,24 @@ in the supplied workshop transcript; the Week 6/7 example source was not supplie
 
 ## 100%: LevelGenerator (PDF pages 14-15)
 
-- [ ] The student writes `LevelGenerator.cs`, containing an `int[,] levelMap` the marker can replace.
-- [ ] In `Start()`, remove the manual Level01 only at runtime, then generate its replacement.
-- [ ] Derive positions, rotations, and reflections from array dimensions and neighboring tiles;
+- [x] Provide `LevelGenerator.cs`, containing an `int[,] levelMap` the marker can replace.
+- [x] In `Start()`, remove the manual Level01 only at runtime, then generate its replacement.
+- [x] Derive positions, rotations, and reflections from array dimensions and neighboring tiles;
   do not hardcode a coordinate table for the supplied map.
-- [ ] Mirror horizontally, vertically, and in both directions, without repeating the bottom row.
-- [ ] Handle reflection separately from rotation; a 180-degree rotation is not a reflection
+- [x] Mirror horizontally, vertically, and in both directions, without repeating the bottom row.
+- [x] Handle reflection separately from rotation; a 180-degree rotation is not a reflection
   for an asymmetric tile.
-- [ ] Fit the camera to any valid map dimensions and display aspect ratio.
-- [ ] Use instantiated objects or Tilemap placement, but calculate connection rules in
-  student-written code; do not use Rule Tiles.
-- [ ] Test wider, taller, and smaller maps, all corner orientations, T junctions, exits, and seams.
-- [ ] Match the manual layout with the default generated map; restore the manual scene after Stop.
-- [ ] Keep PacStudent on its original manual-level patrol route when the test map changes;
+- [x] Fit the camera to valid map dimensions and display aspect ratio.
+- [x] Use instantiated objects and calculate connection rules in project code; do not use Rule Tiles.
+- [x] Test wider, taller, and smaller maps, all corner orientations, T junctions, exits, and seams.
+- [x] Match the manual layout with the default generated map; restore the manual scene after Stop.
+- [x] Keep PacStudent on its original manual-level patrol route when the test map changes;
   this assessment does not require adapting the route.
+
+See [generator validation](LevelGenerator/Generator-Validation.md): five actual map
+sessions, twenty camera/aspect checks, independent angle oracles, pixel seams, retry
+protection and unchanged manual scenes after Stop. These checks establish the tested
+technical behavior, not an awarded grade or completed final submission review.
 
 ## Final delivery
 

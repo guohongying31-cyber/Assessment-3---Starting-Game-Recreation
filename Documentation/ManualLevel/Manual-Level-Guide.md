@@ -2,7 +2,9 @@
 
 The scene is Assets/Scenes/RecreatedLevel.unity. Level01_Manual contains the level objects
 saved before Play. The layout uses the supplied top-left quadrant, then horizontal and
-vertical reflection. It does not use a runtime level generator.
+vertical reflection. The manual placements remain saved and visible before Play.
+The subsequent [generator feature](../LevelGenerator/Generator-Guide.md) replaces
+them during Play and restores this saved scene after Stop.
 
 ## Placement worksheet
 
@@ -70,7 +72,8 @@ cycle through their preview states, and the opening music switches to its normal
 The sidebar elixir also pulses. Stop returns to the same saved maze. The subsequent
 movement feature adds `Characters/PacStudent`, which patrols the first inner block;
 see [the movement guide](../Movement/Movement-Guide.md). Keyboard control, collision
-handling, pickup collection and a runtime LevelGenerator are not part of this manual layout.
+handling and pickup collection are not part of this manual layout. Runtime generation
+is implemented separately on `Systems/LevelGenerator`.
 
 To adjust a cell in the Inspector, use integer positions and 90-degree rotations. Update
 the placement worksheet and repeat mirror/seam checks when changing the source design.

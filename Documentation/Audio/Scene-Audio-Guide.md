@@ -2,8 +2,9 @@
 
 Open Assets/Scenes/RecreatedLevel.unity and press Play.
 The 2.4-second intro is followed by the normal-state music on a continuous loop.
-The scene includes the complete manual maze, a patrol cultivator and an animated sprite
-showcase. The opening audio rig operates independently of patrol movement.
+The scene saves the complete manual maze and generates its replacement during Play,
+alongside a patrol cultivator and animated sprite showcase. The opening audio rig
+operates independently of patrol movement and map generation.
 
 ## Scene organization
 
