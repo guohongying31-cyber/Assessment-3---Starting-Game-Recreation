@@ -1,0 +1,49 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-17T03:00:07.6020710Z",
+    "defaultSourceCells": 210,
+    "defaultNonemptyCells": 166,
+    "defaultWallAngles": 110,
+    "rejectedInvalidCases": 4,
+    "defaultMatchesManual": true,
+    "ambiguousMapAcceptedDeterministically": true,
+    "passed": true,
+    "independentFixtures": [
+        {
+            "name": "Small",
+            "rows": 9,
+            "columns": 8,
+            "comparedCells": 72,
+            "comparedWallAngles": 37,
+            "exactAngles": true,
+            "deterministic": true
+        },
+        {
+            "name": "Wide",
+            "rows": 9,
+            "columns": 20,
+            "comparedCells": 180,
+            "comparedWallAngles": 49,
+            "exactAngles": true,
+            "deterministic": true
+        },
+        {
+            "name": "Tall",
+            "rows": 21,
+            "columns": 8,
+            "comparedCells": 168,
+            "comparedWallAngles": 49,
+            "exactAngles": true,
+            "deterministic": true
+        },
+        {
+            "name": "AllTAndGateOrientations",
+            "rows": 15,
+            "columns": 14,
+            "comparedCells": 210,
+            "comparedWallAngles": 75,
+            "exactAngles": true,
+            "deterministic": true
+        }
+    ]
+}

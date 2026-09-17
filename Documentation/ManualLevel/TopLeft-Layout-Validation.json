@@ -1,0 +1,63 @@
+{
+  "completedUtc": "2026-09-16T09:31:22.177326+00:00",
+  "passed": true,
+  "scope": "Explicit placement worksheet and source-wall edge validation; scene import and Play checks are separate.",
+  "rows": 15,
+  "columns": 14,
+  "placedCellCount": 166,
+  "categoryCounts": {
+    "1": 4,
+    "2": 32,
+    "3": 26,
+    "4": 46,
+    "5": 55,
+    "6": 1,
+    "7": 1,
+    "8": 1
+  },
+  "matchesNumericReference": true,
+  "uniqueCells": true,
+  "matchingAlphaSeams": 107,
+  "matchingColorSeams": 106,
+  "intentionalGateColorTransitions": 1,
+  "openBoundaryArms": [
+    {
+      "row": 0,
+      "column": 13,
+      "side": "Right"
+    },
+    {
+      "row": 4,
+      "column": 13,
+      "side": "Right"
+    },
+    {
+      "row": 6,
+      "column": 13,
+      "side": "Right"
+    },
+    {
+      "row": 10,
+      "column": 13,
+      "side": "Right"
+    },
+    {
+      "row": 12,
+      "column": 13,
+      "side": "Right"
+    },
+    {
+      "row": 13,
+      "column": 0,
+      "side": "Left"
+    },
+    {
+      "row": 14,
+      "column": 10,
+      "side": "Down"
+    }
+  ],
+  "placementSha256": "644315608abb3363df67af39bcffc643db7a7aeb845a42724c17604770c70585",
+  "singleCenterRow": false,
+  "emptySideTunnels": false
+}

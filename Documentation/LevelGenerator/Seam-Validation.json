@@ -1,0 +1,63 @@
+{
+  "completedUtc": "2026-09-17T03:10:51.826456+00:00",
+  "passed": true,
+  "wallSheetSha256": "88f25d0851583f6cc3f1b9e2dc6fe0afbb40a2dc74e368b4611448542f80fcef",
+  "maps": [
+    {
+      "map": "Default",
+      "rows": 29,
+      "columns": 28,
+      "occupied": 660,
+      "matchingAlphaSeams": 438,
+      "matchingColorSeams": 434,
+      "intentionalSealColorChanges": 4,
+      "boundaryWallEnds": 4,
+      "passed": true
+    },
+    {
+      "map": "Small",
+      "rows": 17,
+      "columns": 16,
+      "occupied": 220,
+      "matchingAlphaSeams": 146,
+      "matchingColorSeams": 142,
+      "intentionalSealColorChanges": 4,
+      "boundaryWallEnds": 4,
+      "passed": true
+    },
+    {
+      "map": "Wide",
+      "rows": 17,
+      "columns": 40,
+      "occupied": 364,
+      "matchingAlphaSeams": 194,
+      "matchingColorSeams": 190,
+      "intentionalSealColorChanges": 4,
+      "boundaryWallEnds": 4,
+      "passed": true
+    },
+    {
+      "map": "Tall",
+      "rows": 41,
+      "columns": 16,
+      "occupied": 364,
+      "matchingAlphaSeams": 194,
+      "matchingColorSeams": 190,
+      "intentionalSealColorChanges": 4,
+      "boundaryWallEnds": 4,
+      "passed": true
+    },
+    {
+      "map": "AllTAndGateOrientations",
+      "rows": 29,
+      "columns": 28,
+      "occupied": 440,
+      "matchingAlphaSeams": 306,
+      "matchingColorSeams": 294,
+      "intentionalSealColorChanges": 12,
+      "boundaryWallEnds": 4,
+      "passed": true
+    }
+  ],
+  "scope": "Source RGBA edge comparisons after the same rotations/reflections verified against generated objects in Unity Play. Every active wall edge either matches its reciprocal neighbor or terminates at the full-map boundary."
+}

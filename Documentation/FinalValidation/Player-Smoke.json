@@ -1,0 +1,12 @@
+{
+  "startedUtc": "2026-09-17T04:45:59.6871095Z",
+  "completedUtc": "2026-09-17T04:46:34.8823964Z",
+  "elapsedSeconds": 35.0569376,
+  "executable": "output/final-validation/Windows/ShanHaiSpiritTrail.exe",
+  "graphicsEnabled": true,
+  "earlyExit": false,
+  "stoppedByTestAfterObservation": true,
+  "runtimeErrors": [],
+  "passed": true,
+  "scope": "Uninstrumented Windows player startup and 35-second process/log smoke check. Detailed scene behavior is verified separately in Editor Play; this run does not measure frame rate, audio output, or human interaction."
+}

@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: 5d19e6ac24c7d3343b611e1374703976
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2772291930069515761
+    second: FlameCrane_Sheet_0
+  - first:
+      213: -3254397365025023881
+    second: FlameCrane_Sheet_1
+  - first:
+      213: -7989937355985789543
+    second: FlameCrane_Sheet_2
+  - first:
+      213: 3340071677923397266
+    second: FlameCrane_Sheet_3
+  - first:
+      213: 2333553902305354674
+    second: FlameCrane_Sheet_4
+  - first:
+      213: 7585027951785246031
+    second: FlameCrane_Sheet_5
+  - first:
+      213: -1826156705484436942
+    second: FlameCrane_Sheet_6
+  - first:
+      213: -7821366430903686856
+    second: FlameCrane_Sheet_7
+  - first:
+      213: 6043612051390077875
+    second: FlameCrane_Sheet_8
+  - first:
+      213: 3804694969506428426
+    second: FlameCrane_Sheet_9
+  - first:
+      213: 8358431443151298835
+    second: FlameCrane_Sheet_10
+  - first:
+      213: -4685570256178503363
+    second: FlameCrane_Sheet_11
+  - first:
+      213: 5392548777148270290
+    second: FlameCrane_Sheet_12
+  - first:
+      213: 7171675772794483975
+    second: FlameCrane_Sheet_13
+  - first:
+      213: 7044194541658637376
+    second: FlameCrane_Sheet_14
+  - first:
+      213: 7690299201274449079
+    second: FlameCrane_Sheet_15
+  - first:
+      213: -8770019273340962844
+    second: FlameCrane_Sheet_16
+  - first:
+      213: 6834605775757029011
+    second: FlameCrane_Sheet_17
+  - first:
+      213: -5377978500648337554
+    second: FlameCrane_Sheet_18
+  - first:
+      213: 8047771689517850319
+    second: FlameCrane_Sheet_19
+  - first:
+      213: 660814765319222359
+    second: FlameCrane_Sheet_20
+  - first:
+      213: -7967124024125968725
+    second: FlameCrane_Sheet_21
+  - first:
+      213: 8606026799738700718
+    second: FlameCrane_Sheet_22
+  - first:
+      213: -8150598518389176532
+    second: FlameCrane_Sheet_23
+  - first:
+      213: 2050988705264176898
+    second: FlameCrane_Sheet_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 384
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlameCrane_Walk_Right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1122
+        width: 284
+        height: 280
+      alignment: 9
+      pivot: {x: 0.49383804, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0decad0b074775547a401a741f08a094
+      internalID: -1201452182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Walk_Right_01
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1122
+        width: 277
+        height: 280
+      alignment: 9
+      pivot: {x: 0.49368232, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bba9331eb66a74e84b19187b9213a8
+      internalID: 1822869064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Walk_Left_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1122
+        width: 277
+        height: 280
+      alignment: 9
+      pivot: {x: 0.5063177, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301a83d6ac3a04449b3cc14436b2429f
+      internalID: 1790577555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Walk_Left_01
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1122
+        width: 284
+        height: 280
+      alignment: 9
+      pivot: {x: 0.506162, y: 0.49928573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d460ca13fa784a34a906070d5c30bac7
+      internalID: 1836019009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Walk_Up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 836
+        width: 284
+        height: 286
+      alignment: 9
+      pivot: {x: 0.49383804, y: 0.50839156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66686f633bc852545a3dec8135dc5daa
+      internalID: -1176692609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Walk_Up_01
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 836
+        width: 277
+        height: 286
+      alignment: 9
+      pivot: {x: 0.49368232, y: 0.50839156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fe3da71a78aad42b711cceea19bde3
+      internalID: 381513719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Walk_Down_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 836
+        width: 277
+        height: 286
+      alignment: 9
+      pivot: {x: 0.5063177, y: 0.50839156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a98cc606eda4147a212e230125fe89
+      internalID: -9923155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Walk_Down_01
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 836
+        width: 284
+        height: 286
+      alignment: 9
+      pivot: {x: 0.506162, y: 0.50839156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261229d31deb8cf4a8982dd087d47632
+      internalID: -766255335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Scared_Right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 562
+        width: 284
+        height: 274
+      alignment: 9
+      pivot: {x: 0.49383804, y: 0.50729924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c984cd2e2494fa2459d3aae35ff21935
+      internalID: 1136240658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Scared_Right_01
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 562
+        width: 277
+        height: 274
+      alignment: 9
+      pivot: {x: 0.49368232, y: 0.50729924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cfd0e5b79880044957811a3397b328
+      internalID: -2042327905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Scared_Left_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 562
+        width: 277
+        height: 274
+      alignment: 9
+      pivot: {x: 0.5063177, y: 0.50729924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b164bd5e362e5b4b91b98ef5cc84ab2
+      internalID: 225025910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Scared_Left_01
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 562
+        width: 284
+        height: 274
+      alignment: 9
+      pivot: {x: 0.506162, y: 0.50729924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e26ac4f749f264e815b69491b24e38
+      internalID: -810921226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Scared_Up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 290
+        width: 284
+        height: 272
+      alignment: 9
+      pivot: {x: 0.49383804, y: 0.48014697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4701c608ecb83b4abe78a81e613beb0
+      internalID: 1358236325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Scared_Up_01
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 290
+        width: 277
+        height: 272
+      alignment: 9
+      pivot: {x: 0.49368232, y: 0.48014697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf363938dcafc0488916281a20926f9
+      internalID: 262495617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Scared_Down_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 290
+        width: 277
+        height: 272
+      alignment: 9
+      pivot: {x: 0.5063177, y: 0.48014697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05351b4369dfef45859d9c3776b1e79
+      internalID: -2001654250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Scared_Down_01
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 290
+        width: 284
+        height: 272
+      alignment: 9
+      pivot: {x: 0.506162, y: 0.48014697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5808978c9efb6e54f8c557aefd7c8eb4
+      internalID: -520862716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Recovering_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 284
+        height: 290
+      alignment: 9
+      pivot: {x: 0.49383804, y: 0.48344812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf7f36ba7ae22743b2a716908879a3d
+      internalID: 317402553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Recovering_01
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 277
+        height: 290
+      alignment: 9
+      pivot: {x: 0.49368232, y: 0.48344812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56eaf1965c1dae04c9bb94baa472cd7f
+      internalID: 1045328034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Dead_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 0
+        width: 277
+        height: 290
+      alignment: 9
+      pivot: {x: 0.5063177, y: 0.48344812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39229615ae5e7740a2e77d40bbc0999
+      internalID: 1278178049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameCrane_Dead_01
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 0
+        width: 284
+        height: 290
+      alignment: 9
+      pivot: {x: 0.506162, y: 0.48344812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee2794616fd5024993061cfa2d4f195
+      internalID: 506136228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ea5cbcf5617912c4186929e3b863c2fd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FlameCrane_Dead_00: 1278178049
+      FlameCrane_Dead_01: 506136228
+      FlameCrane_Recovering_00: 317402553
+      FlameCrane_Recovering_01: 1045328034
+      FlameCrane_Scared_Down_00: -2001654250
+      FlameCrane_Scared_Down_01: -520862716
+      FlameCrane_Scared_Left_00: 225025910
+      FlameCrane_Scared_Left_01: -810921226
+      FlameCrane_Scared_Right_00: 1136240658
+      FlameCrane_Scared_Right_01: -2042327905
+      FlameCrane_Scared_Up_00: 1358236325
+      FlameCrane_Scared_Up_01: 262495617
+      FlameCrane_Walk_Down_00: -9923155
+      FlameCrane_Walk_Down_01: -766255335
+      FlameCrane_Walk_Left_00: 1790577555
+      FlameCrane_Walk_Left_01: 1836019009
+      FlameCrane_Walk_Right_00: -1201452182
+      FlameCrane_Walk_Right_01: 1822869064
+      FlameCrane_Walk_Up_00: -1176692609
+      FlameCrane_Walk_Up_01: 381513719
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

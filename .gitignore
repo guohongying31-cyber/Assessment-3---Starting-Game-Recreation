@@ -114,3 +114,9 @@ InitTestScene*.unity*
 /31263-32004 IGDev Assessment 3.pdf
 /PacMan Level Map.csv
 *.zip
+# Temporary editor setup helper (not a gameplay asset)
+/Assets/Editor/LocalSetup/
+/Assets/Editor/LocalSetup.meta
+# Temporary Play-mode verification components
+/Assets/LocalVerification/
+/Assets/LocalVerification.meta

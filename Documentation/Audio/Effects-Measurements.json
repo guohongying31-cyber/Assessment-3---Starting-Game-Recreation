@@ -1,0 +1,80 @@
+[
+  {
+    "file": "Assets/Audio Clips/SFX/SFX_Move_SoftSteps.wav",
+    "duration_seconds": 0.8,
+    "sample_rate": 44100,
+    "channels": 1,
+    "bit_depth": 16,
+    "loop": true,
+    "peak_dbfs": -9.897,
+    "rms_dbfs": -31.899,
+    "boundary_step": 0.0,
+    "clipped_samples": 0,
+    "sha256": "445453b53a14bb55620812f20d7cf4c33d922a77c20363ac307b20cfb3c4e9eb"
+  },
+  {
+    "file": "Assets/Audio Clips/SFX/SFX_Pellet_SpiritMote.wav",
+    "duration_seconds": 0.24,
+    "sample_rate": 44100,
+    "channels": 1,
+    "bit_depth": 16,
+    "loop": false,
+    "peak_dbfs": -14.851,
+    "rms_dbfs": -22.499,
+    "boundary_step": 0.0,
+    "clipped_samples": 0,
+    "sha256": "e188d6db7f490af120fb7e4cd8adb37ee7eecb36c1a63d2814ed63737a9eff69"
+  },
+  {
+    "file": "Assets/Audio Clips/SFX/SFX_Ghost_SpiritSeal.wav",
+    "duration_seconds": 0.85,
+    "sample_rate": 44100,
+    "channels": 1,
+    "bit_depth": 16,
+    "loop": false,
+    "peak_dbfs": -9.257,
+    "rms_dbfs": -21.412,
+    "boundary_step": 0.0,
+    "clipped_samples": 0,
+    "sha256": "1073baeeb2d411ee1b1c74383abab82e3c346e71871f02d5cab86d80d992341e"
+  },
+  {
+    "file": "Assets/Audio Clips/SFX/SFX_Cherry_CrimsonFruit.wav",
+    "duration_seconds": 0.95,
+    "sample_rate": 44100,
+    "channels": 1,
+    "bit_depth": 16,
+    "loop": false,
+    "peak_dbfs": -9.873,
+    "rms_dbfs": -21.938,
+    "boundary_step": 0.0,
+    "clipped_samples": 0,
+    "sha256": "ada035bc864784cdfa35dbef6fa37a90e2a61b2a0f91d3a8a3dc982b7e99d592"
+  },
+  {
+    "file": "Assets/Audio Clips/SFX/SFX_Wall_StoneTouch.wav",
+    "duration_seconds": 0.19,
+    "sample_rate": 44100,
+    "channels": 1,
+    "bit_depth": 16,
+    "loop": false,
+    "peak_dbfs": -9.897,
+    "rms_dbfs": -25.691,
+    "boundary_step": 0.0,
+    "clipped_samples": 0,
+    "sha256": "512b60e20188ae33fa296ab06eac378858fac8cf89f35b4c670151e4124d3b5e"
+  },
+  {
+    "file": "Assets/Audio Clips/SFX/SFX_Death_FadingSpirit.wav",
+    "duration_seconds": 1.8,
+    "sample_rate": 44100,
+    "channels": 1,
+    "bit_depth": 16,
+    "loop": false,
+    "peak_dbfs": -10.024,
+    "rms_dbfs": -22.499,
+    "boundary_step": 0.0,
+    "clipped_samples": 0,
+    "sha256": "cf2c5739cd1e4c508ba27c0164ffdc9f7e3e71c03578d9ad86586848c6f3e3f6"
+  }
+]

@@ -1,0 +1,769 @@
+fileFormatVersion: 2
+guid: ee1c769aeb06f0649a328af16e46c09d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -149244180093273397
+    second: SerpentTortoise_Sheet_0
+  - first:
+      213: -712014433516889051
+    second: SerpentTortoise_Sheet_1
+  - first:
+      213: 8480657922167374890
+    second: SerpentTortoise_Sheet_2
+  - first:
+      213: -5032249761301849991
+    second: SerpentTortoise_Sheet_3
+  - first:
+      213: 5628509468602449219
+    second: SerpentTortoise_Sheet_4
+  - first:
+      213: 7359297320086461670
+    second: SerpentTortoise_Sheet_5
+  - first:
+      213: 5189834284139051741
+    second: SerpentTortoise_Sheet_6
+  - first:
+      213: -2859978234061069454
+    second: SerpentTortoise_Sheet_7
+  - first:
+      213: 4289747509753483436
+    second: SerpentTortoise_Sheet_8
+  - first:
+      213: 806293478093157205
+    second: SerpentTortoise_Sheet_9
+  - first:
+      213: 3639580019182498947
+    second: SerpentTortoise_Sheet_10
+  - first:
+      213: 1501909172684960659
+    second: SerpentTortoise_Sheet_11
+  - first:
+      213: -208725633756561876
+    second: SerpentTortoise_Sheet_12
+  - first:
+      213: 4603637035875556500
+    second: SerpentTortoise_Sheet_13
+  - first:
+      213: -6499688888477428815
+    second: SerpentTortoise_Sheet_14
+  - first:
+      213: -180623627800735109
+    second: SerpentTortoise_Sheet_15
+  - first:
+      213: 960481330294930045
+    second: SerpentTortoise_Sheet_16
+  - first:
+      213: 116471095721640956
+    second: SerpentTortoise_Sheet_17
+  - first:
+      213: -1451297308320906604
+    second: SerpentTortoise_Sheet_18
+  - first:
+      213: -550195820279637810
+    second: SerpentTortoise_Sheet_19
+  - first:
+      213: 2531013925752651307
+    second: SerpentTortoise_Sheet_20
+  - first:
+      213: 6195870101378575052
+    second: SerpentTortoise_Sheet_21
+  - first:
+      213: 1010699282272220250
+    second: SerpentTortoise_Sheet_22
+  - first:
+      213: 7190296173945672156
+    second: SerpentTortoise_Sheet_23
+  - first:
+      213: -7063913651092568851
+    second: SerpentTortoise_Sheet_24
+  - first:
+      213: -5527790797006132565
+    second: SerpentTortoise_Sheet_25
+  - first:
+      213: -3443638528063257830
+    second: SerpentTortoise_Sheet_26
+  - first:
+      213: -4815021462175182462
+    second: SerpentTortoise_Sheet_27
+  - first:
+      213: -3988230309537022925
+    second: SerpentTortoise_Sheet_28
+  - first:
+      213: -627403295608033794
+    second: SerpentTortoise_Sheet_29
+  - first:
+      213: 2024052004838631704
+    second: SerpentTortoise_Sheet_30
+  - first:
+      213: -701579693606956200
+    second: SerpentTortoise_Sheet_31
+  - first:
+      213: -5789520191702388042
+    second: SerpentTortoise_Sheet_32
+  - first:
+      213: 1711866068238625141
+    second: SerpentTortoise_Sheet_33
+  - first:
+      213: -5108460491075165812
+    second: SerpentTortoise_Sheet_34
+  - first:
+      213: 1616478247191388334
+    second: SerpentTortoise_Sheet_35
+  - first:
+      213: 4155089759882453975
+    second: SerpentTortoise_Sheet_36
+  - first:
+      213: -5218972750766513572
+    second: SerpentTortoise_Sheet_37
+  - first:
+      213: 3749115940559719778
+    second: SerpentTortoise_Sheet_38
+  - first:
+      213: 1071202026202195458
+    second: SerpentTortoise_Sheet_39
+  - first:
+      213: -490311831769318864
+    second: SerpentTortoise_Sheet_40
+  - first:
+      213: -7826610802839990603
+    second: SerpentTortoise_Sheet_41
+  - first:
+      213: -2545672748967745389
+    second: SerpentTortoise_Sheet_42
+  - first:
+      213: 8983319322137319992
+    second: SerpentTortoise_Sheet_43
+  - first:
+      213: -4443895850840424520
+    second: SerpentTortoise_Sheet_44
+  - first:
+      213: -1376421763627556741
+    second: SerpentTortoise_Sheet_45
+  - first:
+      213: 3583836787869856920
+    second: SerpentTortoise_Sheet_46
+  - first:
+      213: 8601644204967257842
+    second: SerpentTortoise_Sheet_47
+  - first:
+      213: -1509869189180708082
+    second: SerpentTortoise_Sheet_48
+  - first:
+      213: -934033083998950912
+    second: SerpentTortoise_Sheet_49
+  - first:
+      213: 7602827903798515049
+    second: SerpentTortoise_Sheet_50
+  - first:
+      213: 1604013855191949337
+    second: SerpentTortoise_Sheet_51
+  - first:
+      213: 1991175401641508570
+    second: SerpentTortoise_Sheet_52
+  - first:
+      213: 3013255445304092595
+    second: SerpentTortoise_Sheet_53
+  - first:
+      213: 8466628782392907727
+    second: SerpentTortoise_Sheet_54
+  - first:
+      213: 1790855636707565692
+    second: SerpentTortoise_Sheet_55
+  - first:
+      213: -4991668170779296805
+    second: SerpentTortoise_Sheet_56
+  - first:
+      213: 1826683167084519881
+    second: SerpentTortoise_Sheet_57
+  - first:
+      213: -3805551679586652535
+    second: SerpentTortoise_Sheet_58
+  - first:
+      213: 1940942417485189709
+    second: SerpentTortoise_Sheet_59
+  - first:
+      213: -4104122170950519737
+    second: SerpentTortoise_Sheet_60
+  - first:
+      213: -5223660008932959695
+    second: SerpentTortoise_Sheet_61
+  - first:
+      213: -5972556003072508736
+    second: SerpentTortoise_Sheet_62
+  - first:
+      213: -3232982259598709826
+    second: SerpentTortoise_Sheet_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 384
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SerpentTortoise_Walk_Right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1112
+        width: 287
+        height: 290
+      alignment: 9
+      pivot: {x: 0.48867595, y: 0.51655173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f87530804aa2e48933d2906dd7e76b
+      internalID: 1606128799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Walk_Right_01
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1112
+        width: 274
+        height: 290
+      alignment: 9
+      pivot: {x: 0.48813868, y: 0.51655173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3fef6210cac904ea3a9f0755791bb1
+      internalID: 113182380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Walk_Left_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1112
+        width: 279
+        height: 290
+      alignment: 9
+      pivot: {x: 0.50268817, y: 0.51655173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0e85f1c220c5a409f27ead77f45db3
+      internalID: -1895486975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Walk_Left_01
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1112
+        width: 282
+        height: 290
+      alignment: 9
+      pivot: {x: 0.50265956, y: 0.51655173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133afc768cf84514d904fca0784021b3
+      internalID: 2036505915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Walk_Up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 841
+        width: 287
+        height: 271
+      alignment: 9
+      pivot: {x: 0.48867595, y: 0.5180811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4847fd1974ac5f64fa3fa84ed6398585
+      internalID: -570676107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Walk_Up_01
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 841
+        width: 274
+        height: 271
+      alignment: 9
+      pivot: {x: 0.48813868, y: 0.5180811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a04b4185ec53b14ba35cd2f4898f844
+      internalID: -1323690150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Walk_Down_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 841
+        width: 279
+        height: 271
+      alignment: 9
+      pivot: {x: 0.50268817, y: 0.5180811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c859602883ced4085534bb0fe81ee2
+      internalID: -1227178229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Walk_Down_01
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 841
+        width: 282
+        height: 271
+      alignment: 9
+      pivot: {x: 0.50265956, y: 0.5180811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb10749b9e1e1e746913c0ba96f469fe
+      internalID: -485690846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Scared_Right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 561
+        width: 287
+        height: 280
+      alignment: 9
+      pivot: {x: 0.48867595, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0e2189e1177f54598b3de81664346d
+      internalID: -1386285685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Scared_Right_01
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 561
+        width: 274
+        height: 280
+      alignment: 9
+      pivot: {x: 0.48813868, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef33a003574002047be5868bc4bad300
+      internalID: 720212748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Scared_Left_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 561
+        width: 279
+        height: 280
+      alignment: 9
+      pivot: {x: 0.50268817, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6140c589b82cc5945aa288675dcbbe93
+      internalID: -1214097167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Scared_Left_01
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 561
+        width: 282
+        height: 280
+      alignment: 9
+      pivot: {x: 0.50265956, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2faf25ce87c632e4daa0fdded0cc6961
+      internalID: -1468564362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Scared_Up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 283
+        width: 287
+        height: 278
+      alignment: 9
+      pivot: {x: 0.48867595, y: 0.49496394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446b7c605e12e314f8f202de29cf1f92
+      internalID: 826962104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Scared_Up_01
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 283
+        width: 274
+        height: 278
+      alignment: 9
+      pivot: {x: 0.48813868, y: 0.49496394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a076cd8a38c9e6640bede0a3c6f06cae
+      internalID: -1445567243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Scared_Down_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 283
+        width: 279
+        height: 278
+      alignment: 9
+      pivot: {x: 0.50268817, y: 0.49496394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e531677e1ac67624b9843610ce2becb2
+      internalID: 69517900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Scared_Down_01
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 283
+        width: 282
+        height: 278
+      alignment: 9
+      pivot: {x: 0.50265956, y: 0.49496394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e725248ac0b9b428ffcd6bc8619024
+      internalID: 433945459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Recovering_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 287
+        height: 283
+      alignment: 9
+      pivot: {x: 0.48867595, y: 0.49540618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6077a23417b40f248a7427827c380818
+      internalID: -1276640488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Recovering_01
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 274
+        height: 283
+      alignment: 9
+      pivot: {x: 0.48813868, y: 0.49540618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19ff1a830b907c4aad3427f205fca74
+      internalID: -1579202502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Dead_00
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 0
+        width: 279
+        height: 283
+      alignment: 9
+      pivot: {x: 0.50268817, y: 0.49540618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce651dff501304439b192ae0273c379
+      internalID: -1568478871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerpentTortoise_Dead_01
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 282
+        height: 283
+      alignment: 9
+      pivot: {x: 0.50265956, y: 0.49540618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5beb38037c1edd4faf10cb89addfac6
+      internalID: -2143203281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 50ca3cdcd42cd8749b65e4d1fd688f9a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SerpentTortoise_Dead_00: -1568478871
+      SerpentTortoise_Dead_01: -2143203281
+      SerpentTortoise_Recovering_00: -1276640488
+      SerpentTortoise_Recovering_01: -1579202502
+      SerpentTortoise_Scared_Down_00: 69517900
+      SerpentTortoise_Scared_Down_01: 433945459
+      SerpentTortoise_Scared_Left_00: -1214097167
+      SerpentTortoise_Scared_Left_01: -1468564362
+      SerpentTortoise_Scared_Right_00: -1386285685
+      SerpentTortoise_Scared_Right_01: 720212748
+      SerpentTortoise_Scared_Up_00: 826962104
+      SerpentTortoise_Scared_Up_01: -1445567243
+      SerpentTortoise_Walk_Down_00: -1227178229
+      SerpentTortoise_Walk_Down_01: -485690846
+      SerpentTortoise_Walk_Left_00: -1895486975
+      SerpentTortoise_Walk_Left_01: 2036505915
+      SerpentTortoise_Walk_Right_00: 1606128799
+      SerpentTortoise_Walk_Right_01: 113182380
+      SerpentTortoise_Walk_Up_00: -570676107
+      SerpentTortoise_Walk_Up_01: -1323690150
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

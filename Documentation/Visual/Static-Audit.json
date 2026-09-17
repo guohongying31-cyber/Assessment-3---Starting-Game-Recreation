@@ -1,0 +1,33 @@
+{
+  "completedUtc": "2026-09-16T08:11:47.108121+00:00",
+  "passed": true,
+  "fileCount": 295,
+  "asciiTextFiles": 274,
+  "uniqueAssetGuids": 125,
+  "bundledPackageReferences": {
+    "fe87c0e1cc204ed48ad3b37840f39efc": "com.unity.ugui@bf94f8b81813/Runtime/UGUI/UI/Core/Image.cs.meta",
+    "5f7201a12d95ffc409449d95f23cf332": "com.unity.ugui@bf94f8b81813/Runtime/UGUI/UI/Core/Text.cs.meta",
+    "0cd44c1031e13a943bb63640046fad76": "com.unity.ugui@bf94f8b81813/Runtime/UGUI/UI/Core/Layout/CanvasScaler.cs.meta"
+  },
+  "spriteCount": 101,
+  "visualClipCount": 46,
+  "visualControllerCount": 6,
+  "playSessions": 2,
+  "maximumCharacterOpaqueExtentInCells": 0.93048128342246,
+  "unchangedAudioClips": 11,
+  "excludedUntrackedPackageSettingsSha256": "34c3beaeb14398adf4b27a6760da103c8c89ddb44f3e09bbb2fa78aee7b3a198",
+  "checks": [
+    "English filenames and text",
+    "PNG and PCM WAV validity",
+    "Local Markdown links",
+    "Asset and folder metadata",
+    "Unique and resolved GUIDs",
+    "Sprite names and unchanged source hashes",
+    "One-cell character bounds",
+    "Clip sprite references and prefab controller references",
+    "Showcase conditions and loop flags",
+    "Playback report completeness",
+    "Unchanged audio hashes"
+  ],
+  "scope": "Current authored files, excluding temporary Editor tools and pre-existing untracked package settings. This is a static audit, not a player build or gameplay test."
+}

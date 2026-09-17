@@ -1,0 +1,127 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T09:44:16.1193498Z",
+    "phase": "Final",
+    "session": 1,
+    "cellsBefore": 660,
+    "cellsDuring": 660,
+    "cellsAfter": 660,
+    "observedSeconds": 28.000436996882084,
+    "introStarted": true,
+    "normalStarted": true,
+    "normalLoopWrapped": true,
+    "sceneUnchangedAfterStop": true,
+    "passed": true,
+    "elixirs": [
+        {
+            "path": "TopLeft/R03_C01_Elixir",
+            "frameChanges": 56,
+            "frames": [
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01"
+            ]
+        },
+        {
+            "path": "TopRight/R03_C01_Elixir",
+            "frameChanges": 56,
+            "frames": [
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01"
+            ]
+        },
+        {
+            "path": "BottomLeft/R03_C01_Elixir",
+            "frameChanges": 56,
+            "frames": [
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01"
+            ]
+        },
+        {
+            "path": "BottomRight/R03_C01_Elixir",
+            "frameChanges": 56,
+            "frames": [
+                "Elixir_Pulse_00",
+                "Elixir_Pulse_01"
+            ]
+        }
+    ],
+    "characterStates": [
+        {
+            "actor": "Cultivator",
+            "states": [
+                "WalkingDown",
+                "Dead",
+                "WalkingRight",
+                "WalkingLeft",
+                "WalkingUp"
+            ]
+        },
+        {
+            "actor": "Elixir",
+            "states": [
+                "Pulse"
+            ]
+        },
+        {
+            "actor": "NineTail",
+            "states": [
+                "WalkingDown",
+                "ScaredRight",
+                "ScaredLeft",
+                "ScaredUp",
+                "ScaredDown",
+                "Recovering",
+                "Dead",
+                "WalkingRight",
+                "WalkingLeft",
+                "WalkingUp"
+            ]
+        },
+        {
+            "actor": "FlameCrane",
+            "states": [
+                "WalkingDown",
+                "ScaredRight",
+                "ScaredLeft",
+                "ScaredUp",
+                "ScaredDown",
+                "Recovering",
+                "Dead",
+                "WalkingRight",
+                "WalkingLeft",
+                "WalkingUp"
+            ]
+        },
+        {
+            "actor": "WhiteHound",
+            "states": [
+                "WalkingDown",
+                "ScaredRight",
+                "ScaredLeft",
+                "ScaredUp",
+                "ScaredDown",
+                "Recovering",
+                "Dead",
+                "WalkingRight",
+                "WalkingLeft",
+                "WalkingUp"
+            ]
+        },
+        {
+            "actor": "SerpentTortoise",
+            "states": [
+                "WalkingDown",
+                "ScaredRight",
+                "ScaredLeft",
+                "ScaredUp",
+                "ScaredDown",
+                "Recovering",
+                "Dead",
+                "WalkingRight",
+                "WalkingLeft",
+                "WalkingUp"
+            ]
+        }
+    ]
+}

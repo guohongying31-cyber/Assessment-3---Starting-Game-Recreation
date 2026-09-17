@@ -1,0 +1,612 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-16T08:02:37.6785799Z",
+    "actors": [
+        {
+            "id": "Cultivator",
+            "scenePath": "AssetShowcase/Characters/PacStudent",
+            "prefabPath": "Assets/Prefabs/Characters/PacStudent.prefab",
+            "controllerPath": "Assets/Animations/Controllers/PacStudentAnimator.controller",
+            "defaultState": "WalkingDown",
+            "states": [
+                {
+                    "name": "WalkingRight",
+                    "clipPath": "Assets/Animations/Clips/Cultivator/Cultivator_WalkingRight.anim",
+                    "frames": [
+                        "Cultivator_Walk_Right_00",
+                        "Cultivator_Walk_Right_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingLeft",
+                    "clipPath": "Assets/Animations/Clips/Cultivator/Cultivator_WalkingLeft.anim",
+                    "frames": [
+                        "Cultivator_Walk_Left_00",
+                        "Cultivator_Walk_Left_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingUp",
+                    "clipPath": "Assets/Animations/Clips/Cultivator/Cultivator_WalkingUp.anim",
+                    "frames": [
+                        "Cultivator_Walk_Up_00",
+                        "Cultivator_Walk_Up_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingDown",
+                    "clipPath": "Assets/Animations/Clips/Cultivator/Cultivator_WalkingDown.anim",
+                    "frames": [
+                        "Cultivator_Walk_Down_00",
+                        "Cultivator_Walk_Down_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "Dead",
+                    "clipPath": "Assets/Animations/Clips/Cultivator/Cultivator_Dead.anim",
+                    "frames": [
+                        "Cultivator_Dead_00",
+                        "Cultivator_Dead_01"
+                    ],
+                    "fps": 4.0,
+                    "duration": 0.75,
+                    "exitCycles": 1.0,
+                    "loop": false
+                }
+            ]
+        },
+        {
+            "id": "Elixir",
+            "scenePath": "AssetShowcase/Pickups/Elixir",
+            "prefabPath": "Assets/Prefabs/Pickups/Elixir.prefab",
+            "controllerPath": "Assets/Animations/Controllers/ElixirAnimator.controller",
+            "defaultState": "Pulse",
+            "states": [
+                {
+                    "name": "Pulse",
+                    "clipPath": "Assets/Animations/Clips/Elixir/Elixir_Pulse.anim",
+                    "frames": [
+                        "Elixir_Pulse_00",
+                        "Elixir_Pulse_01"
+                    ],
+                    "fps": 3.0,
+                    "duration": 1.0,
+                    "exitCycles": 3.0,
+                    "loop": true
+                }
+            ]
+        },
+        {
+            "id": "NineTail",
+            "scenePath": "AssetShowcase/Characters/NineTail",
+            "prefabPath": "Assets/Prefabs/Characters/NineTail.prefab",
+            "controllerPath": "Assets/Animations/Controllers/GhostAnimator_NineTail.controller",
+            "defaultState": "WalkingDown",
+            "states": [
+                {
+                    "name": "WalkingRight",
+                    "clipPath": "Assets/Animations/Clips/NineTail/NineTail_WalkingRight.anim",
+                    "frames": [
+                        "NineTail_Walk_Right_00",
+                        "NineTail_Walk_Right_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingLeft",
+                    "clipPath": "Assets/Animations/Clips/NineTail/NineTail_WalkingLeft.anim",
+                    "frames": [
+                        "NineTail_Walk_Left_00",
+                        "NineTail_Walk_Left_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingUp",
+                    "clipPath": "Assets/Animations/Clips/NineTail/NineTail_WalkingUp.anim",
+                    "frames": [
+                        "NineTail_Walk_Up_00",
+                        "NineTail_Walk_Up_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingDown",
+                    "clipPath": "Assets/Animations/Clips/NineTail/NineTail_WalkingDown.anim",
+                    "frames": [
+                        "NineTail_Walk_Down_00",
+                        "NineTail_Walk_Down_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredRight",
+                    "clipPath": "Assets/Animations/Clips/NineTail/NineTail_ScaredRight.anim",
+                    "frames": [
+                        "NineTail_Scared_Right_00",
+                        "NineTail_Scared_Right_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredLeft",
+                    "clipPath": "Assets/Animations/Clips/NineTail/NineTail_ScaredLeft.anim",
+                    "frames": [
+                        "NineTail_Scared_Left_00",
+                        "NineTail_Scared_Left_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredUp",
+                    "clipPath": "Assets/Animations/Clips/NineTail/NineTail_ScaredUp.anim",
+                    "frames": [
+                        "NineTail_Scared_Up_00",
+                        "NineTail_Scared_Up_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredDown",
+                    "clipPath": "Assets/Animations/Clips/NineTail/NineTail_ScaredDown.anim",
+                    "frames": [
+                        "NineTail_Scared_Down_00",
+                        "NineTail_Scared_Down_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "Recovering",
+                    "clipPath": "Assets/Animations/Clips/NineTail/NineTail_Recovering.anim",
+                    "frames": [
+                        "NineTail_Recovering_00",
+                        "NineTail_Recovering_01"
+                    ],
+                    "fps": 4.0,
+                    "duration": 0.75,
+                    "exitCycles": 3.0,
+                    "loop": true
+                },
+                {
+                    "name": "Dead",
+                    "clipPath": "Assets/Animations/Clips/NineTail/NineTail_Dead.anim",
+                    "frames": [
+                        "NineTail_Dead_00",
+                        "NineTail_Dead_01"
+                    ],
+                    "fps": 4.0,
+                    "duration": 0.75,
+                    "exitCycles": 1.0,
+                    "loop": false
+                }
+            ]
+        },
+        {
+            "id": "FlameCrane",
+            "scenePath": "AssetShowcase/Characters/FlameCrane",
+            "prefabPath": "Assets/Prefabs/Characters/FlameCrane.prefab",
+            "controllerPath": "Assets/Animations/Controllers/GhostAnimator_FlameCrane.controller",
+            "defaultState": "WalkingDown",
+            "states": [
+                {
+                    "name": "WalkingRight",
+                    "clipPath": "Assets/Animations/Clips/FlameCrane/FlameCrane_WalkingRight.anim",
+                    "frames": [
+                        "FlameCrane_Walk_Right_00",
+                        "FlameCrane_Walk_Right_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingLeft",
+                    "clipPath": "Assets/Animations/Clips/FlameCrane/FlameCrane_WalkingLeft.anim",
+                    "frames": [
+                        "FlameCrane_Walk_Left_00",
+                        "FlameCrane_Walk_Left_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingUp",
+                    "clipPath": "Assets/Animations/Clips/FlameCrane/FlameCrane_WalkingUp.anim",
+                    "frames": [
+                        "FlameCrane_Walk_Up_00",
+                        "FlameCrane_Walk_Up_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingDown",
+                    "clipPath": "Assets/Animations/Clips/FlameCrane/FlameCrane_WalkingDown.anim",
+                    "frames": [
+                        "FlameCrane_Walk_Down_00",
+                        "FlameCrane_Walk_Down_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredRight",
+                    "clipPath": "Assets/Animations/Clips/FlameCrane/FlameCrane_ScaredRight.anim",
+                    "frames": [
+                        "FlameCrane_Scared_Right_00",
+                        "FlameCrane_Scared_Right_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredLeft",
+                    "clipPath": "Assets/Animations/Clips/FlameCrane/FlameCrane_ScaredLeft.anim",
+                    "frames": [
+                        "FlameCrane_Scared_Left_00",
+                        "FlameCrane_Scared_Left_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredUp",
+                    "clipPath": "Assets/Animations/Clips/FlameCrane/FlameCrane_ScaredUp.anim",
+                    "frames": [
+                        "FlameCrane_Scared_Up_00",
+                        "FlameCrane_Scared_Up_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredDown",
+                    "clipPath": "Assets/Animations/Clips/FlameCrane/FlameCrane_ScaredDown.anim",
+                    "frames": [
+                        "FlameCrane_Scared_Down_00",
+                        "FlameCrane_Scared_Down_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "Recovering",
+                    "clipPath": "Assets/Animations/Clips/FlameCrane/FlameCrane_Recovering.anim",
+                    "frames": [
+                        "FlameCrane_Recovering_00",
+                        "FlameCrane_Recovering_01"
+                    ],
+                    "fps": 4.0,
+                    "duration": 0.75,
+                    "exitCycles": 3.0,
+                    "loop": true
+                },
+                {
+                    "name": "Dead",
+                    "clipPath": "Assets/Animations/Clips/FlameCrane/FlameCrane_Dead.anim",
+                    "frames": [
+                        "FlameCrane_Dead_00",
+                        "FlameCrane_Dead_01"
+                    ],
+                    "fps": 4.0,
+                    "duration": 0.75,
+                    "exitCycles": 1.0,
+                    "loop": false
+                }
+            ]
+        },
+        {
+            "id": "WhiteHound",
+            "scenePath": "AssetShowcase/Characters/WhiteHound",
+            "prefabPath": "Assets/Prefabs/Characters/WhiteHound.prefab",
+            "controllerPath": "Assets/Animations/Controllers/GhostAnimator_WhiteHound.controller",
+            "defaultState": "WalkingDown",
+            "states": [
+                {
+                    "name": "WalkingRight",
+                    "clipPath": "Assets/Animations/Clips/WhiteHound/WhiteHound_WalkingRight.anim",
+                    "frames": [
+                        "WhiteHound_Walk_Right_00",
+                        "WhiteHound_Walk_Right_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingLeft",
+                    "clipPath": "Assets/Animations/Clips/WhiteHound/WhiteHound_WalkingLeft.anim",
+                    "frames": [
+                        "WhiteHound_Walk_Left_00",
+                        "WhiteHound_Walk_Left_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingUp",
+                    "clipPath": "Assets/Animations/Clips/WhiteHound/WhiteHound_WalkingUp.anim",
+                    "frames": [
+                        "WhiteHound_Walk_Up_00",
+                        "WhiteHound_Walk_Up_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingDown",
+                    "clipPath": "Assets/Animations/Clips/WhiteHound/WhiteHound_WalkingDown.anim",
+                    "frames": [
+                        "WhiteHound_Walk_Down_00",
+                        "WhiteHound_Walk_Down_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredRight",
+                    "clipPath": "Assets/Animations/Clips/WhiteHound/WhiteHound_ScaredRight.anim",
+                    "frames": [
+                        "WhiteHound_Scared_Right_00",
+                        "WhiteHound_Scared_Right_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredLeft",
+                    "clipPath": "Assets/Animations/Clips/WhiteHound/WhiteHound_ScaredLeft.anim",
+                    "frames": [
+                        "WhiteHound_Scared_Left_00",
+                        "WhiteHound_Scared_Left_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredUp",
+                    "clipPath": "Assets/Animations/Clips/WhiteHound/WhiteHound_ScaredUp.anim",
+                    "frames": [
+                        "WhiteHound_Scared_Up_00",
+                        "WhiteHound_Scared_Up_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredDown",
+                    "clipPath": "Assets/Animations/Clips/WhiteHound/WhiteHound_ScaredDown.anim",
+                    "frames": [
+                        "WhiteHound_Scared_Down_00",
+                        "WhiteHound_Scared_Down_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "Recovering",
+                    "clipPath": "Assets/Animations/Clips/WhiteHound/WhiteHound_Recovering.anim",
+                    "frames": [
+                        "WhiteHound_Recovering_00",
+                        "WhiteHound_Recovering_01"
+                    ],
+                    "fps": 4.0,
+                    "duration": 0.75,
+                    "exitCycles": 3.0,
+                    "loop": true
+                },
+                {
+                    "name": "Dead",
+                    "clipPath": "Assets/Animations/Clips/WhiteHound/WhiteHound_Dead.anim",
+                    "frames": [
+                        "WhiteHound_Dead_00",
+                        "WhiteHound_Dead_01"
+                    ],
+                    "fps": 4.0,
+                    "duration": 0.75,
+                    "exitCycles": 1.0,
+                    "loop": false
+                }
+            ]
+        },
+        {
+            "id": "SerpentTortoise",
+            "scenePath": "AssetShowcase/Characters/SerpentTortoise",
+            "prefabPath": "Assets/Prefabs/Characters/SerpentTortoise.prefab",
+            "controllerPath": "Assets/Animations/Controllers/GhostAnimator_SerpentTortoise.controller",
+            "defaultState": "WalkingDown",
+            "states": [
+                {
+                    "name": "WalkingRight",
+                    "clipPath": "Assets/Animations/Clips/SerpentTortoise/SerpentTortoise_WalkingRight.anim",
+                    "frames": [
+                        "SerpentTortoise_Walk_Right_00",
+                        "SerpentTortoise_Walk_Right_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingLeft",
+                    "clipPath": "Assets/Animations/Clips/SerpentTortoise/SerpentTortoise_WalkingLeft.anim",
+                    "frames": [
+                        "SerpentTortoise_Walk_Left_00",
+                        "SerpentTortoise_Walk_Left_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingUp",
+                    "clipPath": "Assets/Animations/Clips/SerpentTortoise/SerpentTortoise_WalkingUp.anim",
+                    "frames": [
+                        "SerpentTortoise_Walk_Up_00",
+                        "SerpentTortoise_Walk_Up_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "WalkingDown",
+                    "clipPath": "Assets/Animations/Clips/SerpentTortoise/SerpentTortoise_WalkingDown.anim",
+                    "frames": [
+                        "SerpentTortoise_Walk_Down_00",
+                        "SerpentTortoise_Walk_Down_01"
+                    ],
+                    "fps": 6.0,
+                    "duration": 0.5,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredRight",
+                    "clipPath": "Assets/Animations/Clips/SerpentTortoise/SerpentTortoise_ScaredRight.anim",
+                    "frames": [
+                        "SerpentTortoise_Scared_Right_00",
+                        "SerpentTortoise_Scared_Right_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredLeft",
+                    "clipPath": "Assets/Animations/Clips/SerpentTortoise/SerpentTortoise_ScaredLeft.anim",
+                    "frames": [
+                        "SerpentTortoise_Scared_Left_00",
+                        "SerpentTortoise_Scared_Left_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredUp",
+                    "clipPath": "Assets/Animations/Clips/SerpentTortoise/SerpentTortoise_ScaredUp.anim",
+                    "frames": [
+                        "SerpentTortoise_Scared_Up_00",
+                        "SerpentTortoise_Scared_Up_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "ScaredDown",
+                    "clipPath": "Assets/Animations/Clips/SerpentTortoise/SerpentTortoise_ScaredDown.anim",
+                    "frames": [
+                        "SerpentTortoise_Scared_Down_00",
+                        "SerpentTortoise_Scared_Down_01"
+                    ],
+                    "fps": 5.0,
+                    "duration": 0.6000000238418579,
+                    "exitCycles": 4.0,
+                    "loop": true
+                },
+                {
+                    "name": "Recovering",
+                    "clipPath": "Assets/Animations/Clips/SerpentTortoise/SerpentTortoise_Recovering.anim",
+                    "frames": [
+                        "SerpentTortoise_Recovering_00",
+                        "SerpentTortoise_Recovering_01"
+                    ],
+                    "fps": 4.0,
+                    "duration": 0.75,
+                    "exitCycles": 3.0,
+                    "loop": true
+                },
+                {
+                    "name": "Dead",
+                    "clipPath": "Assets/Animations/Clips/SerpentTortoise/SerpentTortoise_Dead.anim",
+                    "frames": [
+                        "SerpentTortoise_Dead_00",
+                        "SerpentTortoise_Dead_01"
+                    ],
+                    "fps": 4.0,
+                    "duration": 0.75,
+                    "exitCycles": 1.0,
+                    "loop": false
+                }
+            ]
+        }
+    ]
+}

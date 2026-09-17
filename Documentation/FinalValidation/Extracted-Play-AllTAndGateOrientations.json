@@ -1,0 +1,80 @@
+{
+  "phase": "Final",
+  "map": "AllTAndGateOrientations",
+  "unityVersion": "6000.4.11f1",
+  "completedUtc": "2026-09-17T04:55:00.1992195Z",
+  "sceneSha256": "eab7b356451ab09d610c29d2d8da5eda15b599ed83551cde5494392b125855a9",
+  "rows": 29,
+  "columns": 28,
+  "generatedCells": 440,
+  "manualCellsBefore": 660,
+  "manualCellsAfter": 660,
+  "elixirs": 4,
+  "observedFrames": 86,
+  "patrolLaps": 0,
+  "gameSeconds": 1.4100175949546485,
+  "maxPatrolPositionError": 4.76837158203125e-07,
+  "manualRemovedDuringPlay": true,
+  "exactPositions": true,
+  "exactRotationsAndReflections": true,
+  "spriteReferences": true,
+  "centerRowUnique": true,
+  "patrolUnchanged": true,
+  "movementAudio": true,
+  "elixirsAnimated": true,
+  "introStarted": true,
+  "normalStarted": false,
+  "normalLoopWrapped": false,
+  "repeatedGeneration": true,
+  "invalidRetryPreserved": true,
+  "viewReenableRefreshed": true,
+  "noMissingScripts": true,
+  "manualRestored": true,
+  "passed": true,
+  "showcaseStates": [
+    "Elixir:-623385122",
+    "FlameCrane:-1447365632",
+    "NineTail:-1447365632",
+    "PacStudent:-1447365632",
+    "SerpentTortoise:-1447365632",
+    "WhiteHound:-1447365632"
+  ],
+  "views": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "mapVisible": true,
+      "galleryVisible": true,
+      "labelsVisible": true,
+      "labelsAligned": true,
+      "image": ""
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "mapVisible": true,
+      "galleryVisible": true,
+      "labelsVisible": true,
+      "labelsAligned": true,
+      "image": ""
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "mapVisible": true,
+      "galleryVisible": true,
+      "labelsVisible": true,
+      "labelsAligned": true,
+      "image": ""
+    },
+    {
+      "width": 1680,
+      "height": 720,
+      "mapVisible": true,
+      "galleryVisible": true,
+      "labelsVisible": true,
+      "labelsAligned": true,
+      "image": ""
+    }
+  ]
+}

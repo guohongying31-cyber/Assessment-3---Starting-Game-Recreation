@@ -1,0 +1,1319 @@
+{
+  "scope": "Two complete Unity Play sessions, including restart and audio regression checks.",
+  "sessions": [
+    {
+      "unityVersion": "6000.4.11f1",
+      "completedUtc": "2026-09-16T08:03:32.3244648Z",
+      "session": 1,
+      "actorCount": 6,
+      "introStarted": true,
+      "normalStarted": true,
+      "normalLoopWrapped": true,
+      "manualDirectionControl": true,
+      "passed": true,
+      "states": [
+        {
+          "actor": "Cultivator",
+          "state": "WalkingDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001378059387207,
+          "observedCycles": 3.9999985694885254,
+          "frameChanges": 8,
+          "frames": [
+            "Cultivator_Walk_Down_00",
+            "Cultivator_Walk_Down_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "WalkingDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001378059387207,
+          "observedCycles": 3.9999985694885254,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Walk_Down_00",
+            "NineTail_Walk_Down_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "WalkingDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001378059387207,
+          "observedCycles": 3.9999985694885254,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Walk_Down_00",
+            "FlameCrane_Walk_Down_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "WalkingDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001378059387207,
+          "observedCycles": 3.9999985694885254,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Walk_Down_00",
+            "WhiteHound_Walk_Down_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "WalkingDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001378059387207,
+          "observedCycles": 3.9999985694885254,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Walk_Down_00",
+            "SerpentTortoise_Walk_Down_01"
+          ]
+        },
+        {
+          "actor": "Cultivator",
+          "state": "Dead",
+          "loop": false,
+          "completed": true,
+          "requiredSeconds": 0.75,
+          "observedSeconds": 0.7500845789909363,
+          "observedCycles": 0.999774158000946,
+          "frameChanges": 1,
+          "frames": [
+            "Cultivator_Dead_00",
+            "Cultivator_Dead_01"
+          ]
+        },
+        {
+          "actor": "Elixir",
+          "state": "Pulse",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 3.0,
+          "observedSeconds": 28.00006675720215,
+          "observedCycles": 27.999935150146484,
+          "frameChanges": 56,
+          "frames": [
+            "Elixir_Pulse_00",
+            "Elixir_Pulse_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "ScaredRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4001522064208984,
+          "observedCycles": 3.9999501705169678,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Scared_Right_00",
+            "NineTail_Scared_Right_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "ScaredRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4001522064208984,
+          "observedCycles": 3.9999501705169678,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Scared_Right_00",
+            "FlameCrane_Scared_Right_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "ScaredRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4001522064208984,
+          "observedCycles": 3.9999501705169678,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Scared_Right_00",
+            "WhiteHound_Scared_Right_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "ScaredRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4001522064208984,
+          "observedCycles": 3.9999501705169678,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Scared_Right_00",
+            "SerpentTortoise_Scared_Right_01"
+          ]
+        },
+        {
+          "actor": "Cultivator",
+          "state": "WalkingRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000004529953003,
+          "observedCycles": 3.999749183654785,
+          "frameChanges": 8,
+          "frames": [
+            "Cultivator_Walk_Right_00",
+            "Cultivator_Walk_Right_01"
+          ]
+        },
+        {
+          "actor": "Cultivator",
+          "state": "WalkingLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001232624053955,
+          "observedCycles": 3.9999094009399414,
+          "frameChanges": 8,
+          "frames": [
+            "Cultivator_Walk_Left_00",
+            "Cultivator_Walk_Left_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "ScaredLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000284671783447,
+          "observedCycles": 3.999814987182617,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Scared_Left_00",
+            "NineTail_Scared_Left_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "ScaredLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000284671783447,
+          "observedCycles": 3.999814987182617,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Scared_Left_00",
+            "FlameCrane_Scared_Left_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "ScaredLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000284671783447,
+          "observedCycles": 3.999814987182617,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Scared_Left_00",
+            "WhiteHound_Scared_Left_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "ScaredLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000284671783447,
+          "observedCycles": 3.999814987182617,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Scared_Left_00",
+            "SerpentTortoise_Scared_Left_01"
+          ]
+        },
+        {
+          "actor": "Cultivator",
+          "state": "WalkingUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0000739097595215,
+          "observedCycles": 3.999899387359619,
+          "frameChanges": 8,
+          "frames": [
+            "Cultivator_Walk_Up_00",
+            "Cultivator_Walk_Up_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "ScaredUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000046253204346,
+          "observedCycles": 3.999812364578247,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Scared_Up_00",
+            "NineTail_Scared_Up_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "ScaredUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000046253204346,
+          "observedCycles": 3.999812364578247,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Scared_Up_00",
+            "FlameCrane_Scared_Up_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "ScaredUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000046253204346,
+          "observedCycles": 3.999812364578247,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Scared_Up_00",
+            "WhiteHound_Scared_Up_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "ScaredUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000046253204346,
+          "observedCycles": 3.999812364578247,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Scared_Up_00",
+            "SerpentTortoise_Scared_Up_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "ScaredDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4002537727355957,
+          "observedCycles": 3.9999682903289795,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Scared_Down_00",
+            "NineTail_Scared_Down_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "ScaredDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4002537727355957,
+          "observedCycles": 3.9999682903289795,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Scared_Down_00",
+            "FlameCrane_Scared_Down_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "ScaredDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4002537727355957,
+          "observedCycles": 3.9999682903289795,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Scared_Down_00",
+            "WhiteHound_Scared_Down_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "ScaredDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4002537727355957,
+          "observedCycles": 3.9999682903289795,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Scared_Down_00",
+            "SerpentTortoise_Scared_Down_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "Recovering",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.25,
+          "observedSeconds": 2.2500932216644287,
+          "observedCycles": 2.999826192855835,
+          "frameChanges": 6,
+          "frames": [
+            "NineTail_Recovering_00",
+            "NineTail_Recovering_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "Recovering",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.25,
+          "observedSeconds": 2.2500932216644287,
+          "observedCycles": 2.999826192855835,
+          "frameChanges": 6,
+          "frames": [
+            "FlameCrane_Recovering_00",
+            "FlameCrane_Recovering_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "Recovering",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.25,
+          "observedSeconds": 2.2500932216644287,
+          "observedCycles": 2.999826192855835,
+          "frameChanges": 6,
+          "frames": [
+            "WhiteHound_Recovering_00",
+            "WhiteHound_Recovering_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "Recovering",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.25,
+          "observedSeconds": 2.2500932216644287,
+          "observedCycles": 2.999826192855835,
+          "frameChanges": 6,
+          "frames": [
+            "SerpentTortoise_Recovering_00",
+            "SerpentTortoise_Recovering_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "Dead",
+          "loop": false,
+          "completed": true,
+          "requiredSeconds": 0.75,
+          "observedSeconds": 0.7501502633094788,
+          "observedCycles": 0.9998713731765747,
+          "frameChanges": 1,
+          "frames": [
+            "NineTail_Dead_00",
+            "NineTail_Dead_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "Dead",
+          "loop": false,
+          "completed": true,
+          "requiredSeconds": 0.75,
+          "observedSeconds": 0.7501502633094788,
+          "observedCycles": 0.9998713731765747,
+          "frameChanges": 1,
+          "frames": [
+            "FlameCrane_Dead_00",
+            "FlameCrane_Dead_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "Dead",
+          "loop": false,
+          "completed": true,
+          "requiredSeconds": 0.75,
+          "observedSeconds": 0.7501502633094788,
+          "observedCycles": 0.9998713731765747,
+          "frameChanges": 1,
+          "frames": [
+            "WhiteHound_Dead_00",
+            "WhiteHound_Dead_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "Dead",
+          "loop": false,
+          "completed": true,
+          "requiredSeconds": 0.75,
+          "observedSeconds": 0.7501502633094788,
+          "observedCycles": 0.9998713731765747,
+          "frameChanges": 1,
+          "frames": [
+            "SerpentTortoise_Dead_00",
+            "SerpentTortoise_Dead_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "WalkingRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000006914138794,
+          "observedCycles": 3.9996726512908936,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Walk_Right_00",
+            "NineTail_Walk_Right_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "WalkingRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000006914138794,
+          "observedCycles": 3.9996726512908936,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Walk_Right_00",
+            "FlameCrane_Walk_Right_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "WalkingRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000006914138794,
+          "observedCycles": 3.9996726512908936,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Walk_Right_00",
+            "WhiteHound_Walk_Right_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "WalkingRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000006914138794,
+          "observedCycles": 3.9996726512908936,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Walk_Right_00",
+            "SerpentTortoise_Walk_Right_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "WalkingLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001063346862793,
+          "observedCycles": 3.9999001026153564,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Walk_Left_00",
+            "NineTail_Walk_Left_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "WalkingLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001063346862793,
+          "observedCycles": 3.9999001026153564,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Walk_Left_00",
+            "FlameCrane_Walk_Left_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "WalkingLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001063346862793,
+          "observedCycles": 3.9999001026153564,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Walk_Left_00",
+            "WhiteHound_Walk_Left_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "WalkingLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001063346862793,
+          "observedCycles": 3.9999001026153564,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Walk_Left_00",
+            "SerpentTortoise_Walk_Left_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "WalkingUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000115156173706,
+          "observedCycles": 3.999967098236084,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Walk_Up_00",
+            "NineTail_Walk_Up_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "WalkingUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000115156173706,
+          "observedCycles": 3.999967098236084,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Walk_Up_00",
+            "FlameCrane_Walk_Up_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "WalkingUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000115156173706,
+          "observedCycles": 3.999967098236084,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Walk_Up_00",
+            "WhiteHound_Walk_Up_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "WalkingUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000115156173706,
+          "observedCycles": 3.999967098236084,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Walk_Up_00",
+            "SerpentTortoise_Walk_Up_01"
+          ]
+        }
+      ]
+    },
+    {
+      "unityVersion": "6000.4.11f1",
+      "completedUtc": "2026-09-16T08:04:03.5405494Z",
+      "session": 2,
+      "actorCount": 6,
+      "introStarted": true,
+      "normalStarted": true,
+      "normalLoopWrapped": true,
+      "manualDirectionControl": true,
+      "passed": true,
+      "states": [
+        {
+          "actor": "Cultivator",
+          "state": "WalkingDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000016689300537,
+          "observedCycles": 3.999791383743286,
+          "frameChanges": 8,
+          "frames": [
+            "Cultivator_Walk_Down_00",
+            "Cultivator_Walk_Down_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "WalkingDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000016689300537,
+          "observedCycles": 3.999791383743286,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Walk_Down_00",
+            "NineTail_Walk_Down_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "WalkingDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000016689300537,
+          "observedCycles": 3.999791383743286,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Walk_Down_00",
+            "FlameCrane_Walk_Down_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "WalkingDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000016689300537,
+          "observedCycles": 3.999791383743286,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Walk_Down_00",
+            "WhiteHound_Walk_Down_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "WalkingDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000016689300537,
+          "observedCycles": 3.999791383743286,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Walk_Down_00",
+            "SerpentTortoise_Walk_Down_01"
+          ]
+        },
+        {
+          "actor": "Cultivator",
+          "state": "Dead",
+          "loop": false,
+          "completed": true,
+          "requiredSeconds": 0.75,
+          "observedSeconds": 0.7501140236854553,
+          "observedCycles": 0.999996542930603,
+          "frameChanges": 1,
+          "frames": [
+            "Cultivator_Dead_00",
+            "Cultivator_Dead_01"
+          ]
+        },
+        {
+          "actor": "Elixir",
+          "state": "Pulse",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 3.0,
+          "observedSeconds": 28.000146865844727,
+          "observedCycles": 28.000152587890625,
+          "frameChanges": 56,
+          "frames": [
+            "Elixir_Pulse_00",
+            "Elixir_Pulse_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "ScaredRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4001011848449707,
+          "observedCycles": 3.9999630451202393,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Scared_Right_00",
+            "NineTail_Scared_Right_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "ScaredRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4001011848449707,
+          "observedCycles": 3.9999630451202393,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Scared_Right_00",
+            "FlameCrane_Scared_Right_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "ScaredRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4001011848449707,
+          "observedCycles": 3.9999630451202393,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Scared_Right_00",
+            "WhiteHound_Scared_Right_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "ScaredRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4001011848449707,
+          "observedCycles": 3.9999630451202393,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Scared_Right_00",
+            "SerpentTortoise_Scared_Right_01"
+          ]
+        },
+        {
+          "actor": "Cultivator",
+          "state": "WalkingRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0000369548797607,
+          "observedCycles": 3.999831438064575,
+          "frameChanges": 8,
+          "frames": [
+            "Cultivator_Walk_Right_00",
+            "Cultivator_Walk_Right_01"
+          ]
+        },
+        {
+          "actor": "Cultivator",
+          "state": "WalkingLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.000047445297241,
+          "observedCycles": 3.999657154083252,
+          "frameChanges": 8,
+          "frames": [
+            "Cultivator_Walk_Left_00",
+            "Cultivator_Walk_Left_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "ScaredLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000070095062256,
+          "observedCycles": 3.9998390674591064,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Scared_Left_00",
+            "NineTail_Scared_Left_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "ScaredLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000070095062256,
+          "observedCycles": 3.9998390674591064,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Scared_Left_00",
+            "FlameCrane_Scared_Left_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "ScaredLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000070095062256,
+          "observedCycles": 3.9998390674591064,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Scared_Left_00",
+            "WhiteHound_Scared_Left_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "ScaredLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.4000070095062256,
+          "observedCycles": 3.9998390674591064,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Scared_Left_00",
+            "SerpentTortoise_Scared_Left_01"
+          ]
+        },
+        {
+          "actor": "Cultivator",
+          "state": "WalkingUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0000784397125244,
+          "observedCycles": 3.9999024868011475,
+          "frameChanges": 8,
+          "frames": [
+            "Cultivator_Walk_Up_00",
+            "Cultivator_Walk_Up_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "ScaredUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.400089979171753,
+          "observedCycles": 3.999952793121338,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Scared_Up_00",
+            "NineTail_Scared_Up_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "ScaredUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.400089979171753,
+          "observedCycles": 3.999952793121338,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Scared_Up_00",
+            "FlameCrane_Scared_Up_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "ScaredUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.400089979171753,
+          "observedCycles": 3.999952793121338,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Scared_Up_00",
+            "WhiteHound_Scared_Up_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "ScaredUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.400089979171753,
+          "observedCycles": 3.999952793121338,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Scared_Up_00",
+            "SerpentTortoise_Scared_Up_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "ScaredDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.400026559829712,
+          "observedCycles": 3.999734401702881,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Scared_Down_00",
+            "NineTail_Scared_Down_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "ScaredDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.400026559829712,
+          "observedCycles": 3.999734401702881,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Scared_Down_00",
+            "FlameCrane_Scared_Down_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "ScaredDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.400026559829712,
+          "observedCycles": 3.999734401702881,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Scared_Down_00",
+            "WhiteHound_Scared_Down_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "ScaredDown",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.400026559829712,
+          "observedCycles": 3.999734401702881,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Scared_Down_00",
+            "SerpentTortoise_Scared_Down_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "Recovering",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.25,
+          "observedSeconds": 2.250035524368286,
+          "observedCycles": 2.999699354171753,
+          "frameChanges": 6,
+          "frames": [
+            "NineTail_Recovering_00",
+            "NineTail_Recovering_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "Recovering",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.25,
+          "observedSeconds": 2.250035524368286,
+          "observedCycles": 2.999699354171753,
+          "frameChanges": 6,
+          "frames": [
+            "FlameCrane_Recovering_00",
+            "FlameCrane_Recovering_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "Recovering",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.25,
+          "observedSeconds": 2.250035524368286,
+          "observedCycles": 2.999699354171753,
+          "frameChanges": 6,
+          "frames": [
+            "WhiteHound_Recovering_00",
+            "WhiteHound_Recovering_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "Recovering",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.25,
+          "observedSeconds": 2.250035524368286,
+          "observedCycles": 2.999699354171753,
+          "frameChanges": 6,
+          "frames": [
+            "SerpentTortoise_Recovering_00",
+            "SerpentTortoise_Recovering_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "Dead",
+          "loop": false,
+          "completed": true,
+          "requiredSeconds": 0.75,
+          "observedSeconds": 0.7502728700637817,
+          "observedCycles": 0.9999358654022217,
+          "frameChanges": 1,
+          "frames": [
+            "NineTail_Dead_00",
+            "NineTail_Dead_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "Dead",
+          "loop": false,
+          "completed": true,
+          "requiredSeconds": 0.75,
+          "observedSeconds": 0.7502728700637817,
+          "observedCycles": 0.9999358654022217,
+          "frameChanges": 1,
+          "frames": [
+            "FlameCrane_Dead_00",
+            "FlameCrane_Dead_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "Dead",
+          "loop": false,
+          "completed": true,
+          "requiredSeconds": 0.75,
+          "observedSeconds": 0.7502728700637817,
+          "observedCycles": 0.9999358654022217,
+          "frameChanges": 1,
+          "frames": [
+            "WhiteHound_Dead_00",
+            "WhiteHound_Dead_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "Dead",
+          "loop": false,
+          "completed": true,
+          "requiredSeconds": 0.75,
+          "observedSeconds": 0.7502728700637817,
+          "observedCycles": 0.9999358654022217,
+          "frameChanges": 1,
+          "frames": [
+            "SerpentTortoise_Dead_00",
+            "SerpentTortoise_Dead_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "WalkingRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001063346862793,
+          "observedCycles": 3.999664783477783,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Walk_Right_00",
+            "NineTail_Walk_Right_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "WalkingRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001063346862793,
+          "observedCycles": 3.999664783477783,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Walk_Right_00",
+            "FlameCrane_Walk_Right_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "WalkingRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001063346862793,
+          "observedCycles": 3.999664783477783,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Walk_Right_00",
+            "WhiteHound_Walk_Right_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "WalkingRight",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001063346862793,
+          "observedCycles": 3.999664783477783,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Walk_Right_00",
+            "SerpentTortoise_Walk_Right_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "WalkingLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001232624053955,
+          "observedCycles": 3.9997096061706543,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Walk_Left_00",
+            "NineTail_Walk_Left_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "WalkingLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001232624053955,
+          "observedCycles": 3.9997096061706543,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Walk_Left_00",
+            "FlameCrane_Walk_Left_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "WalkingLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001232624053955,
+          "observedCycles": 3.9997096061706543,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Walk_Left_00",
+            "WhiteHound_Walk_Left_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "WalkingLeft",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0001232624053955,
+          "observedCycles": 3.9997096061706543,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Walk_Left_00",
+            "SerpentTortoise_Walk_Left_01"
+          ]
+        },
+        {
+          "actor": "NineTail",
+          "state": "WalkingUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0000274181365967,
+          "observedCycles": 3.9995744228363037,
+          "frameChanges": 8,
+          "frames": [
+            "NineTail_Walk_Up_00",
+            "NineTail_Walk_Up_01"
+          ]
+        },
+        {
+          "actor": "FlameCrane",
+          "state": "WalkingUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0000274181365967,
+          "observedCycles": 3.9995744228363037,
+          "frameChanges": 8,
+          "frames": [
+            "FlameCrane_Walk_Up_00",
+            "FlameCrane_Walk_Up_01"
+          ]
+        },
+        {
+          "actor": "WhiteHound",
+          "state": "WalkingUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0000274181365967,
+          "observedCycles": 3.9995744228363037,
+          "frameChanges": 8,
+          "frames": [
+            "WhiteHound_Walk_Up_00",
+            "WhiteHound_Walk_Up_01"
+          ]
+        },
+        {
+          "actor": "SerpentTortoise",
+          "state": "WalkingUp",
+          "loop": true,
+          "completed": true,
+          "requiredSeconds": 2.0,
+          "observedSeconds": 2.0000274181365967,
+          "observedCycles": 3.9995744228363037,
+          "frameChanges": 8,
+          "frames": [
+            "SerpentTortoise_Walk_Up_00",
+            "SerpentTortoise_Walk_Up_01"
+          ]
+        }
+      ]
+    }
+  ]
+}

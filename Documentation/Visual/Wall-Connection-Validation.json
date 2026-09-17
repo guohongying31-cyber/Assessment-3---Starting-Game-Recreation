@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "tileSizePixels": 384,
+  "atlasSizePixels": [
+    1152,
+    768
+  ],
+  "matchingColorSeamChecks": 7,
+  "gateAlphaSeamCheck": true,
+  "sha256": "88f25d0851583f6cc3f1b9e2dc6fe0afbb40a2dc74e368b4611448542f80fcef",
+  "tiles": [
+    {
+      "name": "Wall_OuterCorner",
+      "connections": [
+        "R",
+        "D"
+      ]
+    },
+    {
+      "name": "Wall_OuterStraight",
+      "connections": [
+        "L",
+        "R"
+      ]
+    },
+    {
+      "name": "Wall_InnerCorner",
+      "connections": [
+        "R",
+        "D"
+      ]
+    },
+    {
+      "name": "Wall_InnerStraight",
+      "connections": [
+        "L",
+        "R"
+      ]
+    },
+    {
+      "name": "Wall_TJunction",
+      "connections": [
+        "L",
+        "R",
+        "D"
+      ]
+    },
+    {
+      "name": "Wall_ExitSeal",
+      "connections": [
+        "L",
+        "R"
+      ]
+    }
+  ]
+}

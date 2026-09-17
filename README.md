@@ -1,37 +1,98 @@
-# 山海灵途 | Shan Hai Spirit Trail
+# Shan Hai Spirit Trail
 
 31263 / 32004 Introduction to Game Development, Assessment 3.
 
-一个以青衣修仙者和山海异兽为主题的 2D PacStudent 重制项目。
-以灵气收集、破厄丹和封印表现原作交互，保留作业要求的关卡与运动规则。
+A 2D PacStudent recreation featuring a cultivator in jade robes and mythical beasts
+inspired by the Classic of Mountains and Seas. Spirit collection, ward-breaking elixirs,
+and sealing rituals reinterpret the original interactions while preserving the required
+level and movement rules.
 
-## 当前阶段
+## Project status
 
-正在建立本地仓库和 Unity 工程基础。尚未完成音频、视觉素材、动画、手动关卡、
-移动或程序化关卡生成；当前内容不能作为已完成作业提交。
+The target is **100% HD**, progressing through every grading band in order.
+The Unity project foundation and the audio implementation are ready. Eleven synthesized
+audio clips are imported, and the scene plays its intro before looping normal-state music.
+See the audio validation record for the checks performed and listening-review limits.
+The visual stage now includes 101 sprite frames, 46 visual animation clips, six visual
+controllers, and a scene showcase with fifteen reusable sprite prefabs. Two full Play
+sessions verified every required animation state and the existing music sequence.
+The manual level is now saved in the scene: 28 columns by 29 rows, four reflected quadrants,
+660 placed objects, 218 spirit motes and four animated elixirs. Two full Play sessions
+verified the completed maze, retained animation showcase and music restart.
+The cultivator now patrols the first inner block clockwise at 2.5 units per second,
+with immediate directional animation and continuous movement audio. Real Play tests at
+30, 60 and 144 requested FPS verified a 7.2-second lap and pause/resume behavior.
+The generator now recreates the maze at runtime using neighboring wall connections,
+four reflected quadrants and adaptive camera/showcase placement. Five maps and twenty
+map/aspect combinations passed Play validation. The saved manual scene returns after Stop.
+Final technical validation includes a successful Windows build, a 35-second player
+launch check and five-map Play verification from a ZIP extracted without caches.
+See [final validation](Documentation/FinalValidation/Final-Validation.md) and the
+[submission guide](Documentation/FinalValidation/Submission-Guide.md).
+The release archive is named `26151833_Assess3.zip`; its adjacent validation receipt
+records the exact Main commit, ZIP checksum and final extracted-archive checks.
 
-- Unity：**6000.4.11f1**（用户已确认）。
-- 远程仓库：等待用户提供地址。
-- 开发分支：`Development`；每次只开展一个功能分支。
-- 主分支：`Main`，最终验收之前不接收开发合并。
+- Unity: **6000.4.11f1**, confirmed by the user.
+- Remote: [Assessment-3---Starting-Game-Recreation](https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation).
+- Development branch: `Development`; work on one feature branch at a time.
+- Main branch: `Main`; do not merge development work into it before final validation.
+- Language: all project files, filenames, comments, asset labels, and game text use English.
 
-## 文档入口
+## Documentation
 
-- [评分要求与验收](Documentation/Assessment-Checklist.md)
-- [主题及素材设计建议](Documentation/Theme-Brief.md)
-- [真实开发里程碑](Documentation/Development-Plan.md)
-- [AI 协助记录](Documentation/AI-Assistance.md)
-- [环境与验证记录](Documentation/Validation.md)
+- [Assessment requirements and acceptance checklist](Documentation/Assessment-Checklist.md)
+- [Theme and asset design guidance](Documentation/Theme-Brief.md)
+- [Development milestones](Documentation/Development-Plan.md)
+- [Environment and validation record](Documentation/Validation.md)
+- [Audio inventory and provenance](Documentation/Audio/Audio-Provenance.md)
+- [Scene audio setup and playback instructions](Documentation/Audio/Scene-Audio-Guide.md)
+- [Audio validation record](Documentation/Audio/Audio-Validation.md)
+- [Visual production and import settings](Documentation/Visual/Visual-Production.md)
+- [Animation controls and showcase guide](Documentation/Visual/Animation-Guide.md)
+- [Visual validation record](Documentation/Visual/Visual-Validation.md)
+- [Manual maze layout and scene guide](Documentation/ManualLevel/Manual-Level-Guide.md)
+- [Manual level validation record](Documentation/ManualLevel/Manual-Level-Validation.md)
+- [Patrol controls and tween explanation](Documentation/Movement/Movement-Guide.md)
+- [Movement and frame-rate validation](Documentation/Movement/Movement-Validation.md)
+- [Generator array, wall rules and camera controls](Documentation/LevelGenerator/Generator-Guide.md)
+- [Generator validation and replacement-map evidence](Documentation/LevelGenerator/Generator-Validation.md)
+- [Visual clarity improvements and before/after captures](Documentation/VisualClarity/Clarity-Validation.md)
+- [Final build, clean-project and repository validation](Documentation/FinalValidation/Final-Validation.md)
+- [Submission and opening instructions](Documentation/FinalValidation/Submission-Guide.md)
 
-文档会在工程准备阶段逐步加入。美术和游戏代码的制作遵循 PDF 的本人创作要求；
-AI 的计划、解释及检查结果如实记录，不替代学生本人完成的素材和代码。
+Production notes describe the actual assets and configuration. Validation records
+distinguish completed checks from work that remains unfinished.
 
-## Git 与提交
+## Open the project
 
-每个可验收的小里程碑单独提交。所有功能分支均从最新 `Development` 创建，
-测试通过后合并回去并保留分支。最终检查通过后才合并到 `Main`，再按
-`studentNumber_Assess3.zip` 打包，保留 `.git`、`.gitignore`，排除 `Library`。
+Add this directory in Unity Hub and open it with version 6000.4.11f1.
+Open `Assets/Scenes/RecreatedLevel.unity`.
+The scene contains an orthographic camera and four organizational groups:
+`Systems`, `Level01_Manual`, `Characters`, and `AssetShowcase`.
+`Systems/LevelAudio` plays the 2.4-second intro and then loops the normal music.
+`Level01_Manual` contains the four saved maze quadrants, visible before Play.
+`Systems/LevelGenerator` replaces them with `Level01_Generated` during Play. Editing
+the `levelMap` array in `Assets/Scripts/Level/LevelGenerator.cs` changes the runtime
+layout; camera framing, panel placement and inventory labels adapt to its dimensions.
+`AssetShowcase` displays the cultivator, four beasts, four items and six wall samples in
+panels beside the maze in landscape and below it in portrait. Press Play and watch
+for at least 28 seconds to see every character
+state and a full normal-music loop. Four maze elixirs and the sidebar elixir pulse.
+`Characters/PacStudent` patrols the maze's first upper-left inner block. Its four-way
+walking animation matches each turn and soft steps loop while it moves. Stop and Play
+again to restart the patrol, preview and music. Movement is automatic; this stage has
+no keyboard control, collision response or pickup collection.
 
-`.gitignore` 采用作业指定的
-[GitHub Unity 模板](https://github.com/github/gitignore/blob/main/Unity.gitignore)，
-末尾另加本项目临时文件和本地参考资料的忽略规则。
+![Generated maze with improved text and sprite clarity](Documentation/VisualClarity/After-1920x1080.png)
+
+## Git and submission
+
+Commit each completed, reviewable milestone separately. Create every feature branch
+from the latest `Development`, test it, merge it back, and retain the feature branch.
+Only after final validation should Development merge into `Main`.
+Package the project as `26151833_Assess3.zip`, including `.git` and
+`.gitignore` and excluding `Library`.
+
+The `.gitignore` is based on the assessment-specified
+[GitHub Unity template](https://github.com/github/gitignore/blob/main/Unity.gitignore),
+with additional rules for local references and temporary verification files.
