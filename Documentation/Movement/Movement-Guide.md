@@ -12,7 +12,7 @@ first inner block. Its saved starting point is `(1, -1, 0)`.
 
 One lap covers 18 world units in 7.2 seconds. Coordinates are world positions,
 with the source array's first cell at `(0, 0)` and rows extending downward.
-The route stays fixed when a later generator changes the map.
+The route stays fixed when the generator changes the map.
 
 `LinearPositionTween` interpolates from a segment's start to its end using
 `elapsed / duration`. `PacStudentPatrol` calculates each duration as distance

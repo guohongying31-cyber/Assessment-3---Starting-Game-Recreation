@@ -1,0 +1,16 @@
+{
+    "unityVersion": "6000.4.11f1",
+    "completedUtc": "2026-09-17T02:54:56.8396426Z",
+    "cases": 25,
+    "sourceRows": 15,
+    "sourceColumns": 14,
+    "fullRows": 29,
+    "fullColumns": 28,
+    "occupied": 660,
+    "motes": 218,
+    "elixirs": 4,
+    "mirrorCoordinates": true,
+    "singleCenterRow": true,
+    "inputValidation": true,
+    "passed": true
+}
