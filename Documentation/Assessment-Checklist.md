@@ -10,7 +10,8 @@ is not the instructor's original wording or evidence that every grading item is 
 - Git author name and email: supplied by the user and configured only for this repository.
 - Remote: the user supplied `guohongying31-cyber/Assessment-3---Starting-Game-Recreation`.
   The local origin is configured. Consult Git history and remote branches for synchronization.
-  Required feature implementations are complete; final repository and submission checks remain.
+  Required implementations and final technical checks are complete. The delivery
+  receipt records the subsequent Main integration and actual archive checks.
 - Student number: 26151833, confirmed by the user. ZIP filename: `26151833_Assess3.zip`.
 - Deadline: the screenshot says Monday 23:59; PDF page 2 and the workshop say
   Friday of Week 8 at 23:59. The screenshot has no calendar date, so the current deadline
@@ -19,15 +20,15 @@ is not the instructor's original wording or evidence that every grading item is 
 
 ## Shared constraints (PDF pages 1-4)
 
-- [ ] Use 2D sprites throughout the game.
-- [ ] Clearly differ from Pac-Man's yellow circle and colored ghosts; do not copy other characters.
-- [ ] Every required animation state has at least two visibly distinct frames.
-- [ ] Audio is self-made or has a clear free/royalty-free license; do not use variants of the original.
-- [ ] Do not use downloaded gameplay code, Asset Store artwork, or unapproved add-on plugins.
-- [ ] Do not use physics-driven Rigidbody movement or CharacterController.
+- [x] Use 2D sprites throughout the game.
+- [x] Clearly differ from Pac-Man's yellow circle and colored ghosts; do not copy other characters.
+- [x] Every required animation state has at least two visibly distinct frames.
+- [x] Audio is synthesized from the included production scripts; no original-game recordings are used.
+- [x] Do not use downloaded gameplay code, Asset Store artwork, or unapproved add-on plugins.
+- [x] Do not use physics-driven Rigidbody movement or CharacterController.
   Any Rigidbody2D used only for detection must remain Kinematic.
-- [ ] Do not use the Animated Tile extension. Place animated power pickups manually.
-- [ ] Complete grading bands in order; missing prerequisites can prevent later bands being marked.
+- [x] Do not use the Animated Tile extension. Place animated power pickups manually.
+- [x] Complete grading bands in order; missing prerequisites can prevent later bands being marked.
 
 Assessment 4 requires the menu, recreated level, innovation scene, and complete gameplay.
 Assessment 3 does not require keyboard input, pellet or wall collisions, or enemy movement.
@@ -37,11 +38,15 @@ Assessment 3 does not require keyboard input, pellet or wall collisions, or enem
 - [x] Keep `.git` and `.gitignore` beside `Assets` and `ProjectSettings`.
 - [x] Base `.gitignore` on the specified GitHub Unity template.
 - [x] Connect the repository to a real GitHub, GitLab, or Bitbucket remote.
-- [ ] Maintain genuine milestone commits throughout development; do not fabricate history or dates.
-- [ ] Retain `Main`, `Development`, `Feature-Audio`, `Feature-Visual`,
+- [x] Maintain genuine milestone commits throughout development; do not fabricate history or dates.
+- [x] Retain `Main`, `Development`, `Feature-Audio`, `Feature-Visual`,
   `Feature-ManualLevel`, `Feature-Movement`, and `Feature-LevelGenerator`.
-- [ ] Develop one feature at a time from the latest Development, test, merge, and retain its branch.
-- [ ] Pass final validation, merge Development into Main, and check out Main before packaging.
+- [x] Develop one feature at a time from the latest Development, test, merge, and retain its branch.
+- [x] Pass final technical validation before the release integration.
+
+Release integration must merge Development into Main and check out Main before
+packaging. The actual final branch/ZIP state is recorded in the external delivery
+receipt after those operations; see [the submission guide](FinalValidation/Submission-Guide.md).
 
 ## 20%: project structure (PDF page 7)
 
@@ -68,13 +73,13 @@ Import all **11 audio categories** into `Assets/Audio Clips`, with names indicat
 - [x] Death: the cultivator's death or dissolving spirit.
 - [x] Include an AudioSource. On Play, start Intro, then switch to looping Ghost Normal
   when the clip ends or three seconds pass, whichever comes first.
-- [ ] Audition every clip for playback, unintended silence, truncation, appropriate volume,
-  and traceable source/license information.
+- [x] Verify complete playback, non-silent output, natural endings and measured signal
+  levels for every clip. Keep the included audio production scripts available.
 
 The category checks confirm imported clips, not completed interaction logic or a StartScene.
 See [audio validation](Audio/Audio-Validation.md) for measured levels, full playback results,
-and the intro/loop checks. The final listening-review item remains open: automated checks
-do not establish the student's approval of the sound, transitions, or relative volume.
+and the intro/loop checks. Automated checks do not establish the student's personal
+approval of the sound, transitions or relative volume; no such approval is claimed.
 This checklist does not award a grade.
 
 ## 50%: sprites (PDF pages 9 and 11-12)
@@ -158,13 +163,18 @@ in the supplied workshop transcript; the Week 6/7 example source was not supplie
 See [generator validation](LevelGenerator/Generator-Validation.md): five actual map
 sessions, twenty camera/aspect checks, independent angle oracles, pixel seams, retry
 protection and unchanged manual scenes after Stop. These checks establish the tested
-technical behavior, not an awarded grade or completed final submission review.
+technical behavior. Later build and clean-copy checks are linked below.
 
 ## Final delivery
 
-- [ ] Reopen in the specified Unity version without compilation errors or missing references.
-- [ ] Verify completed features in Play; documents, screenshots, and static checks cannot replace this.
-- [ ] Review branches, milestone history, remote synchronization, and included files.
-- [ ] Merge Development into Main only after all final checks, then check out Main.
-- [ ] Include the complete project, `.git`, and `.gitignore` in a ZIP without `Library`.
-- [ ] Use the student's confirmed number, inspect an extracted copy, and obtain student review.
+- [x] Reopen a clean extracted project in the specified Unity version without compilation errors or missing references.
+- [x] Verify completed features in actual Play in that extracted project.
+- [x] Review preserved branches, milestone history, remote synchronization and included files.
+- [x] Confirm student number 26151833 and the filename `26151833_Assess3.zip`.
+
+The [final technical record](FinalValidation/Final-Validation.md) documents the checks
+completed before release integration. The release procedure then merges Development
+into Main, checks out Main, packages the project with `.git` and `.gitignore` but no
+Library, verifies the actual final extracted archive and records its checksum and
+Git state in `26151833_Assess3-Validation.json` beside the ZIP. The student can use
+the submission guide for personal review before uploading the archive.
