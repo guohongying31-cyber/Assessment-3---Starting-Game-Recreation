@@ -29,7 +29,8 @@ are performed on the base sprites during level placement; no rotated image varia
 
 - Unity 6000.4.11f1 with the editor's bundled 2D Sprite package.
 - Sprite (2D and UI), Multiple mode, consistent 384 pixels per unit and logical cell-center anchors.
-- Point filtering, uncompressed RGBA, alpha from input, no mipmaps, Clamp wrapping.
+- Bilinear filtering for characters and pickups; Point filtering for connecting
+  wall tiles. Uncompressed RGBA, alpha from input, no mipmaps, Clamp wrapping.
 - Preserve source dimensions; Full Rect sprite meshes; no generated physics shapes.
 - For scene placement, use a visual-child scale of 384 divided by the source cell size.
   This makes each source cell one world unit while preserving consistent import settings.
@@ -42,6 +43,9 @@ The source pixels are unchanged, and neighboring poses remain in separate slices
 
 The earlier 32-pixel canvas suggestion was a drawing option, not the current source resolution.
 The imported pixel-style illustrations retain their full source dimensions.
+
+See the [clarity improvement](../VisualClarity/Clarity-Validation.md) for the later
+filtering comparison, sharper runtime labels and local Editor preview settings.
 
 ## Validation scope
 

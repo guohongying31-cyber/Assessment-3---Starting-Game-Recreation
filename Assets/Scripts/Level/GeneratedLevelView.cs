@@ -34,8 +34,12 @@ namespace ShanHaiSpiritTrail
         private RectTransform leftDivider;
         private RectTransform rightDivider;
         private Text inventoryText;
+        private Canvas labelCanvas;
+        private Text[] labels;
         private float unitsPerPixel;
         private float lastAspect = -1f;
+        private int lastPixelHeight = -1;
+        private float lastOrthographicSize = -1f;
         private bool prepared;
 
         private void Awake() => generator = GetComponent<LevelGenerator>();
@@ -61,9 +65,12 @@ namespace ShanHaiSpiritTrail
 
         private void LateUpdate()
         {
-            if (levelCamera && generator.GeneratedLayout != null &&
-                Mathf.Abs(levelCamera.aspect - lastAspect) > 0.0001f)
+            if (!levelCamera || generator.GeneratedLayout == null) return;
+            if (Mathf.Abs(levelCamera.aspect - lastAspect) > 0.0001f)
                 RefreshLayout();
+            else if (prepared && (levelCamera.pixelHeight != lastPixelHeight ||
+                Mathf.Abs(levelCamera.orthographicSize - lastOrthographicSize) > 0.0001f))
+                RefreshTextDensity();
         }
 
         public void RefreshLayout()
@@ -130,6 +137,7 @@ namespace ShanHaiSpiritTrail
             levelCamera.orthographicSize = Mathf.Max(visible.extents.y,
                 visible.extents.x / aspect) + cameraPadding;
             lastAspect = aspect;
+            RefreshTextDensity();
         }
 
         private void PrepareDisplay()
@@ -150,11 +158,26 @@ namespace ShanHaiSpiritTrail
             scaler.enabled = false;
             canvas.renderMode = RenderMode.WorldSpace;
             canvas.worldCamera = levelCamera;
+            labelCanvas = canvas;
             labelRoot.anchorMin = labelRoot.anchorMax = labelRoot.pivot = new Vector2(0.5f, 0.5f);
             labelRoot.sizeDelta = reference;
             labelRoot.rotation = Quaternion.identity;
             labelRoot.localScale = Vector3.one * unitsPerPixel;
             labelRoot.position = new Vector3(referenceCenter.x, referenceCenter.y, -1);
+            labels = labelRoot.GetComponentsInChildren<Text>(true);
+            foreach (Text label in labels)
+            {
+                if (label.fontSize < 18)
+                {
+                    label.fontSize = 18;
+                    RectTransform rect = label.rectTransform;
+                    rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,
+                        Mathf.Max(rect.rect.width, label.preferredWidth + 6f));
+                }
+                Color color = label.color;
+                if (Mathf.Max(color.r, Mathf.Max(color.g, color.b)) < 0.75f)
+                    label.color = new Color(0.73f, 0.79f, 0.82f, color.a);
+            }
             Canvas.ForceUpdateCanvases();
 
             mazeTitle = RequiredLabel(labelRoot, "MazeTitle");
@@ -185,6 +208,23 @@ namespace ShanHaiSpiritTrail
             leftEnvelope = PanelBounds(Panel.Left);
             rightEnvelope = PanelBounds(Panel.Right);
             prepared = true;
+        }
+
+        private void RefreshTextDensity()
+        {
+            if (!labelCanvas || levelCamera.pixelHeight <= 0 || levelCamera.orthographicSize <= 0f) return;
+            // Dynamic UGUI text uses Canvas.scaleFactor for glyph rasterization.
+            // Two samples per displayed pixel sharpen the atlas without changing
+            // label dimensions, world positions, or the panel layout.
+            float screenPixelsPerUnit = levelCamera.pixelHeight / (2f * levelCamera.orthographicSize);
+            float density = Mathf.Clamp(2f * screenPixelsPerUnit * unitsPerPixel, 2f, 4f);
+            if (Mathf.Abs(labelCanvas.scaleFactor - density) > 0.001f)
+            {
+                labelCanvas.scaleFactor = density;
+                foreach (Text label in labels) label.SetAllDirty();
+            }
+            lastPixelHeight = levelCamera.pixelHeight;
+            lastOrthographicSize = levelCamera.orthographicSize;
         }
 
         private void AddPose(Transform target, Bounds envelope, Panel side)
