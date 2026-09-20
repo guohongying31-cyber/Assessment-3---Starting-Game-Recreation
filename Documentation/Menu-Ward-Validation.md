@@ -47,3 +47,10 @@ SHA-256 is `1863a50e33023b53a32736228cad901d47797786ce72874ef1c3b7cdd59164e7`.
 
 The new playable work is an Assessment 4 development milestone. A complete HD
 compliance assessment and final submission package require the full new rubric.
+
+## Subsequent Windows display correction
+
+A user test exposed stripped UI shaders in the original Windows preview. The
+headless startup check above did not detect that rendering failure. The preview
+has since been rebuilt and checked in a real graphics-enabled player window;
+see [the UI repair record](Player-UI-Repair.md) for the cause, fix and observed checks.
