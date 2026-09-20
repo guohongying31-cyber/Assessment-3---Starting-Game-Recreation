@@ -161,10 +161,14 @@ namespace ShanHaiSpiritTrail
             }
         }
 
-        public bool Eat(int index)
+        public bool Eat(int index, bool frightenedDuringStep = false)
         {
-            if (index < 0 || index >= ghosts.Length || !ghosts[index].IsEdible) return false;
+            if (index < 0 || index >= ghosts.Length) return false;
             GhostAgent ghost = ghosts[index];
+            bool roaming = ghost.State == GhostState.Roaming || ghost.State == GhostState.Exiting;
+            // The shared simulation may end exactly at the power expiry boundary.
+            // Contact during that bounded step still uses its active power state.
+            if (!ghost.IsEdible && !(frightenedDuringStep && roaming)) return false;
             ghost.State = GhostState.Eaten;
             ghost.Frightened = false;
             ghost.ReturningThroughExit = true;

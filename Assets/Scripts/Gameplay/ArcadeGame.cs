@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace ShanHaiSpiritTrail
 {
@@ -14,6 +15,8 @@ namespace ShanHaiSpiritTrail
         [SerializeField] private Camera levelCamera;
         [SerializeField] private ArcadeAudio audioPlayer;
         [SerializeField] private ArcadeHud hud;
+        [SerializeField] private bool talismanMode;
+        [SerializeField] private GameObject wardPrefab;
         public MazeNavigation Navigation { get; private set; }
         public GridMotor Player { get; private set; }
         public GhostDirector Ghosts { get; private set; }
@@ -26,10 +29,16 @@ namespace ShanHaiSpiritTrail
         public float FruitTime { get; private set; }
         public bool ExtraLifeGranted { get; private set; }
         public int GhostCombo { get; private set; }
+        public bool TalismanMode => talismanMode;
+        public TalismanWard Ward { get; } = new TalismanWard();
+        public int BestScore => Mathf.Max(Score, PlayerPrefs.GetInt(BestKey, 0));
+        private string BestKey => talismanMode ? "SpiritTrail.TrialBest" : "SpiritTrail.ClassicBest";
         private ActorSprite playerView;
         private readonly ActorSprite[] ghostViews = new ActorSprite[4];
         private readonly Vector2[] previousGhosts = new Vector2[4];
+        private readonly bool[] edibleBeforeStep = new bool[4];
         private GameObject fruitView;
+        private GameObject wardView;
         private Animator[] pickupAnimators;
         private float aspect, deathTime, lastPickupTime = -1;
         private ArcadePhase beforePause;
@@ -54,6 +63,14 @@ namespace ShanHaiSpiritTrail
             fruitView = Instantiate(fruitPrefab);
             fruitView.name = "Bonus_CrimsonFruit";
             fruitView.transform.position = Navigation.WorldPosition(fruitCell);
+            if(talismanMode)
+            {
+                wardView = Instantiate(wardPrefab);
+                wardView.name = "Active_TalismanWard";
+                wardView.transform.localScale *= 2.1f;
+                foreach(var renderer in wardView.GetComponentsInChildren<SpriteRenderer>())
+                { renderer.sortingOrder = 9; renderer.color = new Color(1,1,1,.6f); }
+            }
             NewGame();
         }
 
@@ -83,6 +100,7 @@ namespace ShanHaiSpiritTrail
             Player.QueueDirection(GridDirection.Left);
             Ghosts.Reset(Round);
             GhostCombo = 0; FruitTime = 0;
+            Ward.Reset();
             Phase = ArcadePhase.Ready; ReadyTime = 2.4f;
             audioPlayer.Music("Intro", true);
         }
@@ -107,6 +125,7 @@ namespace ShanHaiSpiritTrail
             }
             if (Pickups.Remaining != 0) return;
             Phase = ArcadePhase.RoundClear; Player.Enabled = false;
+            RecordBest();
             audioPlayer.Music(null);
         }
         private int FruitPoints()
@@ -144,6 +163,12 @@ namespace ShanHaiSpiritTrail
                 returning |= ghost.State == GhostState.Eaten;
             }
             fruitView.SetActive(FruitTime > 0);
+            if(wardView)
+            {
+                wardView.SetActive(Ward.Active);
+                wardView.transform.position = Player.Position;
+                wardView.GetComponent<Animator>().speed = active ? 1 : 0;
+            }
             if(active) audioPlayer.Music(returning ? "Dead" : Ghosts.FrightRemaining > 0 ? "Scared" : "Normal");
             audioPlayer.Moving(active && Player.IsMoving && Time.time - lastPickupTime > .15f);
             FitCamera(); hud.Draw(this);
@@ -157,7 +182,13 @@ namespace ShanHaiSpiritTrail
             float remaining = deltaTime;
             while(remaining > 0 && Phase != ArcadePhase.Paused && Phase != ArcadePhase.RoundClear && Phase != ArcadePhase.GameOver)
             {
-                float step = Mathf.Min(remaining, 1f/120); remaining -= step;
+                float step = Mathf.Min(remaining, 1f/120);
+                if(Phase == ArcadePhase.Playing)
+                {
+                    if(Ghosts.FrightRemaining > 0) step = Mathf.Min(step,Ghosts.FrightRemaining);
+                    if(Ward.Active) step = Mathf.Min(step,Ward.Remaining);
+                }
+                remaining -= step;
                 if(Phase == ArcadePhase.Ready)
                 {
                     ReadyTime -= step;
@@ -168,7 +199,7 @@ namespace ShanHaiSpiritTrail
                     deathTime -= step;
                     if(deathTime <= 0)
                     {
-                        if(Lives == 0) { Phase = ArcadePhase.GameOver; audioPlayer.Music(null); }
+                        if(Lives == 0) { Phase = ArcadePhase.GameOver; RecordBest(); audioPlayer.Music(null); }
                         else ResetActors();
                     }
                 }
@@ -178,8 +209,14 @@ namespace ShanHaiSpiritTrail
         private void TickPlaying(float step)
         {
             Vector2 previousPlayer = Player.Position;
-            for(int i=0; i<4; i++) previousGhosts[i] = Ghosts.Ghosts[i].Motor.Position;
+            for(int i=0; i<4; i++)
+            {
+                previousGhosts[i] = Ghosts.Ghosts[i].Motor.Position;
+                edibleBeforeStep[i] = Ghosts.Ghosts[i].IsEdible;
+            }
+            bool protectedDuringStep = Ward.Active;
             FruitTime = Mathf.Max(0, FruitTime-step);
+            Ward.Tick(step);
             Player.Tick(step);
             if(Phase != ArcadePhase.Playing) return;
             Ghosts.Tick(step,Player.CurrentCell,Player.Direction);
@@ -187,11 +224,11 @@ namespace ShanHaiSpiritTrail
             {
                 var ghost = Ghosts.Ghosts[i];
                 if(!MazeContact.Crossed(previousPlayer,Player.Position,previousGhosts[i],ghost.Motor.Position,Navigation.Columns)) continue;
-                if(ghost.IsEdible && Ghosts.Eat(i))
+                if(Ghosts.Eat(i, edibleBeforeStep[i]))
                 {
                     AddScore(200 << Mathf.Min(GhostCombo,3)); GhostCombo++; audioPlayer.Effect("Ghost");
                 }
-                else if(ghost.IsDangerous) { LoseLife(); break; }
+                else if(ghost.IsDangerous && !protectedDuringStep) { LoseLife(); break; }
             }
         }
         private void LoseLife()
@@ -202,15 +239,30 @@ namespace ShanHaiSpiritTrail
         }
         private void ReadInput()
         {
+            if(Input.GetKeyDown(KeyCode.M) && Phase != ArcadePhase.Playing && Phase != ArcadePhase.Dying) ReturnToMenu();
             if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P)) TogglePause();
             if (Phase == ArcadePhase.RoundClear && Input.GetKeyDown(KeyCode.Return)) NextRound();
             if (Phase == ArcadePhase.GameOver && Input.GetKeyDown(KeyCode.Return)) NewGame();
             if (Phase != ArcadePhase.Ready && Phase != ArcadePhase.Playing) return;
+            if(Input.GetKeyDown(KeyCode.Space)) TryActivateWard();
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) Player.QueueDirection(GridDirection.Up);
             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) Player.QueueDirection(GridDirection.Left);
             if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) Player.QueueDirection(GridDirection.Down);
             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) Player.QueueDirection(GridDirection.Right);
         }
+        public bool TryActivateWard()
+        {
+            if(!talismanMode || Phase != ArcadePhase.Playing || !Ward.TryActivate()) return false;
+            audioPlayer.Effect("Ghost");
+            return true;
+        }
+        public void ReturnToMenu() { RecordBest(); SceneManager.LoadScene("MainMenu"); }
+        private void RecordBest()
+        {
+            if(Score <= PlayerPrefs.GetInt(BestKey,0)) return;
+            PlayerPrefs.SetInt(BestKey,Score); PlayerPrefs.Save();
+        }
+        private void OnApplicationQuit() => RecordBest();
         public void TogglePause()
         {
             if (Phase == ArcadePhase.Paused) { Phase = beforePause; audioPlayer.Pause(false); PausePickups(false); }
