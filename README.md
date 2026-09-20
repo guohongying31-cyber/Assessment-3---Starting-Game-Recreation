@@ -1,13 +1,27 @@
 # Shan Hai Spirit Trail
 
-31263 / 32004 Introduction to Game Development, Assessment 3.
+31263 / 32004 Introduction to Game Development, Assessments 3 and 4.
 
 A 2D PacStudent recreation featuring a cultivator in jade robes and mythical beasts
 inspired by the Classic of Mountains and Seas. Spirit collection, ward-breaking elixirs,
 and sealing rituals reinterpret the original interactions while preserving the required
 level and movement rules.
 
-## Project status
+## Current playable development
+
+Open `Assets/Scenes/MainMenu.unity` in Unity 6000.4.11f1 and press Play. Choose
+Classic Trail for the Pac-Man-style rules or Talisman Trial for an active protective
+ward. The Windows preview is `output/PlayableBuild/ShanHaiSpiritTrail.exe`.
+
+The playable version includes buffered keyboard movement, collection and scoring,
+four autonomous guardians, power effects, lives, fruit, round progression, pause,
+restart, separate best scores and three navigable scenes. See the
+[play guide](Documentation/Gameplay-Guide.md) for controls and validation records.
+The complete Assessment 4 specification is still needed before checking every
+HD criterion or preparing its final submission. Main and the delivered Assessment 3
+ZIP remain the previous release; new gameplay is developed on Development.
+
+## Preserved Assessment 3 foundation
 
 The target is **100% HD**, progressing through every grading band in order.
 The Unity project foundation and the audio implementation are ready. Eleven synthesized
