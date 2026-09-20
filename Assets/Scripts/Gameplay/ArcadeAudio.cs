@@ -23,11 +23,11 @@ namespace ShanHaiSpiritTrail
             source.volume = volume;
             return source;
         }
-        public void Music(string mode)
+        public void Music(string mode, bool restart = false)
         {
             var clip = mode == "Intro" ? intro : mode == "Scared" ? scared : mode == "Dead" ? dead
                 : mode == "Menu" ? menu : mode == "Normal" ? normal : null;
-            if (musicSource.clip == clip) return;
+            if (!restart && musicSource.clip == clip) return;
             musicSource.Stop();
             musicSource.clip = clip;
             musicSource.loop = mode != "Intro";

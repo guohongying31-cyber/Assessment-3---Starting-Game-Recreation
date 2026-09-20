@@ -32,6 +32,7 @@ namespace ShanHaiSpiritTrail
         private static readonly GridDirection[] SearchDirections =
             { GridDirection.Up, GridDirection.Left, GridDirection.Down, GridDirection.Right };
         private readonly LevelMapLayout layout;
+        private readonly bool allowHouseGates;
         private readonly HashSet<MazeCell> walkable = new HashSet<MazeCell>();
 
         public int Rows => layout.Rows;
@@ -39,11 +40,13 @@ namespace ShanHaiSpiritTrail
         public int TunnelRow => Rows / 2;
         public IReadOnlyList<MazeCell> Cells { get; }
 
-        public MazeNavigation(LevelMapLayout layout) : this(layout, new MazeCell(1, 1)) { }
+        public MazeNavigation(LevelMapLayout layout, bool allowHouseGates = false)
+            : this(layout, new MazeCell(1, 1), allowHouseGates) { }
 
-        public MazeNavigation(LevelMapLayout layout, MazeCell start)
+        public MazeNavigation(LevelMapLayout layout, MazeCell start, bool allowHouseGates = false)
         {
             this.layout = layout ?? throw new ArgumentNullException(nameof(layout));
+            this.allowHouseGates = allowHouseGates;
             if (!IsCorridor(start))
                 throw new ArgumentException("The navigation start must be a corridor tile.", nameof(start));
 
@@ -126,7 +129,7 @@ namespace ShanHaiSpiritTrail
             if (cell.Row < 0 || cell.Row >= Rows || cell.Column < 0 || cell.Column >= Columns)
                 return false;
             int category = CategoryAt(cell);
-            return category == 0 || category == 5 || category == 6;
+            return category == 0 || category == 5 || category == 6 || (allowHouseGates && category == 8);
         }
 
         private MazeCell Adjacent(MazeCell cell, GridDirection direction)
