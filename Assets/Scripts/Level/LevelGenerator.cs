@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace ShanHaiSpiritTrail
@@ -12,6 +13,10 @@ namespace ShanHaiSpiritTrail
         public GameObject GeneratedLevel { get; private set; }
         public LevelMapLayout GeneratedLayout { get; private set; }
         public event Action<LevelMapLayout> LevelGenerated;
+        private Dictionary<Vector2Int, GameObject> generatedTiles = new Dictionary<Vector2Int, GameObject>();
+
+        public GameObject TileAt(int row, int column)
+            => generatedTiles.TryGetValue(new Vector2Int(column, row), out var tile) ? tile : null;
 
         // Replace this quadrant to test another layout using the same tile legend.
         public int[,] levelMap =
@@ -60,13 +65,14 @@ namespace ShanHaiSpiritTrail
             }
 
             var candidate = new GameObject("Level01_Generated");
+            var candidateTiles = new Dictionary<Vector2Int, GameObject>();
             candidate.SetActive(false);
             try
             {
-                BuildQuadrant(candidate.transform, layout, angles, false, false);
-                BuildQuadrant(candidate.transform, layout, angles, true, false);
-                BuildQuadrant(candidate.transform, layout, angles, false, true);
-                BuildQuadrant(candidate.transform, layout, angles, true, true);
+                BuildQuadrant(candidate.transform, layout, angles, false, false, candidateTiles);
+                BuildQuadrant(candidate.transform, layout, angles, true, false, candidateTiles);
+                BuildQuadrant(candidate.transform, layout, angles, false, true, candidateTiles);
+                BuildQuadrant(candidate.transform, layout, angles, true, true, candidateTiles);
             }
             catch
             {
@@ -86,12 +92,14 @@ namespace ShanHaiSpiritTrail
                 Destroy(GeneratedLevel);
             }
             GeneratedLayout = layout;
+            generatedTiles = candidateTiles;
             GeneratedLevel = candidate;
             candidate.SetActive(true);
             LevelGenerated?.Invoke(layout);
         }
 
-        private void BuildQuadrant(Transform parent, LevelMapLayout layout, int[,] angles, bool reflectX, bool reflectY)
+        private void BuildQuadrant(Transform parent, LevelMapLayout layout, int[,] angles, bool reflectX, bool reflectY,
+            Dictionary<Vector2Int, GameObject> tiles)
         {
             string name = (reflectY ? "Bottom" : "Top") + (reflectX ? "Right" : "Left");
             var quadrant = new GameObject(name).transform;
@@ -111,6 +119,8 @@ namespace ShanHaiSpiritTrail
                     tile.name = $"R{row:00}_C{column:00}_{prefab.name}";
                     tile.transform.localPosition = LevelMapLayout.CellPosition(row, column);
                     tile.transform.localRotation = Quaternion.Euler(0, 0, angles[row, column]);
+                    tiles.Add(new Vector2Int(reflectX ? layout.Columns - 1 - column : column,
+                        reflectY ? layout.Rows - 1 - row : row), tile);
                 }
             }
         }
