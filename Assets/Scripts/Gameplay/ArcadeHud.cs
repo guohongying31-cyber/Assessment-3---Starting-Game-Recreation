@@ -11,7 +11,8 @@ namespace ShanHaiSpiritTrail
         private ArcadeGame activeGame;
         private bool actionsVisible;
         private GameObject veil;
-        private Image veilImage;
+        private Image veilImage, wardMeterFill;
+        private GameObject wardMeter;
         public static readonly Color Jade = new Color(.46f, .84f, .72f);
         public static readonly Color Gold = new Color(.95f, .79f, .40f);
         public static readonly Color Ink = new Color(.035f, .065f, .10f);
@@ -40,7 +41,8 @@ namespace ShanHaiSpiritTrail
                 .36f, .64f, 0, 83, 52);
             power.gameObject.SetActive(false);
             ward = ResponsiveLabel(transform, "WardStatus", "", 22, 16, Gold,
-                .64f, .96f, 0, 83, 58);
+                .64f, .96f, 0, 87, 54);
+            CreateWardMeter();
             controls = ResponsiveLabel(transform, "Controls", "", 18, 14, Jade,
                 0, 1, 0, 29, 40, 20);
             veil = new GameObject("StatusOverlay", typeof(RectTransform), typeof(Image));
@@ -86,6 +88,46 @@ namespace ShanHaiSpiritTrail
             foreach (var image in lifeImages) image.sprite = sprite;
         }
 
+        private void CreateWardMeter()
+        {
+            wardMeter = new GameObject("WardMeter", typeof(RectTransform), typeof(Image));
+            wardMeter.transform.SetParent(transform, false);
+            var background = wardMeter.GetComponent<Image>();
+            background.color = new Color(.10f, .20f, .22f, 1);
+            background.raycastTarget = false;
+            var rect = background.rectTransform;
+            rect.anchorMin = new Vector2(.67f, 0);
+            rect.anchorMax = new Vector2(.93f, 0);
+            rect.anchoredPosition = new Vector2(0, 55);
+            rect.sizeDelta = new Vector2(0, 7);
+            var fill = new GameObject("WardMeterFill", typeof(RectTransform), typeof(Image));
+            fill.transform.SetParent(wardMeter.transform, false);
+            wardMeterFill = fill.GetComponent<Image>();
+            wardMeterFill.raycastTarget = false;
+            wardMeterFill.rectTransform.anchorMin = Vector2.zero;
+            wardMeterFill.rectTransform.anchorMax = Vector2.one;
+            wardMeterFill.rectTransform.offsetMin = wardMeterFill.rectTransform.offsetMax = Vector2.zero;
+        }
+
+        private void DrawWard(ArcadeGame game)
+        {
+            ward.gameObject.SetActive(game.TalismanMode);
+            wardMeter.SetActive(game.TalismanMode);
+            if (!game.TalismanMode) return;
+            bool active = game.Ward.Active;
+            bool recharging = !active && game.Ward.Cooldown > 0;
+            float proportion = active ? game.Ward.Remaining / TalismanWard.Duration
+                : 1 - game.Ward.Cooldown / TalismanWard.Recharge;
+            // Stretch the plain Image instead of relying on a runtime texture.
+            wardMeterFill.rectTransform.anchorMax = new Vector2(Mathf.Clamp01(proportion), 1);
+            wardMeterFill.color = active ? Gold : recharging ? Color.Lerp(Ink, Jade, .6f) : Jade;
+            ward.color = active ? Gold : Jade;
+            ward.text = active ? (game.Ward.BlockedContact ? "CONTACT BLOCKED" : "WARD ACTIVE")
+                + "\n" + game.Ward.Remaining.ToString("F1") + "s protection"
+                : recharging ? "WARD RECHARGING\n" + game.Ward.Cooldown.ToString("F1") + "s to ready"
+                : "WARD READY\nSPACE: 3s protection";
+        }
+
         public void Draw(ArcadeGame game)
         {
             activeGame = game;
@@ -97,9 +139,7 @@ namespace ShanHaiSpiritTrail
             power.gameObject.SetActive(game.Ghosts.FrightRemaining > 0);
             power.text = "SCARED  " + Mathf.CeilToInt(game.Ghosts.FrightRemaining) + "s";
             controls.text = "ARROWS / WASD  Move     P / ESC  Pause" + (game.TalismanMode ? "     SPACE  Ward" : "");
-            ward.gameObject.SetActive(game.TalismanMode);
-            ward.text = game.Ward.Active ? "WARD ACTIVE\n" + game.Ward.Remaining.ToString("F1") + "s"
-                : game.Ward.Cooldown > 0 ? "WARD RECHARGE\n" + game.Ward.Cooldown.ToString("F1") + "s" : "WARD READY\nSPACE to activate";
+            DrawWard(game);
             bool showActions = game.Phase == ArcadePhase.Paused;
             bool ended = game.Phase == ArcadePhase.GameOver;
             exitButton.interactable = !ended && game.Phase != ArcadePhase.Dying;
@@ -114,7 +154,10 @@ namespace ShanHaiSpiritTrail
                 (game.ReadyTime > 1 ? Mathf.Clamp(Mathf.CeilToInt(game.ReadyTime) - 1, 1, 3).ToString() : "GO!")
                 : game.Phase == ArcadePhase.Paused ? "PAUSED\n<size=24>Press P or ESC to resume</size>"
                 : game.Phase == ArcadePhase.Dying ? "SPIRIT DISPERSED"
-                : "Game Over\n<size=24>Returning to the start screen...</size>";
+                : "Game Over\n<size=24>" + (game.Pickups.Remaining == 0 ? "All spirit motes collected" : "No lives remaining")
+                    + "</size>\n\n<size=26>SCORE  " + game.Score.ToString("D6") + "     TIME  "
+                    + LevelRecord.FormatTime(game.ElapsedSeconds) + "</size>\n<size=20>Returning to the start screen in "
+                    + Mathf.Max(1, Mathf.CeilToInt(game.ResultRemaining)) + "...</size>";
         }
 
         private static Text ResponsiveLabel(Transform parent, string name, string text, int size,
