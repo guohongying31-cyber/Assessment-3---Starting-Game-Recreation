@@ -50,9 +50,11 @@ namespace ShanHaiSpiritTrail
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(1440, 1080);
             scaler.matchWidthOrHeight = 1;
+            root.AddComponent<MenuBorderAnimation>();
 
             StretchLabel("Eyebrow", "THE JADE LABYRINTH", -54, 36, 18, ArcadeHud.Gold);
-            StretchLabel("Title", "SHAN HAI\nSPIRIT TRAIL", -141, 126, 52, ArcadeHud.Gold);
+            StretchLabel("Title", "PacStudent", -120, 86, 60, ArcadeHud.Gold);
+            StretchLabel("Subtitle", "SHAN HAI SPIRIT TRAIL", -185, 46, 28, ArcadeHud.Jade);
             StretchLabel("Introduction", "Gather spirit motes. Outwit the four guardians.", -239, 50, 20, ArcadeHud.Jade);
 
             string[] names = { "CULTIVATOR", "NINE-TAILED\nFOX", "FLAME\nCRANE", "WHITE\nHOUND", "SERPENT\nTORTOISE" };
@@ -75,22 +77,22 @@ namespace ShanHaiSpiritTrail
                 FitText(label, 12, 16);
             }
 
-            classicButton = CreateButton(canvasRect, "ClassicTrail", "CLASSIC TRAIL", new Vector2(.5f, 1),
+            classicButton = CreateButton(canvasRect, "Level1Button", "Level 1", new Vector2(.5f, 1),
                 new Vector2(0, -504), new Vector2(680, 78), () => OpenLevel("ClassicLevel"));
-            StretchLabel("ClassicDescription", "Collect every mote. Avoid the guardians.\nBEST  " +
-                PlayerPrefs.GetInt("SpiritTrail.ClassicBest", 0).ToString("D6"), -571, 52, 18, ArcadeHud.Jade);
+            StretchLabel("ClassicDescription", "Classic Trail - Collect every spirit mote.\nBEST  " +
+                LevelRecord.Score(false).ToString("D6") + "     TIME  " + LevelRecord.TimeText(false), -575, 58, 18, ArcadeHud.Jade);
 
-            trialButton = CreateButton(canvasRect, "TalismanTrial", "TALISMAN TRIAL", new Vector2(.5f, 1),
+            trialButton = CreateButton(canvasRect, "Level2Button", "Level 2", new Vector2(.5f, 1),
                 new Vector2(0, -654), new Vector2(680, 78), () => OpenLevel("TalismanLevel"));
-            StretchLabel("TrialDescription", "SPACE: 3-second shield / 15-second recharge\nBEST  " +
-                PlayerPrefs.GetInt("SpiritTrail.TrialBest", 0).ToString("D6"), -721, 56, 18, ArcadeHud.Jade);
+            StretchLabel("TrialDescription", "Talisman Trial - SPACE: 3-second ward / 15-second recharge\nBEST  " +
+                LevelRecord.Score(true).ToString("D6") + "     TIME  " + LevelRecord.TimeText(true), -725, 58, 18, ArcadeHud.Jade);
 
             StretchLabel("Controls", "ARROWS / WASD  Move     P / ESC  Pause\nSPACE  Activate the ward in Talisman Trial",
                 -812, 66, 18, Color.white);
             quitButton = CreateButton(canvasRect, "Quit", "QUIT", new Vector2(.5f, 1),
                 new Vector2(0, -918), new Vector2(220, 56), Quit);
             quitButton.interactable = !Application.isEditor;
-            StretchLabel("Navigation", "ENTER selects     1 Classic     2 Trial", -993, 42, 16, ArcadeHud.Jade);
+            StretchLabel("Navigation", "ENTER selects     1 Level 1     2 Level 2", -993, 42, 16, ArcadeHud.Jade);
 
             var classicNavigation = classicButton.navigation;
             classicNavigation.mode = Navigation.Mode.Explicit;
