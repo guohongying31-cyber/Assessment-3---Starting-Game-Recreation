@@ -33,7 +33,7 @@ namespace ShanHaiSpiritTrail
         {
             if (loading || !classicButton) return;
             if (Input.GetKeyDown(KeyCode.Alpha1)) OpenLevel("ClassicLevel");
-            else if (Input.GetKeyDown(KeyCode.Alpha2)) OpenLevel("TalismanLevel");
+            else if (Input.GetKeyDown(KeyCode.Alpha2)) OpenLevel("InnovationScene");
             if (EventSystem.current && !EventSystem.current.currentSelectedGameObject)
                 EventSystem.current.SetSelectedGameObject(classicButton.gameObject);
             Resize();
@@ -83,11 +83,11 @@ namespace ShanHaiSpiritTrail
                 LevelRecord.Score(false).ToString("D6") + "     TIME  " + LevelRecord.TimeText(false), -575, 58, 18, ArcadeHud.Jade);
 
             trialButton = CreateButton(canvasRect, "Level2Button", "Level 2", new Vector2(.5f, 1),
-                new Vector2(0, -654), new Vector2(680, 78), () => OpenLevel("TalismanLevel"));
-            StretchLabel("TrialDescription", "Talisman Trial - SPACE: 3-second ward / 15-second recharge\nBEST  " +
+                new Vector2(0, -654), new Vector2(680, 78), () => OpenLevel("InnovationScene"));
+            StretchLabel("TrialDescription", "SPACE: block contact for 3s. 15s between uses.\nBEST  " +
                 LevelRecord.Score(true).ToString("D6") + "     TIME  " + LevelRecord.TimeText(true), -725, 58, 18, ArcadeHud.Jade);
 
-            StretchLabel("Controls", "ARROWS / WASD  Move     P / ESC  Pause\nSPACE  Activate the ward in Talisman Trial",
+            StretchLabel("Controls", "ARROWS / WASD  Move     P / ESC  Pause\nThe ward protects you; power pellets let you defeat guardians.",
                 -812, 66, 18, Color.white);
             quitButton = CreateButton(canvasRect, "Quit", "QUIT", new Vector2(.5f, 1),
                 new Vector2(0, -918), new Vector2(220, 56), Quit);
