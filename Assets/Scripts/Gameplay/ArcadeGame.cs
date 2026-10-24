@@ -41,6 +41,7 @@ namespace ShanHaiSpiritTrail
         private readonly Vector2[] previousGhosts = new Vector2[4];
         private readonly bool[] edibleBeforeStep = new bool[4];
         private GameObject wardView;
+        private SpriteRenderer[] wardRenderers;
         private Animator[] pickupAnimators;
         private float aspect;
         private double readyRemaining, deathRemaining, resultRemaining;
@@ -77,7 +78,8 @@ namespace ShanHaiSpiritTrail
                 wardView = Instantiate(wardPrefab);
                 wardView.name = "Active_TalismanWard";
                 wardView.transform.localScale *= 2.1f;
-                foreach(var renderer in wardView.GetComponentsInChildren<SpriteRenderer>())
+                wardRenderers = wardView.GetComponentsInChildren<SpriteRenderer>();
+                foreach(var renderer in wardRenderers)
                 { renderer.sortingOrder = 9; renderer.color = new Color(1,1,1,.6f); }
             }
             NewGame();
@@ -170,6 +172,10 @@ namespace ShanHaiSpiritTrail
                 wardView.SetActive(Ward.Active);
                 wardView.transform.position = Player.Position;
                 wardView.GetComponent<Animator>().speed = active ? 1 : 0;
+                float opacity = Ward.Remaining < .5f ? .35f + .4f * Mathf.Abs(Mathf.Sin(Ward.Remaining * 24)) : .65f;
+                Color tint = Ward.BlockedContact ? ArcadeHud.Gold : Color.white;
+                tint.a = opacity;
+                foreach (var renderer in wardRenderers) renderer.color = tint;
             }
             if(active) audioPlayer.Music(returning ? "Dead" : Ghosts.FrightRemaining > 0 ? "Scared" : "Normal");
             audioPlayer.Moving(active && Player.IsMoving, Pickups.Contains(Player.TargetCell));
@@ -199,6 +205,7 @@ namespace ShanHaiSpiritTrail
                 else if (Phase == ArcadePhase.Dying)
                 {
                     float step = (float)System.Math.Min(remaining, deathRemaining);
+                    Cherry.Tick(step);
                     particles.Tick(step, Player.Position, false);
                     ElapsedSeconds += step;
                     remaining = System.Math.Max(0, remaining - step);
@@ -260,7 +267,11 @@ namespace ShanHaiSpiritTrail
                 {
                     AddScore(300); audioPlayer.Effect("Ghost");
                 }
-                else if(ghost.IsDangerous && !protectedDuringStep) { LoseLife(); break; }
+                else if(ghost.IsDangerous)
+                {
+                    if (!protectedDuringStep) { LoseLife(); break; }
+                    if (Ward.RegisterBlockedContact()) audioPlayer.Effect("Wall");
+                }
             }
         }
         private void LoseLife()
