@@ -15,9 +15,11 @@ namespace ShanHaiSpiritTrail
         public bool IsEdible => Frightened && (State == GhostState.Roaming || State == GhostState.Exiting);
         public bool IsDangerous => !Frightened && (State == GhostState.Roaming || State == GhostState.Exiting);
         public float ReleaseRemaining => (float)WaitRemaining;
+        public float DeadTimeRemaining => (float)DeadRemaining;
 
         internal double WaitRemaining;
-        internal bool ReturningThroughExit;
+        internal double DeadRemaining;
+        internal GhostState StateBeforeDeath;
 
         internal GhostAgent(int index, MazeNavigation navigation, MazeCell spawn)
         {
@@ -26,8 +28,8 @@ namespace ShanHaiSpiritTrail
         }
     }
 
-    // Decisions use the same corridor graph as the player. Only release and
-    // return paths can cross the house gates; no physics moves these actors.
+    // Decisions use the same corridor graph as the player. Only release paths
+    // cross the house gates; no physics moves these actors.
     public sealed class GhostDirector
     {
         private static readonly GridDirection[] DecisionOrder =
@@ -50,7 +52,8 @@ namespace ShanHaiSpiritTrail
 
         public IReadOnlyList<GhostAgent> Ghosts { get; }
         public float FrightRemaining => (float)frightRemaining;
-        public bool Recovering => frightRemaining > 0 && frightRemaining <= 2;
+        public bool Recovering => frightRemaining > 0 && frightRemaining <= 3;
+        public bool IsRecovering => Recovering;
         public bool IsScattering => modeIndex < ModeDurations.Length && modeIndex % 2 == 0;
         public float ModeTimeRemaining => (float)modeRemaining;
 
@@ -95,7 +98,7 @@ namespace ShanHaiSpiritTrail
                 ghost.Motor.Reset(spawnCells[ghost.Index]);
                 ghost.Motor.Speed = normalSpeed;
                 ghost.Frightened = false;
-                ghost.ReturningThroughExit = false;
+                ghost.DeadRemaining = 0;
                 ghost.WaitRemaining = ghost.Index * 2;
                 ghost.State = GhostState.Waiting;
                 ghost.Motor.Enabled = ghost.State != GhostState.Waiting;
@@ -117,8 +120,12 @@ namespace ShanHaiSpiritTrail
                 // change or accidentally advance the chase timer while frightened.
                 double step = Math.Min(remaining, frightRemaining > 0 ? frightRemaining : modeRemaining);
                 foreach (GhostAgent ghost in ghosts)
+                {
                     if (ghost.State == GhostState.Waiting && ghost.WaitRemaining > 0)
                         step = Math.Min(step, ghost.WaitRemaining);
+                    if (ghost.State == GhostState.Eaten && ghost.DeadRemaining > 0)
+                        step = Math.Min(step, ghost.DeadRemaining);
+                }
 
                 bool wasFrightened = frightRemaining > 0;
                 foreach (GhostAgent ghost in ghosts) Advance(ghost, (float)step);
@@ -169,16 +176,34 @@ namespace ShanHaiSpiritTrail
             // The shared simulation may end exactly at the power expiry boundary.
             // Contact during that bounded step still uses its active power state.
             if (!ghost.IsEdible && !(frightenedDuringStep && roaming)) return false;
+            ghost.StateBeforeDeath = ghost.State;
             ghost.State = GhostState.Eaten;
             ghost.Frightened = false;
-            ghost.ReturningThroughExit = true;
+            ghost.DeadRemaining = 3;
+            ghost.Motor.Enabled = false;
             UpdateSpeed(ghost);
-            if (ghost.Motor.IsAtCenter) ChooseReturnDirection(ghost);
             return true;
         }
 
         private void Advance(GhostAgent ghost, float deltaSeconds)
         {
+            if (ghost.State == GhostState.Eaten)
+            {
+                ghost.DeadRemaining = Math.Max(0, ghost.DeadRemaining - deltaSeconds);
+                if (ghost.DeadRemaining <= 0)
+                {
+                    ghost.State = ghost.StateBeforeDeath;
+                    ghost.Frightened = frightRemaining > 0;
+                    ghost.Motor.Enabled = true;
+                    UpdateSpeed(ghost);
+                    if (ghost.Motor.IsAtCenter)
+                    {
+                        if (ghost.State == GhostState.Exiting) ChooseExitDirection(ghost);
+                        else ChooseRoamingDirection(ghost);
+                    }
+                }
+                return;
+            }
             if (ghost.State == GhostState.Waiting)
             {
                 ghost.WaitRemaining = Math.Max(0, ghost.WaitRemaining - deltaSeconds);
@@ -200,7 +225,6 @@ namespace ShanHaiSpiritTrail
             {
                 case GhostState.Roaming: ChooseRoamingDirection(ghost); break;
                 case GhostState.Exiting: ChooseExitDirection(ghost); break;
-                case GhostState.Eaten: ChooseReturnDirection(ghost); break;
             }
         }
 
@@ -212,26 +236,6 @@ namespace ShanHaiSpiritTrail
                 ChooseRoamingDirection(ghost);
             }
             else ghost.Motor.QueueDirection(ShortestDirection(houseNavigation, ghost.Motor.CurrentCell, exitCell));
-        }
-
-        private void ChooseReturnDirection(GhostAgent ghost)
-        {
-            MazeCell cell = ghost.Motor.CurrentCell;
-            if (ghost.ReturningThroughExit && cell == exitCell) ghost.ReturningThroughExit = false;
-            if (!ghost.ReturningThroughExit && cell == homeCell)
-            {
-                ghost.State = GhostState.Waiting;
-                ghost.Frightened = false;
-                ghost.WaitRemaining = 1;
-                ghost.Motor.Reset(homeCell);
-                ghost.Motor.Enabled = false;
-                UpdateSpeed(ghost);
-                return;
-            }
-            MazeNavigation navigation = ghost.ReturningThroughExit && playerNavigation.IsWalkable(cell)
-                ? playerNavigation : houseNavigation;
-            ghost.Motor.QueueDirection(ShortestDirection(navigation, cell,
-                ghost.ReturningThroughExit ? exitCell : homeCell));
         }
 
         private void ChooseRoamingDirection(GhostAgent ghost)
@@ -297,7 +301,7 @@ namespace ShanHaiSpiritTrail
         }
 
         private void UpdateSpeed(GhostAgent ghost)
-            => ghost.Motor.Speed = ghost.State == GhostState.Eaten ? 8f : ghost.Frightened ? 2.8f : normalSpeed;
+            => ghost.Motor.Speed = ghost.State == GhostState.Eaten || ghost.Frightened ? 2.8f : normalSpeed;
 
         private static GridDirection ShortestDirection(MazeNavigation navigation, MazeCell from, MazeCell target)
         {

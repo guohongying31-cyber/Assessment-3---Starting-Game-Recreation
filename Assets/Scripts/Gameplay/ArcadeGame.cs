@@ -8,6 +8,7 @@ namespace ShanHaiSpiritTrail
     [DefaultExecutionOrder(100)]
     public sealed class ArcadeGame : MonoBehaviour
     {
+        private const float DeathDuration = 1.8f;
         [SerializeField] private LevelGenerator generator;
         [SerializeField] private GameObject playerPrefab;
         [SerializeField] private GameObject[] ghostPrefabs = new GameObject[4];
@@ -28,8 +29,6 @@ namespace ShanHaiSpiritTrail
         public int Round { get; private set; }
         public float ReadyTime { get; private set; }
         public CherryController Cherry { get; private set; }
-        public bool ExtraLifeGranted { get; private set; }
-        public int GhostCombo { get; private set; }
         public double ElapsedSeconds { get; private set; }
         public bool TalismanMode => talismanMode;
         public TalismanWard Ward { get; } = new TalismanWard();
@@ -84,7 +83,7 @@ namespace ShanHaiSpiritTrail
 
         public void NewGame()
         {
-            Score = 0; Lives = 3; Round = 1; ExtraLifeGranted = false;
+            Score = 0; Lives = 3; Round = 1;
             ElapsedSeconds = 0;
             Cherry.ResetClock();
             audioPlayer.Pause(false);
@@ -93,12 +92,14 @@ namespace ShanHaiSpiritTrail
         }
         private void StartRound()
         {
-            Pickups = new PickupLedger(Navigation);
-            foreach (var cell in Navigation.Cells)
+            // Collected objects are destroyed. A fresh run needs fresh objects,
+            // not an attempt to reactivate references to the previous pickups.
+            if (Pickups != null)
             {
-                int category = Navigation.CategoryAt(cell);
-                if (category == 5 || category == 6) generator.TileAt(cell.Row, cell.Column).SetActive(true);
+                generator.GenerateLevel();
+                pickupAnimators = generator.GeneratedLevel.GetComponentsInChildren<Animator>(true);
             }
+            Pickups = new PickupLedger(Navigation);
             Pickups.CollectedPickup += Collected;
             ResetActors();
         }
@@ -106,9 +107,9 @@ namespace ShanHaiSpiritTrail
         {
             Player.Speed = Mathf.Min(6.5f, 5 + (Round-1)*.12f);
             playerController.ResetLife(playerStart);
+            playerController.InputEnabled = false;
             Player.Enabled = false;
             Ghosts.Reset(Round);
-            GhostCombo = 0;
             particles.Clear();
             Ward.Reset();
             Phase = ArcadePhase.Ready; ReadyTime = 2.4f;
@@ -116,11 +117,11 @@ namespace ShanHaiSpiritTrail
         }
         private void Collected(MazeCell cell, int category)
         {
-            generator.TileAt(cell.Row, cell.Column).SetActive(false);
+            var pickup = generator.TileAt(cell.Row, cell.Column);
+            if (pickup) Destroy(pickup);
             if(category == 6)
             {
-                GhostCombo = 0;
-                Ghosts.ActivatePower(Mathf.Max(2, 6 - (Round-1)*.4f));
+                Ghosts.ActivatePower(10);
             }
         }
         private void Arrive(MazeCell cell)
@@ -134,8 +135,6 @@ namespace ShanHaiSpiritTrail
         private void AddScore(int points)
         {
             Score += points;
-            if(!ExtraLifeGranted && Score >= 10000)
-            { Lives++; ExtraLifeGranted = true; }
         }
         private void Update()
         {
@@ -150,14 +149,15 @@ namespace ShanHaiSpiritTrail
             playerController.InputEnabled = active;
             playerView.transform.position = Player.Position;
             playerView.Present(Player.Direction == GridDirection.None ? GridDirection.Right : Player.Direction, active && Player.IsMoving || Phase == ArcadePhase.Dying,
-                Phase == ArcadePhase.Dying || Phase == ArcadePhase.GameOver ? "Dead" : "Walking");
+                Phase == ArcadePhase.Dying || Phase == ArcadePhase.GameOver ? "Dead" : "Walking",
+                Phase == ArcadePhase.Dying ? DeathDuration : 0);
             bool returning = false;
             for(int i=0; i<ghostViews.Length; i++)
             {
                 var ghost = Ghosts.Ghosts[i];
                 ghostViews[i].transform.position = ghost.Motor.Position;
                 string form = ghost.State == GhostState.Eaten ? "Dead" : ghost.Frightened
-                    ? (Ghosts.FrightRemaining <= 2 ? "Recovering" : "Scared") : "Walking";
+                    ? (Ghosts.Recovering ? "Recovering" : "Scared") : "Walking";
                 ghostViews[i].Present(ghost.Motor.Direction, active, form);
                 returning |= ghost.State == GhostState.Eaten;
             }
@@ -222,7 +222,7 @@ namespace ShanHaiSpiritTrail
             if(Phase != ArcadePhase.Playing) return;
             bool fruitInside = Cherry.Position.x >= -.5f && Cherry.Position.x <= Navigation.Columns-.5f
                 && Cherry.Position.y <= .5f && Cherry.Position.y >= -Navigation.Rows+.5f;
-            if(Cherry.Active && fruitInside && MazeContact.Crossed(previousPlayer,Player.Position,Cherry.PreviousPosition,Cherry.Position,Navigation.Columns) && Cherry.Collect())
+            if(Cherry.Active && fruitInside && MazeContact.CrossedFruit(previousPlayer,Player.Position,Cherry.PreviousPosition,Cherry.Position,Navigation.Columns) && Cherry.Collect())
             { AddScore(100); audioPlayer.Effect("Fruit"); }
             Ghosts.Tick(step,Player.CurrentCell,Player.Direction);
             for(int i=0; i<4; i++)
@@ -231,16 +231,19 @@ namespace ShanHaiSpiritTrail
                 if(!MazeContact.Crossed(previousPlayer,Player.Position,previousGhosts[i],ghost.Motor.Position,Navigation.Columns)) continue;
                 if(Ghosts.Eat(i, edibleBeforeStep[i]))
                 {
-                    AddScore(200 << Mathf.Min(GhostCombo,3)); GhostCombo++; audioPlayer.Effect("Ghost");
+                    AddScore(300); audioPlayer.Effect("Ghost");
                 }
                 else if(ghost.IsDangerous && !protectedDuringStep) { LoseLife(); break; }
             }
         }
         private void LoseLife()
         {
-            Lives--; Phase = ArcadePhase.Dying; deathTime = 1.8f;
+            Lives--; Phase = ArcadePhase.Dying; deathTime = DeathDuration;
             Player.Enabled = false;
+            playerController.InputEnabled = false;
             particles.Death(Player.Position);
+            playerView.Present(Player.Direction, true, "Dead", DeathDuration);
+            audioPlayer.Moving(false);
             audioPlayer.Music(null); audioPlayer.Effect("Death");
         }
         private void ReadInput()
@@ -273,7 +276,7 @@ namespace ShanHaiSpiritTrail
         }
         private void PausePickups(bool pause)
         {
-            foreach(var pickup in pickupAnimators) pickup.speed = pause ? 0 : 1;
+            foreach(var pickup in pickupAnimators) if (pickup) pickup.speed = pause ? 0 : 1;
         }
         public void NextRound()
         {
