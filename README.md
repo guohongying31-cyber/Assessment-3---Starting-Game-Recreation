@@ -48,15 +48,17 @@ The [formal checklist](Documentation/Assessment4-Checklist.md) maps the supplied
 Assessment 4 criteria. The [validation record](Documentation/Assessment4-Validation.md)
 distinguishes checks actually executed from remaining work and historical milestones.
 
-Final Windows player validation, clean-archive validation and release packaging
-are pending. They must be recorded before this project is marked as the final release.
-The planned standalone output is `output/Assessment4Build/ShanHaiSpiritTrail.exe`;
+Windows player validation and cache-free project validation have passed. The
+validation record describes their scope and the isolated full-route fixture.
+The standalone output is `output/Assessment4Build/ShanHaiSpiritTrail.exe`;
 its Data folder, UnityPlayer.dll and generated dependencies must remain beside it.
 
 The Assessment 4 project archive is named **`26151833_A4_Project.zip`**. Package the
 complete Unity project with `.git` and `.gitignore`, excluding Library, generated
 caches, logs, local preview builds and temporary verification helpers. Complete
 final validation before merging Development into Main and packaging with Main checked out.
+The adjacent `Assessment4-Release-Receipt.json` records the delivered archive hash,
+release commit and final archive checks; generated output files are not Git assets.
 The separate submission declaration has been deferred by the user and is not part
 of the current preparation work.
 
