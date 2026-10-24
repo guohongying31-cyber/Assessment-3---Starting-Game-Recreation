@@ -10,6 +10,7 @@ namespace ShanHaiSpiritTrail
         public int Remaining => remaining.Count;
         public int Collected => InitialCount - Remaining;
         public event Action<MazeCell, int> CollectedPickup;
+        public bool Contains(MazeCell cell) => remaining.ContainsKey(cell);
 
         public PickupLedger(MazeNavigation navigation)
         {

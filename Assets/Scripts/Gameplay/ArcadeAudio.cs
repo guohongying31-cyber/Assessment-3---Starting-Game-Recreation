@@ -39,8 +39,10 @@ namespace ShanHaiSpiritTrail
                 : name == "Ghost" ? ghost : name == "Fruit" ? fruit : null;
             if (clip) effectSource.PlayOneShot(clip);
         }
-        public void Moving(bool moving)
+        public void Moving(bool moving, bool eating = false)
         {
+            var desired = eating ? pellet : movement;
+            if (footsteps.clip != desired) { footsteps.Stop(); footsteps.clip = desired; }
             if (moving && !footsteps.isPlaying) footsteps.Play();
             if (!moving && footsteps.isPlaying) footsteps.Stop();
         }

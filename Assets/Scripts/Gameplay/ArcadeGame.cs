@@ -27,7 +27,7 @@ namespace ShanHaiSpiritTrail
         public int Lives { get; private set; }
         public int Round { get; private set; }
         public float ReadyTime { get; private set; }
-        public float FruitTime { get; private set; }
+        public CherryController Cherry { get; private set; }
         public bool ExtraLifeGranted { get; private set; }
         public int GhostCombo { get; private set; }
         public double ElapsedSeconds { get; private set; }
@@ -37,16 +37,15 @@ namespace ShanHaiSpiritTrail
         private string BestKey => talismanMode ? "SpiritTrail.TrialBest" : "SpiritTrail.ClassicBest";
         private ActorSprite playerView;
         private PacStudentController playerController;
+        private PlayerParticles particles;
         private readonly ActorSprite[] ghostViews = new ActorSprite[4];
         private readonly Vector2[] previousGhosts = new Vector2[4];
         private readonly bool[] edibleBeforeStep = new bool[4];
-        private GameObject fruitView;
         private GameObject wardView;
         private Animator[] pickupAnimators;
-        private float aspect, deathTime, lastPickupTime = -1;
+        private float aspect, deathTime;
         private ArcadePhase beforePause;
         private readonly MazeCell playerStart = new MazeCell(1, 1);
-        private readonly MazeCell fruitCell = new MazeCell(17, 14);
 
         private void Start()
         {
@@ -58,7 +57,10 @@ namespace ShanHaiSpiritTrail
             playerController.Initialize(Navigation, playerStart);
             Player = playerController.Motor;
             Player.Arrived += Arrive;
-            Player.Blocked += _ => audioPlayer.Effect("Wall");
+            particles = playerView.gameObject.AddComponent<PlayerParticles>();
+            var moteRenderer = generator.TileAt(1,2).GetComponentInChildren<SpriteRenderer>();
+            particles.Initialize(moteRenderer.sprite, moteRenderer.sharedMaterial);
+            Player.Blocked += direction => { audioPlayer.Effect("Wall"); particles.Impact(Player.Position,direction); };
             hud.SetLifeSprite(lifeIndicatorPrefab.GetComponentInChildren<SpriteRenderer>().sprite);
             Ghosts = new GhostDirector(generator.GeneratedLayout, Navigation);
             for(int i=0; i<4; i++)
@@ -67,9 +69,8 @@ namespace ShanHaiSpiritTrail
                 ghostViews[i].name = "Guardian_" + i;
                 GhostNumberLabel.Create(ghostViews[i].transform, i + 1);
             }
-            fruitView = Instantiate(fruitPrefab);
-            fruitView.name = "Bonus_CrimsonFruit";
-            fruitView.transform.position = Navigation.WorldPosition(fruitCell);
+            Cherry = gameObject.AddComponent<CherryController>();
+            Cherry.Initialize(fruitPrefab, Navigation.Rows, Navigation.Columns, levelCamera);
             if(talismanMode)
             {
                 wardView = Instantiate(wardPrefab);
@@ -85,6 +86,7 @@ namespace ShanHaiSpiritTrail
         {
             Score = 0; Lives = 3; Round = 1; ExtraLifeGranted = false;
             ElapsedSeconds = 0;
+            Cherry.ResetClock();
             audioPlayer.Pause(false);
             PausePickups(false);
             StartRound();
@@ -106,7 +108,8 @@ namespace ShanHaiSpiritTrail
             playerController.ResetLife(playerStart);
             Player.Enabled = false;
             Ghosts.Reset(Round);
-            GhostCombo = 0; FruitTime = 0;
+            GhostCombo = 0;
+            particles.Clear();
             Ward.Reset();
             Phase = ArcadePhase.Ready; ReadyTime = 2.4f;
             audioPlayer.Music("Intro", true);
@@ -114,31 +117,19 @@ namespace ShanHaiSpiritTrail
         private void Collected(MazeCell cell, int category)
         {
             generator.TileAt(cell.Row, cell.Column).SetActive(false);
-            lastPickupTime = Time.time;
-            audioPlayer.Effect("Pellet");
             if(category == 6)
             {
                 GhostCombo = 0;
                 Ghosts.ActivatePower(Mathf.Max(2, 6 - (Round-1)*.4f));
             }
-            if(Pickups.Collected == 70 || Pickups.Collected == 170) FruitTime = 10;
         }
         private void Arrive(MazeCell cell)
         {
             AddScore(Pickups.Consume(cell));
-            if(FruitTime > 0 && cell == fruitCell)
-            {
-                FruitTime = 0; AddScore(FruitPoints()); audioPlayer.Effect("Fruit");
-            }
             if (Pickups.Remaining != 0) return;
             Phase = ArcadePhase.RoundClear; Player.Enabled = false;
             RecordBest();
             audioPlayer.Music(null);
-        }
-        private int FruitPoints()
-        {
-            int[] points = {100,300,500,500,700,700,1000,1000,2000,2000,3000,3000,5000};
-            return points[Mathf.Min(Round-1,points.Length-1)];
         }
         private void AddScore(int points)
         {
@@ -170,7 +161,6 @@ namespace ShanHaiSpiritTrail
                 ghostViews[i].Present(ghost.Motor.Direction, active, form);
                 returning |= ghost.State == GhostState.Eaten;
             }
-            fruitView.SetActive(FruitTime > 0);
             if(wardView)
             {
                 wardView.SetActive(Ward.Active);
@@ -178,7 +168,7 @@ namespace ShanHaiSpiritTrail
                 wardView.GetComponent<Animator>().speed = active ? 1 : 0;
             }
             if(active) audioPlayer.Music(returning ? "Dead" : Ghosts.FrightRemaining > 0 ? "Scared" : "Normal");
-            audioPlayer.Moving(active && Player.IsMoving && Time.time - lastPickupTime > .15f);
+            audioPlayer.Moving(active && Player.IsMoving, Pickups.Contains(Player.TargetCell));
             FitCamera(); hud.Draw(this);
         }
         public void Advance(float deltaTime)
@@ -199,11 +189,13 @@ namespace ShanHaiSpiritTrail
                 remaining -= step;
                 if(Phase == ArcadePhase.Ready)
                 {
+                    Cherry.Tick(step);
                     ReadyTime -= step;
                     if(ReadyTime <= 0) { Phase = ArcadePhase.Playing; Player.Enabled = true; }
                 }
                 else if(Phase == ArcadePhase.Dying)
                 {
+                    particles.Tick(step,Player.Position,false);
                     deathTime -= step;
                     if(deathTime <= 0)
                     {
@@ -223,10 +215,15 @@ namespace ShanHaiSpiritTrail
                 edibleBeforeStep[i] = Ghosts.Ghosts[i].IsEdible;
             }
             bool protectedDuringStep = Ward.Active;
-            FruitTime = Mathf.Max(0, FruitTime-step);
+            Cherry.Tick(step);
             Ward.Tick(step);
             Player.Tick(step);
+            particles.Tick(step,Player.Position,Player.IsMoving);
             if(Phase != ArcadePhase.Playing) return;
+            bool fruitInside = Cherry.Position.x >= -.5f && Cherry.Position.x <= Navigation.Columns-.5f
+                && Cherry.Position.y <= .5f && Cherry.Position.y >= -Navigation.Rows+.5f;
+            if(Cherry.Active && fruitInside && MazeContact.Crossed(previousPlayer,Player.Position,Cherry.PreviousPosition,Cherry.Position,Navigation.Columns) && Cherry.Collect())
+            { AddScore(100); audioPlayer.Effect("Fruit"); }
             Ghosts.Tick(step,Player.CurrentCell,Player.Direction);
             for(int i=0; i<4; i++)
             {
@@ -242,7 +239,8 @@ namespace ShanHaiSpiritTrail
         private void LoseLife()
         {
             Lives--; Phase = ArcadePhase.Dying; deathTime = 1.8f;
-            Player.Enabled = false; FruitTime = 0;
+            Player.Enabled = false;
+            particles.Death(Player.Position);
             audioPlayer.Music(null); audioPlayer.Effect("Death");
         }
         private void ReadInput()
