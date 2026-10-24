@@ -4,7 +4,7 @@ using UnityEngine;
 namespace ShanHaiSpiritTrail
 {
     // Movement is a sequence of one-tile linear tweens. Decisions happen at
-    // tile centres; reversing can happen anywhere along the current segment.
+    // tile centres, including reversal requested during the current segment.
     public sealed class GridMotor
     {
         private readonly MazeNavigation navigation;
@@ -21,7 +21,7 @@ namespace ShanHaiSpiritTrail
         public event Action<GridDirection> DirectionChanged;
         public event Action<GridDirection> Blocked;
 
-        // CurrentCell is the last centre actually reached, including during a reversal.
+        // CurrentCell is the last centre actually reached.
         public MazeCell CurrentCell { get; private set; }
         public MazeCell TargetCell => traversing ? segmentEnd : CurrentCell;
         public GridDirection Direction { get; private set; }
@@ -68,8 +68,6 @@ namespace ShanHaiSpiritTrail
             ValidateDirection(direction);
             if (bufferedDirection != direction) lastBlockedDirection = GridDirection.None;
             bufferedDirection = direction;
-            if (Enabled && traversing && direction == MazeNavigation.Opposite(Direction))
-                ReverseSegment();
         }
 
         public void Tick(float deltaSeconds)
@@ -82,8 +80,6 @@ namespace ShanHaiSpiritTrail
             double remaining = deltaSeconds;
             while (Enabled && remaining > 0)
             {
-                if (traversing && bufferedDirection == MazeNavigation.Opposite(Direction))
-                    ReverseSegment();
                 if (resetVersion != version || !Enabled) return;
 
                 if (!traversing && !BeginSegment()) return;
@@ -137,17 +133,6 @@ namespace ShanHaiSpiritTrail
                 DirectionChanged?.Invoke(Direction);
             }
             return true;
-        }
-
-        private void ReverseSegment()
-        {
-            MazeCell previousStart = segmentStart;
-            segmentStart = segmentEnd;
-            segmentEnd = previousStart;
-            progress = 1 - progress;
-            Direction = MazeNavigation.Opposite(Direction);
-            UpdatePosition();
-            DirectionChanged?.Invoke(Direction);
         }
 
         private void UpdatePosition()
