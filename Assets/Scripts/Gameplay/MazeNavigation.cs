@@ -33,6 +33,7 @@ namespace ShanHaiSpiritTrail
             { GridDirection.Up, GridDirection.Left, GridDirection.Down, GridDirection.Right };
         private readonly LevelMapLayout layout;
         private readonly bool allowHouseGates;
+        private readonly bool allowTunnelWrap;
         private readonly HashSet<MazeCell> walkable = new HashSet<MazeCell>();
 
         public int Rows => layout.Rows;
@@ -40,13 +41,14 @@ namespace ShanHaiSpiritTrail
         public int TunnelRow => Rows / 2;
         public IReadOnlyList<MazeCell> Cells { get; }
 
-        public MazeNavigation(LevelMapLayout layout, bool allowHouseGates = false)
-            : this(layout, new MazeCell(1, 1), allowHouseGates) { }
+        public MazeNavigation(LevelMapLayout layout, bool allowHouseGates = false, bool allowTunnelWrap = true)
+            : this(layout, new MazeCell(1, 1), allowHouseGates, allowTunnelWrap) { }
 
-        public MazeNavigation(LevelMapLayout layout, MazeCell start, bool allowHouseGates = false)
+        public MazeNavigation(LevelMapLayout layout, MazeCell start, bool allowHouseGates = false, bool allowTunnelWrap = true)
         {
             this.layout = layout ?? throw new ArgumentNullException(nameof(layout));
             this.allowHouseGates = allowHouseGates;
+            this.allowTunnelWrap = allowTunnelWrap;
             if (!IsCorridor(start))
                 throw new ArgumentException("The navigation start must be a corridor tile.", nameof(start));
 
@@ -137,7 +139,7 @@ namespace ShanHaiSpiritTrail
             Vector2 step = StepVector(direction);
             int row = cell.Row - (int)step.y;
             int column = cell.Column + (int)step.x;
-            if (row == TunnelRow && cell.Row == TunnelRow)
+            if (allowTunnelWrap && row == TunnelRow && cell.Row == TunnelRow)
             {
                 if (column < 0) column = Columns - 1;
                 else if (column >= Columns) column = 0;

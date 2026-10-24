@@ -43,3 +43,11 @@ Unity compiled and the lifecycle suite passed 88 assertions across six scenarios
 Both completion paths were exercised: collection arrival callbacks for all remaining pellets, and three consecutive ordinary-ghost deaths. Both enter a locked three-second Game Over state and automatically return to StartScene. The collection fixture is an integration test of arrival callbacks, not evidence of a human-played complete route. Verified score/time pairing, higher-score replacement, faster equal-score replacement, slower/lower-result rejection, independent level records and menu display after return. Test preferences were restored afterward.
 
 Rendered result screens at both required aspect ratios after Unity completed object destruction. The capture helper preserves the production overlay ordering when rendering to a texture.
+
+## Prescribed ghost motion and decisions
+
+Unity compiled the completed GhostController and ClockwisePatrol implementation on 2026-10-24. The physical-motion regression passed 11 scenarios, including all assigned house exits, constant speed ratios, 90 seconds of corridor traversal without stopping or illegal reversal, portal dead ends, six direct-return cases, and equivalent seeded behavior at 30/60/144 requested FPS. Its 91,014 assertions include repeated per-frame invariants rather than that many distinct tests.
+
+The decision suite passed seven scenarios with 19,371 assertions: normal distance filters using noninteger player positions and exact midpoint ties, random diversity across seeds, all four frightened behaviors, empty-filter fallback, power transitions without reversal, three complete clockwise perimeter laps, and clockwise rejoining after frightened movement. The 138-cell perimeter excludes tunnel stubs. A returning patrol may use a tunnel dead end while rejoining; it reverses only when physically forced.
+
+Integrated Play Mode passed 15 ghost checks for a real 300-point contact, return speed and pause, separate spawn arrivals, last-Dead music restoration, power expiry, and view positions. The 88-assertion lifecycle regression also passed with the new controller. Dead ghosts now revive only at their own starting position; the temporary three-second timer from the earlier milestone is removed.

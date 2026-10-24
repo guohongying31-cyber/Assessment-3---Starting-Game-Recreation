@@ -22,7 +22,7 @@ namespace ShanHaiSpiritTrail
         [SerializeField] private GameObject lifeIndicatorPrefab;
         public MazeNavigation Navigation { get; private set; }
         public GridMotor Player { get; private set; }
-        public GhostDirector Ghosts { get; private set; }
+        public GhostController Ghosts { get; private set; }
         public PickupLedger Pickups { get; private set; }
         public ArcadePhase Phase { get; private set; }
         public int Score { get; private set; }
@@ -63,7 +63,7 @@ namespace ShanHaiSpiritTrail
             particles.Initialize(moteRenderer.sprite, moteRenderer.sharedMaterial);
             Player.Blocked += direction => { audioPlayer.Effect("Wall"); particles.Impact(Player.Position,direction); };
             hud.SetLifeSprite(lifeIndicatorPrefab.GetComponentInChildren<SpriteRenderer>().sprite);
-            Ghosts = new GhostDirector(generator.GeneratedLayout, Navigation);
+            Ghosts = new GhostController(generator.GeneratedLayout, Navigation);
             for(int i=0; i<4; i++)
             {
                 ghostViews[i] = Instantiate(ghostPrefabs[i]).AddComponent<ActorSprite>();
@@ -159,10 +159,10 @@ namespace ShanHaiSpiritTrail
             for(int i=0; i<ghostViews.Length; i++)
             {
                 var ghost = Ghosts.Ghosts[i];
-                ghostViews[i].transform.position = ghost.Motor.Position;
+                ghostViews[i].transform.position = ghost.Position;
                 string form = ghost.State == GhostState.Eaten ? "Dead" : ghost.Frightened
                     ? (Ghosts.Recovering ? "Recovering" : "Scared") : "Walking";
-                ghostViews[i].Present(ghost.Motor.Direction, active, form);
+                ghostViews[i].Present(ghost.Direction, active, form);
                 returning |= ghost.State == GhostState.Eaten;
             }
             if(wardView)
@@ -238,7 +238,7 @@ namespace ShanHaiSpiritTrail
             Vector2 previousPlayer = Player.Position;
             for(int i=0; i<4; i++)
             {
-                previousGhosts[i] = Ghosts.Ghosts[i].Motor.Position;
+                previousGhosts[i] = Ghosts.Ghosts[i].Position;
                 edibleBeforeStep[i] = Ghosts.Ghosts[i].IsEdible;
             }
             bool protectedDuringStep = Ward.Active;
@@ -251,11 +251,11 @@ namespace ShanHaiSpiritTrail
                 && Cherry.Position.y <= .5f && Cherry.Position.y >= -Navigation.Rows+.5f;
             if(Cherry.Active && fruitInside && MazeContact.CrossedFruit(previousPlayer,Player.Position,Cherry.PreviousPosition,Cherry.Position,Navigation.Columns) && Cherry.Collect())
             { AddScore(100); audioPlayer.Effect("Fruit"); }
-            Ghosts.Tick(step,Player.CurrentCell,Player.Direction);
+            Ghosts.Tick(step,Player.Position);
             for(int i=0; i<4; i++)
             {
                 var ghost = Ghosts.Ghosts[i];
-                if(!MazeContact.Crossed(previousPlayer,Player.Position,previousGhosts[i],ghost.Motor.Position,Navigation.Columns)) continue;
+                if(!MazeContact.Crossed(previousPlayer,Player.Position,previousGhosts[i],ghost.Position,Navigation.Columns)) continue;
                 if(Ghosts.Eat(i, edibleBeforeStep[i]))
                 {
                     AddScore(300); audioPlayer.Effect("Ghost");
