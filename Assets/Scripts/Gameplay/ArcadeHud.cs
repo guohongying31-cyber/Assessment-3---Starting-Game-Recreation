@@ -101,7 +101,7 @@ namespace ShanHaiSpiritTrail
             ward.text = game.Ward.Active ? "WARD ACTIVE\n" + game.Ward.Remaining.ToString("F1") + "s"
                 : game.Ward.Cooldown > 0 ? "WARD RECHARGE\n" + game.Ward.Cooldown.ToString("F1") + "s" : "WARD READY\nSPACE to activate";
             bool showActions = game.Phase == ArcadePhase.Paused;
-            bool ended = game.Phase == ArcadePhase.GameOver || game.Phase == ArcadePhase.RoundClear;
+            bool ended = game.Phase == ArcadePhase.GameOver;
             exitButton.interactable = !ended && game.Phase != ArcadePhase.Dying;
             resumeButton.gameObject.SetActive(showActions); menuButton.gameObject.SetActive(showActions);
             resumeButton.interactable = menuButton.interactable = showActions;

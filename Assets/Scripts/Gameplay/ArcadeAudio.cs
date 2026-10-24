@@ -31,6 +31,7 @@ namespace ShanHaiSpiritTrail
             musicSource.Stop();
             musicSource.clip = clip;
             musicSource.loop = mode != "Intro";
+            musicSource.pitch = mode == "Intro" && clip ? clip.length / 4f : 1;
             if (clip) musicSource.Play();
         }
         public void Effect(string name)

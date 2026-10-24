@@ -78,7 +78,8 @@ namespace ShanHaiSpiritTrail
                     double step = Math.Min(remaining, waitRemaining);
                     remaining -= step;
                     waitRemaining -= step;
-                    if (waitRemaining > 0) break;
+                    if (waitRemaining > .000001) break;
+                    waitRemaining = 0;
                     Spawn();
                 }
                 if (remaining <= 0) break;
