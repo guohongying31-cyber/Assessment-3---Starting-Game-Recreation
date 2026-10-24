@@ -17,6 +17,7 @@ namespace ShanHaiSpiritTrail
         [SerializeField] private ArcadeHud hud;
         [SerializeField] private bool talismanMode;
         [SerializeField] private GameObject wardPrefab;
+        [SerializeField] private GameObject lifeIndicatorPrefab;
         public MazeNavigation Navigation { get; private set; }
         public GridMotor Player { get; private set; }
         public GhostDirector Ghosts { get; private set; }
@@ -29,6 +30,7 @@ namespace ShanHaiSpiritTrail
         public float FruitTime { get; private set; }
         public bool ExtraLifeGranted { get; private set; }
         public int GhostCombo { get; private set; }
+        public double ElapsedSeconds { get; private set; }
         public bool TalismanMode => talismanMode;
         public TalismanWard Ward { get; } = new TalismanWard();
         public int BestScore => Mathf.Max(Score, PlayerPrefs.GetInt(BestKey, 0));
@@ -54,11 +56,13 @@ namespace ShanHaiSpiritTrail
             Player = new GridMotor(Navigation, playerStart, 5f);
             Player.Arrived += Arrive;
             Player.Blocked += _ => audioPlayer.Effect("Wall");
+            hud.SetLifeSprite(lifeIndicatorPrefab.GetComponentInChildren<SpriteRenderer>().sprite);
             Ghosts = new GhostDirector(generator.GeneratedLayout, Navigation);
             for(int i=0; i<4; i++)
             {
                 ghostViews[i] = Instantiate(ghostPrefabs[i]).AddComponent<ActorSprite>();
                 ghostViews[i].name = "Guardian_" + i;
+                GhostNumberLabel.Create(ghostViews[i].transform, i + 1);
             }
             fruitView = Instantiate(fruitPrefab);
             fruitView.name = "Bonus_CrimsonFruit";
@@ -77,6 +81,7 @@ namespace ShanHaiSpiritTrail
         public void NewGame()
         {
             Score = 0; Lives = 3; Round = 1; ExtraLifeGranted = false;
+            ElapsedSeconds = 0;
             audioPlayer.Pause(false);
             PausePickups(false);
             StartRound();

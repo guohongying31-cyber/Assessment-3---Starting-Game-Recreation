@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 527256161}
   - component: {fileID: 527256160}
   m_Layer: 0
-  m_Name: ArcadeHud
+  m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,6 +275,7 @@ MonoBehaviour:
   levelCamera: {fileID: 784613061}
   audioPlayer: {fileID: 866762401}
   hud: {fileID: 527256160}
+  lifeIndicatorPrefab: {fileID: 6607525753965261351, guid: 70c2c2ab9acc86044a79adbd87657ce4, type: 3}
   talismanMode: 0
   wardPrefab: {fileID: 1764597660908029547, guid: 911747da4cfd9cc43845a42f3e18e428, type: 3}
 --- !u!4 &593761828
