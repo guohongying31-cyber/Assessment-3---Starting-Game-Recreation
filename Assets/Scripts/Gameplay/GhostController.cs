@@ -46,12 +46,14 @@ namespace ShanHaiSpiritTrail
             { GridDirection.Up, GridDirection.Left, GridDirection.Down, GridDirection.Right };
         private readonly MazeNavigation corridors;
         private readonly MazeNavigation house;
+        private readonly ClockwisePatrol patrol;
         private readonly GhostAgent[] ghosts = new GhostAgent[4];
         private readonly int seed;
         private Vector2 playerPosition;
         private double frightRemaining;
 
         public IReadOnlyList<GhostAgent> Ghosts { get; }
+        public IReadOnlyList<MazeCell> ClockwiseRoute => patrol.Route;
         public float FrightRemaining => (float)frightRemaining;
         public bool Recovering => frightRemaining > 0 && frightRemaining <= 3;
         public bool IsRecovering => Recovering;
@@ -65,6 +67,7 @@ namespace ShanHaiSpiritTrail
             this.seed = seed;
             corridors = new MazeNavigation(layout, allowTunnelWrap: false);
             house = new MazeNavigation(layout, allowHouseGates: true, allowTunnelWrap: false);
+            patrol = new ClockwisePatrol(corridors);
             for (int index = 0; index < ghosts.Length; index++)
             {
                 var ghost = new GhostAgent(index, house, new MazeCell(14, 12 + index));
@@ -251,7 +254,27 @@ namespace ShanHaiSpiritTrail
         }
 
         internal GridDirection GhostDecision(GhostAgent ghost, List<GridDirection> choices)
-            => choices[ghost.Random.Next(choices.Count)];
+        {
+            if (!ghost.Frightened && ghost.Index == 3)
+                return patrol.Choose(ghost.Motor.CurrentCell, ghost.Motor.Direction, choices);
+            if (!ghost.Frightened && ghost.Index == 2)
+                return choices[ghost.Random.Next(choices.Count)];
+
+            bool flee = ghost.Frightened || ghost.Index == 0;
+            float currentDistance = (ghost.Position - playerPosition).sqrMagnitude;
+            var matches = new List<GridDirection>(choices.Count);
+            foreach (var direction in choices)
+            {
+                corridors.TryStep(ghost.Motor.CurrentCell, direction, out MazeCell next);
+                float nextDistance = (corridors.WorldPosition(next) - playerPosition).sqrMagnitude;
+                if (flee ? nextDistance >= currentDistance : nextDistance <= currentDistance)
+                    matches.Add(direction);
+            }
+            // If the distance filter excludes every route, preserve the stronger
+            // no-stopping/no-backstep constraints using a legal random fallback.
+            var available = matches.Count > 0 ? matches : choices;
+            return available[ghost.Random.Next(available.Count)];
+        }
 
         private bool CanMove(GhostAgent ghost, GridDirection direction)
         {
