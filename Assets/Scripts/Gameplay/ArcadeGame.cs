@@ -42,7 +42,7 @@ namespace ShanHaiSpiritTrail
         private Animator[] pickupAnimators;
         private float aspect, deathTime, lastPickupTime = -1;
         private ArcadePhase beforePause;
-        private readonly MazeCell playerStart = new MazeCell(17, 13);
+        private readonly MazeCell playerStart = new MazeCell(1, 1);
         private readonly MazeCell fruitCell = new MazeCell(17, 14);
 
         private void Start()
@@ -97,7 +97,6 @@ namespace ShanHaiSpiritTrail
             Player.Speed = Mathf.Min(6.5f, 5 + (Round-1)*.12f);
             Player.Reset(playerStart);
             Player.Enabled = false;
-            Player.QueueDirection(GridDirection.Left);
             Ghosts.Reset(Round);
             GhostCombo = 0; FruitTime = 0;
             Ward.Reset();
@@ -150,7 +149,7 @@ namespace ShanHaiSpiritTrail
         {
             bool active = Phase == ArcadePhase.Playing;
             playerView.transform.position = Player.Position;
-            playerView.Present(Player.Direction, active && Player.IsMoving || Phase == ArcadePhase.Dying,
+            playerView.Present(Player.Direction == GridDirection.None ? GridDirection.Right : Player.Direction, active && Player.IsMoving || Phase == ArcadePhase.Dying,
                 Phase == ArcadePhase.Dying || Phase == ArcadePhase.GameOver ? "Dead" : "Walking");
             bool returning = false;
             for(int i=0; i<ghostViews.Length; i++)
