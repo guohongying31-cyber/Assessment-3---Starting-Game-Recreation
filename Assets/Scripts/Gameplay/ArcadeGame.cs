@@ -36,6 +36,7 @@ namespace ShanHaiSpiritTrail
         public int BestScore => Mathf.Max(Score, PlayerPrefs.GetInt(BestKey, 0));
         private string BestKey => talismanMode ? "SpiritTrail.TrialBest" : "SpiritTrail.ClassicBest";
         private ActorSprite playerView;
+        private PacStudentController playerController;
         private readonly ActorSprite[] ghostViews = new ActorSprite[4];
         private readonly Vector2[] previousGhosts = new Vector2[4];
         private readonly bool[] edibleBeforeStep = new bool[4];
@@ -53,7 +54,9 @@ namespace ShanHaiSpiritTrail
             pickupAnimators = generator.GeneratedLevel.GetComponentsInChildren<Animator>(true);
             playerView = Instantiate(playerPrefab).AddComponent<ActorSprite>();
             playerView.name = "Cultivator_Player";
-            Player = new GridMotor(Navigation, playerStart, 5f);
+            playerController = playerView.gameObject.AddComponent<PacStudentController>();
+            playerController.Initialize(Navigation, playerStart);
+            Player = playerController.Motor;
             Player.Arrived += Arrive;
             Player.Blocked += _ => audioPlayer.Effect("Wall");
             hud.SetLifeSprite(lifeIndicatorPrefab.GetComponentInChildren<SpriteRenderer>().sprite);
@@ -100,7 +103,7 @@ namespace ShanHaiSpiritTrail
         private void ResetActors()
         {
             Player.Speed = Mathf.Min(6.5f, 5 + (Round-1)*.12f);
-            Player.Reset(playerStart);
+            playerController.ResetLife(playerStart);
             Player.Enabled = false;
             Ghosts.Reset(Round);
             GhostCombo = 0; FruitTime = 0;
@@ -153,6 +156,7 @@ namespace ShanHaiSpiritTrail
         public void Present()
         {
             bool active = Phase == ArcadePhase.Playing;
+            playerController.InputEnabled = active;
             playerView.transform.position = Player.Position;
             playerView.Present(Player.Direction == GridDirection.None ? GridDirection.Right : Player.Direction, active && Player.IsMoving || Phase == ArcadePhase.Dying,
                 Phase == ArcadePhase.Dying || Phase == ArcadePhase.GameOver ? "Dead" : "Walking");
@@ -249,10 +253,6 @@ namespace ShanHaiSpiritTrail
             if (Phase == ArcadePhase.GameOver && Input.GetKeyDown(KeyCode.Return)) NewGame();
             if (Phase != ArcadePhase.Ready && Phase != ArcadePhase.Playing) return;
             if(Input.GetKeyDown(KeyCode.Space)) TryActivateWard();
-            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) Player.QueueDirection(GridDirection.Up);
-            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) Player.QueueDirection(GridDirection.Left);
-            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)) Player.QueueDirection(GridDirection.Down);
-            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) Player.QueueDirection(GridDirection.Right);
         }
         public bool TryActivateWard()
         {
