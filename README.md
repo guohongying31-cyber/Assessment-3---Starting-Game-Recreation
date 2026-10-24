@@ -1,112 +1,99 @@
-# Shan Hai Spirit Trail
+# PacStudent: Shan Hai Spirit Trail
 
 31263 / 32004 Introduction to Game Development, Assessments 3 and 4.
+Student number: 26151833.
 
-A 2D PacStudent recreation featuring a cultivator in jade robes and mythical beasts
-inspired by the Classic of Mountains and Seas. Spirit collection, ward-breaking elixirs,
-and sealing rituals reinterpret the original interactions while preserving the required
-level and movement rules.
+A 2D maze game featuring a cultivator in jade robes and four guardians inspired
+by the Classic of Mountains and Seas. Assessment 4 extends the original maze,
+sprites, animations and sound with playable rules and an active protective talisman.
 
-## Current playable development
+## Open and play
 
-Open `Assets/Scenes/MainMenu.unity` in Unity 6000.4.11f1 and press Play. Choose
-Classic Trail for the Pac-Man-style rules or Talisman Trial for an active protective
-ward. The Windows preview is `output/PlayableBuild/ShanHaiSpiritTrail.exe`.
+1. Add this project folder in Unity Hub and open it with **Unity 6000.4.11f1**.
+2. Allow package import and script compilation to finish.
+3. Open `Assets/Scenes/StartScene.unity` and press Play.
+4. Choose **Level 1** for the required recreation or **Level 2** for Talisman Trial.
 
-The playable version includes buffered keyboard movement, collection and scoring,
-four autonomous guardians, power effects, lives, fruit, round progression, pause,
-restart, separate best scores and three navigable scenes. See the
-[play guide](Documentation/Gameplay-Guide.md) for controls and validation records.
-The complete Assessment 4 specification is still needed before checking every
-HD criterion or preparing its final submission. Main and the delivered Assessment 3
-ZIP remain the previous release; new gameplay is developed on Development.
+The enabled scene order is `StartScene`, `ClassicLevel`, `InnovationScene`.
+Use WASD or arrow keys to move, P or Escape to pause, and Space to activate the
+Level 2 talisman. Input is buffered until the current grid cell is complete.
+The HUD Exit button returns to StartScene without saving an unfinished run.
+
+See the [play guide](Documentation/Gameplay-Guide.md) for complete controls,
+scoring, guardian behavior and the distinction between ward protection and elixirs.
+
+## Assessment 4 features
+
+- Animated start-screen border, five character sprites, level selection and
+  independent high-score/time records.
+- A world-space maze with 218 spirit motes and four flashing ward elixirs;
+  keyboard movement, player tunnels, collection, collision feedback and three lives.
+- A four-second `3, 2, 1, GO!` countdown, six-digit score, centisecond game timer,
+  sprite life indicators and numbered guardians.
+- Moving crimson fruit that crosses the map centre and clips to its boundaries.
+- Four specified guardian behaviors, ten-second scared effects with three-second
+  recovery, and direct spirit returns to each guardian's own starting position.
+- Game Over on maze completion or loss of all lives, followed by a locked
+  three-second result display and automatic menu return. Completed runs store the
+  score and its associated time; a faster equal score replaces the previous time.
+- A Level 2 talisman that blocks Normal guardian contact for three seconds, with
+  fifteen seconds between activations and clear protection/recharge feedback.
+
+The project uses custom linear movement and world-space sprites. All authored
+project text, filenames, code comments and game UI use English.
+
+## Verification and release status
+
+The [formal checklist](Documentation/Assessment4-Checklist.md) maps the supplied
+Assessment 4 criteria. The [validation record](Documentation/Assessment4-Validation.md)
+distinguishes checks actually executed from remaining work and historical milestones.
+
+Windows player validation and cache-free project validation have passed. The
+validation record describes their scope and the isolated full-route fixture.
+The standalone output is `output/Assessment4Build/ShanHaiSpiritTrail.exe`;
+its Data folder, UnityPlayer.dll and generated dependencies must remain beside it.
+
+The Assessment 4 project archive is named **`26151833_A4_Project.zip`**. Package the
+complete Unity project with `.git` and `.gitignore`, excluding Library, generated
+caches, logs, local preview builds and temporary verification helpers. Complete
+final validation before merging Development into Main and packaging with Main checked out.
+The adjacent `Assessment4-Release-Receipt.json` records the delivered archive hash,
+release commit and final archive checks; generated output files are not Git assets.
+The separate submission declaration has been deferred by the user and is not part
+of the current preparation work.
 
 ## Preserved Assessment 3 foundation
 
-The target is **100% HD**, progressing through every grading band in order.
-The Unity project foundation and the audio implementation are ready. Eleven synthesized
-audio clips are imported, and the scene plays its intro before looping normal-state music.
-See the audio validation record for the checks performed and listening-review limits.
-The visual stage now includes 101 sprite frames, 46 visual animation clips, six visual
-controllers, and a scene showcase with fifteen reusable sprite prefabs. Two full Play
-sessions verified every required animation state and the existing music sequence.
-The manual level is now saved in the scene: 28 columns by 29 rows, four reflected quadrants,
-660 placed objects, 218 spirit motes and four animated elixirs. Two full Play sessions
-verified the completed maze, retained animation showcase and music restart.
-The cultivator now patrols the first inner block clockwise at 2.5 units per second,
-with immediate directional animation and continuous movement audio. Real Play tests at
-30, 60 and 144 requested FPS verified a 7.2-second lap and pause/resume behavior.
-The generator now recreates the maze at runtime using neighboring wall connections,
-four reflected quadrants and adaptive camera/showcase placement. Five maps and twenty
-map/aspect combinations passed Play validation. The saved manual scene returns after Stop.
-Final technical validation includes a successful Windows build, a 35-second player
-launch check and five-map Play verification from a ZIP extracted without caches.
-See [final validation](Documentation/FinalValidation/Final-Validation.md) and the
-[submission guide](Documentation/FinalValidation/Submission-Guide.md).
-The release archive is named `26151833_Assess3.zip`; its adjacent validation receipt
-records the exact Main commit, ZIP checksum and final extracted-archive checks.
+`Assets/Scenes/RecreatedLevel.unity` preserves the earlier Assessment 3 demonstration.
+It contains the saved manual maze, automatic patrol and asset showcase; it is separate
+from the three enabled Assessment 4 scenes.
 
-- Unity: **6000.4.11f1**, confirmed by the user.
-- Remote: [Assessment-3---Starting-Game-Recreation](https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation).
-- Development branch: `Development`; work on one feature branch at a time.
-- Main branch: `Main`; do not merge development work into it before final validation.
-- Language: all project files, filenames, comments, asset labels, and game text use English.
+That foundation includes eleven audio clips, 101 sprite frames, 46 visual animation
+clips, six visual controllers and fifteen reusable sprite prefabs. The maze has
+28 columns by 29 rows, four reflected quadrants and 660 placed objects. The original
+patrol demonstrates a clockwise 7.2-second lap at 2.5 units per second, while the
+runtime generator reconstructs the saved maze using neighboring wall connections.
 
-## Documentation
+Historical checks cover animation and audio playback, requested 30/60/144 FPS patrol
+tests, five generator maps, twenty map/aspect combinations and an extracted-project
+import. Those results belong to the Assessment 3 milestone. Its released archive
+`26151833_Assess3.zip` is preserved. See the historical
+[final validation](Documentation/FinalValidation/Final-Validation.md) and
+[Assessment 3 opening guide](Documentation/FinalValidation/Submission-Guide.md).
 
-- [Assessment requirements and acceptance checklist](Documentation/Assessment-Checklist.md)
-- [Theme and asset design guidance](Documentation/Theme-Brief.md)
-- [Development milestones](Documentation/Development-Plan.md)
-- [Environment and validation record](Documentation/Validation.md)
-- [Audio inventory and provenance](Documentation/Audio/Audio-Provenance.md)
-- [Scene audio setup and playback instructions](Documentation/Audio/Scene-Audio-Guide.md)
-- [Audio validation record](Documentation/Audio/Audio-Validation.md)
+## Development workflow and references
+
+The repository uses Main, Development and preserved feature branches. Each meaningful
+milestone is committed with its actual development timestamp. A feature is compiled
+and tested before its merge into Development; the final release merge follows the
+complete validation sequence.
+
+- [Remote repository](https://github.com/guohongying31-cyber/Assessment-3---Starting-Game-Recreation)
+- [Theme and asset design](Documentation/Theme-Brief.md)
+- [Audio inventory and configuration](Documentation/Audio/Scene-Audio-Guide.md)
 - [Visual production and import settings](Documentation/Visual/Visual-Production.md)
-- [Animation controls and showcase guide](Documentation/Visual/Animation-Guide.md)
-- [Visual validation record](Documentation/Visual/Visual-Validation.md)
-- [Manual maze layout and scene guide](Documentation/ManualLevel/Manual-Level-Guide.md)
-- [Manual level validation record](Documentation/ManualLevel/Manual-Level-Validation.md)
-- [Patrol controls and tween explanation](Documentation/Movement/Movement-Guide.md)
-- [Movement and frame-rate validation](Documentation/Movement/Movement-Validation.md)
-- [Generator array, wall rules and camera controls](Documentation/LevelGenerator/Generator-Guide.md)
-- [Generator validation and replacement-map evidence](Documentation/LevelGenerator/Generator-Validation.md)
-- [Visual clarity improvements and before/after captures](Documentation/VisualClarity/Clarity-Validation.md)
-- [Final build, clean-project and repository validation](Documentation/FinalValidation/Final-Validation.md)
-- [Submission and opening instructions](Documentation/FinalValidation/Submission-Guide.md)
+- [Generator layout and wall rules](Documentation/LevelGenerator/Generator-Guide.md)
 
-Production notes describe the actual assets and configuration. Validation records
-distinguish completed checks from work that remains unfinished.
-
-## Open the project
-
-Add this directory in Unity Hub and open it with version 6000.4.11f1.
-Open `Assets/Scenes/RecreatedLevel.unity`.
-The scene contains an orthographic camera and four organizational groups:
-`Systems`, `Level01_Manual`, `Characters`, and `AssetShowcase`.
-`Systems/LevelAudio` plays the 2.4-second intro and then loops the normal music.
-`Level01_Manual` contains the four saved maze quadrants, visible before Play.
-`Systems/LevelGenerator` replaces them with `Level01_Generated` during Play. Editing
-the `levelMap` array in `Assets/Scripts/Level/LevelGenerator.cs` changes the runtime
-layout; camera framing, panel placement and inventory labels adapt to its dimensions.
-`AssetShowcase` displays the cultivator, four beasts, four items and six wall samples in
-panels beside the maze in landscape and below it in portrait. Press Play and watch
-for at least 28 seconds to see every character
-state and a full normal-music loop. Four maze elixirs and the sidebar elixir pulse.
-`Characters/PacStudent` patrols the maze's first upper-left inner block. Its four-way
-walking animation matches each turn and soft steps loop while it moves. Stop and Play
-again to restart the patrol, preview and music. Movement is automatic; this stage has
-no keyboard control, collision response or pickup collection.
-
-![Generated maze with improved text and sprite clarity](Documentation/VisualClarity/After-1920x1080.png)
-
-## Git and submission
-
-Commit each completed, reviewable milestone separately. Create every feature branch
-from the latest `Development`, test it, merge it back, and retain the feature branch.
-Only after final validation should Development merge into `Main`.
-Package the project as `26151833_Assess3.zip`, including `.git` and
-`.gitignore` and excluding `Library`.
-
-The `.gitignore` is based on the assessment-specified
+The `.gitignore` follows the assessment-specified
 [GitHub Unity template](https://github.com/github/gitignore/blob/main/Unity.gitignore),
 with additional rules for local references and temporary verification files.
