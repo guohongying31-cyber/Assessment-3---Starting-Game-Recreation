@@ -255,7 +255,7 @@ namespace ShanHaiSpiritTrail
             audioPlayer.Effect("Ghost");
             return true;
         }
-        public void ReturnToMenu() { RecordBest(); SceneManager.LoadScene("MainMenu"); }
+        public void ReturnToMenu() { RecordBest(); SceneManager.LoadScene("StartScene"); }
         private void RecordBest()
         {
             if(Score <= PlayerPrefs.GetInt(BestKey,0)) return;
