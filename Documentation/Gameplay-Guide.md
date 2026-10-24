@@ -1,65 +1,111 @@
-# Shan Hai Spirit Trail: play guide
+# PacStudent: Shan Hai Spirit Trail
 
-## Launch
+## Open and play
 
-Use Unity 6000.4.11f1. Open `Assets/Scenes/MainMenu.unity`, then press Play.
-The build scene order is MainMenu, ClassicLevel, TalismanLevel. The original
-RecreatedLevel scene remains available as the Assessment 3 demonstration.
+Use Unity 6000.4.11f1. Open `Assets/Scenes/StartScene.unity` and press Play.
+The enabled scene order is StartScene, ClassicLevel, InnovationScene.
+The separate RecreatedLevel scene preserves the Assessment 3 visual demonstration.
 
-A Windows preview is available at `output/PlayableBuild/ShanHaiSpiritTrail.exe`.
-Keep its Data directory, UnityPlayer.dll and other build dependencies beside it.
-This preview is not an Assessment 4 submission archive.
+The Windows build is in `output/Assessment4Build`. Launch `ShanHaiSpiritTrail.exe`
+with its Data folder, UnityPlayer.dll and other generated dependencies beside it.
 
 ## Controls
 
 | Input | Action |
 | --- | --- |
-| Arrow keys / WASD | Move; queue the next turn before an intersection |
-| Opposite direction | Reverse immediately while moving |
-| P / Escape | Pause or resume |
-| Space | Activate the ward in Talisman Trial |
-| Enter | Next round after clearing; restart after Game Over; select a menu button |
-| M while paused / Ready / results | Return to the main menu |
-| 1 / 2 on main menu | Start Classic Trail / Talisman Trial |
-| Mouse | Select menu and pause/result buttons |
+| WASD or arrow keys | Request a direction; the latest request is kept until valid |
+| Opposite direction | Finish the current grid cell, then reverse |
+| P or Escape | Pause or resume |
+| Space in Level 2 | Activate the protective talisman when ready |
+| Exit | Return to StartScene without recording an unfinished run |
+| 1 or 2 in StartScene | Open Level 1 or Level 2 |
+| Enter in StartScene | Activate the selected menu button |
 
-## Classic Trail
+## Level 1: the Jade Labyrinth
 
-Collect 218 spirit motes and four elixirs to clear the maze. Motes give 10 points;
-elixirs give 50 and temporarily make guardians edible. A chain of four guardian
-captures gives 200, 400, 800 and 1,600 points. Returning spirits are harmless.
+Collect 218 spirit motes and four ward elixirs. Begin with three Soul Jade life
+indicators. The cultivator starts in the top-left corridor facing right and waits
+for input after the four-second `3, 2, 1, GO!` countdown.
 
-Start with three lives. Ordinary guardian contact removes one life while keeping
-collected items and score. One extra life is granted at 10,000 points. Crimson
-fruit appears twice per round for a limited time. Clear every pickup and press
-Enter or Next Round to continue. Later rounds become faster with shorter elixir
-effects. A separate best score is saved for each mode.
+Movement uses one-cell linear interpolation at five tiles per second. A blocked
+requested turn stays buffered while the cultivator continues in the current
+direction. At the next valid junction the requested turn takes effect. A reversal
+also waits for the current cell to finish. The side tunnels connect the two edges.
 
-## Talisman Trial
+| Item or contact | Result |
+| --- | --- |
+| Spirit mote | 10 points; the mote is removed |
+| Ward elixir | 50 points; guardians become Scared for ten seconds |
+| Crimson fruit | 100 points; the fruit is removed |
+| Scared or Recovering guardian | 300 points; its spirit returns home |
+| Normal guardian | Lose one life and play the death sequence |
 
-User direction, translated into English: "Use Pac-Man's rules and add an actively
-usable talisman skill to the innovation scene."
+The last three seconds of the elixir effect use the Recovering animation.
+The integer SCARED timer is hidden when the effect ends. Eating another elixir
+refreshes the full ten seconds. Returning spirits remain harmless and cannot be
+captured a second time before reviving.
 
-This mode uses the same maze and base rules so the skill's effect is easy to
-compare with Classic Trail. Press Space during play for a three-second protective
-ward. It permits contact with ordinary guardians without losing a life or gaining
-points. Frightened guardians still award normal capture points. The ward recharges
-15 seconds after activation, including its three active seconds. Repeated presses
-do not extend protection. Pause freezes both timers. Each respawn or new round
-restores a ready ward.
+Crimson fruit first appears after five unpaused scene seconds, including the
+initial countdown and death sequences. It flies through the centre at three units
+per second. It ignores the maze walls and is visible only inside the map boundary.
+The next fruit appears five seconds after the previous one is collected or exits.
 
-The intended decision is when to spend a short period of safety: crossing a
-blocked junction, escaping a chase, or reaching an elixir. The visible aura and
-countdown show when the protection will end. Remaining inside a guardian as the
-ward expires is dangerous. Classic Trail never enables the skill.
+## The numbered guardians
 
-## Development and validation
+All four guardians start evenly spaced in the centre. Numbers identify the
+behaviors required by the assessment, independently of their themed sprites.
 
-- [Maze foundation](Playable-Maze-Validation.md)
-- [Classic gameplay](Classic-Rules-Validation.md)
-- [Menu, ward and build checks](Menu-Ward-Validation.md)
+| Number | Guardian | Normal behavior | House exit |
+| --- | --- | --- | --- |
+| 1 | Nine-tailed fox | Random valid direction that increases or preserves distance from the player | Top |
+| 2 | Flame crane | Random valid direction that decreases or preserves distance from the player | Bottom |
+| 3 | White-headed hound | Random valid direction | Top |
+| 4 | Serpent tortoise | Follows the outside wall clockwise | Bottom |
 
-All authored project text and UI use English. The current work continues the
-original development repository without changing its earlier history or the
-delivered Assessment 3 archive. The complete Assessment 4 rubric has not been
-provided, so this guide does not claim a final grade or complete submission scope.
+Living guardians stay in corridors, cannot teleport through side tunnels, and reverse only when
+there is no other physical exit. If a distance filter leaves no eligible forward
+route, a legal nonreverse route is selected so a guardian never stops or makes
+an unnecessary backstep. The formal checklist explains this underspecified case.
+
+Normal speed is 4.5 tiles per second. Scared, Recovering and Dead speed is 2.25.
+All Scared or Recovering guardians use the first guardian's fleeing behavior.
+Dead spirits move directly through walls to their own original spawn, then
+adopt the current global state and leave through the assigned gate. There is no
+fixed revival timer in the final ghost implementation.
+
+## Results and records
+
+The game clock begins after GO disappears. Death sequences count as elapsed play
+time; pause does not. Death freezes all guardian movement, then restores the
+cultivator to the top-left and resets the guardians. The player waits for fresh
+input and the initial countdown is not repeated.
+
+Clearing all pickups or losing all three lives shows `Game Over`. Movement, game
+time and buttons are disabled for three seconds before an automatic menu return.
+Each level stores its own highest score and the time achieved with that score.
+An equal score replaces the record only if the time is lower. Leaving an unfinished
+run does not save a result. Records persist on the local computer using PlayerPrefs.
+
+## Level 2: Talisman Trial
+
+The active talisman adds a timing decision to the same maze and scoring rules.
+Press Space for three seconds of protection from Normal guardians. Protection
+does not award points, eat a Normal guardian or change its route. Scared guardians
+still award the regular 300 points when captured.
+
+The talisman recharges fifteen seconds after activation, including its active
+three seconds. Repeated presses do not extend it. The aura and HUD show its active
+duration and recharge. The HUD reports CONTACT BLOCKED after a successful block.
+Pause freezes both timers; a new life restores availability. Normal guardian
+contact becomes dangerous immediately after protection expires.
+
+Saving the talisman for a blocked junction or an elixir approach gives the player
+control over one short risky passage. Spending it early leaves a twelve-second
+unprotected interval, so it complements movement planning rather than replacing it.
+
+## Verification
+
+See `Documentation/Assessment4-Checklist.md` for formal acceptance criteria and
+`Documentation/Assessment4-Validation.md` for checks actually executed. Historical
+preview validation documents describe earlier development states; the formal
+Assessment 4 record and this guide describe the final rules.

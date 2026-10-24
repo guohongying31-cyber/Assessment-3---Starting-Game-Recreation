@@ -49,6 +49,6 @@ This is a documented interpretation of an underspecified case, not an additional
 - [ ] Final archive named `26151833_A4_Project.zip`.
 - [ ] Include the complete Unity project, `.git` and `.gitignore`; exclude `Library` and other generated caches, temporary verification files, logs and local preview builds.
 - [ ] Extract the ZIP into a fresh location without caches; confirm project import, correct first scene, gameplay and required assets.
-- [ ] Complete `26151833_A4_Declaration.txt` using the actual Canvas template, submitted to the separate portal. The template must be obtained before preparing the final declaration.
-- [ ] Explain the active talisman innovation in detail in the declaration's Design Innovation section.
+- [ ] Deferred by the user: complete `26151833_A4_Declaration.txt` using the actual Canvas template and submit it separately. No declaration is prepared in this delivery.
+- [ ] Deferred with the declaration: explain the active talisman innovation in its Design Innovation section. The gameplay guide currently documents the mechanic.
 - [ ] Resolve the deadline from Canvas: the supplied PDF and screenshot have inconsistent wording, so no exact final deadline is inferred here.
