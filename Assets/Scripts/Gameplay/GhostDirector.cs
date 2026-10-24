@@ -61,9 +61,9 @@ namespace ShanHaiSpiritTrail
             houseNavigation = new MazeNavigation(layout, allowHouseGates: true);
             exitCell = Nearest(playerNavigation, 11, 13);
             homeCell = Nearest(houseNavigation, 14, 13);
-            spawnCells[0] = exitCell;
-            spawnCells[1] = Nearest(houseNavigation, 14, 12);
-            spawnCells[2] = homeCell;
+            spawnCells[0] = Nearest(houseNavigation, 14, 12);
+            spawnCells[1] = homeCell;
+            spawnCells[2] = Nearest(houseNavigation, 14, 14);
             spawnCells[3] = Nearest(houseNavigation, 14, 15);
             scatterCells[0] = Nearest(playerNavigation, 1, layout.Columns - 2);
             scatterCells[1] = Nearest(playerNavigation, 1, 1);
@@ -97,7 +97,7 @@ namespace ShanHaiSpiritTrail
                 ghost.Frightened = false;
                 ghost.ReturningThroughExit = false;
                 ghost.WaitRemaining = ghost.Index * 2;
-                ghost.State = ghost.Index == 0 ? GhostState.Roaming : GhostState.Waiting;
+                ghost.State = GhostState.Waiting;
                 ghost.Motor.Enabled = ghost.State != GhostState.Waiting;
                 if (ghost.State == GhostState.Roaming) ChooseRoamingDirection(ghost);
             }
